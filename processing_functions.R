@@ -10,6 +10,12 @@ read_aligned_six_hour_split_bytes <- function(file_name, device_name, num_days)
   return(ret_list)
 }
 
+# File offsets are all aligned by 6 hours windows. In order to properly align the output file
+# we need to say what hour the files starts on. To do this, we use the following convention:
+# 0 = 00:00
+# 1 = 06:00
+# 2 = 12:00
+# 3 = 18:00
 read_aligned_six_hour_split <- function(file_name, device_name, num_days, column_name)
 {
   dataset <- read.csv(file_name)
@@ -27,9 +33,9 @@ read_aligned_six_hour_split <- function(file_name, device_name, num_days, column
   # Per timeslot
   elems_per_day = 4
   window_1 <- dataset[[column_name]][seq(from=1, to=length(dataset[[column_name]]), by=4)]
-  window_2 <- dataset[[column_name]][seq(from=2, to=length(dataset[[column_name]]), by=4)]
-  window_3 <- dataset[[column_name]][seq(from=3, to=length(dataset[[column_name]]), by=4)]
-  window_4 <- dataset[[column_name]][seq(from=4, to=length(dataset[[column_name]]), by=4)]
+  six_to_noon <- dataset[[column_name]][seq(from=2, to=length(dataset[[column_name]]), by=4)]
+  noon_to_eighteen <- dataset[[column_name]][seq(from=3, to=length(dataset[[column_name]]), by=4)]
+  eighteen_to_midnight <- dataset[[column_name]][seq(from=4, to=length(dataset[[column_name]]), by=4)]
   
   window_1_mean <- mean(window_1)
   window_1_sd <- sd(window_1)
@@ -38,26 +44,26 @@ read_aligned_six_hour_split <- function(file_name, device_name, num_days, column
   ret_list[["window_1.sd"]] <- window_1_sd
   ret_list[["window_1.cov"]] <- window_1_CoV
   
-  window_2_mean <- mean(window_2)
-  window_2_sd <- sd(window_2)
-  window_2_CoV <- window_2_sd/window_2_mean
-  ret_list[["window_2.mean"]] <- window_2_mean
-  ret_list[["window_2.sd"]] <- window_2_sd
-  ret_list[["window_2.cov"]] <- window_2_CoV
+  six_to_noon_mean <- mean(six_to_noon)
+  six_to_noon_sd <- sd(six_to_noon)
+  six_to_noon_CoV <- six_to_noon_sd/six_to_noon_mean
+  ret_list[["six_to_noon.mean"]] <- six_to_noon_mean
+  ret_list[["six_to_noon.sd"]] <- six_to_noon_sd
+  ret_list[["six_to_noon.cov"]] <- six_to_noon_CoV
   
-  window_3_mean <- mean(window_3)
-  window_3_sd <- sd(window_3)
-  window_3_CoV <- window_3_sd/window_3_mean
-  ret_list[["window_3.mean"]] <- window_3_mean
-  ret_list[["window_3.sd"]] <- window_3_sd
-  ret_list[["window_3.cov"]] <- window_3_CoV
+  noon_to_eighteen_mean <- mean(noon_to_eighteen)
+  noon_to_eighteen_sd <- sd(noon_to_eighteen)
+  noon_to_eighteen_CoV <- noon_to_eighteen_sd/noon_to_eighteen_mean
+  ret_list[["noon_to_eighteen.mean"]] <- noon_to_eighteen_mean
+  ret_list[["noon_to_eighteen.sd"]] <- noon_to_eighteen_sd
+  ret_list[["noon_to_eighteen.cov"]] <- noon_to_eighteen_CoV
   
-  window_4_mean <- mean(window_4)
-  window_4_sd <- sd(window_4)
-  window_4_CoV <- window_4_sd/window_4_mean
-  ret_list[["window_4.mean"]] <- window_4_mean
-  ret_list[["window_4.sd"]] <- window_4_sd
-  ret_list[["window_4.cov"]] <- window_4_CoV
+  eighteen_to_midnight_mean <- mean(eighteen_to_midnight)
+  eighteen_to_midnight_sd <- sd(eighteen_to_midnight)
+  eighteen_to_midnight_CoV <- eighteen_to_midnight_sd/eighteen_to_midnight_mean
+  ret_list[["eighteen_to_midnight.mean"]] <- eighteen_to_midnight_mean
+  ret_list[["eighteen_to_midnight.sd"]] <- eighteen_to_midnight_sd
+  ret_list[["eighteen_to_midnight.cov"]] <- eighteen_to_midnight_CoV
   
   # Per day
   day_data <- dataset[[column_name]]
@@ -70,6 +76,105 @@ read_aligned_six_hour_split <- function(file_name, device_name, num_days, column
   day_CoV <- day_sd/day_mean
   ret_list[["day.mean"]] <- day_mean
   ret_list[["day.sd"]] <- day_sd
+  ret_list[["day.cov"]] <- day_CoV
+  
+  return(ret_list)
+}
+
+# File offsets are all aligned by 6 hours windows. In order to properly align the output file
+# we need to say what hour the files starts on. To do this, we use the following convention:
+# 0 = 00:00
+# 1 = 06:00
+# 2 = 12:00
+# 3 = 18:00
+compute_aligned_cov <- function(file_path, start_hour_enum, column_name)
+{
+  dataset <- read.csv(file_path)
+  ret_list <- list() 
+  ret_list[["file"]] <- basename(file_path)
+  
+  # Overall
+  overall_mean <- mean(dataset[[column_name]])
+  overall_sd <- sd(dataset[[column_name]])
+  overall_CoV <- overall_sd/overall_mean
+  ret_list[["overall.cov"]] <- overall_CoV
+  
+  # Partition data into 4 windows, which captures the same time of day every time 
+  # (e.g. window_1 may always contain 00:00-06:00 data)
+  elems_per_day = 4
+  window_1 <- dataset[[column_name]][seq(from=1, to=length(dataset[[column_name]]), by=elems_per_day)]
+  window_2 <- dataset[[column_name]][seq(from=2, to=length(dataset[[column_name]]), by=elems_per_day)]
+  window_3 <- dataset[[column_name]][seq(from=3, to=length(dataset[[column_name]]), by=elems_per_day)]
+  window_4 <- dataset[[column_name]][seq(from=4, to=length(dataset[[column_name]]), by=elems_per_day)]
+  
+  # Since the starting time can be different (but is always aligned by 6 hours),
+  # we map the windows onto real times based on the start time
+  if (start_hour_enum == 0)
+  {
+    midnight_to_six <- window_1
+    six_to_noon <- window_2
+    noon_to_eighteen <- window_3
+    eighteen_to_midnight <- window_4
+  }
+  else if (start_hour_enum == 1)
+  {
+    midnight_to_six <- window_4
+    six_to_noon <- window_1
+    noon_to_eighteen <- window_2
+    eighteen_to_midnight <- window_3
+  }
+  else if (start_hour_enum == 2)
+  {
+    midnight_to_six <- window_3
+    six_to_noon <- window_4
+    noon_to_eighteen <- window_1
+    eighteen_to_midnight <- window_2
+  }
+  else if (start_hour_enum == 3)
+  {
+    midnight_to_six <- window_2
+    six_to_noon <- window_3
+    noon_to_eighteen <- window_4
+    eighteen_to_midnight <- window_1
+  }
+  else
+  {
+    return(NaN)
+  }
+  
+  # Compute CoV across 6 hour blocks
+  midnight_to_six_mean <- mean(midnight_to_six)
+  midnight_to_six_sd <- sd(midnight_to_six)
+  midnight_to_six_CoV <- midnight_to_six_sd/midnight_to_six_mean
+  ret_list[["midnight_to_six.cov"]] <- midnight_to_six_CoV
+  
+  six_to_noon_mean <- mean(six_to_noon)
+  six_to_noon_sd <- sd(six_to_noon)
+  six_to_noon_CoV <- six_to_noon_sd/six_to_noon_mean
+  ret_list[["six_to_noon.cov"]] <- six_to_noon_CoV
+  
+  noon_to_eighteen_mean <- mean(noon_to_eighteen)
+  noon_to_eighteen_sd <- sd(noon_to_eighteen)
+  noon_to_eighteen_CoV <- noon_to_eighteen_sd/noon_to_eighteen_mean
+  ret_list[["noon_to_eighteen.cov"]] <- noon_to_eighteen_CoV
+  
+  eighteen_to_midnight_mean <- mean(eighteen_to_midnight)
+  eighteen_to_midnight_sd <- sd(eighteen_to_midnight)
+  eighteen_to_midnight_CoV <- eighteen_to_midnight_sd/eighteen_to_midnight_mean
+  ret_list[["eighteen_to_midnight.cov"]] <- eighteen_to_midnight_CoV
+  
+  # Computer CoV across days
+  num_entries <- length(dataset[[column_name]])
+  full_day_count <- num_entries %/% 4
+  
+  day_data <- dataset[[column_name]]
+  day_data <- day_data[1:(full_day_count * elems_per_day)]
+  day_data <- split(day_data, rep(1:full_day_count,each=elems_per_day), drop = TRUE)
+  day_sums <- lapply(day_data, sum)
+  
+  day_mean <- mean(unlist(day_sums))
+  day_sd <- sd(unlist(day_sums))
+  day_CoV <- day_sd/day_mean
   ret_list[["day.cov"]] <- day_CoV
   
   return(ret_list)
