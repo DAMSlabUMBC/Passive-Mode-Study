@@ -97,7 +97,12 @@ process_and_write_data <- function(directory_path, output_path)
   
   # Create results dir
   dir.create(output_path, showWarnings=FALSE)
-  dir.create("plots", showWarnings=FALSE)
+  
+  # Create plot dirs
+  packet_plot_path <- file.path(output_path, "wan_packet_plots")
+  byte_plot_path <- file.path(output_path, "wan_byte_plots")
+  dir.create(packet_plot_path, showWarnings=FALSE)
+  dir.create(byte_plot_path, showWarnings=FALSE)
   
   # CoV for devices
   #calculate_and_write_cov(files_with_offset, output_path)
@@ -107,13 +112,14 @@ process_and_write_data <- function(directory_path, output_path)
   {
     filepath <- files_with_offset[[i]][[1]]
 
-    temp <- compute_hurst(filepath, "Frames")
+    plot_data_over_time(filepath, "Frames", 2, packet_plot_path)
+    plot_data_over_time(filepath, "Bytes", 2, byte_plot_path)
   }
 }
 
 # Get location of this script
 script_dir <- getwd()
-input_dir <- file.path(script_dir, "datasets/FullThirtyMinutes")
+input_dir <- file.path(script_dir, "datasets/FullThirtyMinutes/WAN-Filtered")
 output_dir <- file.path(script_dir, "output")
 
 process_and_write_data(input_dir, output_dir)
