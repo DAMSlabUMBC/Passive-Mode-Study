@@ -2,6 +2,9 @@ source("processing_functions.R")
 library(xlsx)
 library(stringr)
 library(dplyr)
+library(pracma)
+library(ggplot2)
+library(scales)
 
 # Gets stat files in directory as a list of vectors in the form (file_path, start_offset)
 get_files_with_start_offsets <- function(directory_path)
@@ -94,14 +97,23 @@ process_and_write_data <- function(directory_path, output_path)
   
   # Create results dir
   dir.create(output_path, showWarnings=FALSE)
+  dir.create("plots", showWarnings=FALSE)
   
   # CoV for devices
-  calculate_and_write_cov(files_with_offset, output_path)
+  #calculate_and_write_cov(files_with_offset, output_path)
+  
+  # Process the list of files
+  for (i in seq_along(files_with_offset))
+  {
+    filepath <- files_with_offset[[i]][[1]]
+
+    temp <- compute_hurst(filepath, "Frames")
+  }
 }
 
 # Get location of this script
-script_dir <- dirname(sys.frame(1)$ofile)
-input_dir <- file.path(script_dir, "datasets/Per-Device")
+script_dir <- getwd()
+input_dir <- file.path(script_dir, "datasets/FullThirtyMinutes")
 output_dir <- file.path(script_dir, "output")
 
 process_and_write_data(input_dir, output_dir)

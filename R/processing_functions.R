@@ -179,3 +179,34 @@ compute_aligned_cov <- function(file_path, start_hour_enum, column_name)
   
   return(ret_list)
 }
+
+compute_hurst <- function(file_path, column_name)
+{
+  library(ggplot2)
+  
+  dataset <- read.csv(file_path)
+  dataframe <- data.frame(dataset)
+  ret_list <- list() 
+  ret_list[["file"]] <- basename(file_path)
+  
+  # Overall
+  data <- dataset[[column_name]]
+  time_series <- ts(data, start=0, frequency=2)
+  
+  outname <- paste(basename(file_path),".png",sep="")
+  
+  # For easier display, scale seconds data to be in hours
+  #dataframe <- dataframe %>% mutate(StartTime = StartTime / 3600)
+  
+  #png(filename=file.path("plots",outname))
+  the_plot <- ggplot(data=dataframe, aes(x=StartTime, y=Frames)) + 
+    geom_line() +
+    scale_y_continuous(expand=c(0,0), limits=c(0,(max(dataframe$Frames) * 1.05))) +
+    scale_x_continuous(expand=c(0,0), breaks = scales::breaks_width(3600 * 6), labels = function(x) format(x / 3600)) +
+    ggtitle("Packets sent over capture timeframe") +
+    xlab("Capture Time (Hours)") +
+    ylab("Packets (Total)")
+
+  suppressMessages(ggsave(file.path("plots_full",outname), plot=the_plot))
+  #invisible(dev.off())
+}
