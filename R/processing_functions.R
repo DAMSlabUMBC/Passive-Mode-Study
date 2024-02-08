@@ -113,9 +113,9 @@ plot_data_over_time <- function(file_path, column_name, observations_per_hour, o
     
     outname <- paste(basename(file_path),".png",sep="")
     
-    the_plot <- ggplot(data=dataframe, aes(x=StartTime, y=Frames)) + 
+    the_plot <- ggplot(data=dataframe, aes(x=StartTime, y=.data[[column_name]])) + 
       geom_line() +
-      scale_y_continuous(expand=c(0,0), limits=c(0,(max(dataframe$Frames) * 1.05))) +
+      scale_y_continuous(expand=c(0,0), limits=c(0,(max(dataframe[[column_name]]) * 1.05))) +
       scale_x_continuous(expand=c(0,0), breaks = scales::breaks_width(3600 * 6), labels = function(x) format(x / 3600)) +
       ggtitle(basename(file_path)) +
       xlab("Capture Time (Hours)") +
