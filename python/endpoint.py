@@ -18,7 +18,7 @@ lan_ip = "^(192.168.).*|(10.).*|(172.16).*$" # checks if the numbers are 192.168
 
 #Endpoint,LAN or WAN,Total Packet Count,Total Byte CountTx Packet Count, Tx Byte Count, Rx Packet Count, Rx Byte Count,Protos Used
 
-pathlist = Path(r"C:\Users\Manav\Desktop\New folder\endpoint\AllDataAlignedOn6hrsComplete\Filtered\Europe\Per-Device").glob('**/*.pcap') # go through a folder of .pcaps
+pathlist = Path(r"C:\Users\Manav\Desktop\New folder\endpoint\AllDataAlignedOn6hrsComplete\Filtered\US1\Active-Captures\Per-Device").glob('**/*.pcap') # go through a folder of .pcaps
 for path in pathlist: # iterate through each path
 
     file_location = str(path) # turn into string 
