@@ -5,6 +5,8 @@ library(dplyr)
 library(pracma)
 library(ggplot2)
 library(scales)
+library(fpp)
+library(ggstatsplot)
 
 # Gets stat files in directory as a list of vectors in the form (file_path, start_offset)
 get_files_with_start_offsets <- function(directory_path)
@@ -59,7 +61,8 @@ calculate_and_write_cov <- function(files_with_offsets, output_path)
   # Create output in the master output dir
   cov_output_file <- file.path(output_path, "CoVs.xlsx")
 
-  headers <- c("File", "Overall CoV", "00:00-06:00 CoV", "00:00-06:00 CoV", "00:00-06:00 CoV", "00:00-06:00 CoV", "Day CoV")
+  #headers <- c("File", "Overall CoV", "00:00-06:00 CoV", "00:00-06:00 CoV", "00:00-06:00 CoV", "00:00-06:00 CoV", "Day CoV")
+  headers <- c("File", "Overall CoV", "Rolling Mean CoV", "Rolling Mean No Outlier CoV")
   
   # Process the list of files
   for (i in seq_along(files_with_offsets))
@@ -68,8 +71,10 @@ calculate_and_write_cov <- function(files_with_offsets, output_path)
     start_offset <- files_with_offsets[[i]][[2]]
     
     # Now that we know the offsets, start processing data
-    packet_data <- compute_aligned_cov(filepath, start_offset, "Frames")
-    bytes_data <- compute_aligned_cov(filepath, start_offset, "Bytes")
+    #packet_data <- compute_aligned_cov(filepath, start_offset, "Frames")
+    #bytes_data <- compute_aligned_cov(filepath, start_offset, "Bytes")
+    packet_data <- compute_cov(filepath, "Frames")
+    bytes_data <- compute_cov(filepath, "Bytes")
     
     if(i == 1)
     {
@@ -99,18 +104,20 @@ process_and_write_data <- function(directory_path, output_path)
   dir.create(output_path, showWarnings=FALSE)
   
   # Create plot dirs
-  packet_plot_path <- file.path(output_path, "wan_packet_plots")
-  byte_plot_path <- file.path(output_path, "wan_byte_plots")
+  packet_plot_path <- file.path(output_path, "packet_plots_outlier_2")
+  byte_plot_path <- file.path(output_path, "byte_plots_outlier_2")
   dir.create(packet_plot_path, showWarnings=FALSE)
   dir.create(byte_plot_path, showWarnings=FALSE)
   
   # CoV for devices
-  #calculate_and_write_cov(files_with_offset, output_path)
-  
+  calculate_and_write_cov(files_with_offset, output_path)
+
   # Process the list of files
   for (i in seq_along(files_with_offset))
   {
     filepath <- files_with_offset[[i]][[1]]
+    
+    calculate_number_of_outliers(filepath, "Frames")
 
     plot_data_over_time(filepath, "Frames", 2, packet_plot_path)
     plot_data_over_time(filepath, "Bytes", 2, byte_plot_path)
@@ -119,7 +126,7 @@ process_and_write_data <- function(directory_path, output_path)
 
 # Get location of this script
 script_dir <- getwd()
-input_dir <- file.path(script_dir, "datasets/FullThirtyMinutes/WAN-Filtered")
+input_dir <- file.path(script_dir, "datasets/FullThirtyMinutes")
 output_dir <- file.path(script_dir, "output")
 
 process_and_write_data(input_dir, output_dir)

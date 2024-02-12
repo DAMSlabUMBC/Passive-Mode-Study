@@ -1,3 +1,15 @@
+remove_outliers <- function(dataset, column_name)
+{
+  data_mean <- mean(dataset[[column_name]])
+  three_sigma <- 3 * sd(dataset[[column_name]])
+  lower_bound <- data_mean - three_sigma
+  upper_bound <- data_mean + three_sigma
+  
+  no_outlier_dataframe <- dataset[dataset[[column_name]] >= lower_bound & dataset[[column_name]] <= upper_bound,]
+  return(no_outlier_dataframe)
+}
+
+
 # File offsets are all aligned by 6 hours windows. In order to properly align the output file
 # we need to say what hour the files starts on. To do this, we use the following convention:
 # 0 = 00:00
@@ -97,6 +109,65 @@ compute_aligned_cov <- function(file_path, start_hour_enum, column_name)
   return(ret_list)
 }
 
+calculate_number_of_outliers <- function(file_path, column_name)
+{
+  dataset <- read.csv(file_path)
+  
+  # Remove outliers
+  
+  no_outlier_dataframe <- remove_outliers(dataset, column_name)
+  
+  original <- nrow(dataset)
+  new <- nrow(no_outlier_dataframe)
+  removed <- original - new
+  
+  if(removed > 0)
+  {
+    print(paste(basename(file_path), "Removed:", removed, " elements which is", (removed / original) * 100, "% of the elements"))
+    print(paste("Mean:", mean(no_outlier_dataframe[[column_name]]), "SD:", sd(no_outlier_dataframe[[column_name]])))
+  }
+  else
+  {
+    print(paste(basename(file_path), "Removed no elements"))
+    print(paste("Mean:", mean(no_outlier_dataframe[[column_name]]), "SD:", sd(no_outlier_dataframe[[column_name]])))
+  }
+}
+
+compute_cov <- function(file_path, column_name)
+{
+  dataset <- read.csv(file_path)
+  ret_list <- list() 
+  ret_list[["file"]] <- basename(file_path)
+  
+  # Remove outliers
+  no_outlier_dataframe <- remove_outliers(dataset, column_name)
+  
+  # Overall
+  overall_mean <- mean(no_outlier_dataframe[[column_name]])
+  overall_sd <- sd(no_outlier_dataframe[[column_name]])
+  overall_CoV <- overall_sd/overall_mean
+  ret_list[["overall.cov"]] <- overall_CoV
+  
+  rolling_mean_data <- rollmean(dataset[[column_name]], k=12, fill=NA, align='right')
+  print(paste(basename(file_path), column_name))
+  print(mean(rolling_mean_data,na.rm=TRUE))
+  
+  rolling_mean <- mean(rolling_mean_data,na.rm=TRUE)
+  rolling_sd <- sd(rolling_mean_data,na.rm=TRUE)
+  rolling_CoV <- rolling_sd/rolling_mean
+  ret_list[["rolling_mean.cov"]] <- rolling_CoV
+  
+  rolling_mean_data <- rollmean(no_outlier_dataframe[[column_name]], k=12, fill=NA, align='right')
+  
+  rolling_mean <- mean(rolling_mean_data,na.rm=TRUE)
+  rolling_sd <- sd(rolling_mean_data,na.rm=TRUE)
+  rolling_CoV <- rolling_sd/rolling_mean
+  ret_list[["rolling_mean_outlier.cov"]] <- rolling_CoV
+
+  return(ret_list)
+}
+
+
 plot_data_over_time <- function(file_path, column_name, observations_per_hour, output_dir)
 {
   library(ggplot2)
@@ -111,10 +182,19 @@ plot_data_over_time <- function(file_path, column_name, observations_per_hour, o
   {
     time_series <- ts(data, start=0, frequency=observations_per_hour)
     
-    outname <- paste(basename(file_path),".png",sep="")
+    dataframe <- dataframe %>% mutate(rolling_avg=rollmean(dataframe[[column_name]], k=12, fill=NA, align='right'))
     
-    the_plot <- ggplot(data=dataframe, aes(x=StartTime, y=.data[[column_name]])) + 
-      geom_line() +
+    no_outlier_dataframe <- remove_outliers(dataset, column_name)
+    
+    no_outlier_dataframe <- no_outlier_dataframe %>% mutate(rolling_avg=rollmean(no_outlier_dataframe[[column_name]], k=12, fill=NA, align='right'))
+    
+    rolling_avg_mean = mean(no_outlier_dataframe$rolling_avg,na.rm=TRUE)
+    rolling_avg_sd = sd(no_outlier_dataframe$rolling_avg,na.rm=TRUE)
+    
+    outname <- paste(basename(file_path),".png",sep="")
+    the_plot <- ggplot(data=no_outlier_dataframe, aes(x=StartTime)) + 
+      geom_line(data=dataframe, aes(y=.data[[column_name]]), color="black") +
+      geom_line(aes(y=rolling_avg), color="darkred", linetype="solid") +
       scale_y_continuous(expand=c(0,0), limits=c(0,(max(dataframe[[column_name]]) * 1.05))) +
       scale_x_continuous(expand=c(0,0), breaks = scales::breaks_width(3600 * 6), labels = function(x) format(x / 3600)) +
       ggtitle(basename(file_path)) +
