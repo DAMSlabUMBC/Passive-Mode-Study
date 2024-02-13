@@ -1,1 +1,1 @@
-StartTime,Frames,Bytes
+Device,StartTime,Frames,Bytes,TxFrames,TxBytes,RxFrames,RxBytes

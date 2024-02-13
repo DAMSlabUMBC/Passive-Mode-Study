@@ -56,13 +56,18 @@ get_files_with_start_offsets <- function(directory_path)
 }
 
 # Calculates overall, six hour split, and day split CoVs for the devices
-calculate_and_write_cov <- function(files_with_offsets, output_path)
+calculate_and_write_overall_stats <- function(files_with_offsets, output_path)
 {
   # Create output in the master output dir
-  cov_output_file <- file.path(output_path, "CoVs.xlsx")
+  output_file <- file.path(output_path, "overall_stats.csv")
 
-  #headers <- c("File", "Overall CoV", "00:00-06:00 CoV", "00:00-06:00 CoV", "00:00-06:00 CoV", "00:00-06:00 CoV", "Day CoV")
-  headers <- c("File", "Overall CoV", "Rolling Mean CoV", "Rolling Mean No Outlier CoV")
+  headers <- c("Device", "Intervals", "Outlier Intervals (Frames)", 
+      "Frame Mean", "Frame SD", "Frame CoV",
+      "TxFrame Mean", "TxFrame SD", "TxFrame CoV",
+      "RxFrame Mean", "RxFrame SD", "RxFrame CoV",
+      "Outlier Intervals (Bytes)", "Byte Mean", "Byte SD", "Byte CoV",
+      "TxByte Mean", "TxByte SD", "TxByte CoV",
+      "RxByte Mean", "RxByte SD", "RxByte CoV")
   
   # Process the list of files
   for (i in seq_along(files_with_offsets))
@@ -70,58 +75,76 @@ calculate_and_write_cov <- function(files_with_offsets, output_path)
     filepath <- files_with_offsets[[i]][[1]]
     start_offset <- files_with_offsets[[i]][[2]]
     
-    # Now that we know the offsets, start processing data
-    #packet_data <- compute_aligned_cov(filepath, start_offset, "Frames")
-    #bytes_data <- compute_aligned_cov(filepath, start_offset, "Bytes")
-    packet_data <- compute_cov(filepath, "Frames")
-    bytes_data <- compute_cov(filepath, "Bytes")
+    overall_stats <- generate_overall_stats(filepath)
+
+    if(!is.list(overall_stats))
+    {
+      warning(paste("No data found in file: ", basename(filepath)))
+      next
+    }
     
     if(i == 1)
     {
-      packets_dataframe <- data.frame(packet_data)
-      bytes_dataframe <- data.frame(bytes_data)
-      colnames(packets_dataframe) <- headers
-      colnames(bytes_dataframe) <- headers
+      dataframe <- data.frame(overall_stats)
+      colnames(dataframe) <- headers
     }
     else
     {
-      packets_dataframe[nrow(packets_dataframe) + 1,] = packet_data
-      bytes_dataframe[nrow(bytes_dataframe) + 1,] = bytes_data
+      dataframe[nrow(dataframe) + 1,] = overall_stats
     }
   }
   
-  write.xlsx(packets_dataframe, file=cov_output_file, sheetName="Packets", row.names=FALSE)
-  write.xlsx(bytes_dataframe, file=cov_output_file, sheetName="Bytes", row.names=FALSE, append=TRUE)
+  write.csv(dataframe, output_file, row.names=FALSE)
+}
+
+create_and_write_plots <- function(files_with_offsets, output_path)
+{
+  # Create plot dirs
+  base_plot_path <- file.path(output_path, "plots")
+  packet_plot_path <- file.path(output_path, "packet_plots")
+  byte_plot_path <- file.path(output_path, "byte_plots")
+  dir.create(packet_plot_path, showWarnings=FALSE)
+  dir.create(byte_plot_path, showWarnings=FALSE)
+  
+  # Process the list of files
+  for (i in seq_along(files_with_offsets))
+  {
+    filepath <- files_with_offsets[[i]][[1]]
+
+    plots <- generate_plots(filepath)
+    
+    # Frame plots
+    plot_names <- names(plots[["frameplots"]])
+    for (j in seq_along(plots[["frameplots"]]))
+    {
+      plot_name <- plot_names[[j]]
+      outfile_name <- paste(plot_name, ".png", sep="")
+      suppressMessages(ggsave(file.path(packet_plot_path,outfile_name), plot=plots[["frameplots"]][[j]]))
+    }
+    
+    # Byte plots
+    plot_names <- names(plots[["byteplots"]])
+    for (j in seq_along(plots[["byteplots"]]))
+    {
+      plot_name <- plot_names[[j]]
+      outfile_name <- paste(plot_name, ".png", sep="")
+      suppressMessages(ggsave(file.path(byte_plot_path,outfile_name), plot=plots[["byteplots"]][[j]]))
+    }
+  }
 }
 
 # Main processing function
 process_and_write_data <- function(directory_path, output_path)
 {
   # Get paths and offsets for all files in the directory
-  files_with_offset <- get_files_with_start_offsets(directory_path)
+  files_with_offsets <- get_files_with_start_offsets(directory_path)
   
   # Create results dir
   dir.create(output_path, showWarnings=FALSE)
   
-  # Create plot dirs
-  packet_plot_path <- file.path(output_path, "packet_plots_outlier_2")
-  byte_plot_path <- file.path(output_path, "byte_plots_outlier_2")
-  dir.create(packet_plot_path, showWarnings=FALSE)
-  dir.create(byte_plot_path, showWarnings=FALSE)
-  
-  # CoV for devices
-  calculate_and_write_cov(files_with_offset, output_path)
-
-  # Process the list of files
-  for (i in seq_along(files_with_offset))
-  {
-    filepath <- files_with_offset[[i]][[1]]
-    
-    calculate_number_of_outliers(filepath, "Frames")
-
-    plot_data_over_time(filepath, "Frames", 2, packet_plot_path)
-    plot_data_over_time(filepath, "Bytes", 2, byte_plot_path)
-  }
+  # Process data
+  calculate_and_write_overall_stats(files_with_offsets, output_path)
+  create_and_write_plots(files_with_offsets, output_path)
 }
 
 # Get location of this script
