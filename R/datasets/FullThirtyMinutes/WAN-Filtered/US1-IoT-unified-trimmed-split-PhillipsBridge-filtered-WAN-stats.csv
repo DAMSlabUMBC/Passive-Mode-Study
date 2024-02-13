@@ -1,5 +1,5 @@
 Device,StartTime,Frames,Bytes,TxFrames,TxBytes,RxFrames,RxBytes
-PhillipsBridge (US),0,429,39468,220,19168,209,20300
+PhillipsBridge (US),0,397,37632,206,18328,191,19304
 PhillipsBridge (US),1800,308,19734,155,10308,153,9426
 PhillipsBridge (US),3600,356,28859,182,14672,174,14187
 PhillipsBridge (US),5400,297,18774,150,9888,147,8886

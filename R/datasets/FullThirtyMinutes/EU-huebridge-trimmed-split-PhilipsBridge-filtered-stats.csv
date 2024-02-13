@@ -1,5 +1,5 @@
 Device,StartTime,Frames,Bytes,TxFrames,TxBytes,RxFrames,RxBytes
-PhilipsBridge (EU),0,633,111852,440,96383,193,15469
+PhilipsBridge (EU),0,591,109560,421,95357,170,14203
 PhilipsBridge (EU),1800,580,102960,414,92756,166,10204
 PhilipsBridge (EU),3600,618,111208,433,96127,185,15081
 PhilipsBridge (EU),5400,537,95392,389,86664,148,8728
