@@ -4,9 +4,52 @@ from pathlib import Path
 from collections import defaultdict
 import json
 
+
 # well_known = http, https, ssdp, mdns, ntp, tplink-smarthome, mqtt, mqtt-secure
 WELL_KNOWN = ["http", "https", "ssdp", "mdns", "ntp", "tplink-smarthome", "mqtt", "mqtt-secure"]
 PROTOCOLS = ["tcp", "udp"]
+
+
+def text_to_dic(parsed_output):    
+    result = {} # final result
+    current_level = result  # New variable to keep track of the current key
+    prev_spacing = 0 # spacing to figure out when to track
+    stack = [] # keep track of current location
+    for line in parsed_output:
+        parts = line.split() # split,
+        key = parts[0].rstrip(':') # get the key (layer)
+        left_spacing = int((len(line) - len(line.lstrip())) / 2) # indicate what level of spacing
+        print(prev_spacing, left_spacing)
+
+        if(prev_spacing > left_spacing): # need to go back in the dictionary
+            current_level = result
+            # print(stack)
+
+            while(True):
+                if(len(stack) != left_spacing): # while stack isnt the index
+                    stack.pop() 
+                else:
+                    break
+            # print(stack)    
+
+            for i in stack: # for each element 
+                current_level = current_level[i] # go to that depth
+
+        if(prev_spacing == left_spacing): # if its the same length
+            current_level = result # start at the top
+
+            for i in range(left_spacing): # for each space
+                current_level = current_level[stack[i]] # set it to the index of stack
+
+        current_level[key] = {} # set the key to be empty
+        current_level = current_level[key] # go to that key
+
+        stack.append(key)
+        prev_spacing = left_spacing # previous tracker 
+
+    return result
+
+
 # load the pathlist for the section of .pcaps
 
 # for path in pathlist:
@@ -33,40 +76,8 @@ if(command_one.returncode == 0):  # Check if the command was successful
     parsed_output = '\n'.join(lines[i:]) # join it together
     parsed_output = parsed_output.splitlines() # put string into list for parsing
     parsed_output.remove(parsed_output[-1]) # remove final line, useless tring
+    
     print(command_one.stdout)
+    output = text_to_dic(parsed_output)
 
-    result = {} # final result
-    current_level = result  # New variable to keep track of the current key
-    prev_spacing = 0 # spacing to figure out when to track
-    stack = [] # keep track of current location
-    for line in parsed_output:
-        parts = line.split() # split,
-        key = parts[0].rstrip(':') # get the key (layer)
-        left_spacing = int((len(line) - len(line.lstrip())) / 2) # indicate what level of spacing
-        # print(prev_spacing, left_spacing)
-
-        if(prev_spacing > left_spacing): # need to go back in the dictionary
-            current_level = result
-            # print(stack)
-
-            while(True):
-                if(len(stack) != left_spacing): # get to the index
-                    stack.pop() # pop the stack
-                else:
-                    break
-            # print(stack)    
-
-            for i in stack: # for each element 
-                current_level = current_level[i] # go to that locaiton
- 
-        current_level[key] = {} # set the key to be empty
-        current_level = current_level[key] # go to that key
-
-        stack.append(key) # append the key
-        prev_spacing = left_spacing # previous tracker 
-
-    print(result)
-
-
-
-   
+    print(output)
