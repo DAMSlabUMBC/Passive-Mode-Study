@@ -11,7 +11,7 @@ PROTOCOLS = ["tcp", "udp"]
 
 # for path in pathlist:
     # get the file location as a str and the file_name
-path = r"File location"
+path = r"C:\Users\Manav\Desktop\programs\wireshark\AllDataAlignedOn6hrsComplete (1)\AllDataAlignedOn6hrsComplete\Filtered\US1\Active-Captures\Per-Device\US1-AllActive-Jan30-Feb1h18-split-EchoDot5-filtered.pcap"
 
 file_location = str(path)
 file_name = file_location.split("\\")
@@ -38,23 +38,31 @@ if(command_one.returncode == 0):  # Check if the command was successful
     result = {} # final result
     current_level = result  # New variable to keep track of the current key
     prev_spacing = 0 # spacing to figure out when to track
+    stack = [] # keep track of current location
     for line in parsed_output:
         parts = line.split() # split,
         key = parts[0].rstrip(':') # get the key (layer)
         left_spacing = int((len(line) - len(line.lstrip())) / 2) # indicate what level of spacing
-        print(prev_spacing, left_spacing)
+        # print(prev_spacing, left_spacing)
 
-        if(prev_spacing >= left_spacing): # need to go back in the dictionary
-            current_level = result # start at the top 
-            for i in range(left_spacing-1): # for each layer
-                for k,v in current_level.items(): # for each key and value
-                    current_level = current_level[k] # go to that key and value
-                    
-                    print(current_level)
+        if(prev_spacing > left_spacing): # need to go back in the dictionary
+            current_level = result
+            # print(stack)
 
+            while(True):
+                if(len(stack) != left_spacing): # get to the index
+                    stack.pop() # pop the stack
+                else:
+                    break
+            # print(stack)    
+
+            for i in stack: # for each element 
+                current_level = current_level[i] # go to that locaiton
+ 
         current_level[key] = {} # set the key to be empty
         current_level = current_level[key] # go to that key
 
+        stack.append(key) # append the key
         prev_spacing = left_spacing # previous tracker 
 
     print(result)
