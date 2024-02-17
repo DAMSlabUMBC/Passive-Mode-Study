@@ -11,19 +11,24 @@ PROTOCOLS = ["tcp", "udp"]
 
 
 
-def parse_ip_and_value(tcp_or_udp, ip_or_ipv6, key, text):
+def parse_ip_and_value(stack, tcp_or_udp, ip_or_ipv6, key, text):
     
     parsed_output = text.splitlines() # put string into list for parsing
     parsed_output = parsed_output[5:]
     parsed_output = parsed_output[:-1]
     array = [[]]
+    full_path = ""
+    for i in stack:
+        full_path += i
+        full_path += " "
+
     try:
         for line in parsed_output:
             value = []
             line = line.split()
             ip_src, port_src = line[0].split(":") # ip address 1
             ip_dst, port_dst = line[2].split(":")
-            value.append([tcp_or_udp, ip_or_ipv6, ip_src, port_src, ip_dst, port_dst, "\n"])
+            value.append([full_path, tcp_or_udp, ip_or_ipv6, ip_src, port_src, ip_dst, port_dst, "\n"])
             array.append(value)
             # print(current_level)
     except Exception as e:
@@ -43,8 +48,8 @@ def text_to_dic(parsed_output):
     ip_or_ipv6 = ""
     tcp_or_udp = ""
     flag = True
-    final_arr = []
     for line in parsed_output:
+        arr = []
         parts = line.split() # split,
         key = parts[0].rstrip(':') # get the key (layer)
         left_spacing = int((len(line) - len(line.lstrip())) / 2) # indicate what level of spacing
@@ -65,11 +70,8 @@ def text_to_dic(parsed_output):
             print(tshark_command_two)
             command_two = subprocess.run(tshark_command_two, capture_output=True, text=True)   # Run tshark command
             # print(command_two.stdout)
-            arr = parse_ip_and_value(tcp_or_udp, ip_or_ipv6, key,command_two.stdout)
+            arr = parse_ip_and_value(stack, tcp_or_udp, ip_or_ipv6, key,command_two.stdout)
             flag = False
-            # current_level[key].append(arr)
-            # exit()
-
 
         if(prev_spacing > left_spacing): # need to go back in the dictionary
             level = ""
@@ -84,7 +86,7 @@ def text_to_dic(parsed_output):
             # print(stack)    
 
             for i in stack: # for each element 
-                current_level = current_level[i] # go to that depth
+                current_level = current_level[i]["value"] # go to that depth
             
             flag = True
 
@@ -92,23 +94,28 @@ def text_to_dic(parsed_output):
             current_level = result # start at the top
 
             for i in range(left_spacing): # for each space
-                current_level = current_level[stack[i]] # set it to the index of stack
+                current_level = current_level[stack[i]]["value"] # set it to the index of stack
 
         current_level[key] = {} # set the key to be empty
-        current_level = current_level[key] # go to that key
-
+        current_level[key]["value"] = {}
+        if(len(arr) != 0):
+            current_level[key]["tshark"] = []
+            current_level[key]["tshark"] = arr
+        current_level = current_level[key]["value"] # go to that key
+        
         stack.append(key)
+
+
         prev_spacing = left_spacing # previous tracker 
 
-    print(result)
-    return result
+    return result, arr
 
 
 # load the pathlist for the section of .pcaps
 
 # for path in pathlist:
     # get the file location as a str and the file_name
-path = r"path"
+path = r"C:\Users\Manav\Desktop\New folder\endpoint\AllDataAlignedOn6hrsComplete\Filtered\US1\Active-Captures\Per-Device\US1-AllActive-Jan30-Feb1h18-split-EchoDot5-filtered.pcap"
 
 file_location = str(path)
 file_name = file_location.split("\\")
@@ -131,10 +138,14 @@ if(command_one.returncode == 0):  # Check if the command was successful
     parsed_output = parsed_output.splitlines() # put string into list for parsing
     parsed_output.remove(parsed_output[-1]) # remove final line, useless tring
     
-    output = text_to_dic(parsed_output)
-
-    print(output)
+    output, arr = text_to_dic(parsed_output)
 
 
-
-   
+    file_name = file_location.split("\\") # split by the \ of the file location
+    with open("file_name.csv", "a") as a: # open the csv
+        a.write(file_name[-1]) # get the last value of the array, contains the name of the file 
+        a.write("\n") # add a new line 
+        for i,j in output.items(): # get the key value pair of each protocol and the amound  
+            name = i + ": " + str(j) + "\n" # formating 
+            a.write(name) # write to file 
+        a.write("\n")
