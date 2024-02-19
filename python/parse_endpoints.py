@@ -9,15 +9,7 @@ import sys
 import csv
 import pandas
 import numpy
-
-layer_3_protos = ["ip", "ipv6"]
-layer_4_protos = ["tcp", "udp", "igmp"]
-layer_5_protos = ["tls"]
-layer_7_protos = ["http", "https", "ssdp", "mdns", "ntp", "tplink-smarthome", "mqtt", "secure-mqtt"]
-
-# Additional protocol list was manually constructed from evaluation of observed ports
-known_other_protos = { "56700" : "lifx" }
-
+from dns import resolver,reversename
 
 def main(argv):
 
@@ -34,43 +26,38 @@ def main(argv):
 
         print(f"Processing file {file_name}...")
 
-        print(f"    ...Parsing protos")
-        tshark_command_one = ["tshark", "-Nt", "-qr", file_location, "-z", "io,phs"] # create an array for both template commands
+        # First fetch list of all IPs including metrics
+        print(f"    ... Fetching IP List")
+        ip_data = fetch_ip_list(file_location)
 
-        command_one = subprocess.run(tshark_command_one, capture_output=True, text=True)   # Run tshark command
+        # Then try to resolve name
+        print(f"    ... Resolving with SNIs")
+        ip_data = resolve_with_SNIs(file_location, ip_data)
 
-        if(command_one.returncode == 0):  # Check if the command was successful
-        
-            parsed_output = command_one.stdout # Process the output and extract values
-        
-            lines = parsed_output.split('\n')   # split based off of new line
-            for i, line in enumerate(lines): # for each line
-                if line.strip().startswith('eth'): # check if it starts with eth, indicating that we got rid of junk characters
-                    break
+        print(f"    ... Resolving with x509 certs")
+        ip_data = resolve_with_certs(file_location, ip_data)
 
-            # Join and return the remaining lines
-            parsed_output = '\n'.join(lines[i:]) # join it together
-            parsed_output = parsed_output.splitlines() # put string into list for parsing
-            parsed_output.remove(parsed_output[-1]) # remove final line, useless tring
+        print(f"    ... Finally trying with a DNS query")
+        ip_data = resolve_with_dns(ip_data)
+
+        # Create output dir if it doesn't exist
+        if not os.path.isdir("results"):
+            os.makedirs("results")
+
+        outfile_name = f"{file_name}-endpoints.csv"
+        outfile_location = os.path.join("results", outfile_name)
+        with open(outfile_location, "w", newline='') as outfile: # open the csv
+
+            lines_to_write = []
+            header = "IP, Hostname, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes\n"
+            lines_to_write.append(header)
             
-            # Parse out protocol tree
-            protocol_list = unwind_phs_tree(parsed_output)
-            known_protos, unknown_protos = parse_protocol_list(protocol_list)
-
-            print(f"    ...Parsing conversations")
-            all_protos = resolve_unknown_protos(known_protos, unknown_protos, file_location)
-
-            # Create output dir if it doesn't exist
-            if not os.path.isdir("results"):
-               os.makedirs("results")
-
-            outfile_name = f"{file_name}-protocols.csv"
-            outfile_location = os.path.join("results", outfile_name)
-            with open(outfile_location, "w", newline='') as outfile: # open the csv
-
-                output_df = pandas.DataFrame(dict([ (k,pandas.Series(v)) for k,v in all_protos.items() ]))
-                output_df.replace(numpy.nan, '')
-                output_df.to_csv(outfile, index=False)
+            for ip in ip_data.keys():
+                data_dict = ip_data[ip]
+                line_to_write = f"{ip},{data_dict['Hostname']},{data_dict['Packets']},{data_dict['Bytes']},{data_dict['TxPackets']},{data_dict['TxBytes']},{data_dict['RxPackets']},{data_dict['RxBytes']}\n"
+                lines_to_write.append(line_to_write)
+                
+            outfile.writelines(lines_to_write)
 
 
 def is_dir(path):
@@ -79,6 +66,134 @@ def is_dir(path):
     else:
         raise argparse.ArgumentTypeError(f"{path} not found or isn't a directory")
     
+
+def fetch_ip_list(file_location):
+
+    ret_dict = dict()
+
+    # Run first command with no name resolution
+    tshark_command = ["tshark", "-qr", file_location, "-z", "endpoints,ipv6", "-z", "endpoints,ip"]
+    command = subprocess.run(tshark_command, capture_output=True, text=True)
+    
+    if(command.returncode != 0): 
+        return None
+        
+    parsed_output = command.stdout
+    parsed_output = parsed_output.split('\n') 
+
+    # Trim header and footer
+    parsed_output = parsed_output[4:]
+    parsed_output = parsed_output[:-2]
+
+    # Seperate IP and IPv6 sections
+    # Need to iterate with indicies since we're splitting the list in two
+    for i in range(len(parsed_output)):
+
+        line = parsed_output[i]
+
+        # Look for footer of TCP section
+        if "====" in line:
+            
+            # The previous line is the last part of the TCP section
+            ip_lines = parsed_output[:i]
+            
+            # The next 5 lines are UDP header
+            ipv6_lines = parsed_output[i+5:]
+
+            break
+
+    # Now process data
+    for line in ip_lines:
+        tokens = line.split()
+        line_dict = dict()
+        line_dict["Hostname"] = None
+        line_dict["Packets"] = tokens[1]
+        line_dict["Bytes"] = tokens[2]
+        line_dict["TxPackets"] = tokens[3]
+        line_dict["TxBytes"] = tokens[4]
+        line_dict["RxPackets"] = tokens[5]
+        line_dict["RxBytes"] = tokens[6]
+        ret_dict[tokens[0]] = line_dict
+
+    for line in ipv6_lines:
+        tokens = line.split()
+        line_dict = dict()
+        line_dict["Hostname"] = None
+        line_dict["Packets"] = tokens[1]
+        line_dict["Bytes"] = tokens[2]
+        line_dict["TxPackets"] = tokens[3]
+        line_dict["TxBytes"] = tokens[4]
+        line_dict["RxPackets"] = tokens[5]
+        line_dict["RxBytes"] = tokens[6]
+        ret_dict[tokens[0]] = line_dict
+
+    return ret_dict
+
+def resolve_with_SNIs(file_location, ip_data):
+
+    # Run command to fetch SNI mapping
+    tshark_command = ["tshark", "-r", file_location, "-Ytls.handshake.type == 1", "-Tfields", "-eip.dst", "-etls.handshake.extensions_server_name"]
+    command = subprocess.run(tshark_command, capture_output=True, text=True)
+    
+    if(command.returncode != 0): 
+        return None
+        
+    parsed_output = command.stdout
+    parsed_output = parsed_output.split('\n') 
+
+    # Now process data
+    for line in parsed_output:
+        tokens = line.split()
+
+        if len(tokens) == 2:
+            ip = tokens[0]
+            hostname = tokens[1]
+
+            if ip in ip_data:
+                ip_data[ip]["Hostname"] = hostname
+
+    return ip_data
+
+def resolve_with_certs(file_location, ip_data):
+
+    # Run command to fetch cert mapping
+    tshark_command = ["tshark", "-Nn", "-qr", file_location, "-Ydns.resp.type == A", "-Tfields", "-edns.a", "-edns.qry.name"]
+    command = subprocess.run(tshark_command, capture_output=True, text=True)
+    
+    if(command.returncode != 0): 
+        return None
+        
+    parsed_output = command.stdout
+    parsed_output = parsed_output.split('\n') 
+
+    # Now process data
+    for line in parsed_output:
+        tokens = line.split()
+
+        if len(tokens) == 2:
+            ip_list = tokens[0].split(',')
+            hostname = tokens[1]
+
+            for ip in ip_list:
+                if ip in ip_data and ip_data[ip]["Hostname"] == None:
+                    ip_data[ip]["Hostname"] = hostname
+
+    return ip_data
+    
+def resolve_with_dns(ip_data):
+
+    for ip in ip_data.keys():
+        if ip_data[ip]["Hostname"] == None:
+            try:
+                # Try to query the DNS server
+                addr = reversename.from_address(ip)
+                name = str(resolver.resolve(addr,"PTR")[0])
+                ip_data[ip]["Hostname"] = name
+            except:
+                continue
+
+    return ip_data
+
 
 def unwind_phs_tree(parsed_output):
     proto_list, output_lines = unwind_phs_tree_step(-1, [], parsed_output, [])
@@ -287,12 +402,10 @@ def parse_ips_and_ports(text):
         if "====" in line:
             
             # The previous line is the last part of the TCP section
-            tcp_lines = parsed_output[:i]
+            tcp_lines = parsed_output[:i-1]
             
             # The next 5 lines are UDP header
             udp_lines = parsed_output[i+5:]
-
-            break
     
     # Process TCP
     for line in tcp_lines:
