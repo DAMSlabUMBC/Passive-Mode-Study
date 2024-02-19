@@ -1,0 +1,5 @@
+Layer 3,Layer 4,Layer 5,Layer 7
+ip,udp,tls,tplink-smarthome
+,tcp,,ntp
+,,,lmsocialserver
+,,,https

@@ -1,0 +1,10 @@
+Layer 3,Layer 4,Layer 5,Layer 7
+ip,tcp,tls,http
+ipv6,udp,,mdns
+,igmp,,ssdp
+,,,tplink-smarthome
+,,,ntp
+,,,https
+,,,lifx
+,,,estamp
+,,,https

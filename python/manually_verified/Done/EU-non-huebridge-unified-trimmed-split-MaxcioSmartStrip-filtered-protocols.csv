@@ -1,0 +1,4 @@
+Layer 3,Layer 4,Layer 5,Layer 7
+ip,tcp,tls,8886 tuya
+,udp,,6667 tuya
+,igmp,,https

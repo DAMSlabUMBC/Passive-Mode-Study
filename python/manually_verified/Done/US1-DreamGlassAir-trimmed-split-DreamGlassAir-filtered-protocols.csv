@@ -1,0 +1,6 @@
+Layer 3,Layer 4,Layer 5,Layer 7
+ip,udp,tls,mdns
+ipv6,tcp,,ssdp
+,,,http
+,,,ntp
+,,,https

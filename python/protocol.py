@@ -46,6 +46,9 @@ def parse_protocols_from_file(file, proto_table):
 
     for frame in tqdm(cap_file, total=len(cap_file)):
 
+        layer = i.highest_layer # get the highest layer protocol
+        protocols_used[layer] += 1 # increment layer by 1 
+
         # Get the protocol number from the frame
         proto_num = int(frame.ip.proto)
         protocol = proto_num
