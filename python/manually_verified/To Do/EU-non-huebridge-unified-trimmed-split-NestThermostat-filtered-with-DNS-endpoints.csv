@@ -1,0 +1,123 @@
+IP, Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+192.168.231.226,None,None,None,44391,13853754,23642,7917049,20749,5936705
+35.190.54.210,logsink.devices.nest.com,United States,US;US;US;US,20352,9317897,9568,2794496,10784,6523401
+192.168.231.1,None,None,None,17381,2362078,8119,1602467,9262,759611
+52.205.228.132,squeakydoor.nest.com,United States,US;US;US;US,1222,439914,577,330646,645,109268
+54.164.247.81,squeakydoor.nest.com,United States,US;US;US;US,1063,378686,506,284058,557,94628
+54.156.64.150,squeakydoor.nest.com,United States,US;US;US;US,911,326768,428,244244,483,82524
+54.208.172.57,squeakydoor.nest.com,United States,US;US;US;US,445,131177,194,89382,251,41795
+34.231.209.135,czfe24-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,211,49736,98,27037,113,22699
+52.70.53.18,squeakydoor.nest.com,United States,US;US;US;US,191,58450,82,40879,109,17571
+107.21.146.204,czfe112-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,182,43011,77,25839,105,17172
+34.239.79.85,czfe81-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,157,44213,70,23274,87,20939
+54.173.243.106,czfe110-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,129,40796,60,26405,69,14391
+18.204.152.154,czfe87-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,125,41883,56,25884,69,15999
+54.156.213.123,czfe108-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,121,37480,54,26126,67,11354
+34.237.131.21,czfe93-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,109,35763,44,16787,65,18976
+142.250.201.174,clients3.google.com,United States,None,106,9238,50,4586,56,4652
+52.6.94.39,czfe44-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,98,23729,45,15824,53,7905
+18.210.25.50,czfe45-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,96,28779,43,16793,53,11986
+18.209.86.148,czfe69-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,84,24925,38,16194,46,8731
+52.55.205.241,czfe91-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,84,26598,39,16848,45,9750
+18.205.224.178,czfe30-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,81,24724,37,16087,44,8637
+35.171.224.183,czfe16-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,79,27351,35,16026,44,11325
+216.239.35.0,time.nest.com,United States,None,70,6300,35,3150,35,3150
+35.169.204.9,czfe39-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,69,23729,31,15626,38,8103
+52.91.103.86,czfe111-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,69,23924,34,15891,35,8033
+18.210.94.215,czfe04-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,66,23027,31,15098,35,7929
+35.168.175.128,czfe85-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,62,15891,26,10610,36,5281
+52.206.238.53,czfe67-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,62,21987,27,17011,35,4976
+107.23.175.250,czfe120-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,62,14556,20,9672,42,4884
+54.146.20.238,weather.nest.com,United States,US;US;US;US,60,22168,23,18092,37,4076
+3.83.229.35,czfe121-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,60,21201,27,14631,33,6570
+18.205.174.64,czfe98-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,56,17697,26,10198,30,7499
+54.166.199.222,czfe116-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,52,20664,24,14407,28,6257
+54.205.92.207,weather.nest.com,United States,US;US;US;US,46,17827,19,14184,27,3643
+35.171.116.112,czfe61-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,44,13842,17,10554,27,3288
+18.204.62.133,czfe62-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,41,12653,17,8851,24,3802
+35.171.141.52,czfe19-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,38,13703,15,10489,23,3214
+52.73.226.79,weather.nest.com,United States,US;US;US;US,31,8168,12,5762,19,2406
+18.204.60.159,czfe49-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,27,7024,15,5585,12,1439
+18.209.53.160,czfe29-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,24,6826,14,5519,10,1307
+52.55.159.10,weather.nest.com,United States,US;US;US;US,24,10747,11,9030,13,1717
+54.152.190.163,weather.nest.com,United States,US;US;US;US,24,10718,10,8935,14,1783
+18.210.159.117,czfe37-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,22,7226,11,5455,11,1771
+52.54.95.86,czfe18-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,22,6714,12,5403,10,1311
+18.210.177.46,czfe59-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,21,6660,11,5349,10,1311
+18.210.177.236,czfe53-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,20,7106,9,5335,11,1771
+18.209.26.40,czfe06-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,20,7118,9,5347,11,1771
+54.88.60.177,czfe100-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,20,6606,10,5295,10,1311
+0.0.0.0,None,None,None,19,1536,19,1536,0,0
+52.22.4.251,weather.nest.com,United States,US;US;US;US,18,7150,9,5482,9,1668
+18.208.2.216,czfe82-front01-iad01.transport.home.nest.com,United States,US;US;US;US;US;US,16,6792,7,5184,9,1608
+52.54.204.6,weather.nest.com,United States,None,10,2905,4,2008,6,897
+52.87.106.218,weather.nest.com,United States,None,9,2839,5,2050,4,789
+52.22.184.96,weather.nest.com,United States,US;US;US;US,8,3957,4,3168,4,789
+52.72.161.88,weather.nest.com,United States,US;US;US;US,7,4167,3,3378,4,789
+54.164.236.255,weather.nest.com,United States,None,3,202,1,74,2,128
+fdc4:22e1:d5d::1,None,None,None,14245,2145028,6361,1341537,7884,803491
+fdc4:22e1:d5d:0:6c57:28ca:f997:5e59,None,None,None,1203,180955,649,66285,554,114670
+fdc4:22e1:d5d:0:70fa:86f4:dff5:7d6,None,None,None,798,118191,443,45117,355,73074
+fdc4:22e1:d5d:0:55e7:f9ac:9058:5e7d,None,None,None,779,115316,448,45541,331,69775
+fdc4:22e1:d5d:0:499:151e:deab:4f07,None,None,None,775,114948,421,42860,354,72088
+fdc4:22e1:d5d:0:9ce9:23cc:4d66:5f6d,None,None,None,765,115520,434,43936,331,71584
+fdc4:22e1:d5d:0:7dc7:76d0:9429:a77c,None,None,None,707,110300,379,38546,328,71754
+fdc4:22e1:d5d:0:dda9:9d3a:3948:6693,None,None,None,697,99984,404,41057,293,58927
+fdc4:22e1:d5d:0:a99a:d9f7:84db:3004,None,None,None,650,97081,350,35580,300,61501
+fdc4:22e1:d5d:0:8c63:3110:22f6:5a1,None,None,None,551,80470,301,30596,250,49874
+fdc4:22e1:d5d:0:2dbb:8060:6d8a:8546,None,None,None,482,71342,256,26028,226,45314
+fdc4:22e1:d5d:0:14bb:cbac:e493:b526,None,None,None,482,73064,253,25752,229,47312
+fdc4:22e1:d5d:0:cd5c:1fc:64f5:2f7c,None,None,None,410,62584,223,22633,187,39951
+fdc4:22e1:d5d:0:180f:2444:530e:216a,None,None,None,390,59608,217,22016,173,37592
+fdc4:22e1:d5d:0:b03a:317a:16a5:96a,None,None,None,367,59713,200,20272,167,39441
+fdc4:22e1:d5d:0:988e:6a6c:2eee:499,None,None,None,322,48090,175,17832,147,30258
+fdc4:22e1:d5d:0:65ab:d1f4:ea5d:52a3,None,None,None,281,40143,171,17353,110,22790
+fdc4:22e1:d5d:0:ec7b:fb03:9fb7:9eb1,None,None,None,259,39027,146,14844,113,24183
+fdc4:22e1:d5d:0:903e:5fd3:e862:8a13,None,None,None,248,36016,157,15942,91,20074
+fdc4:22e1:d5d:0:f9b6:3ab0:b7bd:25f0,None,None,None,221,32906,126,12754,95,20152
+fdc4:22e1:d5d:0:1dc2:f6d3:abd4:1255,None,None,None,206,30696,111,11316,95,19380
+fdc4:22e1:d5d:0:6485:69bd:e655:ccb6,None,None,None,199,31989,106,10768,93,21221
+fdc4:22e1:d5d:0:f007:3698:6d2f:ca35,None,None,None,192,28468,100,10192,92,18276
+fdc4:22e1:d5d:0:2007:f542:d26b:b3ce,None,None,None,191,28036,113,11457,78,16579
+fdc4:22e1:d5d:0:a88b:2477:ac7e:1fb7,None,None,None,182,30292,96,9697,86,20595
+fdc4:22e1:d5d:0:c4b9:4762:8530:a135,None,None,None,176,26674,90,9148,86,17526
+fdc4:22e1:d5d:0:442c:798f:7591:d5e9,None,None,None,171,25242,88,8960,83,16282
+fdc4:22e1:d5d:0:dcc5:9d7a:718c:661e,None,None,None,151,23549,87,9358,64,14191
+fdc4:22e1:d5d:0:89a4:8121:eeda:6ca9,None,None,None,146,22934,75,7724,71,15210
+fdc4:22e1:d5d:0:8c5f:87a7:87f8:90bf,None,None,None,139,21559,84,8556,55,13003
+fdc4:22e1:d5d:0:613e:5154:8ebd:e497,None,None,None,138,23009,72,7756,66,15253
+fdc4:22e1:d5d:0:35b7:69d5:a563:6337,None,None,None,136,21554,79,7973,57,13581
+fdc4:22e1:d5d:0:3dfa:6985:3784:834b,None,None,None,123,15437,66,6875,57,8562
+fdc4:22e1:d5d:0:98a5:2a4a:b012:a3ea,None,None,None,120,19200,71,7603,49,11597
+fdc4:22e1:d5d:0:f849:8681:7e8:3077,None,None,None,115,17454,58,5941,57,11513
+fdc4:22e1:d5d:0:1d30:8f2b:2cbe:49d7,None,None,None,110,17104,63,6371,47,10733
+fdc4:22e1:d5d:0:cde:2cac:4de1:d47a,None,None,None,94,15984,52,5226,42,10758
+fdc4:22e1:d5d:0:d54:4911:7610:5eaa,None,None,None,93,12812,52,5403,41,7409
+fdc4:22e1:d5d:0:898a:3ea6:f4aa:fd9b,None,None,None,92,12809,53,5360,39,7449
+fdc4:22e1:d5d:0:d492:14e3:5789:4d5a,None,None,None,86,13404,44,4467,42,8937
+fdc4:22e1:d5d:0:c03:d48f:81d7:478a,None,None,None,79,12726,44,4468,35,8258
+fdc4:22e1:d5d:0:c961:9edb:5bb3:a0e3,None,None,None,70,10309,37,3792,33,6517
+fdc4:22e1:d5d:0:d864:ec9:2d86:3fe0,None,None,None,57,7762,30,3059,27,4703
+fdc4:22e1:d5d:0:6dee:9fb2:59a7:2bad,None,None,None,56,7772,33,3464,23,4308
+fdc4:22e1:d5d:0:747c:11be:a60c:fd21,None,None,None,54,7869,31,3355,23,4514
+fdc4:22e1:d5d:0:9ddc:39a6:476c:3743,None,None,None,54,7387,31,3164,23,4223
+fdc4:22e1:d5d:0:5c77:3a61:d36d:6a55,None,None,None,52,8273,27,3020,25,5253
+fdc4:22e1:d5d:0:f9f6:f087:5ef2:183a,None,None,None,51,7824,27,2771,24,5053
+fdc4:22e1:d5d:0:11d2:a9ff:cfc1:6a95,None,None,None,50,7143,28,2809,22,4334
+fdc4:22e1:d5d:0:d558:fc60:b0f8:710e,None,None,None,44,7441,23,2483,21,4958
+fdc4:22e1:d5d:0:f53f:91f9:6cbb:a3,None,None,None,42,6581,22,2202,20,4379
+fdc4:22e1:d5d:0:b575:4a45:1c82:513d,None,None,None,38,6741,21,2082,17,4659
+fdc4:22e1:d5d:0:c44c:b328:9217:d52b,None,None,None,37,5087,22,2252,15,2835
+fdc4:22e1:d5d:0:f9ce:dc7d:8482:4fca,None,None,None,34,4760,18,1848,16,2912
+fdc4:22e1:d5d:0:6616:66ff:febe:449c,None,None,None,33,4480,26,2548,7,1932
+fdc4:22e1:d5d:0:fd7f:a69a:7add:f7d,None,None,None,32,5980,16,1699,16,4281
+fd50:af72:1bad:2:6616:6600:e9:5f29,None,None,None,30,2869,30,2869,0,0
+fdc4:22e1:d5d:0:b4e0:46a9:a8b5:aa74,None,None,None,28,4127,15,1498,13,2629
+fdc4:22e1:d5d:0:92f:5062:a8f3:dcdb,None,None,None,28,5140,14,1417,14,3723
+fdc4:22e1:d5d:0:e825:3219:f091:e1ea,None,None,None,26,3843,13,1351,13,2492
+fdc4:22e1:d5d:0:b949:59de:31b5:93c5,None,None,None,26,4322,20,1980,6,2342
+fdc4:22e1:d5d:0:a5c7:4bb6:98c1:2731,None,None,None,24,4520,12,1182,12,3338
+fdc4:22e1:d5d:0:c2b:c6d1:aa7c:8387,None,None,None,20,3437,10,974,10,2463
+fdc4:22e1:d5d:0:e5b6:4324:46f8:fd56,None,None,None,19,2569,12,1208,7,1361
+fdc4:22e1:d5d:0:55b1:8653:f799:2b80,None,None,None,8,1871,4,397,4,1474
+fdc4:22e1:d5d:0:5c37:d3f0:fe70:3d5,None,None,None,6,731,5,504,1,227

@@ -1,0 +1,13 @@
+IP, Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+192.168.231.120,None,None,US;US;US;US,66026,6920297,33038,4110598,32988,2809699
+35.195.102.202,oculus395-eu1.dropcam.com,Belgium,US;US;US;US,65244,6747701,32636,2728274,32608,4019427
+192.168.231.1,None,None,None,337,55361,147,41091,190,14270
+130.211.135.74,oculus10798-us1.dropcam.com,United States,US;US;US;US,203,68623,92,19811,111,48812
+104.199.109.192,oculus346-eu1.dropcam.com,Belgium,US;US;US;US,172,42312,78,17373,94,24939
+195.154.226.102,pool.ntp.org,France,None,10,900,5,450,5,450
+162.159.200.123,pool.ntp.org,None,None,10,900,5,450,5,450
+129.250.35.251,pool.ntp.org,United States,None,10,900,5,450,5,450
+194.57.169.1,pool.ntp.org,France,None,10,900,5,450,5,450
+5.39.80.51,pool.ntp.org,France,None,10,900,5,450,5,450
+129.151.225.244,pool.ntp.org,France,None,10,900,5,450,5,450
+146.59.35.38,pool.ntp.org,France,None,10,900,5,450,5,450
