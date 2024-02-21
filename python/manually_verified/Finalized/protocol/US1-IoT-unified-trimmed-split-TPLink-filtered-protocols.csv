@@ -1,4 +1,4 @@
 Layer 3,Layer 4,Layer 5,Layer 7
 ip,tcp,tls,ntp
-,udp,,tplink-smarthome
+,udp,,Responds to amazon device udp only
 ,,,https

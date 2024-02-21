@@ -1,6 +1,0 @@
-Layer 3,Layer 4,Layer 5,Layer 7
-ip,igmp,tls,mdns
-ipv6,udp,,ntp
-,tcp,,http
-,,,llmnr
-,,,https

@@ -1,7 +1,7 @@
 IP, Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
 192.168.231.176,None,None,None,125873,50062648,81480,21195861,44393,28866787
 224.0.0.251,mdns.mcast.net.,None,None,23083,5362511,0,0,23083,5362511
-142.251.168.188,wh-in-f188.1e100.net.,United States,None,21424,1965863,12884,1131630,8540,834233
+142.251.168.188,mtalk.google.com,United States,None,21424,1965863,12884,1131630,8540,834233
 142.250.201.174,clients3.google.com,United States,US;US;US;BE;US,8960,7706279,3618,6420945,5342,1285334
 216.58.214.163,connectivitycheck.gstatic.com,United States,US;US;US;BE;US,8529,1844695,2939,579003,5590,1265692
 239.255.255.250,None,None,None,6816,2475344,0,0,6816,2475344

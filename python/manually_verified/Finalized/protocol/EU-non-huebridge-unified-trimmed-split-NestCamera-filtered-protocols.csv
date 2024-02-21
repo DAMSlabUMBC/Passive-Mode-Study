@@ -1,0 +1,4 @@
+Layer 3,Layer 4,Layer 5,Layer 7,
+ip,tcp,tls,http,Only tries to get root directory from router??
+,udp,,ntp,
+,,,https,

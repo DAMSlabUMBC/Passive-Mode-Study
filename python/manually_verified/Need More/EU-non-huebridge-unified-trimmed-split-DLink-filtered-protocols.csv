@@ -1,8 +1,0 @@
-Layer 3,Layer 4,Layer 5,Layer 7
-ip,tcp,tls,http
-,udp,,mdns
-,,,https
-,,,44040 -> 34484
-,,,50188 -> 48564
-,,,42188 -> 44006
-,,,60904 -> stun

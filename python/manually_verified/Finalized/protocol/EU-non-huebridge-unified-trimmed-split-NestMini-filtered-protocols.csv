@@ -1,7 +1,7 @@
 Layer 3,Layer 4,Layer 5,Layer 7,Notes
 ip,tcp,tls,http,Used for connectivity checks and device metrics
 ipv6,udp,,mdns,Responds with type and name
-,igmp,,tplink-smarthome,Requests information from tp link devices via broadcast
+,igmp,,tplink-smarthome,"Requests information from tp link devices via broadcast, Recv over UDP"
 ,,,ntp,
 ,,,10006,"Exchanging STUN with google home speaker and nest mini, nothing is responding, mistmatched protocols? LAN, no servers"
 ,,,10001,"Exchanging STUN with google home speaker and nest mini, nothing is responding, mistmatched protocols? LAN, no servers"

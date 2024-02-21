@@ -1,4 +1,0 @@
-Layer 3,Layer 4,Layer 5,Layer 7
-ip,udp,tls,6667 Tuya
-,tcp,,secure-mqtt
-,,,https

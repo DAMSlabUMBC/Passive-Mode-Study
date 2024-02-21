@@ -1,0 +1,4 @@
+Layer 3,Layer 4,Layer 5,Layer 7,
+ip,tcp,tls,58866,Integration with home assistants
+,udp,,secure-mqtt,
+,,,https,

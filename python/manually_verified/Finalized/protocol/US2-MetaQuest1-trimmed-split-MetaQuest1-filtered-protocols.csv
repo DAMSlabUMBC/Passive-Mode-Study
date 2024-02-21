@@ -1,0 +1,4 @@
+Layer 3,Layer 4,Layer 5,Layer 7,
+ipv6,tcp,tls,http,Captive portal / connectivity check infrequently
+ip,udp,,ntp,
+,,,https,

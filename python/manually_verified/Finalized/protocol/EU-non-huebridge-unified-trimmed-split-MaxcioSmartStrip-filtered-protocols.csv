@@ -1,0 +1,6 @@
+Layer 3,Layer 4,Layer 5,Layer 7,
+ip,tcp,tls,8886 tuya,Tuya MQTT  https://support.tuya.com/en/help/_detail/Kd9ym28csm58k
+,udp,,6667,Tuya device discovery  https://support.tuya.com/en/help/_detail/Kd9ym28csm58k
+,igmp,,https,Comms to Tuya domains
+,,,,
+,,,,IGMP: 224.0.0.1
