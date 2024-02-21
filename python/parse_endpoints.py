@@ -12,7 +12,7 @@ remote_filter = "eth.dst.ig == 0 && !((ip.src == 10.0.0.0/8 || ip.src == 172.16.
 def main(argv):
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('pcap_dir', type=is_dir, help="A directory containing pcap files to scan for protocols")
+    parser.add_argument('pcap_dir', type=is_dir, help="A directory containing pcap files to scan for endpoints")
     args = parser.parse_args()
 
     # load the pathlist for the section of .pcaps

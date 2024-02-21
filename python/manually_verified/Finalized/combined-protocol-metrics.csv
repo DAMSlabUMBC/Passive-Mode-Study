@@ -1,0 +1,355 @@
+File, Layer, Proto, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+Overall,Total,Total,17214590,7714002759,10951361,3084433826,6263229,4629568933
+Overall,Layer 3,ip,10545449,2701061133,7000253,2080081955,3545196,620979178
+Overall,Layer 3,ipv6,6669141,5012941626,3951108,1004351871,2718033,4008589755
+Overall,Layer 4,tcp,10340842,5967562290,5819108,1470728009,4521734,4496834281
+Overall,Layer 4,udp,6850877,1745126363,5109382,1612391711,1741495,132734652
+Overall,Layer 4,igmp,22871,1314106,22871,1314106,0,0
+Overall,Layer 5,tls,1901570,1531169312,802373,351989902,1099197,1179179410
+Overall,Layer 7,http,1174799,247069007,594117,122031548,580682,125037459
+Overall,Layer 7,ssdp,2671664,1022529378,2605766,1000255854,65898,22273524
+Overall,Layer 7,ntp,11992,1118780,6129,571550,5863,547230
+Overall,Layer 7,https,7976847,5548594304,4602524,1260884320,3374323,4287709984
+Overall,Layer 7,mdns,536768,447930504,536768,447930504,0,0
+Overall,Layer 7,34484,14,938,14,938,0,0
+Overall,Layer 7,48564,13,871,13,871,0,0
+Overall,Layer 7,44006,9,603,9,603,0,0
+Overall,Layer 7,stun,4,248,4,248,0,0
+Overall,Layer 7,tplink-smarthome,49561,32220797,29319,16432632,20242,15788165
+Overall,Layer 7,55444,2025720,109388864,1012860,54694432,1012860,54694432
+Overall,Layer 7,50000,2920,1057100,420,58590,2500,998510
+Overall,Layer 7,1982,384,52608,384,52608,0,0
+Overall,Layer 7,56700,384,29952,384,29952,0,0
+Overall,Layer 7,55443,286286,76445322,143143,38222661,143143,38222661
+Overall,Layer 7,10006,794722,49272764,397361,24636382,397361,24636382
+Overall,Layer 7,10001,463104,28712448,231552,14356224,231552,14356224
+Overall,Layer 7,10101,391765,37105251,199801,17964269,189832,17096942
+Overall,Layer 7,9478,8517,698394,8517,698394,0,0
+Overall,Layer 7,1111,12144,534336,6072,267168,6072,267168
+Overall,Layer 7,5228,71392,6414799,34468,2715325,36866,3590499
+Overall,Layer 7,10005,35004,7935676,16566,3048346,16566,3048346
+Overall,Layer 7,8012,30228,7869704,14050,2890194,14050,2890194
+Overall,Layer 7,9000,110798,19301150,53360,7517228,53360,7517228
+Overall,Layer 7,8886,23674,1989240,13097,1019573,10577,969667
+Overall,Layer 7,6667,134875,34888706,134875,34888706,0,0
+Overall,Layer 7,9543,2429,733934,1313,237549,1025,425952
+Overall,Layer 7,secure-mqtt,218891,20384944,135204,12423205,83687,7961739
+Overall,Layer 7,8555,834,50313,417,23280,417,27033
+Overall,Layer 7,llmnr,3946,323572,3946,323572,0,0
+Overall,Layer 7,58866,122804,14859284,122804,14859284,0,0
+,,,,,,,,
+EU-huebridge-trimmed-split-PhilipsBridge-filtered-protocols,Total,Total,  80566 , 14812529 ,  57882 , 13099360 ,  22684 , 1713169 
+EU-huebridge-trimmed-split-PhilipsBridge-filtered-protocols,Layer 3,ip,  80566 , 14812529 ,  57882 , 13099360 ,  22684 , 1713169 
+EU-huebridge-trimmed-split-PhilipsBridge-filtered-protocols,Layer 4,tcp,  44931 , 3835769 ,  22717 , 2164900 ,  22214 , 1670869 
+EU-huebridge-trimmed-split-PhilipsBridge-filtered-protocols,Layer 4,udp,  31391 , 10747584 ,  30921 , 10705284 ,    470 , 42300 
+EU-huebridge-trimmed-split-PhilipsBridge-filtered-protocols,Layer 4,igmp,   4244 , 229176 ,   4244 , 229176 ,      0 ,     0 
+EU-huebridge-trimmed-split-PhilipsBridge-filtered-protocols,Layer 5,tls,   7465 , 1773563 ,   4085 , 1123208 ,   3380 , 650355 
+EU-huebridge-trimmed-split-PhilipsBridge-filtered-protocols,Layer 7,http,     37 ,  4609 ,     19 ,  3078 ,     18 ,  1531 
+EU-huebridge-trimmed-split-PhilipsBridge-filtered-protocols,Layer 7,ssdp,  30354 , 10654254 ,  30354 , 10654254 ,      0 ,     0 
+EU-huebridge-trimmed-split-PhilipsBridge-filtered-protocols,Layer 7,ntp,   1037 , 93330 ,    567 , 51030 ,    470 , 42300 
+EU-huebridge-trimmed-split-PhilipsBridge-filtered-protocols,Layer 7,https,  44894 , 3831160 ,  22698 , 2161822 ,  22196 , 1669338 
+,,,,,,,,
+EU-non-huebridge-unified-trimmed-split-DLink-filtered-protocols,Total,Total, 113671 , 101371518 ,  67179 , 97461921 ,  46492 , 3909597 
+EU-non-huebridge-unified-trimmed-split-DLink-filtered-protocols,Layer 3,ip, 113671 , 101371518 ,  67179 , 97461921 ,  46492 , 3909597 
+EU-non-huebridge-unified-trimmed-split-DLink-filtered-protocols,Layer 4,tcp, 113447 , 101335354 ,  66955 , 97425757 ,  46492 , 3909597 
+EU-non-huebridge-unified-trimmed-split-DLink-filtered-protocols,Layer 4,udp,    224 , 36164 ,    224 , 36164 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-DLink-filtered-protocols,Layer 5,tls,  13070 , 9327871 ,   8614 , 8204062 ,   4456 , 1123809 
+EU-non-huebridge-unified-trimmed-split-DLink-filtered-protocols,Layer 7,http,    157 , 55555 ,     65 , 47519 ,     92 ,  8036 
+EU-non-huebridge-unified-trimmed-split-DLink-filtered-protocols,Layer 7,mdns,    184 , 33504 ,    184 , 33504 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-DLink-filtered-protocols,Layer 7,https, 113290 , 101279799 ,  66890 , 97378238 ,  46400 , 3901561 
+EU-non-huebridge-unified-trimmed-split-DLink-filtered-protocols,Layer 7,34484,     14 ,   938 ,     14 ,   938 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-DLink-filtered-protocols,Layer 7,48564,     13 ,   871 ,     13 ,   871 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-DLink-filtered-protocols,Layer 7,44006,      9 ,   603 ,      9 ,   603 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-DLink-filtered-protocols,Layer 7,stun,      4 ,   248 ,      4 ,   248 ,      0 ,     0 
+,,,,,,,,
+EU-non-huebridge-unified-trimmed-split-EchoDot3-filtered-protocols,Total,Total, 1352122 , 161486409 , 671365 , 66323151 , 680757 , 95163258 
+EU-non-huebridge-unified-trimmed-split-EchoDot3-filtered-protocols,Layer 3,ip, 1351947 , 161469084 , 671190 , 66305826 , 680757 , 95163258 
+EU-non-huebridge-unified-trimmed-split-EchoDot3-filtered-protocols,Layer 3,ipv6,    175 , 17325 ,    175 , 17325 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-EchoDot3-filtered-protocols,Layer 4,tcp, 336336 , 105961470 , 163490 , 40842089 , 172846 , 65119381 
+EU-non-huebridge-unified-trimmed-split-EchoDot3-filtered-protocols,Layer 4,udp, 1015786 , 55524939 , 507875 , 25481062 , 507911 , 30043877 
+EU-non-huebridge-unified-trimmed-split-EchoDot3-filtered-protocols,Layer 5,tls, 161835 , 80747228 , 100276 , 36401086 ,  61559 , 44346142 
+EU-non-huebridge-unified-trimmed-split-EchoDot3-filtered-protocols,Layer 7,http,  13183 , 1451965 ,   6203 , 651389 ,   6980 , 800576 
+EU-non-huebridge-unified-trimmed-split-EchoDot3-filtered-protocols,Layer 7,tplink-smarthome,   1722 , 665704 ,    834 , 69582 ,    888 , 596122 
+EU-non-huebridge-unified-trimmed-split-EchoDot3-filtered-protocols,Layer 7,mdns,    836 , 94256 ,    836 , 94256 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-EchoDot3-filtered-protocols,Layer 7,ssdp,    210 , 29295 ,    210 , 29295 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-EchoDot3-filtered-protocols,Layer 7,ntp,      4 ,   360 ,      2 ,   180 ,      2 ,   180 
+EU-non-huebridge-unified-trimmed-split-EchoDot3-filtered-protocols,Layer 7,55444, 1012860 , 54694432 , 506431 , 25321550 , 506429 , 29372882 
+EU-non-huebridge-unified-trimmed-split-EchoDot3-filtered-protocols,Layer 7,50000,   1450 , 524540 ,    210 , 29295 ,   1240 , 495245 
+EU-non-huebridge-unified-trimmed-split-EchoDot3-filtered-protocols,Layer 7,1982,    105 , 14385 ,    105 , 14385 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-EchoDot3-filtered-protocols,Layer 7,56700,    105 ,  8190 ,    105 ,  8190 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-EchoDot3-filtered-protocols,Layer 7,55443, 143143 , 38222661 ,  59082 , 12689823 ,  84061 , 25532838 
+EU-non-huebridge-unified-trimmed-split-EchoDot3-filtered-protocols,Layer 7,https, 172691 , 65243615 ,  93862 , 27225991 ,  78829 , 38017624 
+,,,,,,,,
+EU-non-huebridge-unified-trimmed-split-EchoShow5-filtered-protocols,Total,Total, 1350646 , 174581329 , 700553 , 91118270 , 650093 , 83463059 
+EU-non-huebridge-unified-trimmed-split-EchoShow5-filtered-protocols,Layer 3,ip, 1350453 , 174562294 , 700360 , 91099235 , 650093 , 83463059 
+EU-non-huebridge-unified-trimmed-split-EchoShow5-filtered-protocols,Layer 3,ipv6,    193 , 19035 ,    193 , 19035 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-EchoShow5-filtered-protocols,Layer 4,tcp, 326630 , 117202722 , 184506 , 59763832 , 142124 , 57438890 
+EU-non-huebridge-unified-trimmed-split-EchoShow5-filtered-protocols,Layer 4,udp, 1024016 , 57378607 , 516047 , 31354438 , 507969 , 26024169 
+EU-non-huebridge-unified-trimmed-split-EchoShow5-filtered-protocols,Layer 5,tls, 137880 , 59556926 ,  51607 , 29327558 ,  86273 , 30229368 
+EU-non-huebridge-unified-trimmed-split-EchoShow5-filtered-protocols,Layer 7,http,  17635 , 1488903 ,   8834 , 788409 ,   8801 , 700494 
+EU-non-huebridge-unified-trimmed-split-EchoShow5-filtered-protocols,Layer 7,tplink-smarthome,   1828 , 710164 ,    885 , 73635 ,    943 , 636529 
+EU-non-huebridge-unified-trimmed-split-EchoShow5-filtered-protocols,Layer 7,ssdp,   3618 , 1357563 ,   3618 , 1357563 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-EchoShow5-filtered-protocols,Layer 7,mdns,   5570 , 585608 ,   5570 , 585608 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-EchoShow5-filtered-protocols,Layer 7,ntp,     20 ,  1800 ,     10 ,   900 ,     10 ,   900 
+EU-non-huebridge-unified-trimmed-split-EchoShow5-filtered-protocols,Layer 7,55444, 1012860 , 54694432 , 506429 , 29372882 , 506431 , 25321550 
+EU-non-huebridge-unified-trimmed-split-EchoShow5-filtered-protocols,Layer 7,50000,   1470 , 532560 ,    210 , 29295 ,   1260 , 503265 
+EU-non-huebridge-unified-trimmed-split-EchoShow5-filtered-protocols,Layer 7,56700,    105 ,  8190 ,    105 ,  8190 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-EchoShow5-filtered-protocols,Layer 7,1982,    105 , 14385 ,    105 , 14385 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-EchoShow5-filtered-protocols,Layer 7,55443, 143143 , 38222661 ,  84061 , 25532838 ,  59082 , 12689823 
+EU-non-huebridge-unified-trimmed-split-EchoShow5-filtered-protocols,Layer 7,https, 158258 , 76415367 ,  87106 , 33157520 ,  71152 , 43257847 
+,,,,,,,,
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Total,Total, 1126157 , 124709108 , 609806 , 67749957 , 516351 , 56959151 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 3,ip, 1090376 , 116138623 , 574025 , 59179472 , 516351 , 56959151 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 3,ipv6,  35781 , 8570485 ,  35781 , 8570485 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 4,tcp, 394381 , 60142411 , 202791 , 29969355 , 191590 , 30173056 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 4,udp, 731751 , 64565067 , 406990 , 37778972 , 324761 , 26786095 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 4,igmp,     25 ,  1630 ,     25 ,  1630 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 5,tls, 146059 , 34081266 ,  71838 , 15035915 ,  74221 , 19045351 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 7,http,  23578 , 3815576 ,  14206 , 2567885 ,   9372 , 1247691 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 7,tplink-smarthome,  12714 , 7469234 ,   4254 , 302034 ,   8460 , 7167200 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 7,mdns,  71580 , 16180295 ,  71580 , 16180295 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 7,ntp,    572 , 51480 ,    286 , 25740 ,    286 , 25740 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 7,10006, 397361 , 24636382 , 197938 , 12272156 , 199423 , 12364226 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 7,10001, 231552 , 14356224 , 114969 , 7128078 , 116583 , 7228146 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 7,10101, 199448 , 18862854 , 100629 , 9496935 ,  97753 , 8343899 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 7,9478,   4258 , 349156 ,   4258 , 349156 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 7,1111,   3423 , 150612 ,   3423 , 150612 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 7,https,  75407 , 24061130 ,  40716 , 11623357 ,  34691 , 12437773 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 7,5228,  22975 , 1857407 ,  12369 , 876009 ,  10595 , 956698 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 7,10005,  17502 , 3967838 ,   8337 , 1671793 ,   8229 , 1376553 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 7,8012,  15114 , 3934852 ,   7423 , 1629476 ,   6627 , 1260718 
+EU-non-huebridge-unified-trimmed-split-GoogleHome-filtered-protocols,Layer 7,9000,  55399 , 9650575 ,  29028 , 2966721 ,  24332 , 4550507 
+,,,,,,,,
+EU-non-huebridge-unified-trimmed-split-MaxcioSmartStrip-filtered-protocols,Total,Total,  41142 , 5561887 ,  28711 , 4409785 ,  12431 , 1152102 
+EU-non-huebridge-unified-trimmed-split-MaxcioSmartStrip-filtered-protocols,Layer 3,ip,  41142 , 5561887 ,  28711 , 4409785 ,  12431 , 1152102 
+EU-non-huebridge-unified-trimmed-split-MaxcioSmartStrip-filtered-protocols,Layer 4,tcp,  27055 , 2334757 ,  14624 , 1182655 ,  12431 , 1152102 
+EU-non-huebridge-unified-trimmed-split-MaxcioSmartStrip-filtered-protocols,Layer 4,udp,  14017 , 3223910 ,  14017 , 3223910 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-MaxcioSmartStrip-filtered-protocols,Layer 4,igmp,     70 ,  3220 ,     70 ,  3220 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-MaxcioSmartStrip-filtered-protocols,Layer 5,tls,   8955 , 1324831 ,   4625 , 626242 ,   4330 , 698589 
+EU-non-huebridge-unified-trimmed-split-MaxcioSmartStrip-filtered-protocols,Layer 7,8886,  23674 , 1989240 ,  13097 , 1019573 ,  10577 , 969667 
+EU-non-huebridge-unified-trimmed-split-MaxcioSmartStrip-filtered-protocols,Layer 7,6667,  14017 , 3223910 ,  14017 , 3223910 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-MaxcioSmartStrip-filtered-protocols,Layer 7,https,   3381 , 345517 ,   1527 , 163082 ,   1854 , 182435 
+,,,,,,,,
+EU-non-huebridge-unified-trimmed-split-NestCamera-filtered-protocols,Total,Total,  65901 , 6864118 ,  32971 , 4088570 ,  32930 , 2775548 
+EU-non-huebridge-unified-trimmed-split-NestCamera-filtered-protocols,Layer 3,ip,  65901 , 6864118 ,  32971 , 4088570 ,  32930 , 2775548 
+EU-non-huebridge-unified-trimmed-split-NestCamera-filtered-protocols,Layer 4,tcp,  65831 , 6857818 ,  32936 , 4085420 ,  32895 , 2772398 
+EU-non-huebridge-unified-trimmed-split-NestCamera-filtered-protocols,Layer 4,udp,     70 ,  6300 ,     35 ,  3150 ,     35 ,  3150 
+EU-non-huebridge-unified-trimmed-split-NestCamera-filtered-protocols,Layer 5,tls,  32720 , 4665254 ,  25062 , 3559512 ,   7658 , 1105742 
+EU-non-huebridge-unified-trimmed-split-NestCamera-filtered-protocols,Layer 7,http,    243 , 18424 ,    154 , 11484 ,     89 ,  6940 
+EU-non-huebridge-unified-trimmed-split-NestCamera-filtered-protocols,Layer 7,ntp,     70 ,  6300 ,     35 ,  3150 ,     35 ,  3150 
+EU-non-huebridge-unified-trimmed-split-NestCamera-filtered-protocols,Layer 7,https,  65588 , 6839394 ,  32782 , 4073936 ,  32806 , 2765458 
+,,,,,,,,
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Total,Total, 1139631 , 130235783 , 613824 , 69777796 , 525807 , 60457987 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 3,ip, 1104010 , 121592767 , 578203 , 61134780 , 525807 , 60457987 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 3,ipv6,  35621 , 8643016 ,  35621 , 8643016 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 4,tcp, 416006 , 66130255 , 213261 , 32382856 , 202745 , 33747399 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 4,udp, 723606 , 64104230 , 400544 , 37393642 , 323062 , 26710588 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 4,igmp,     19 ,  1298 ,     19 ,  1298 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 5,tls, 151530 , 37493860 ,  74005 , 16901342 ,  77525 , 20592518 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 7,http,  24809 , 3954729 ,  14518 , 2693978 ,  10291 , 1260751 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 7,mdns,  71222 , 16330877 ,  71222 , 16330877 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 7,tplink-smarthome,  12708 , 7463418 ,   4253 , 301963 ,   8455 , 7161455 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 7,ntp,    666 , 59940 ,    333 , 29970 ,    333 , 29970 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 7,10006, 397361 , 24636382 , 199423 , 12364226 , 197938 , 12272156 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 7,10001, 231552 , 14356224 , 116583 , 7228146 , 114969 , 7128078 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 7,9478,   4259 , 349238 ,   4259 , 349238 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 7,10101, 192317 , 18242397 ,  99172 , 8467334 ,  92079 , 8753043 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 7,1111,   2649 , 116556 ,   2649 , 116556 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 7,https,  94373 , 29538244 ,  49412 , 13257744 ,  44961 , 16280500 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 7,5228,  24436 , 2280676 ,  12399 , 900240 ,  11993 , 1304044 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 7,10005,  17502 , 3967838 ,   8229 , 1376553 ,   8337 , 1671793 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 7,8012,  15114 , 3934852 ,   6627 , 1260718 ,   7423 , 1629476 
+EU-non-huebridge-unified-trimmed-split-NestMini-filtered-protocols,Layer 7,9000,  55399 , 9650575 ,  24332 , 4550507 ,  29028 , 2966721 
+,,,,,,,,
+EU-non-huebridge-unified-trimmed-split-NestThermostat-filtered-protocols,Total,Total,  25757 , 10566211 ,  13854 , 6671123 ,  11903 , 3895088 
+EU-non-huebridge-unified-trimmed-split-NestThermostat-filtered-protocols,Layer 3,ip,  25757 , 10566211 ,  13854 , 6671123 ,  11903 , 3895088 
+EU-non-huebridge-unified-trimmed-split-NestThermostat-filtered-protocols,Layer 4,tcp,  25687 , 10559911 ,  13819 , 6667973 ,  11868 , 3891938 
+EU-non-huebridge-unified-trimmed-split-NestThermostat-filtered-protocols,Layer 4,udp,     70 ,  6300 ,     35 ,  3150 ,     35 ,  3150 
+EU-non-huebridge-unified-trimmed-split-NestThermostat-filtered-protocols,Layer 5,tls,   5902 , 4986821 ,   3567 , 1875848 ,   2335 , 3110973 
+EU-non-huebridge-unified-trimmed-split-NestThermostat-filtered-protocols,Layer 7,http,    106 ,  9238 ,     56 ,  4652 ,     50 ,  4586 
+EU-non-huebridge-unified-trimmed-split-NestThermostat-filtered-protocols,Layer 7,ntp,     70 ,  6300 ,     35 ,  3150 ,     35 ,  3150 
+EU-non-huebridge-unified-trimmed-split-NestThermostat-filtered-protocols,Layer 7,https,  23243 , 9887172 ,  12450 , 6425772 ,  10793 , 3461400 
+EU-non-huebridge-unified-trimmed-split-NestThermostat-filtered-protocols,Layer 7,9543,   2429 , 733934 ,   1313 , 237549 ,   1025 , 425952 
+,,,,,,,,
+EU-non-huebridge-unified-trimmed-split-SonyTV-filtered-protocols,Total,Total, 143279 , 40158939 , 102863 , 26296291 ,  40416 , 13862648 
+EU-non-huebridge-unified-trimmed-split-SonyTV-filtered-protocols,Layer 3,ip, 120201 , 34165472 ,  79785 , 20302824 ,  40416 , 13862648 
+EU-non-huebridge-unified-trimmed-split-SonyTV-filtered-protocols,Layer 3,ipv6,  23078 , 5993467 ,  23078 , 5993467 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-SonyTV-filtered-protocols,Layer 4,tcp,  87568 , 25028587 ,  47154 , 11166119 ,  40414 , 13862468 
+EU-non-huebridge-unified-trimmed-split-SonyTV-filtered-protocols,Layer 4,udp,  55711 , 15130352 ,  55709 , 15130172 ,      2 ,   180 
+EU-non-huebridge-unified-trimmed-split-SonyTV-filtered-protocols,Layer 5,tls,  32899 , 15914558 ,  17169 , 5066405 ,  15730 , 10848153 
+EU-non-huebridge-unified-trimmed-split-SonyTV-filtered-protocols,Layer 7,http,  13771 , 3114954 ,   8958 , 2199058 ,   4813 , 915896 
+EU-non-huebridge-unified-trimmed-split-SonyTV-filtered-protocols,Layer 7,mdns,  46161 , 11355978 ,  46161 , 11355978 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-SonyTV-filtered-protocols,Layer 7,ssdp,   6816 , 2475344 ,   6816 , 2475344 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-SonyTV-filtered-protocols,Layer 7,ntp,      4 ,   360 ,      2 ,   180 ,      2 ,   180 
+EU-non-huebridge-unified-trimmed-split-SonyTV-filtered-protocols,Layer 7,https,  48139 , 19108250 ,  27726 , 7552615 ,  20413 , 11555635 
+EU-non-huebridge-unified-trimmed-split-SonyTV-filtered-protocols,Layer 7,5228,  23981 , 2276716 ,   9700 , 939076 ,  14278 , 1329757 
+,,,,,,,,
+EU-non-huebridge-unified-trimmed-split-TPLink-filtered-protocols,Total,Total,  29435 , 7816195 ,  16876 , 6984819 ,  12559 , 831376 
+EU-non-huebridge-unified-trimmed-split-TPLink-filtered-protocols,Layer 3,ip,  29435 , 7816195 ,  16876 , 6984819 ,  12559 , 831376 
+EU-non-huebridge-unified-trimmed-split-TPLink-filtered-protocols,Layer 4,udp,  12254 , 5781787 ,   9019 , 5633007 ,   3235 , 148780 
+EU-non-huebridge-unified-trimmed-split-TPLink-filtered-protocols,Layer 4,tcp,  17181 , 2034408 ,   7857 , 1351812 ,   9324 , 682596 
+EU-non-huebridge-unified-trimmed-split-TPLink-filtered-protocols,Layer 5,tls,   2562 , 377094 ,   1281 , 198939 ,   1281 , 178155 
+EU-non-huebridge-unified-trimmed-split-TPLink-filtered-protocols,Layer 7,tplink-smarthome,  11525 , 6594135 ,  10202 , 6479034 ,   1323 , 115101 
+EU-non-huebridge-unified-trimmed-split-TPLink-filtered-protocols,Layer 7,ntp,    280 , 25200 ,    140 , 12600 ,    140 , 12600 
+EU-non-huebridge-unified-trimmed-split-TPLink-filtered-protocols,Layer 7,1111,   3095 , 136180 ,      0 ,     0 ,   3095 , 136180 
+EU-non-huebridge-unified-trimmed-split-TPLink-filtered-protocols,Layer 7,https,   3948 , 451938 ,   2562 , 268113 ,   1386 , 183825 
+,,,,,,,,
+EU-non-huebridge-unified-trimmed-split-TPLinkLight-filtered-protocols,Total,Total,  26054 , 10593598 ,  18136 , 9912217 ,   7918 , 681381 
+EU-non-huebridge-unified-trimmed-split-TPLinkLight-filtered-protocols,Layer 3,ip,  26054 , 10593598 ,  18136 , 9912217 ,   7918 , 681381 
+EU-non-huebridge-unified-trimmed-split-TPLinkLight-filtered-protocols,Layer 4,tcp,  14251 , 1354958 ,   9450 , 817165 ,   4801 , 537793 
+EU-non-huebridge-unified-trimmed-split-TPLinkLight-filtered-protocols,Layer 4,udp,  11803 , 9238640 ,   8686 , 9095052 ,   3117 , 143588 
+EU-non-huebridge-unified-trimmed-split-TPLinkLight-filtered-protocols,Layer 5,tls,   9442 , 1095272 ,   4721 , 561799 ,   4721 , 533473 
+EU-non-huebridge-unified-trimmed-split-TPLinkLight-filtered-protocols,Layer 7,tplink-smarthome,   8544 , 9082272 ,   8544 , 9082272 ,      0 ,     0 
+EU-non-huebridge-unified-trimmed-split-TPLinkLight-filtered-protocols,Layer 7,ntp,    282 , 25380 ,    142 , 12780 ,    140 , 12600 
+EU-non-huebridge-unified-trimmed-split-TPLinkLight-filtered-protocols,Layer 7,1111,   2977 , 130988 ,      0 ,     0 ,   2977 , 130988 
+EU-non-huebridge-unified-trimmed-split-TPLinkLight-filtered-protocols,Layer 7,https,  14251 , 1354958 ,   9450 , 817165 ,   4801 , 537793 
+,,,,,,,,
+US1-DreamGlassAir-trimmed-split-DreamGlassAir-filtered-protocols,Total,Total, 2733238 , 1329936304 , 2728078 , 1329410410 ,   5160 , 525894 
+US1-DreamGlassAir-trimmed-split-DreamGlassAir-filtered-protocols,Layer 3,ip, 2732940 , 1329851562 , 2727905 , 1329369888 ,   5035 , 481674 
+US1-DreamGlassAir-trimmed-split-DreamGlassAir-filtered-protocols,Layer 3,ipv6,    298 , 84742 ,    173 , 40522 ,    125 , 44220 
+US1-DreamGlassAir-trimmed-split-DreamGlassAir-filtered-protocols,Layer 4,udp, 2718935 , 1328570452 , 2718929 , 1328569792 ,      6 ,   660 
+US1-DreamGlassAir-trimmed-split-DreamGlassAir-filtered-protocols,Layer 4,tcp,  14303 , 1365852 ,   9149 , 840618 ,   5154 , 525234 
+US1-DreamGlassAir-trimmed-split-DreamGlassAir-filtered-protocols,Layer 5,tls,     56 , 41351 ,     28 ,  8988 ,     28 , 32363 
+US1-DreamGlassAir-trimmed-split-DreamGlassAir-filtered-protocols,Layer 7,mdns, 300696 , 391506192 , 300696 , 391506192 ,      0 ,     0 
+US1-DreamGlassAir-trimmed-split-DreamGlassAir-filtered-protocols,Layer 7,ssdp, 2418227 , 937062940 , 2418227 , 937062940 ,      0 ,     0 
+US1-DreamGlassAir-trimmed-split-DreamGlassAir-filtered-protocols,Layer 7,http,   2518 , 335261 ,   1330 , 198428 ,   1188 , 136833 
+US1-DreamGlassAir-trimmed-split-DreamGlassAir-filtered-protocols,Layer 7,ntp,     12 ,  1320 ,      6 ,   660 ,      6 ,   660 
+US1-DreamGlassAir-trimmed-split-DreamGlassAir-filtered-protocols,Layer 7,https,    150 , 49319 ,     96 , 14664 ,     54 , 34655 
+,,,,,,,,
+US1-IoT-unified-trimmed-split-AmazonLight-filtered-protocols,Total,Total,  15591 , 2218656 ,   9028 , 1055963 ,   6563 , 1162693 
+US1-IoT-unified-trimmed-split-AmazonLight-filtered-protocols,Layer 3,ip,  15591 , 2218656 ,   9028 , 1055963 ,   6563 , 1162693 
+US1-IoT-unified-trimmed-split-AmazonLight-filtered-protocols,Layer 4,tcp,  11497 , 1850196 ,   6981 , 871733 ,   4516 , 978463 
+US1-IoT-unified-trimmed-split-AmazonLight-filtered-protocols,Layer 4,udp,   4094 , 368460 ,   2047 , 184230 ,   2047 , 184230 
+US1-IoT-unified-trimmed-split-AmazonLight-filtered-protocols,Layer 5,tls,   6239 , 1563448 ,   3299 , 672177 ,   2940 , 891271 
+US1-IoT-unified-trimmed-split-AmazonLight-filtered-protocols,Layer 7,ntp,   4094 , 368460 ,   2047 , 184230 ,   2047 , 184230 
+US1-IoT-unified-trimmed-split-AmazonLight-filtered-protocols,Layer 7,secure-mqtt,   6814 , 716673 ,   4275 , 510681 ,   2539 , 205992 
+US1-IoT-unified-trimmed-split-AmazonLight-filtered-protocols,Layer 7,https,   4683 , 1133523 ,   2706 , 361052 ,   1977 , 772471 
+,,,,,,,,
+US1-IoT-unified-trimmed-split-EchoDot5-filtered-protocols,Total,Total, 443243 , 198552933 , 232477 , 68225941 , 210766 , 130326992 
+US1-IoT-unified-trimmed-split-EchoDot5-filtered-protocols,Layer 3,ip, 442943 , 198523238 , 232177 , 68196246 , 210766 , 130326992 
+US1-IoT-unified-trimmed-split-EchoDot5-filtered-protocols,Layer 3,ipv6,    300 , 29695 ,    300 , 29695 ,      0 ,     0 
+US1-IoT-unified-trimmed-split-EchoDot5-filtered-protocols,Layer 4,tcp, 437949 , 197403943 , 229488 , 67907341 , 208461 , 129496602 
+US1-IoT-unified-trimmed-split-EchoDot5-filtered-protocols,Layer 4,udp,   5289 , 1148712 ,   2984 , 318322 ,   2305 , 830390 
+US1-IoT-unified-trimmed-split-EchoDot5-filtered-protocols,Layer 4,igmp,      5 ,   278 ,      5 ,   278 ,      0 ,     0 
+US1-IoT-unified-trimmed-split-EchoDot5-filtered-protocols,Layer 5,tls, 193935 , 152863043 , 112072 , 58510301 ,  81863 , 94352742 
+US1-IoT-unified-trimmed-split-EchoDot5-filtered-protocols,Layer 7,http,  23966 , 3425766 ,  13280 , 1314136 ,  10686 , 2111630 
+US1-IoT-unified-trimmed-split-EchoDot5-filtered-protocols,Layer 7,mdns,   2100 , 212896 ,   2100 , 212896 ,      0 ,     0 
+US1-IoT-unified-trimmed-split-EchoDot5-filtered-protocols,Layer 7,ssdp,   2478 , 772854 ,    354 , 54942 ,   2124 , 717912 
+US1-IoT-unified-trimmed-split-EchoDot5-filtered-protocols,Layer 7,tplink-smarthome,    347 , 124112 ,    174 , 12354 ,    173 , 111758 
+US1-IoT-unified-trimmed-split-EchoDot5-filtered-protocols,Layer 7,ntp,     16 ,  1440 ,      8 ,   720 ,      8 ,   720 
+US1-IoT-unified-trimmed-split-EchoDot5-filtered-protocols,Layer 7,https, 413983 , 193978177 , 216208 , 66593205 , 197775 , 127384972 
+US1-IoT-unified-trimmed-split-EchoDot5-filtered-protocols,Layer 7,56700,    174 , 13572 ,    174 , 13572 ,      0 ,     0 
+US1-IoT-unified-trimmed-split-EchoDot5-filtered-protocols,Layer 7,1982,    174 , 23838 ,    174 , 23838 ,      0 ,     0 
+,,,,,,,,
+US1-IoT-unified-trimmed-split-Govee-filtered-protocols,Total,Total,  32072 , 3982863 ,  21074 , 1824294 ,  10998 , 2158569 
+US1-IoT-unified-trimmed-split-Govee-filtered-protocols,Layer 3,ip,  32072 , 3982863 ,  21074 , 1824294 ,  10998 , 2158569 
+US1-IoT-unified-trimmed-split-Govee-filtered-protocols,Layer 4,tcp,  31732 , 3952263 ,  20903 , 1808904 ,  10829 , 2143359 
+US1-IoT-unified-trimmed-split-Govee-filtered-protocols,Layer 4,udp,    340 , 30600 ,    171 , 15390 ,    169 , 15210 
+US1-IoT-unified-trimmed-split-Govee-filtered-protocols,Layer 5,tls,  19215 , 2367363 ,   9608 , 1184333 ,   9607 , 1183030 
+US1-IoT-unified-trimmed-split-Govee-filtered-protocols,Layer 7,http,   2318 , 1031226 ,   1248 , 82029 ,   1070 , 949197 
+US1-IoT-unified-trimmed-split-Govee-filtered-protocols,Layer 7,ntp,    340 , 30600 ,    171 , 15390 ,    169 , 15210 
+US1-IoT-unified-trimmed-split-Govee-filtered-protocols,Layer 7,secure-mqtt,  29414 , 2921037 ,  19655 , 1726875 ,   9759 , 1194162 
+,,,,,,,,
+US1-IoT-unified-trimmed-split-Litokam-filtered-protocols,Total,Total, 220403 , 41474328 , 175998 , 36518855 ,  44405 , 4955473 
+US1-IoT-unified-trimmed-split-Litokam-filtered-protocols,Layer 3,ip, 220403 , 41474328 , 175998 , 36518855 ,  44405 , 4955473 
+US1-IoT-unified-trimmed-split-Litokam-filtered-protocols,Layer 4,udp, 120858 , 31664796 , 120858 , 31664796 ,      0 ,     0 
+US1-IoT-unified-trimmed-split-Litokam-filtered-protocols,Layer 4,tcp,  99545 , 9809532 ,  55140 , 4854059 ,  44405 , 4955473 
+US1-IoT-unified-trimmed-split-Litokam-filtered-protocols,Layer 5,tls,  24221 , 4841764 ,  12396 , 2040199 ,  11825 , 2801565 
+US1-IoT-unified-trimmed-split-Litokam-filtered-protocols,Layer 7,6667, 120858 , 31664796 , 120858 , 31664796 ,      0 ,     0 
+US1-IoT-unified-trimmed-split-Litokam-filtered-protocols,Layer 7,secure-mqtt,  89040 , 7290792 ,  49460 , 3983946 ,  39580 , 3306846 
+US1-IoT-unified-trimmed-split-Litokam-filtered-protocols,Layer 7,https,  10505 , 2518740 ,   5680 , 870113 ,   4825 , 1648627 
+,,,,,,,,
+US1-IoT-unified-trimmed-split-Netvue-filtered-protocols,Total,Total, 636251 , 140657293 , 326446 , 29404458 , 309805 , 111252835 
+US1-IoT-unified-trimmed-split-Netvue-filtered-protocols,Layer 3,ip, 636251 , 140657293 , 326446 , 29404458 , 309805 , 111252835 
+US1-IoT-unified-trimmed-split-Netvue-filtered-protocols,Layer 4,tcp, 561014 , 117154036 , 315400 , 27483846 , 245614 , 89670190 
+US1-IoT-unified-trimmed-split-Netvue-filtered-protocols,Layer 4,udp,  75237 , 23503257 ,  11046 , 1920612 ,  64191 , 21582645 
+US1-IoT-unified-trimmed-split-Netvue-filtered-protocols,Layer 5,tls,  24546 , 4801344 ,  12150 , 1760084 ,  12396 , 3041260 
+US1-IoT-unified-trimmed-split-Netvue-filtered-protocols,Layer 7,http, 518218 , 110424744 , 287927 , 24011580 , 230291 , 86413164 
+US1-IoT-unified-trimmed-split-Netvue-filtered-protocols,Layer 7,ssdp,  74403 , 23452944 ,  10629 , 1897332 ,  63774 , 21555612 
+US1-IoT-unified-trimmed-split-Netvue-filtered-protocols,Layer 7,8555,    834 , 50313 ,    417 , 23280 ,    417 , 27033 
+US1-IoT-unified-trimmed-split-Netvue-filtered-protocols,Layer 7,secure-mqtt,  30320 , 2630557 ,  20164 , 1644665 ,  10156 , 985892 
+US1-IoT-unified-trimmed-split-Netvue-filtered-protocols,Layer 7,https,  12476 , 4098735 ,   7309 , 1827601 ,   5167 , 2271134 
+,,,,,,,,
+US1-IoT-unified-trimmed-split-PhillipsBridge-filtered-protocols,Total,Total, 807963 , 177242791 , 465059 , 148953609 , 342904 , 28289182 
+US1-IoT-unified-trimmed-split-PhillipsBridge-filtered-protocols,Layer 3,ip, 793047 , 172071735 , 450143 , 143782553 , 342904 , 28289182 
+US1-IoT-unified-trimmed-split-PhillipsBridge-filtered-protocols,Layer 3,ipv6,  14916 , 5171056 ,  14916 , 5171056 ,      0 ,     0 
+US1-IoT-unified-trimmed-split-PhillipsBridge-filtered-protocols,Layer 4,tcp, 627363 , 119498927 , 285441 , 91298125 , 341922 , 28200802 
+US1-IoT-unified-trimmed-split-PhillipsBridge-filtered-protocols,Layer 4,udp, 167499 , 56957786 , 166517 , 56869406 ,    982 , 88380 
+US1-IoT-unified-trimmed-split-PhillipsBridge-filtered-protocols,Layer 4,igmp,  13101 , 786078 ,  13101 , 786078 ,      0 ,     0 
+US1-IoT-unified-trimmed-split-PhillipsBridge-filtered-protocols,Layer 5,tls,  16409 , 3075496 ,   8181 , 1447897 ,   8228 , 1627599 
+US1-IoT-unified-trimmed-split-PhillipsBridge-filtered-protocols,Layer 7,http, 523525 , 111292373 , 232657 , 87035470 , 290868 , 24256903 
+US1-IoT-unified-trimmed-split-PhillipsBridge-filtered-protocols,Layer 7,ssdp, 135558 , 46724184 , 135558 , 46724184 ,      0 ,     0 
+US1-IoT-unified-trimmed-split-PhillipsBridge-filtered-protocols,Layer 7,ntp,   2109 , 189810 ,   1127 , 101430 ,    982 , 88380 
+US1-IoT-unified-trimmed-split-PhillipsBridge-filtered-protocols,Layer 7,mdns,  29832 , 10043792 ,  29832 , 10043792 ,      0 ,     0 
+US1-IoT-unified-trimmed-split-PhillipsBridge-filtered-protocols,Layer 7,https, 103838 , 8206554 ,  52784 , 4262655 ,  51054 , 3943899 
+,,,,,,,,
+US1-IoT-unified-trimmed-split-TPLink-filtered-protocols,Total,Total,   8245 , 968754 ,   5476 , 631591 ,   2769 , 337163 
+US1-IoT-unified-trimmed-split-TPLink-filtered-protocols,Layer 3,ip,   8245 , 968754 ,   5476 , 631591 ,   2769 , 337163 
+US1-IoT-unified-trimmed-split-TPLink-filtered-protocols,Layer 4,tcp,   7735 , 826666 ,   5134 , 504623 ,   2601 , 322043 
+US1-IoT-unified-trimmed-split-TPLink-filtered-protocols,Layer 4,udp,    510 , 142088 ,    342 , 126968 ,    168 , 15120 
+US1-IoT-unified-trimmed-split-TPLink-filtered-protocols,Layer 5,tls,   5134 , 655000 ,   2567 , 335201 ,   2567 , 319799 
+US1-IoT-unified-trimmed-split-TPLink-filtered-protocols,Layer 7,ntp,    337 , 30330 ,    169 , 15210 ,    168 , 15120 
+US1-IoT-unified-trimmed-split-TPLink-filtered-protocols,Layer 7,tplink-smarthome,    173 , 111758 ,    173 , 111758 ,      0 ,     0 
+US1-IoT-unified-trimmed-split-TPLink-filtered-protocols,Layer 7,https,   7735 , 826666 ,   5134 , 504623 ,   2601 , 322043 
+,,,,,,,,
+US1-MetaquestPro-trimmed-split-MetaquestPro-filtered-protocols,Total,Total,  48167 , 17551203 ,  26514 , 11174297 ,  21653 , 6376906 
+US1-MetaquestPro-trimmed-split-MetaquestPro-filtered-protocols,Layer 3,ipv6,  36207 , 13531034 ,  19807 , 8677302 ,  16400 , 4853732 
+US1-MetaquestPro-trimmed-split-MetaquestPro-filtered-protocols,Layer 3,ip,  11960 , 4020169 ,   6707 , 2496995 ,   5253 , 1523174 
+US1-MetaquestPro-trimmed-split-MetaquestPro-filtered-protocols,Layer 4,tcp,  47940 , 17527273 ,  26391 , 11161287 ,  21549 , 6365986 
+US1-MetaquestPro-trimmed-split-MetaquestPro-filtered-protocols,Layer 4,udp,    227 , 23930 ,    123 , 13010 ,    104 , 10920 
+US1-MetaquestPro-trimmed-split-MetaquestPro-filtered-protocols,Layer 5,tls,  17113 , 9855159 ,   8561 , 4566172 ,   8552 , 5288987 
+US1-MetaquestPro-trimmed-split-MetaquestPro-filtered-protocols,Layer 7,ntp,    227 , 23930 ,    123 , 13010 ,    104 , 10920 
+US1-MetaquestPro-trimmed-split-MetaquestPro-filtered-protocols,Layer 7,http,     90 ,  9441 ,     45 ,  5085 ,     45 ,  4356 
+US1-MetaquestPro-trimmed-split-MetaquestPro-filtered-protocols,Layer 7,https,  47774 , 17512456 ,  26308 , 11153058 ,  21466 , 6359398 
+,,,,,,,,
+US2-HoloLens-trimmed-split-HoloLens2-filtered-protocols,Total,Total,  69164 , 22133762 ,  44980 , 7835526 ,  24184 , 14298236 
+US2-HoloLens-trimmed-split-HoloLens2-filtered-protocols,Layer 3,ip,  54164 , 17072937 ,  34929 , 5246256 ,  19235 , 11826681 
+US2-HoloLens-trimmed-split-HoloLens2-filtered-protocols,Layer 3,ipv6,  15000 , 5060825 ,  10051 , 2589270 ,   4949 , 2471555 
+US2-HoloLens-trimmed-split-HoloLens2-filtered-protocols,Layer 4,igmp,   5407 , 292426 ,   5407 , 292426 ,      0 ,     0 
+US2-HoloLens-trimmed-split-HoloLens2-filtered-protocols,Layer 4,udp,  12557 , 1912838 ,  12545 , 1911758 ,     12 ,  1080 
+US2-HoloLens-trimmed-split-HoloLens2-filtered-protocols,Layer 4,tcp,  51200 , 19928498 ,  27028 , 5631342 ,  24172 , 14297156 
+US2-HoloLens-trimmed-split-HoloLens2-filtered-protocols,Layer 5,tls,  21916 , 11262832 ,  10138 , 3896521 ,  11778 , 7366311 
+US2-HoloLens-trimmed-split-HoloLens2-filtered-protocols,Layer 7,mdns,   8587 , 1587106 ,   8587 , 1587106 ,      0 ,     0 
+US2-HoloLens-trimmed-split-HoloLens2-filtered-protocols,Layer 7,ntp,     24 ,  2160 ,     12 ,  1080 ,     12 ,  1080 
+US2-HoloLens-trimmed-split-HoloLens2-filtered-protocols,Layer 7,http,   9740 , 6546729 ,   4107 , 368825 ,   5633 , 6177904 
+US2-HoloLens-trimmed-split-HoloLens2-filtered-protocols,Layer 7,llmnr,   3946 , 323572 ,   3946 , 323572 ,      0 ,     0 
+US2-HoloLens-trimmed-split-HoloLens2-filtered-protocols,Layer 7,https,  41460 , 13381769 ,  22921 , 5262517 ,  18539 , 8119252 
+,,,,,,,,
+US2-MagicLeap-trimmed-split-MagicLeap-filtered-protocols,Total,Total,   3354 , 1165013 ,   1792 , 624059 ,   1562 , 540954 
+US2-MagicLeap-trimmed-split-MagicLeap-filtered-protocols,Layer 3,ip,   3354 , 1165013 ,   1792 , 624059 ,   1562 , 540954 
+US2-MagicLeap-trimmed-split-MagicLeap-filtered-protocols,Layer 4,tcp,   3326 , 1162493 ,   1778 , 622799 ,   1548 , 539694 
+US2-MagicLeap-trimmed-split-MagicLeap-filtered-protocols,Layer 4,udp,     28 ,  2520 ,     14 ,  1260 ,     14 ,  1260 
+US2-MagicLeap-trimmed-split-MagicLeap-filtered-protocols,Layer 5,tls,   1493 , 962279 ,    736 , 519242 ,    757 , 443037 
+US2-MagicLeap-trimmed-split-MagicLeap-filtered-protocols,Layer 7,http,    615 , 54693 ,    365 , 29958 ,    250 , 24735 
+US2-MagicLeap-trimmed-split-MagicLeap-filtered-protocols,Layer 7,ntp,     28 ,  2520 ,     14 ,  1260 ,     14 ,  1260 
+US2-MagicLeap-trimmed-split-MagicLeap-filtered-protocols,Layer 7,https,   2711 , 1107800 ,   1413 , 592841 ,   1298 , 514959 
+,,,,,,,,
+US2-MetaQuest1-trimmed-split-MetaQuest1-filtered-protocols,Total,Total, 6385709 , 4917562261 , 3750839 , 932668795 , 2634870 , 3984893466 
+US2-MetaQuest1-trimmed-split-MetaQuest1-filtered-protocols,Layer 3,ipv6, 6382822 , 4916868494 , 3749271 , 932203208 , 2633551 , 3984665286 
+US2-MetaQuest1-trimmed-split-MetaQuest1-filtered-protocols,Layer 3,ip,   2887 , 693767 ,   1568 , 465587 ,   1319 , 228180 
+US2-MetaQuest1-trimmed-split-MetaQuest1-filtered-protocols,Layer 4,tcp, 6384275 , 4917404641 , 3750122 , 932589985 , 2634153 , 3984814656 
+US2-MetaQuest1-trimmed-split-MetaQuest1-filtered-protocols,Layer 4,udp,   1434 , 157620 ,    717 , 78810 ,    717 , 78810 
+US2-MetaQuest1-trimmed-split-MetaQuest1-filtered-protocols,Layer 5,tls, 773426 , 1059763005 , 211469 , 143399025 , 561957 , 916363980 
+US2-MetaQuest1-trimmed-split-MetaQuest1-filtered-protocols,Layer 7,http,    230 , 28527 ,    115 , 15195 ,    115 , 13332 
+US2-MetaQuest1-trimmed-split-MetaQuest1-filtered-protocols,Layer 7,ntp,   1434 , 157620 ,    717 , 78810 ,    717 , 78810 
+US2-MetaQuest1-trimmed-split-MetaQuest1-filtered-protocols,Layer 7,https, 6383821 , 4917360058 , 3749895 , 932565642 , 2633926 , 3984794416 
+,,,,,,,,
+US2-MetaQuest2-trimmed-split-MetaQuest2-filtered-protocols,Total,Total, 128835 , 49531065 ,  63962 , 32616918 ,  64873 , 16914147 
+US2-MetaQuest2-trimmed-split-MetaQuest2-filtered-protocols,Layer 3,ipv6, 124750 , 48952452 ,  61742 , 32397490 ,  63008 , 16554962 
+US2-MetaQuest2-trimmed-split-MetaQuest2-filtered-protocols,Layer 3,ip,   4085 , 578613 ,   2220 , 219428 ,   1865 , 359185 
+US2-MetaQuest2-trimmed-split-MetaQuest2-filtered-protocols,Layer 4,tcp, 128469 , 49490925 ,  63779 , 32596848 ,  64690 , 16894077 
+US2-MetaQuest2-trimmed-split-MetaQuest2-filtered-protocols,Layer 4,udp,    366 , 40140 ,    183 , 20070 ,    183 , 20070 
+US2-MetaQuest2-trimmed-split-MetaQuest2-filtered-protocols,Layer 5,tls,  45192 , 21998759 ,  23141 , 11526474 ,  22051 , 10472285 
+US2-MetaQuest2-trimmed-split-MetaQuest2-filtered-protocols,Layer 7,ntp,    366 , 40140 ,    183 , 20070 ,    183 , 20070 
+US2-MetaQuest2-trimmed-split-MetaQuest2-filtered-protocols,Layer 7,http,     60 ,  6294 ,     30 ,  3390 ,     30 ,  2904 
+US2-MetaQuest2-trimmed-split-MetaQuest2-filtered-protocols,Layer 7,https, 128361 , 49481223 ,  63725 , 32591466 ,  64636 , 16889757 
+,,,,,,,,
+US2-RoboRock-trimmed-split-Roborock-filtered-protocols,Total,Total, 187994 , 22267909 , 165618 , 19595850 ,  22376 , 2672059 
+US2-RoboRock-trimmed-split-Roborock-filtered-protocols,Layer 3,ip, 187994 , 22267909 , 165618 , 19595850 ,  22376 , 2672059 
+US2-RoboRock-trimmed-split-Roborock-filtered-protocols,Layer 4,tcp,  65190 , 7408625 ,  42814 , 4736566 ,  22376 , 2672059 
+US2-RoboRock-trimmed-split-Roborock-filtered-protocols,Layer 4,udp, 122804 , 14859284 , 122804 , 14859284 ,      0 ,     0 
+US2-RoboRock-trimmed-split-Roborock-filtered-protocols,Layer 5,tls,  42356 , 5773925 ,  21177 , 3241372 ,  21179 , 2532553 
+US2-RoboRock-trimmed-split-Roborock-filtered-protocols,Layer 7,58866, 122804 , 14859284 , 122804 , 14859284 ,      0 ,     0 
+US2-RoboRock-trimmed-split-Roborock-filtered-protocols,Layer 7,secure-mqtt,  63303 , 6825885 ,  41650 , 4557038 ,  21653 , 2268847 
+US2-RoboRock-trimmed-split-Roborock-filtered-protocols,Layer 7,https,   1887 , 582740 ,   1164 , 179528 ,    723 , 403212 
+,,,,,,,,

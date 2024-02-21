@@ -1,4 +1,4 @@
-Layer 3,Layer 4,Layer 5,Layer 7,
-ip,tcp,tls,http,Only tries to get root directory from router??
-,udp,,ntp,
-,,,https,
+MAC,Layer 3,Layer 4,Layer 5,Layer 7,
+64:16:66:4A:65:71,ip,tcp,tls,http,Only tries to get root directory from router??
+,,udp,,ntp,
+,,,,https,

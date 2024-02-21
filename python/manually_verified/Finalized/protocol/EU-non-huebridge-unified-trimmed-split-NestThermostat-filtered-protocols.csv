@@ -1,5 +1,5 @@
-Layer 3,Layer 4,Layer 5,Layer 7,
-ip,tcp,tls,http,Connectivity and portal detection https://www.chromium.org/chromium-os/chromiumos-design-docs/network-portal-detection/
-,udp,,ntp,
-,,,https,
-,,,9543,Contains some mandatory traffic
+MAC,Layer 3,Layer 4,Layer 5,Layer 7,
+64:16:66:BE:44:9C,ip,tcp,tls,http,Connectivity and portal detection https://www.chromium.org/chromium-os/chromiumos-design-docs/network-portal-detection/
+,,udp,,ntp,
+,,,,https,
+,,,,9543,Contains some mandatory traffic

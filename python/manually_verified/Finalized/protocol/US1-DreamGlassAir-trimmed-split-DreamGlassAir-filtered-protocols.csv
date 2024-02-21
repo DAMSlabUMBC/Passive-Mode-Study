@@ -1,6 +1,6 @@
-Layer 3,Layer 4,Layer 5,Layer 7,
-ip,udp,tls,mdns,
-ipv6,tcp,,ssdp,
-,,,http,"hpplay communication including device information, log in requests, and server requests"
-,,,ntp,
-,,,https,
+MAC,Layer 3,Layer 4,Layer 5,Layer 7,
+C0:84:7D:2E:9C:86,ip,udp,tls,mdns,
+,ipv6,tcp,,ssdp,
+,,,,http,"hpplay communication including device information, log in requests, and server requests"
+,,,,ntp,
+,,,,https,

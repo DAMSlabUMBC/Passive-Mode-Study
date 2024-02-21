@@ -1,12 +1,12 @@
-Layer 3,Layer 4,Layer 5,Layer 7,
-ip,tcp,tls,http,"connectivity and captive portal checks, requests SSDP device desc from Sony TV (only model name), gets ssdp unpn data such as service lists and control addresses, requests meta.json from external (denied)"
-ipv6,udp,,tplink-smarthome,"Requests information from tp link devices via broadcast and TCP, recv over UDP/TCP"
-,,,ssdp,UPnP
-,,,mdns,Responds with type and name
-,,,ntp,
-,,,55444,"Echo dot communication, most likely time sync"
-,,,50000,Recv UPnP
-,,,56700,"Broadcast, probably lifx, https://lan.developer.lifx.com/docs/querying-the-device-for-data#getservice---packet-2"
-,,,1982,Query SSDP (wifi bulb)
-,,,55443,"Encrypted comms between echo dot, cert says alexa"
-,,,https,
+MAC,Layer 3,Layer 4,Layer 5,Layer 7,
+40:A2:DB:2C:8A:68,ip,tcp,tls,http,"connectivity and captive portal checks, requests SSDP device desc from Sony TV (only model name), gets ssdp unpn data such as service lists and control addresses, requests meta.json from external (denied)"
+,ipv6,udp,,tplink-smarthome,"Requests information from tp link devices via broadcast and TCP, recv over UDP/TCP"
+,,,,ssdp,UPnP
+,,,,mdns,Responds with type and name
+,,,,ntp,
+,,,,55444,"Echo dot communication, most likely time sync"
+,,,,50000,Recv UPnP
+,,,,56700,"Broadcast, probably lifx, https://lan.developer.lifx.com/docs/querying-the-device-for-data#getservice---packet-2"
+,,,,1982,Query SSDP (wifi bulb)
+,,,,55443,"Encrypted comms between echo dot, cert says alexa"
+,,,,https,
