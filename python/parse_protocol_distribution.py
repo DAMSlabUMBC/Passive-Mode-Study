@@ -110,7 +110,7 @@ def main(argv):
                 lines_to_write.append(line_to_write)
 
         # Add linebreak
-        lines_to_write.append(",,,,,,,,\n")
+        lines_to_write.append(",,,,,,,,,,,,,,,,,,,,,\n")
 
         # Now process every individual dict
         for file, data in protocol_data_list.items():
@@ -118,7 +118,7 @@ def main(argv):
                 for proto, values in protocols.items():
                     line_to_write = f"{file},{layer},{proto},{values[PACKET_COUNT_INDEX]},{values[BYTE_COUNT_INDEX]},{values[TXPACKET_COUNT_INDEX]},{values[TXBYTE_COUNT_INDEX]},{values[RXPACKET_COUNT_INDEX]},{values[RXBYTE_COUNT_INDEX]},{values[LAN_PACKET_COUNT_INDEX]},{values[LAN_BYTE_COUNT_INDEX]},{values[LAN_TXPACKET_COUNT_INDEX]},{values[LAN_TXBYTE_COUNT_INDEX]},{values[LAN_RXPACKET_COUNT_INDEX]},{values[LAN_RXBYTE_COUNT_INDEX]},{values[WAN_PACKET_COUNT_INDEX]},{values[WAN_BYTE_COUNT_INDEX]},{values[WAN_TXPACKET_COUNT_INDEX]},{values[WAN_TXBYTE_COUNT_INDEX]},{values[WAN_RXPACKET_COUNT_INDEX]},{values[WAN_RXBYTE_COUNT_INDEX]}\n"
                     lines_to_write.append(line_to_write)
-            lines_to_write.append(",,,,,,,,\n")
+            lines_to_write.append(",,,,,,,,,,,,,,,,,,,,,\n")
 
         outfile.writelines(lines_to_write)
 
@@ -230,7 +230,7 @@ def parse_pcap_for_protos(protocol_dict, pcap_file_location, mac):
 
     # Set up filters
     # Start with an "all" filter
-    filter_string = f",{global_filter},eth.src == {mac} && {global_filter},eth.dst == {mac} && {global_filter} && {lan_filter}"
+    filter_string = f",{global_filter} && {lan_filter},eth.src == {mac} && {global_filter} && {lan_filter},eth.dst == {mac} && {global_filter} && {lan_filter}"
     for data in protocol_dict.values():
         for proto in data:
 
@@ -281,7 +281,7 @@ def parse_pcap_for_protos(protocol_dict, pcap_file_location, mac):
 
     # Set up filters
     # Start with an "all" filter
-    filter_string = f",{global_filter},eth.src == {mac} && {global_filter},eth.dst == {mac} && {global_filter} && {wan_filter}"
+    filter_string = f",{global_filter} && {wan_filter},eth.src == {mac} && {global_filter} && {wan_filter},eth.dst == {mac} && {global_filter} && {wan_filter}"
     for data in protocol_dict.values():
         for proto in data:
 
