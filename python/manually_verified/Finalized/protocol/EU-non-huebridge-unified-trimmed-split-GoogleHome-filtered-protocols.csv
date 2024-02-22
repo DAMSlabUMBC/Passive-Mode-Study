@@ -1,7 +1,7 @@
 MAC,Layer 3,Layer 4,Layer 5,Layer 7,
 A4:77:33:DF:C2:4D,ip,tcp,tls,http,Used for connectivity checks
 ,ipv6,udp,,tplink-smarthome,Requests information from tp link devices via broadcast
-,,igmp,,mdns,Responds with type and name
+,,,,mdns,Responds with type and name
 ,,,,ntp,
 ,,,,10006,"Exchanging STUN with google home speaker and nest mini, nothing is responding, mistmatched protocols? LAN, no servers"
 ,,,,10001,"Exchanging STUN with google home speaker and nest mini, nothing is responding, mistmatched protocols? LAN, no servers"
