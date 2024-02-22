@@ -1,0 +1,87 @@
+IP, Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+173.194.76.138,clients.google.com,United States,None,195,68194,89,31872,106,36322
+216.58.215.46,clients.google.com,United States,None,43256,17814007,20386,9198309,22870,8615698
+216.58.213.78,clients.google.com,United States,None,1679,477023,781,111391,898,365632
+142.250.201.174,clients.google.com,United States,None,1172,811230,562,623362,610,187868
+172.217.20.206,clients.google.com,United States,None,176,53741,82,19372,94,34369
+64.233.166.101,clients.google.com,United States,None,152,57651,68,28909,84,28742
+66.102.1.102,clients.google.com,United States,None,99,39022,46,19188,53,19834
+108.177.15.138,clients.google.com,United States,None,97,38292,45,19127,52,19165
+64.233.184.101,clients.google.com,United States,None,97,31747,44,12417,53,19330
+66.102.1.138,clients.google.com,United States,None,96,38520,46,19133,50,19387
+108.177.15.101,clients.google.com,United States,None,93,31947,43,12396,50,19551
+64.233.166.138,clients.google.com,United States,None,52,26015,21,9540,31,16475
+142.251.168.102,clients.google.com,United States,None,51,19002,22,9720,29,9282
+64.233.166.102,clients.google.com,United States,None,50,20508,22,9556,28,10952
+173.194.76.100,clients.google.com,United States,None,50,19204,24,9799,26,9405
+64.233.184.113,clients.google.com,United States,None,50,19068,22,9425,28,9643
+173.194.76.113,clients.google.com,United States,None,49,20234,22,9723,27,10511
+64.233.167.139,clients.google.com,United States,None,49,19142,23,9611,26,9531
+108.177.15.102,clients.google.com,United States,None,49,18673,23,9611,26,9062
+173.194.76.101,clients.google.com,United States,None,48,19194,23,9664,25,9530
+66.102.1.101,clients.google.com,United States,None,48,19164,23,9620,25,9544
+64.233.166.139,clients.google.com,United States,None,48,19584,22,9526,26,10058
+74.125.133.102,clients.google.com,United States,None,47,18672,23,9597,24,9075
+142.251.173.102,clients.google.com,United States,None,47,19146,23,9714,24,9432
+64.233.167.100,clients.google.com,United States,None,47,18942,23,9557,24,9385
+173.194.76.139,clients.google.com,United States,None,47,19128,20,9521,27,9607
+74.125.71.102,clients.google.com,United States,None,47,19190,22,9573,25,9617
+108.177.15.113,clients.google.com,United States,None,46,18427,21,9360,25,9067
+66.102.1.100,clients.google.com,United States,None,46,18492,22,9497,24,8995
+108.177.15.139,clients.google.com,United States,None,45,18365,20,8998,25,9367
+64.233.167.101,clients.google.com,United States,None,44,12446,21,2717,23,9729
+108.177.15.100,clients.google.com,United States,None,44,12665,21,3085,23,9580
+64.233.184.139,clients.google.com,United States,None,42,11960,21,2784,21,9176
+74.125.133.139,clients.google.com,United States,None,41,10939,18,2014,23,8925
+142.250.178.131,connectivitycheck.gstatic.com,United States,None,22787,3711238,9067,1232463,13720,2478775
+142.250.75.227,connectivitycheck.gstatic.com,United States,None,492,87804,187,27736,305,60068
+216.58.214.163,connectivitycheck.gstatic.com,United States,None,489,74401,197,24737,292,49664
+8.8.8.8,dns.google,United States,None,22486,2166139,11242,1316593,11244,849546
+8.8.4.4,dns.google,United States,None,4,604,2,446,2,158
+172.217.20.202,geller-pa.googleapis.com,United States,None,1654,567144,732,338169,922,228975
+216.58.215.42,geller-pa.googleapis.com,United States,None,1465,508713,681,261462,784,247251
+142.250.178.138,geller-pa.googleapis.com,United States,None,1420,482167,640,290706,780,191461
+216.58.214.67,gstatic.com,United States,None,245,77742,103,47278,142,30464
+224.0.0.22,igmp.mcast.net,None,None,25,1630,0,0,25,1630
+224.0.0.251,mdns.mcast.net,None,None,35802,7610131,0,0,35802,7610131
+64.233.166.188,mtalk.google.com,United States,None,10001,768587,4638,391250,5363,377337
+108.177.15.188,mtalk.google.com,United States,None,7338,590214,3421,315768,3917,274446
+173.194.76.188,mtalk.google.com,United States,None,4849,376464,2223,189245,2626,187219
+74.125.206.188,mtalk.google.com,United States,None,4214,370549,1900,203596,2314,166953
+142.250.110.188,mtalk.google.com,United States,None,964,86449,444,48380,520,38069
+192.168.231.223,None,None,None,907826,74664833,455940,38192888,451886,36471945
+255.255.255.255,None,None,None,8512,651190,0,0,8512,651190
+192.168.231.112,None,None,None,5978,2763926,4246,2687718,1732,76208
+192.168.231.200,None,None,None,5905,4553886,4214,4479482,1691,74404
+239.255.255.251,None,None,None,4275,371913,0,0,4275,371913
+224.0.0.250,None,None,None,4272,371658,0,0,4272,371658
+192.168.231.1,None,None,None,206,37194,103,29047,103,8147
+fe80::a677:33ff:fedf:c24d,None,None,None,35780,8570378,35780,8570378,0,0
+ff02::fb,None,None,None,35778,8570164,0,0,35778,8570164
+ff02::c:c,None,None,None,2,214,0,0,2,214
+fdc4:22e1:d5d:0:d5df:30a:d02d:b5dd,None,None,None,1,107,1,107,0,0
+ff05::c0c,None,None,None,1,107,0,0,1,107
+142.250.179.74,play.googleapis.com,United States,None,3092,1053829,1388,593442,1704,460387
+142.250.75.234,play.googleapis.com,United States,None,2998,984875,1355,607863,1643,377012
+172.217.20.170,play.googleapis.com,United States,None,1658,565909,723,331864,935,234045
+142.250.201.170,play.googleapis.com,United States,None,1652,552180,748,286829,904,265351
+216.58.214.170,play.googleapis.com,United States,None,1548,531334,686,318169,862,213165
+142.250.179.106,play.googleapis.com,United States,None,1450,498784,645,308910,805,189874
+142.250.74.234,play.googleapis.com,United States,None,1414,479654,640,277719,774,201935
+216.58.214.74,play.googleapis.com,United States,None,1389,456729,619,261331,770,195398
+216.58.213.74,play.googleapis.com,United States,None,1320,460465,592,276997,728,183468
+172.217.18.202,play.googleapis.com,United States,None,1012,341634,457,204570,555,137064
+142.250.179.70,static.doubleclick.net,United States,None,113,28715,52,20942,61,7773
+142.250.75.251,storage.googleapis.com,United States,None,966,2282302,643,2258273,323,24029
+216.58.213.91,storage.googleapis.com,United States,None,946,2272617,649,2250280,297,22337
+172.217.20.219,storage.googleapis.com,United States,None,822,2257495,604,2240321,218,17174
+172.217.20.187,storage.googleapis.com,United States,None,86,121075,45,110323,41,10752
+216.239.35.0,time.google.com,United States,None,160,14400,80,7200,80,7200
+216.239.35.4,time.google.com,United States,None,144,12960,72,6480,72,6480
+216.239.35.8,time.google.com,United States,None,136,12240,68,6120,68,6120
+216.239.35.12,time.google.com,United States,None,132,11880,66,5940,66,5940
+142.250.74.238,tools.google.com,United States,None,519,200196,229,156268,290,43928
+216.58.213.67,gstatic.com,United States,None,365,418047,196,387126,169,30921
+216.58.215.35,gstatic.com,United States,None,285,252435,132,230173,153,22262
+142.250.178.142,youtube.com,United States,None,899,2035378,528,1965972,371,69406
+142.250.179.78,youtube.com,United States,None,500,1021058,318,986582,182,34476
