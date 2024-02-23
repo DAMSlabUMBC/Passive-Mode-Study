@@ -58,8 +58,47 @@ def main(argv):
                         out_row = [[ip], hostname, ip_geo, cert_geo, packet_count, byte_count, txpacket_count, txbyte_count, rxpacket_count, rxbyte_count]
                         all_hosts_in_file.append(out_row)
 
-                    # Otherwise, we need to see if we can merge rows
+                    # Otherwise, we process for merges and updates
                     else:
+
+                        # First we preprocess for updates or anycast
+                        for known_host in all_hosts_in_file:
+
+                            # First we check for hostname match
+                            if hostname == known_host[1]:
+
+                                # Check to see if the country / geo ip needs updating
+                                if ip_geo != "None" and known_host[2] == "None":
+                                    known_host[2] = ip_geo
+                                elif ip_geo == "None" and known_host[2] != "None":
+                                    ip_geo = known_host[2]
+
+                                if cert_geo != "None" and known_host[3] == "None":
+                                    known_host[3] = cert_geo
+                                elif cert_geo == "None" and known_host[3] != "None":
+                                    cert_geo = known_host[3]
+
+                                # Check for anycast
+                                # We can't truly detect anycast, however we assume that if there is the same hostname
+                                # resolving to multiple geographic locations, it may be anycast                          
+                                if ip_geo != known_host[2]:
+                                    
+                                    # Could be anycast mark them both
+                                    if '*' not in ip_geo:
+                                        ip_geo = f"*{ip_geo}"
+                                    if '*' not in known_host[2]:
+                                        known_host[2] = f"*{known_host[2]}"
+
+                                if cert_geo != known_host[3]:
+                                    
+                                    # Could be anycast mark them both
+                                    if '*' not in cert_geo:
+                                        cert_geo = f"*{cert_geo}"
+                                    if '*' not in known_host[3]:
+                                        known_host[3] = f"*{known_host[3]}"
+
+
+                        # Now merge rows as needed
                         found = False
                         for known_host in all_hosts_in_file:
 
