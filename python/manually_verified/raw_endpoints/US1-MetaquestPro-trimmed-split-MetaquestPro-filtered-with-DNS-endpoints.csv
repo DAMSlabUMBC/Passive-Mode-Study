@@ -1,56 +1,55 @@
-IP, Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
-172.253.115.94,connectivitycheck.gstatic.com,United States,None,60,6294,30,2904,30,3390
-172.253.122.94,connectivitycheck.gstatic.com,United States,None,30,3147,15,1452,15,1695
-2a03:2880:f211:c1:face:b00c:0:32c2,edge-oculus6-*.fbcdn.net,None,None,16,1504,0,0,16,1504
-2a03:2880:f203:c1:face:b00c:0:32c2,edge-oculus6-*.fbcdn.net,None,None,16654,3767572,6963,2030980,9691,1736592
-2a03:2880:f212:c1:face:b00c:0:32c2,edge-oculus6-*.fbcdn.net,None,None,751,207700,322,131088,429,76612
-2a03:2880:f22c:c1:face:b00c:0:32c2,edge-oculus6-*.fbcdn.net,None,None,1,94,0,0,1,94
-2a03:2880:f211:1ce:face:b00c:0:32c2,edge-oculus6-*.fbcdn.net,None,None,4,376,0,0,4,376
-2a03:2880:f203:1cc:face:b00c:0:32c2,edge-oculus6-*.fbcdn.net,None,None,8037,1791736,3323,950445,4714,841291
-2a03:2880:f212:1c8:face:b00c:0:32c2,edge-oculus6-*.fbcdn.net,None,None,1450,422309,628,275473,822,146836
-2a03:2880:f22c:1c1:face:b00c:0:32c2,edge-oculus6-*.fbcdn.net,None,None,1,94,0,0,1,94
-2a03:2880:f275:1cb:face:b00c:0:32c2,edge-oculus6-*.fbcdn.net,None,None,95,25325,44,15968,51,9357
-2a03:2880:f003:c1b:face:b00c:0:2b80,edge-secure6-*.facebook.com.,None,None,76,43241,32,19093,44,24148
-2a03:2880:f012:10f:face:b00c:0:2b80,edge-secure6-*.facebook.com.,None,None,28,14640,12,6483,16,8157
-2a03:2880:f011:1:face:b00c:0:1,edge-star6-*.facebook.com.,None,None,16,1504,0,0,16,1504
-2a03:2880:f003:c07:face:b00c:0:2,edge-star6-*.facebook.com.,None,None,6369,9215514,3481,923947,2888,8291567
-2a03:2880:f012:1:face:b00c:0:1,edge-star6-*.facebook.com.,None,None,256,311916,123,35908,133,276008
-2a03:2880:f003:112:face:b00c:0:2,edge-star6-*.facebook.com.,None,None,786,1115277,441,109670,345,1005607
-2a03:2880:f012:100:face:b00c:0:2,edge-star6-*.facebook.com.,None,None,1102,1516737,577,146691,525,1370046
-2a03:2880:f111:83:face:b00c:0:25de,edge-star-mini6-*.facebook.com.,None,None,6,564,0,0,6,564
-2a03:2880:f103:83:face:b00c:0:25de,edge-star-mini6-*.facebook.com.,None,None,983,644807,436,370949,547,273858
-2a03:2880:f103:181:face:b00c:0:25de,edge-star-mini6-*.facebook.com.,None,None,108,75203,49,42613,59,32590
-2a03:2880:f112:182:face:b00c:0:25de,edge-star-mini6-*.facebook.com.,None,None,137,85367,60,52658,77,32709
-2a03:2880:f12c:183:face:b00c:0:25de,edge-star-mini6-*.facebook.com.,None,None,1,94,0,0,1,94
-31.13.65.1,graph.facebook.com,United States,None,957,1280863,493,100906,464,1179957
-31.13.66.4,graph.facebook.com,United States,None,820,1188748,476,107390,344,1081358
-157.240.241.17,graph.facebook.com,United States,None,314,449196,162,36006,152,413190
-31.13.66.48,graph.oculus.com,United States,US;US;US;US,7287,1522319,2959,834712,4328,687607
-157.240.241.55,graph.oculus.com,United States,US;US;US;US,1136,292460,477,187794,659,104666
-31.13.65.51,graph.oculus.com,United States,US;US;US;US,587,164946,259,111746,328,53200
-31.13.71.51,graph.oculus.com,United States,US;US;US;US,387,106900,167,71696,220,35204
-157.240.229.55,graph.oculus.com,United States,US;US;US;US,88,19551,40,11415,48,8136
-192.168.1.1,None,None,None,346,89775,173,76514,173,13261
-2620:0:5301:2210:758e:610a:d180:6605,None,None,None,37052,19260824,20483,14140278,16569,5120546
-fdb3:3744:776d:0:758e:610a:d180:6605,None,None,None,4458,1219204,2229,214210,2229,1004994
-fdb3:3744:776d::1,None,None,None,4458,1219204,2229,1004994,2229,214210
-129.134.26.123,time.facebook.com,United States,None,16,1440,8,720,8,720
-129.134.28.123,time.facebook.com,United States,None,14,1260,7,630,7,630
-129.134.27.123,time.facebook.com,United States,None,12,1080,6,540,6,540
-129.134.25.123,time.facebook.com,United States,None,6,540,3,270,3,270
-129.134.29.123,time.facebook.com,United States,None,4,360,2,180,2,180
-2a03:2880:ff0b::123,time.facebook.com,None,None,40,4400,20,2200,20,2200
-2a03:2880:ff0c::123,time.facebook.com,None,None,19,2090,0,0,19,2090
-2a03:2880:ff08::123,time.facebook.com,None,None,40,4400,20,2200,20,2200
-2a03:2880:ff09::123,time.facebook.com,None,None,22,2420,11,1210,11,1210
-2a03:2880:ff0a::123,time.facebook.com,None,None,54,5940,27,2970,27,2970
-31.13.65.36,facebook.com,United States,None,93,55226,42,24842,51,30384
-31.13.66.35,facebook.com,United States,None,89,61292,41,37944,48,23348
-31.13.71.36,facebook.com,United States,None,48,28213,22,13912,26,14301
-157.240.229.35,facebook.com,United States,None,42,22604,19,7652,23,14952
-157.240.241.35,facebook.com,United States,None,24,14650,11,6953,13,7697
-172.253.63.106,google.com,United States,None,38,14330,20,11448,18,2882
-172.253.63.103,google.com,United States,None,36,14200,19,11384,17,2816
-172.253.63.105,google.com,United States,None,36,14200,19,11384,17,2816
-172.253.63.104,google.com,United States,None,34,14070,18,11320,16,2750
-172.253.63.147,google.com,United States,None,17,7033,9,5658,8,1375
+IP, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+31.13.66.48,graph.oculus.com,graph.oculus.com,United States,US;US;US;US,7287,1522319,2959,834712,4328,687607
+157.240.241.55,graph.oculus.com,graph.oculus.com,United States,US;US;US;US,1136,292460,477,187794,659,104666
+31.13.65.1,graph.facebook.com,graph.facebook.com,United States,None,957,1280863,493,100906,464,1179957
+31.13.66.4,graph.facebook.com,graph.facebook.com,United States,None,820,1188748,476,107390,344,1081358
+31.13.65.51,graph.oculus.com,graph.oculus.com,United States,US;US;US;US,587,164946,259,111746,328,53200
+31.13.71.51,graph.oculus.com,graph.oculus.com,United States,US;US;US;US,387,106900,167,71696,220,35204
+157.240.241.17,graph.facebook.com,graph.facebook.com,United States,None,314,449196,162,36006,152,413190
+31.13.65.36,www.facebook.com,www.facebook.com,United States,None,93,55226,42,24842,51,30384
+31.13.66.35,www.facebook.com,www.facebook.com,United States,None,89,61292,41,37944,48,23348
+157.240.229.55,graph.oculus.com,graph.oculus.com,United States,US;US;US;US,88,19551,40,11415,48,8136
+172.253.115.94,connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,United States,None,60,6294,30,2904,30,3390
+31.13.71.36,www.facebook.com,www.facebook.com,United States,None,48,28213,22,13912,26,14301
+157.240.229.35,www.facebook.com,www.facebook.com,United States,None,42,22604,19,7652,23,14952
+172.253.63.106,www.google.com,www.google.com,United States,None,38,14330,20,11448,18,2882
+172.253.63.103,www.google.com,www.google.com,United States,None,36,14200,19,11384,17,2816
+172.253.63.105,www.google.com,www.google.com,United States,None,36,14200,19,11384,17,2816
+172.253.63.104,www.google.com,www.google.com,United States,None,34,14070,18,11320,16,2750
+172.253.122.94,connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,United States,None,30,3147,15,1452,15,1695
+157.240.241.35,www.facebook.com,www.facebook.com,United States,None,24,14650,11,6953,13,7697
+172.253.63.147,www.google.com,www.google.com,United States,None,17,7033,9,5658,8,1375
+129.134.26.123,time.facebook.com,time.facebook.com,United States,None,16,1440,8,720,8,720
+129.134.28.123,time.facebook.com,time.facebook.com,United States,None,14,1260,7,630,7,630
+129.134.27.123,time.facebook.com,time.facebook.com,United States,None,12,1080,6,540,6,540
+129.134.25.123,time.facebook.com,time.facebook.com,United States,None,6,540,3,270,3,270
+129.134.29.123,time.facebook.com,time.facebook.com,United States,None,4,360,2,180,2,180
+2620:0:5301:2210:758e:610a:d180:6605,None,None,None,None,37052,19260824,20483,14140278,16569,5120546
+2a03:2880:f203:c1:face:b00c:0:32c2,edge-oculus6-shv-01-iad3.fbcdn.net.,edge-oculus6-shv-01-iad3.fbcdn.net.,None,None,16654,3767572,6963,2030980,9691,1736592
+2a03:2880:f203:1cc:face:b00c:0:32c2,edge-oculus6-shv-02-iad3.fbcdn.net.,edge-oculus6-shv-02-iad3.fbcdn.net.,None,None,8037,1791736,3323,950445,4714,841291
+2a03:2880:f003:c07:face:b00c:0:2,edge-star6-shv-01-iad3.facebook.com.,edge-star6-shv-01-iad3.facebook.com.,None,None,6369,9215514,3481,923947,2888,8291567
+fdb3:3744:776d:0:758e:610a:d180:6605,None,None,None,None,4458,1219204,2229,214210,2229,1004994
+fdb3:3744:776d::1,None,None,None,None,4458,1219204,2229,1004994,2229,214210
+2a03:2880:f212:1c8:face:b00c:0:32c2,edge-oculus6-shv-02-lga3.fbcdn.net.,edge-oculus6-shv-02-lga3.fbcdn.net.,None,None,1450,422309,628,275473,822,146836
+2a03:2880:f012:100:face:b00c:0:2,edge-star6-shv-02-lga3.facebook.com.,edge-star6-shv-02-lga3.facebook.com.,None,None,1102,1516737,577,146691,525,1370046
+2a03:2880:f103:83:face:b00c:0:25de,edge-star-mini6-shv-01-iad3.facebook.com.,edge-star-mini6-shv-01-iad3.facebook.com.,None,None,983,644807,436,370949,547,273858
+2a03:2880:f003:112:face:b00c:0:2,edge-star6-shv-02-iad3.facebook.com.,edge-star6-shv-02-iad3.facebook.com.,None,None,786,1115277,441,109670,345,1005607
+2a03:2880:f212:c1:face:b00c:0:32c2,edge-oculus6-shv-01-lga3.fbcdn.net.,edge-oculus6-shv-01-lga3.fbcdn.net.,None,None,751,207700,322,131088,429,76612
+2a03:2880:f012:1:face:b00c:0:1,edge-star6-shv-01-lga3.facebook.com.,edge-star6-shv-01-lga3.facebook.com.,None,None,256,311916,123,35908,133,276008
+2a03:2880:f112:182:face:b00c:0:25de,edge-star-mini6-shv-02-lga3.facebook.com.,edge-star-mini6-shv-02-lga3.facebook.com.,None,None,137,85367,60,52658,77,32709
+2a03:2880:f103:181:face:b00c:0:25de,edge-star-mini6-shv-02-iad3.facebook.com.,edge-star-mini6-shv-02-iad3.facebook.com.,None,None,108,75203,49,42613,59,32590
+2a03:2880:f275:1cb:face:b00c:0:32c2,edge-oculus6-shv-02-ord5.fbcdn.net.,edge-oculus6-shv-02-ord5.fbcdn.net.,None,None,95,25325,44,15968,51,9357
+2a03:2880:f003:c1b:face:b00c:0:2b80,edge-secure6-shv-01-iad3.facebook.com.,edge-secure6-shv-01-iad3.facebook.com.,None,None,76,43241,32,19093,44,24148
+2a03:2880:ff0a::123,time5.facebook.com.,time5.facebook.com.,None,None,54,5940,27,2970,27,2970
+2a03:2880:ff08::123,time3.facebook.com.,time3.facebook.com.,None,None,40,4400,20,2200,20,2200
+2a03:2880:ff0b::123,time1.facebook.com.,time1.facebook.com.,None,None,40,4400,20,2200,20,2200
+2a03:2880:f012:10f:face:b00c:0:2b80,edge-secure6-shv-02-lga3.facebook.com.,edge-secure6-shv-02-lga3.facebook.com.,None,None,28,14640,12,6483,16,8157
+2a03:2880:ff09::123,time4.facebook.com.,time4.facebook.com.,None,None,22,2420,11,1210,11,1210
+2a03:2880:ff0c::123,time2.facebook.com.,time2.facebook.com.,None,None,19,2090,0,0,19,2090
+2a03:2880:f211:c1:face:b00c:0:32c2,edge-oculus6-shv-01-atl3.fbcdn.net.,edge-oculus6-shv-01-atl3.fbcdn.net.,None,None,16,1504,0,0,16,1504
+2a03:2880:f011:1:face:b00c:0:1,edge-star6-shv-01-atl3.facebook.com.,edge-star6-shv-01-atl3.facebook.com.,None,None,16,1504,0,0,16,1504
+2a03:2880:f111:83:face:b00c:0:25de,edge-star-mini6-shv-01-atl3.facebook.com.,edge-star-mini6-shv-01-atl3.facebook.com.,None,None,6,564,0,0,6,564
+2a03:2880:f211:1ce:face:b00c:0:32c2,edge-oculus6-shv-02-atl3.fbcdn.net.,edge-oculus6-shv-02-atl3.fbcdn.net.,None,None,4,376,0,0,4,376
+2a03:2880:f22c:c1:face:b00c:0:32c2,edge-oculus6-shv-01-mia3.fbcdn.net.,edge-oculus6-shv-01-mia3.fbcdn.net.,None,None,1,94,0,0,1,94
+2a03:2880:f12c:183:face:b00c:0:25de,edge-star-mini6-shv-02-mia3.facebook.com.,edge-star-mini6-shv-02-mia3.facebook.com.,None,None,1,94,0,0,1,94
+2a03:2880:f22c:1c1:face:b00c:0:32c2,edge-oculus6-shv-02-mia3.fbcdn.net.,edge-oculus6-shv-02-mia3.fbcdn.net.,None,None,1,94,0,0,1,94

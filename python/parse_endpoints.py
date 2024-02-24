@@ -69,12 +69,12 @@ def main(argv):
             with open(outfile_location, "w", newline='') as outfile: # open the csv
 
                 lines_to_write = []
-                header = "IP, Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes\n"
+                header = "IP, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes\n"
                 lines_to_write.append(header)
                 
                 for ip in ip_data.keys():
                     data_dict = ip_data[ip]
-                    line_to_write = f"{ip},{data_dict['Hostname']},{data_dict['IP Geolocation']},{data_dict['Cert Geolocation']},{data_dict['Packets']},{data_dict['Bytes']},{data_dict['TxPackets']},{data_dict['TxBytes']},{data_dict['RxPackets']},{data_dict['RxBytes']}\n"
+                    line_to_write = f"{ip},{data_dict['Hostname']},{data_dict['Hostname']},{data_dict['IP Geolocation']},{data_dict['Cert Geolocation']},{data_dict['Packets']},{data_dict['Bytes']},{data_dict['TxPackets']},{data_dict['TxBytes']},{data_dict['RxPackets']},{data_dict['RxBytes']}\n"
                     lines_to_write.append(line_to_write)
                     
                 outfile.writelines(lines_to_write)

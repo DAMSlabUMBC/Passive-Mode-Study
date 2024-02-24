@@ -1,14 +1,8 @@
-import subprocess
-import re
 from pathlib import Path
-from collections import defaultdict
-import json
 import argparse
 import os
 import sys
 import csv
-import pandas
-import numpy
 from tqdm import tqdm
 
 def main(argv):
@@ -53,6 +47,13 @@ def main(argv):
                     rxpacket_count = int(row[8])
                     rxbyte_count = int(row[9])
 
+                    # Collapse certs to only contain unique elements
+                    if(cert_geo != "None"):
+                        cert_list = cert_geo.split(';')
+                        trimmed_cert_list = []
+                        [trimmed_cert_list.append(x) for x in cert_list if x not in trimmed_cert_list]
+                        cert_geo = ';'.join(trimmed_cert_list)
+
                     # If hostname is unknown, we just add as is
                     if hostname == "None":
                         out_row = [[ip], hostname, ip_geo, cert_geo, packet_count, byte_count, txpacket_count, txbyte_count, rxpacket_count, rxbyte_count]
@@ -67,21 +68,10 @@ def main(argv):
                             # First we check for hostname match
                             if hostname == known_host[1]:
 
-                                # Check to see if the country / geo ip needs updating
-                                if ip_geo != "None" and known_host[2] == "None":
-                                    known_host[2] = ip_geo
-                                elif ip_geo == "None" and known_host[2] != "None":
-                                    ip_geo = known_host[2]
-
-                                if cert_geo != "None" and known_host[3] == "None":
-                                    known_host[3] = cert_geo
-                                elif cert_geo == "None" and known_host[3] != "None":
-                                    cert_geo = known_host[3]
-
                                 # Check for anycast
                                 # We can't truly detect anycast, however we assume that if there is the same hostname
                                 # resolving to multiple geographic locations, it may be anycast                          
-                                if ip_geo != known_host[2]:
+                                if ip_geo != "None" and known_host[2] != "None" and ip_geo != known_host[2]:
                                     
                                     # Could be anycast mark them both
                                     if '*' not in ip_geo:
@@ -89,7 +79,7 @@ def main(argv):
                                     if '*' not in known_host[2]:
                                         known_host[2] = f"*{known_host[2]}"
 
-                                if cert_geo != known_host[3]:
+                                if cert_geo != "None" and known_host[3] != "None" and cert_geo != known_host[3]:
                                     
                                     # Could be anycast mark them both
                                     if '*' not in cert_geo:
@@ -102,18 +92,30 @@ def main(argv):
                         found = False
                         for known_host in all_hosts_in_file:
 
-                            # Check for equivelance in hostname and locations
-                            if hostname == known_host[1] and ip_geo == known_host[2] and cert_geo == known_host[3]:
-                                found = True
-                                
-                                # Update IPs and counts
-                                known_host[0].append(ip)
-                                known_host[4] += packet_count
-                                known_host[5] += byte_count
-                                known_host[6] += txpacket_count
-                                known_host[7] += txbyte_count
-                                known_host[8] += rxpacket_count
-                                known_host[9] += rxbyte_count
+                            if hostname == known_host[1]:
+                                # Check to see if the country / geo ip needs updating
+                                if ip_geo != "None" and known_host[2] == "None":
+                                    known_host[2] = ip_geo
+                                elif ip_geo == "None" and known_host[2] != "None":
+                                    ip_geo = known_host[2]
+
+                                if cert_geo != "None" and known_host[3] == "None":
+                                    known_host[3] = cert_geo
+                                elif cert_geo == "None" and known_host[3] != "None":
+                                    cert_geo = known_host[3]
+
+                                # Check for equivelance in hostname and locations
+                                if ip_geo == known_host[2] and cert_geo == known_host[3]:
+                                    found = True
+                                    
+                                    # Update IPs and counts
+                                    known_host[0].append(ip)
+                                    known_host[4] += packet_count
+                                    known_host[5] += byte_count
+                                    known_host[6] += txpacket_count
+                                    known_host[7] += txbyte_count
+                                    known_host[8] += rxpacket_count
+                                    known_host[9] += rxbyte_count
 
                         # If it doesn't exist, add as is
                         if not found:
@@ -155,20 +157,32 @@ def main(argv):
                     
                         found = False
                         for host in all_hosts_overall:
+
+                            if host[1] == this_host[1]:
+                                # Check to see if the country / geo ip needs updating
+                                if host[2] != "None" and this_host[2] == "None":
+                                    this_host[2] = host[2]
+                                elif host[2] == "None" and this_host[2] != "None":
+                                    host[2] = this_host[2]
+
+                                if host[3] != "None" and this_host[3] == "None":
+                                    this_host[3] = host[3]
+                                elif host[3] == "None" and this_host[3] != "None":
+                                    host[3] = this_host[3]
                             
-                            # Check for equivelance in hostname and locations
-                            if host[1] == this_host[1] and host[2] == this_host[2] and host[3] == this_host[3]:
-                                found = True
-                                
-                                # Update IPs and counts
-                                host[0].append(this_host[0])
-                                host[4] += this_host[4]
-                                host[5] += this_host[5]
-                                host[6] += this_host[6]
-                                host[7] += this_host[7]
-                                host[8] += this_host[8]
-                                host[9] += this_host[9]
-                                host[10].append(file_name)
+                                # Check for equivelance in hostname and locations
+                                if host[2] == this_host[2] and host[3] == this_host[3]:
+                                    found = True
+                                    
+                                    # Update IPs and counts
+                                    host[0].append(this_host[0])
+                                    host[4] += this_host[4]
+                                    host[5] += this_host[5]
+                                    host[6] += this_host[6]
+                                    host[7] += this_host[7]
+                                    host[8] += this_host[8]
+                                    host[9] += this_host[9]
+                                    host[10].append(file_name)
 
                         # If it doesn't exist, add as is
                         if not found:
@@ -190,6 +204,10 @@ def main(argv):
             # Convert string array into a comma seperated list before writing
             known_host[0] = ",".join(known_host[0])
             known_host[10] = ",".join(known_host[10])
+
+            tokens = known_host[1].split(".")
+            known_host = known_host + tokens[::-1]
+
             writer.writerow(known_host)
 
 def is_dir(path):

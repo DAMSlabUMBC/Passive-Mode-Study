@@ -1,0 +1,128 @@
+IP, Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+23.200.87.150,*.akamai.net,France,US;US;US;US,34,20258,14,18548,20,1710
+23.210.249.137,*.akamai.net,France,US;US;US;US,34,20258,14,18548,20,1710
+52.222.169.67,*.api.amazonvideo.com,United States,US;US;US;US;US;US;US,30,17831,13,15838,17,1993
+44.203.165.173,*.us-*.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,55,21072,23,10634,32,10438
+34.192.183.83,*.us-*.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,49,18515,21,9520,28,8995
+34.252.29.56,*-appboot.netflix.com,Ireland,None,69,52140,28,20332,41,31808
+34.240.160.76,*-appboot.netflix.com,Ireland,None,63,51743,22,19936,41,31807
+52.17.126.117,*-appboot.netflix.com,Ireland,None,37,26235,15,10232,22,16003
+52.17.211.173,*-appboot.netflix.com,Ireland,None,28,25641,10,9902,18,15739
+52.212.197.118,*-appboot.netflix.com,Ireland,None,26,25509,12,10034,14,15475
+52.210.62.227,*-appboot.netflix.com,Ireland,None,24,25377,11,9968,13,15409
+142.250.179.78,android.clients.google.com,United States,US;US;US;BE;US,53,24348,25,19954,28,4394
+142.250.178.142,android.clients.google.com,United States,US;US;US;BE;US,53,24423,25,20029,28,4394
+142.250.74.238,android.clients.google.com,United States,US;US;US;BE;US,25,10896,11,9167,14,1729
+142.250.75.238,android.clients.google.com,United States,US;US;US;BE;US,24,10818,10,9101,14,1717
+142.250.178.138,android.googleapis.com,United States,US;US;US;BE;US,2612,1119797,1271,782807,1341,336990
+142.250.201.170,android.googleapis.com,United States,US;US;US;BE;US,2376,1217431,1137,865196,1239,352235
+142.250.179.106,android.googleapis.com,United States,US;US;US;BE;US,2057,919598,1014,653036,1043,266562
+142.250.75.234,android.googleapis.com,United States,US;US;US;BE;US,1824,735057,893,455483,931,279574
+172.217.18.202,android.googleapis.com,United States,US;US;US;BE;US,1160,420180,571,263917,589,156263
+216.58.215.42,android.googleapis.com,United States,US;US;US;BE;US,760,424639,353,342553,407,82086
+46.137.170.241,android.prod.cloud.netflix.com,Ireland,None,41,10627,19,6291,22,4336
+54.170.173.133,android.prod.cloud.netflix.com,Ireland,None,23,5509,11,3275,12,2234
+34.255.15.69,android.prod.cloud.netflix.com,Ireland,None,22,8086,10,5890,12,2196
+99.81.251.69,android.prod.cloud.netflix.com,Ireland,None,22,5443,10,3209,12,2234
+54.217.21.108,android.prod.cloud.netflix.com,Ireland,None,22,5443,10,3209,12,2234
+52.211.179.103,android.prod.cloud.netflix.com,Ireland,None,21,5381,10,3213,11,2168
+54.217.35.13,android.prod.cloud.netflix.com,Ireland,None,20,5315,9,3147,11,2168
+52.84.174.104,api.erabu.sony.tv,United States,US;US;US;US;US;US;US,184,50567,88,29241,96,21326
+13.224.68.118,api.erabu.sony.tv,United States,US;US;US;US;US;US;US,98,25432,52,14901,46,10531
+52.84.174.89,api.erabu.sony.tv,United States,US;US;US;US;US;US;US,94,25288,44,14493,50,10795
+18.239.69.44,api.erabu.sony.tv,United States,US;US;US;US;US;US;US,89,25206,44,14741,45,10465
+44.240.111.222,api.meta.ndmdhs.com,United States,BE;JP;BE;BE,35,8295,16,6210,19,2085
+44.225.84.51,api.meta.ndmdhs.com,United States,BE;JP;BE;BE,29,7899,15,6144,14,1755
+34.248.133.31,api-global.netflix.com,Ireland,US;US;US;US,130,116868,49,68025,81,48843
+34.240.52.30,api-global.netflix.com,Ireland,US;US;US;US,85,85640,34,72092,51,13548
+34.250.84.59,api-global.netflix.com,Ireland,US;US;US;US,81,79445,33,51983,48,27462
+52.49.41.243,api-global.netflix.com,Ireland,US;US;US;US,45,42900,20,36160,25,6740
+34.242.150.220,api-global.netflix.com,Ireland,US;US;US;US,43,42482,18,35741,25,6741
+52.210.63.192,api-global.netflix.com,Ireland,US;US;US;US,42,42461,16,35655,26,6806
+44.231.61.240,*-us*.amazon.com,United States,US;US;US;US;US;US;US,32,9034,16,6921,16,2113
+45.57.91.1,assets.nflxext.com,United States,None,779,1645806,334,1608590,445,37216
+18.196.27.158,*sonybraviareleasekeys.api.amazonvideo.com,Germany,US;US;US;US;US,28,13146,11,10664,17,2482
+50.112.17.37,*.ndmdhs.com,United States,BE;JP;BE;BE,20,7689,8,5182,12,2507
+13.32.145.49,*.ndmdhs.com,United States,BE;BE,25,8743,12,7219,13,1524
+13.32.145.58,*.ndmdhs.com,United States,BE;BE,24,8700,11,7176,13,1524
+13.224.68.66,*.ndmdhs.com,United States,BE;BE,23,8610,11,7152,12,1458
+13.32.145.21,cdn.meta.ndmdhs.com,United States,None,10,1394,5,768,5,626
+13.32.145.105,cdn.meta.ndmdhs.com,United States,None,10,1394,5,768,5,626
+142.250.201.174,clients.google.com,United States,US;US;US;BE;US,8960,7706279,3618,6420945,5342,1285334
+216.58.214.163,connectivitycheck.gstatic.com,United States,US;US;US;BE;US,8529,1844695,2939,579003,5590,1265692
+142.250.75.227,connectivitycheck.gstatic.com,United States,US;US;US;BE;US,5234,1152217,1811,379783,3423,772434
+34.195.175.66,device-metrics-us.amazon.com,United States,US;US;US;US;US,36,10958,16,6515,20,4443
+34.237.111.59,device-metrics-us.amazon.com,United States,None,22,5146,11,1152,11,3994
+8.8.8.8,dns.google,United States,None,650,100592,325,74182,325,26410
+216.239.38.57,fcm.googleapis.com,United States,None,1417,420029,634,299988,783,120041
+216.239.38.55,fcm.googleapis.com,United States,None,1287,380928,579,272226,708,108702
+216.239.36.55,fcm.googleapis.com,United States,None,1156,341966,516,244019,640,97947
+216.239.36.57,fcm.googleapis.com,United States,None,831,244213,373,174211,458,70002
+216.58.214.68,google.com,United States,US;US;US;BE;US,18,6430,7,5177,11,1253
+142.250.179.74,googleapis.com,United States,US;US;US;BE;US,2057,854235,1017,510242,1040,343993
+172.217.20.170,googleapis.com,United States,US;US;US;BE;US,1456,518445,732,315286,724,203159
+216.58.214.170,imasdk.googleapis.com,United States,US;US;US;BE;US,2984,1525818,1437,1138793,1547,387025
+52.11.230.198,log.core.cloud.vewd.com,United States,AT;US;AT;GB;US,59,16895,26,13063,33,3832
+52.30.55.190,logs.netflix.com,Ireland,None,1901,1286375,756,517551,1145,768824
+52.209.135.12,logs.netflix.com,Ireland,None,1704,1162468,676,466927,1028,695541
+52.16.177.193,logs.netflix.com,Ireland,None,1366,920425,544,375351,822,545074
+224.0.0.251,mdns.mcast.net,None,None,23083,5362511,0,0,23083,5362511
+52.222.174.123,metadata.erabu.sony.tv,United States,US;US;US;US;US;US;US,24,8750,10,7201,14,1549
+52.222.174.21,metadata.erabu.sony.tv,United States,US;US;US;US;US;US;US,23,8684,10,7201,13,1483
+52.222.174.103,metadata.erabu.sony.tv,United States,US;US;US;US;US;US;US,23,8684,10,7201,13,1483
+18.66.171.30,metadata.erabu.sony.tv,United States,US;US;US;US;US;US;US,23,8730,10,7247,13,1483
+18.239.69.3,metadata.erabu.sony.tv,United States,US;US;US;US;US;US;US,22,8664,10,7247,12,1417
+142.251.168.188,mtalk.google.com,United States,None,21424,1965863,12884,1131630,8540,834233
+64.233.167.188,mtalk.google.com,United States,None,1491,133363,889,74556,602,58807
+173.194.76.188,mtalk.google.com,United States,None,597,115532,300,91227,297,24305
+74.125.133.188,mtalk.google.com,United States,None,469,61958,208,40227,261,21731
+54.155.246.232,netflix.com,Ireland,None,111,34022,47,21031,64,12991
+3.251.50.149,netflix.com,Ireland,None,69,18946,32,11248,37,7698
+54.73.148.110,netflix.com,Ireland,None,44,12496,19,7343,25,5153
+54.74.73.31,netflix.com,Ireland,None,42,12365,18,7278,24,5087
+54.170.196.176,netflix.com,Ireland,None,42,12368,18,7278,24,5090
+52.214.181.141,netflix.com,Ireland,None,21,6187,9,3640,12,2547
+54.246.79.9,netflix.com,Ireland,None,21,6185,9,3640,12,2545
+54.155.178.5,netflix.com,Ireland,None,21,6185,9,3638,12,2547
+239.255.255.250,None,None,None,6816,2475344,0,0,6816,2475344
+192.168.231.171,None,None,None,2240,831075,525,43120,1715,787955
+192.168.231.108,None,None,None,2220,823055,525,43120,1695,779935
+192.168.231.1,None,None,None,654,170882,327,144306,327,26576
+fe80::66ff:aff:fe88:af4a,None,None,None,23078,5993467,23078,5993467,0,0
+ff02::fb,None,None,None,23078,5993467,0,0,23078,5993467
+fdc4:22e1:d5d::1,None,None,None,2468,688300,1234,563287,1234,125013
+fdc4:22e1:d5d:0:3545:ee40:6984:507e,None,None,None,836,234513,418,42534,418,191979
+fdc4:22e1:d5d:0:35d0:b757:86d6:c0ec,None,None,None,832,232370,416,42071,416,190299
+fdc4:22e1:d5d:0:57c:d141:6ee2:3389,None,None,None,800,221417,400,40408,400,181009
+54.73.99.78,nrdp-ipv6.prod.ftl.netflix.com,Ireland,None,379,219759,166,123580,213,96179
+54.228.171.0,nrdp-ipv6.prod.ftl.netflix.com,Ireland,None,344,228875,140,119735,204,109140
+3.248.68.85,nrdp-ipv6.prod.ftl.netflix.com,Ireland,None,287,155192,127,93890,160,61302
+63.35.92.152,nrdp-ipv6.prod.ftl.netflix.com,Ireland,None,241,147805,103,80994,138,66811
+54.75.143.18,nrdp-ipv6.prod.ftl.netflix.com,Ireland,None,238,151185,99,80946,139,70239
+176.34.214.23,nrdp-ipv6.prod.ftl.netflix.com,Ireland,None,224,139304,94,75832,130,63472
+34.252.142.55,nrdp-ipv6.prod.ftl.netflix.com,Ireland,None,214,106296,96,67455,118,38841
+54.220.170.166,nrdp-ipv6.prod.ftl.netflix.com,Ireland,None,178,118477,72,62247,106,56230
+3.248.72.3,nrdp-ipv6.prod.ftl.netflix.com,Ireland,None,168,79178,75,50456,93,28722
+54.77.110.160,nrdp-ipv6.prod.ftl.netflix.com,Ireland,None,141,74269,62,45554,79,28715
+54.155.136.132,nrdp-ipv6.prod.ftl.netflix.com,Ireland,None,126,65967,57,40735,69,25232
+54.195.14.93,nrdp-ipv6.prod.ftl.netflix.com,Ireland,None,125,90819,49,45066,76,45753
+216.58.214.74,play.googleapis.com,United States,US;US;US;BE;US,1308,653153,633,469645,675,183508
+216.58.213.74,play.googleapis.com,United States,US;US;US;BE;US,919,447199,449,321971,470,125228
+142.250.179.110,play.googleapis.com,United States,None,1134,713479,523,286282,611,427197
+63.35.126.25,preapp.prod.partner.netflix.net,Ireland,None,82,52064,39,37307,43,14757
+99.81.216.237,preapp.prod.partner.netflix.net,Ireland,None,78,52245,37,37620,41,14625
+52.214.249.246,preapp.prod.partner.netflix.net,Ireland,None,53,34534,25,24740,28,9794
+54.201.66.14,reg.biv.sony.tv,United States,US;US;US;US;US;US;US,21,8865,8,6994,13,1871
+45.57.90.1,secure.netflix.com,United States,None,3279,7030386,1434,6886092,1845,144294
+44.239.233.189,service.biv.sony.tv,United States,US;US;US;US;US;US;US,22,10035,8,7554,14,2481
+142.250.74.234,speechs3proto2-pa.googleapis.com,United States,US;US;US;BE;US,1003,311571,482,185295,521,126276
+52.25.158.229,*.internet.sony.tv,United States,US;US;US;US;US;US;US,24,10650,9,8631,15,2019
+104.84.81.161,*.internet.sony.tv,United Kingdom,None,14,5729,5,5011,9,718
+216.239.35.0,time.android.com,United States,None,2,180,1,90,1,90
+216.239.35.4,time.android.com,United States,None,2,180,1,90,1,90
+52.17.111.227,uiboot.netflix.com,Ireland,US;US;US;US,84,79848,35,52320,49,27528
+52.211.14.11,uiboot.netflix.com,Ireland,US;US;US;US,46,37307,18,16255,28,21052
+52.213.79.183,uiboot.netflix.com,Ireland,US;US;US;US,44,37271,17,16285,27,20986
+54.229.254.136,uiboot.netflix.com,Ireland,US;US;US;US,43,37201,17,16281,26,20920
+52.213.164.31,uiboot.netflix.com,Ireland,US;US;US;US,42,37086,15,16100,27,20986
+172.217.20.202,youtubei.googleapis.com,United States,US;US;US;BE;US,2391,822007,1197,479146,1194,342861

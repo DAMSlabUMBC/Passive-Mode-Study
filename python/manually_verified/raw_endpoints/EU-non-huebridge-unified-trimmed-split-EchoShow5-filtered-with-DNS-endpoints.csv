@@ -1,381 +1,380 @@
-IP, Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
-18.244.38.168,*.cloudfront.net,United States,US;US;US;US;US;US;US,4752,10240962,1925,9988197,2827,252765
-18.244.38.192,*.cloudfront.net,United States,US;US;US;US;US;US;US,4469,7631130,1461,7382904,3008,248226
-18.244.38.8,*.cloudfront.net,United States,US;US;US;US;US;US;US,2178,4102382,827,3983082,1351,119300
-18.244.38.32,*.cloudfront.net,United States,US;US;US;US;US;US;US,1115,3106872,678,3058442,437,48430
-18.244.38.214,*.cloudfront.net,United States,US;US;US;US;US;US;US,627,1414085,305,1390775,322,23310
-18.244.38.90,*.cloudfront.net,United States,US;US;US;US;US;US;US,559,1409610,307,1390908,252,18702
-3.162.40.176,*.cloudfront.net,United States,US;US;US;US;US;US;US,403,96032,196,66923,207,29109
-13.32.158.66,*.cloudfront.net,United States,US;US;US;US;US;US;US,335,549172,105,531221,230,17951
-3.162.40.105,*.cloudfront.net,United States,US;US;US;US;US;US;US,280,82105,134,62975,146,19130
-99.86.122.137,*.cloudfront.net,United States,US;US;US;US;US;US;US,63,19269,30,15132,33,4137
-54.192.219.143,*.cloudfront.net,United States,None,36,5594,20,2892,16,2702
-99.86.122.221,*.cloudfront.net,United States,None,35,5455,18,2699,17,2756
-52.222.196.206,*.cloudfront.net,United States,US;US;US;US;US;US;US,25,8590,11,7120,14,1470
-108.157.19.49,*.cloudfront.net,United States,US;US;US;US;US;US;US,24,8675,11,6925,13,1750
-54.192.219.13,*.cloudfront.net,United States,US;US;US;US;US;US;US,24,8383,11,6954,13,1429
-52.222.196.44,*.cloudfront.net,United States,US;US;US;US;US;US;US,23,8429,11,7091,12,1338
-18.66.212.125,*.cloudfront.net,United States,US;US;US;US;US;US;US,22,8222,10,6859,12,1363
-18.239.38.68,*.cloudfront.net,United States,US;US;US;US;US;US;US,21,8156,10,6859,11,1297
-99.86.122.86,*.cloudfront.net,United States,None,18,2761,9,1350,9,1411
-99.86.122.76,*.cloudfront.net,United States,None,17,2694,9,1349,8,1345
-52.222.149.14,*.cloudfront.net,United States,None,10,2127,4,1538,6,589
-52.222.149.109,*.cloudfront.net,United States,None,10,2127,4,1538,6,589
-52.222.149.17,*.cloudfront.net,United States,None,10,2127,4,1538,6,589
-18.239.83.38,*.cloudfront.net,United States,None,10,2127,4,1538,6,589
-18.66.171.34,*.cloudfront.net,United States,None,10,2127,4,1538,6,589
-46.17.65.37,2.android.pool.ntp.org,France,None,2,180,1,90,1,90
-51.68.44.27,2.android.pool.ntp.org,France,None,2,180,1,90,1,90
-72.44.62.198,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,357,298802,138,28962,219,269840
-18.205.100.7,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,266,170683,108,31039,158,139644
-52.7.205.185,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,261,192486,98,24350,163,168136
-3.218.205.64,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,245,184213,101,24945,144,159268
-52.4.158.24,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,237,170409,104,24676,133,145733
-54.174.80.13,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,227,166506,88,23608,139,142898
-3.225.242.163,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,225,157574,87,23039,138,134535
-3.232.13.221,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,215,164951,85,23398,130,141553
-3.213.195.62,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,169,135351,59,13548,110,121803
-23.20.118.44,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,156,118483,60,12585,96,105898
-54.86.203.154,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,142,103731,52,12560,90,91171
-52.203.138.223,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,137,93343,59,13081,78,80262
-52.1.173.208,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,135,98038,51,13044,84,84994
-54.205.113.109,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,134,92359,56,12569,78,79790
-100.26.14.217,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,132,99033,56,12333,76,86700
-54.84.214.32,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,126,91220,54,12775,72,78445
-44.207.176.59,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,125,90381,47,12313,78,78068
-54.91.3.155,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,124,87382,48,12331,76,75051
-54.235.158.5,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,124,84049,50,11925,74,72124
-44.203.165.173,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,123,94019,50,12463,73,81556
-3.222.86.36,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,122,80932,50,12463,72,68469
-34.198.66.232,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,121,88757,44,12067,77,76690
-34.230.181.204,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,120,84498,46,12199,74,72299
-52.4.100.208,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,119,90881,48,12343,71,78538
-34.199.95.114,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,118,85948,43,11475,75,74473
-35.153.45.34,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,117,88638,48,12331,69,76307
-50.16.101.24,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,117,81015,45,11619,72,69396
-35.168.38.187,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,117,78315,47,11739,70,66576
-50.16.128.54,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,116,83375,43,12013,73,71362
-23.20.243.43,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,116,87121,48,11793,68,75328
-44.213.25.251,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,116,90842,46,12235,70,78607
-18.205.85.213,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,116,85499,49,12445,67,73054
-34.192.115.84,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,116,89541,46,11661,70,77880
-18.211.103.112,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,116,75549,48,11793,68,63756
-23.20.115.129,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,115,78910,45,11607,70,67303
-3.81.247.209,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,115,92498,43,12013,72,80485
-54.209.4.131,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,115,82279,44,11576,71,70703
-54.173.198.118,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,115,87071,48,12331,67,74740
-3.212.241.87,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,115,80694,43,11463,72,69231
-3.220.58.223,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,114,78847,44,11529,70,67318
-54.88.199.193,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,114,81773,50,12475,64,69298
-52.207.128.220,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,113,82984,48,11793,65,71191
-23.22.68.51,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,113,90185,44,12079,69,78106
-52.203.21.18,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,113,85571,46,12211,67,73360
-52.72.185.78,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,111,79592,47,11727,64,67865
-3.211.164.164,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,111,80838,42,11444,69,69394
-35.171.72.122,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,111,79688,40,11277,71,68411
-34.226.182.0,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,111,80342,40,11265,71,69077
-18.208.88.131,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,111,79836,48,11864,63,67972
-107.23.108.62,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,111,84675,44,12067,67,72608
-3.226.173.58,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,110,76720,41,11343,69,65377
-3.222.71.134,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,110,85831,43,11522,67,74309
-23.22.199.21,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,110,79742,46,11661,64,68081
-3.82.137.139,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,110,80695,46,12211,64,68484
-52.204.137.63,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,109,80647,45,11595,64,69052
-52.21.200.178,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,107,74171,40,11265,67,62906
-3.224.93.55,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,106,75268,40,10774,66,64494
-107.23.153.61,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,106,83481,42,11935,64,71546
-3.217.74.251,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,104,74827,44,11529,60,63298
-18.214.77.14,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,104,73386,45,11116,59,62270
-34.195.136.47,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,104,76567,43,11463,61,65104
-3.229.211.131,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,103,75977,36,10510,67,65467
-54.235.163.0,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,95,71099,38,10642,57,60457
-3.219.130.117,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,30,11551,13,7519,17,4032
-34.228.94.124,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,29,11413,13,7519,16,3894
-44.217.141.182,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,28,11421,13,7519,15,3902
-34.224.55.49,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,26,11318,13,7519,13,3799
-44.205.200.128,*.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,26,11328,13,7519,13,3809
-52.214.227.89,alexa.eu.gateway.devices.a2z.com,Ireland,US;US;US;US;US;US;US,36181,26872181,19296,19154569,16885,7717612
-52.16.104.93,alexa.eu.gateway.devices.a2z.com,Ireland,US;US;US;US;US;US;US,23532,17655837,12356,12740787,11176,4915050
-18.203.57.224,alexa.eu.gateway.devices.a2z.com,Ireland,US;US;US;US;US;US;US,20333,14911590,10925,10656421,9408,4255169
-52.46.131.169,api.amazon.com,United States,US;US;US;US;US,137,62494,57,46494,80,16000
-209.54.180.27,api.amazon.com,United States,US;US;US;US;US,119,56556,49,36694,70,19862
-52.46.128.81,api.amazon.com,United States,US;US;US;US;US,86,39099,36,29079,50,10020
-52.94.231.169,api.amazon.com,United States,US;US;US;US;US,68,31236,28,23220,40,8016
-209.54.181.4,api.amazon.com,United States,US;US;US;US;US,53,27385,23,14402,30,12983
-209.54.179.88,api.amazon.com,United States,US;US;US;US;US,52,23481,22,17469,30,6012
-52.46.143.123,api.amazon.com,United States,US;US;US;US;US,51,23395,21,17415,30,5980
-209.54.181.98,api.amazon.com,United States,US;US;US;US;US,51,23427,21,17415,30,6012
-52.119.196.31,api.amazon.com,United States,US;US;US;US;US,36,15723,16,11747,20,3976
-209.54.178.166,api.amazon.com,United States,US;US;US;US;US,36,15755,16,11747,20,4008
-52.46.158.193,api.amazon.com,United States,US;US;US;US;US,35,15672,15,11664,20,4008
-52.119.198.189,api.amazon.com,United States,US;US;US;US;US,35,15701,15,11693,20,4008
-52.119.198.2,api.amazon.com,United States,US;US;US;US;US,35,15672,15,11664,20,4008
-52.119.198.101,api.amazon.com,United States,US;US;US;US;US,35,15672,15,11664,20,4008
-209.54.177.153,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
-52.94.240.240,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
-52.119.198.118,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
-209.54.178.134,api.amazon.com,United States,US;US;US;US;US,34,15586,14,11610,20,3976
-52.94.242.236,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
-209.54.180.44,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
-52.119.198.106,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
-72.21.207.143,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
-52.46.146.126,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
-209.54.180.25,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
-52.46.131.209,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
-209.54.178.164,api.amazon.com,United States,US;US;US;US;US,33,15564,13,11556,20,4008
-209.54.177.157,api.amazon.com,United States,US;US;US;US;US,18,7863,8,5859,10,2004
-209.54.177.117,api.amazon.com,United States,US;US;US;US;US,18,7863,8,5859,10,2004
-52.46.131.184,api.amazon.com,United States,US;US;US;US;US,18,7863,8,5859,10,2004
-52.119.198.109,api.amazon.com,United States,US;US;US;US;US,18,7863,8,5859,10,2004
-52.119.198.186,api.amazon.com,United States,US;US;US;US;US,17,7809,7,5805,10,2004
-209.54.177.114,api.amazon.com,United States,US;US;US;US;US,17,7809,7,5805,10,2004
-52.46.149.20,api.amazon.com,United States,US;US;US;US;US,17,7777,7,5805,10,1972
-209.54.177.154,api.amazon.com,United States,US;US;US;US;US,17,7809,7,5805,10,2004
-52.46.149.29,api.amazon.com,United States,US;US;US;US;US,17,7809,7,5805,10,2004
-52.94.241.146,api.amazon.com,United States,US;US;US;US;US,17,7809,7,5805,10,2004
-18.155.120.74,api.amazonalexa.com,United States,US;US;US;US;US;US;US,9574,3295708,4721,2656666,4853,639042
-18.66.164.76,api.amazonalexa.com,United States,US;US;US;US;US;US;US,1050,366373,525,296170,525,70203
-52.222.173.74,api.amazonalexa.com,United States,US;US;US;US;US;US;US,492,171721,242,138871,250,32850
-52.84.191.74,api.amazonalexa.com,United States,US;US;US;US;US;US;US,313,107670,154,87025,159,20645
-52.84.214.74,api.amazonalexa.com,United States,US;US;US;US;US;US;US,245,84891,123,68603,122,16288
-52.84.170.76,api.amazonalexa.com,United States,US;US;US;US;US;US;US,215,74448,105,60122,110,14326
-13.225.235.83,api.amazonalexa.com,United States,US;US;US;US;US;US;US,164,53772,78,42985,86,10787
-108.138.179.76,api.amazonalexa.com,United States,US;US;US;US;US;US;US,126,41403,63,33085,63,8318
-18.161.88.75,api.amazonalexa.com,United States,US;US;US;US;US;US;US,93,31885,48,25887,45,5998
-3.160.177.67,api.amazonalexa.com,United States,US;US;US;US;US;US;US,92,30298,45,24196,47,6102
-108.156.57.75,api.amazonalexa.com,United States,US;US;US;US;US;US;US,69,25363,36,19650,33,5713
-18.161.103.75,api.amazonalexa.com,United States,US;US;US;US;US;US;US,63,22644,31,18499,32,4145
-3.160.209.67,api.amazonalexa.com,United States,US;US;US;US;US;US;US,61,21900,32,18072,29,3828
-52.85.120.82,api.amazonalexa.com,United States,US;US;US;US;US;US;US,33,10816,16,8606,17,2210
-18.172.207.74,api.amazonalexa.com,United States,US;US;US;US;US;US;US,31,10624,16,8611,15,2013
-18.165.180.74,api.amazonalexa.com,United States,US;US;US;US;US;US;US,31,10682,15,8537,16,2145
-52.222.195.41,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,8297,1924419,4122,1209946,4175,714473
-18.66.165.150,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,868,200615,424,125549,444,75066
-54.192.217.204,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,366,87520,183,56922,183,30598
-108.138.181.195,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,136,28712,68,16815,68,11897
-18.155.130.184,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,82,24550,40,17680,42,6870
-13.225.233.147,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,81,18807,40,11893,41,6914
-18.172.210.181,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,59,15384,30,10525,29,4859
-18.239.32.55,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,45,12237,22,8640,23,3597
-18.161.234.211,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,30,9167,15,7166,15,2001
-3.162.41.56,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,24,9220,11,7221,13,1999
-100.21.0.103,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,980,265317,450,197858,530,67459
-52.36.138.241,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,976,268371,443,199785,533,68586
-35.164.182.2,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,687,191564,326,144696,361,46868
-54.187.92.102,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,597,164838,283,124263,314,40575
-52.11.127.249,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,495,136794,236,103562,259,33232
-52.37.30.201,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,490,136841,237,103631,253,33210
-44.228.215.143,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,459,127668,219,96573,240,31095
-44.226.67.213,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,456,128022,219,96577,237,31445
-52.42.206.78,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,455,127305,217,96445,238,30860
-44.231.61.240,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,427,119188,202,89594,225,29594
-54.70.5.180,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,423,118083,203,89651,220,28432
-35.161.96.40,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,398,109480,189,82862,209,26618
-35.167.225.196,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,391,109636,187,82730,204,26906
-34.210.228.239,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,360,100349,171,75809,189,24540
-44.225.45.107,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,332,91279,156,68956,176,22323
-54.68.57.171,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,330,91745,156,68954,174,22791
-52.27.163.92,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,329,91786,157,69022,172,22764
-35.166.62.210,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,324,90791,156,68954,168,21837
-52.39.190.49,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,296,80244,139,59894,157,20350
-44.240.184.205,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,294,81807,139,61964,155,19843
-44.227.96.221,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,265,73403,129,55440,136,17963
-54.71.86.13,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,264,73466,125,55177,139,18289
-44.234.113.198,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,261,72852,125,55175,136,17677
-35.155.9.57,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,254,71108,119,54356,135,16752
-54.201.253.231,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,230,63799,108,48189,122,15610
-52.95.119.232,cdws.eu-west-1.amazonaws.com,Ireland,US;US;US;US;US;US;US,17,7937,7,6360,10,1577
-91.203.187.32,crea.skyrock.net,France,US;US;US;US,198,186979,89,178179,109,8800
-3.162.40.170,*.cloudfront.net,United States,US;US;US;US;US;US;US,255,87669,116,71139,139,16530
-3.162.40.108,*.cloudfront.net,United States,US;US;US;US;US;US;US,207,46564,102,31385,105,15179
-44.215.143.151,dcape-na.amazon.com,United States,US;US;US;US;US,96,37484,39,23098,57,14386
-44.215.134.203,dcape-na.amazon.com,United States,US;US;US;US;US,24,9374,10,5794,14,3580
-44.215.132.72,dcape-na.amazon.com,United States,US;US;US;US;US,24,9374,10,5794,14,3580
-13.32.158.17,*.cloudfront.net,United States,US;US;US;US;US;US;US,161,287351,67,280316,94,7035
-52.54.36.84,det-ta-g7g.amazon.com,United States,US;US;US;US;US,107,40663,44,20892,63,19771
-18.234.8.50,det-ta-g7g.amazon.com,United States,US;US;US;US;US,58,23534,22,10446,36,13088
-34.195.16.139,det-ta-g7g.amazon.com,United States,US;US;US;US;US,31,15011,11,5223,20,9788
-176.32.101.46,device-messaging-na.amazon.com,United States,US;US;US;US;US;US;US,76,43060,32,20466,44,22594
-176.32.98.108,device-messaging-na.amazon.com,United States,US;US;US;US;US;US;US,60,34887,25,14525,35,20362
-3.232.127.207,device-metrics-us.amazon.com,United States,US;US;US;US;US,2558,2343599,885,83784,1673,2259815
-52.205.66.64,device-metrics-us.amazon.com,United States,US;US;US;US;US,1370,1192552,494,68991,876,1123561
-34.232.93.236,device-metrics-us.amazon.com,United States,US;US;US;US;US,1325,1150218,471,49800,854,1100418
-18.233.46.225,device-metrics-us.amazon.com,United States,US;US;US;US;US,1323,1210728,443,42777,880,1167951
-35.174.51.236,device-metrics-us.amazon.com,United States,US;US;US;US;US,1316,1187049,449,52245,867,1134804
-34.195.153.29,device-metrics-us.amazon.com,United States,US;US;US;US;US,1242,1155966,412,49140,830,1106826
-52.70.101.206,device-metrics-us.amazon.com,United States,US;US;US;US;US,1237,1123831,417,45360,820,1078471
-184.73.130.219,device-metrics-us.amazon.com,United States,US;US;US;US;US,183,61799,86,26376,97,35423
-3.220.182.54,device-metrics-us.amazon.com,United States,US;US;US;US;US,179,64787,84,12760,95,52027
-3.208.140.212,device-metrics-us.amazon.com,United States,US;US;US;US;US,155,51723,72,20490,83,31233
-52.73.50.224,device-metrics-us.amazon.com,United States,US;US;US;US;US,141,44653,69,11220,72,33433
-3.237.53.195,device-metrics-us.amazon.com,United States,US;US;US;US;US,132,44878,60,23757,72,21121
-44.197.43.221,device-metrics-us.amazon.com,United States,US;US;US;US;US,129,49743,61,10266,68,39477
-54.161.84.13,device-metrics-us.amazon.com,United States,US;US;US;US;US,121,41864,56,14472,65,27392
-3.234.165.228,device-metrics-us.amazon.com,United States,US;US;US;US;US,95,33114,43,17724,52,15390
-54.226.11.35,device-metrics-us.amazon.com,United States,US;US;US;US;US,90,31756,43,8652,47,23104
-54.209.44.8,device-metrics-us.amazon.com,United States,US;US;US;US;US,90,30150,42,13122,48,17028
-3.212.205.83,device-metrics-us.amazon.com,United States,US;US;US;US;US,90,30946,41,13005,49,17941
-3.226.196.104,device-metrics-us.amazon.com,United States,US;US;US;US;US,88,33562,40,8454,48,25108
-52.204.152.47,device-metrics-us.amazon.com,United States,US;US;US;US;US,84,27189,40,8454,44,18735
-54.166.101.241,device-metrics-us.amazon.com,United States,US;US;US;US;US,60,22286,27,7170,33,15116
-34.192.154.181,device-metrics-us.amazon.com,United States,None,55,18158,26,2568,29,15590
-52.1.172.87,device-metrics-us.amazon.com,United States,US;US;US;US;US,36,12714,17,6084,19,6630
-3.224.166.115,device-metrics-us.amazon.com,United States,US;US;US;US;US,34,12597,15,5952,19,6645
-34.239.216.180,device-metrics-us.amazon.com,United States,None,22,3895,11,1152,11,2743
-34.117.13.189,discovery.meethue.com,United States,US;US;US;BE;US,118,36682,46,27942,72,8740
-52.46.144.82,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,59,32767,24,23036,35,9731
-52.46.141.136,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,59,32794,26,23203,33,9591
-209.54.177.132,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,58,32681,23,22982,35,9699
-52.46.155.116,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,58,32739,25,23148,33,9591
-209.54.181.97,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,57,32628,22,22929,35,9699
-209.54.181.78,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,41,21942,19,15548,22,6394
-209.54.180.131,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,40,21889,16,15387,24,6502
-209.54.177.232,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,20,10930,9,7733,11,3197
-209.54.181.86,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,18,10822,7,7625,11,3197
-209.54.177.222,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,18,10822,7,7625,11,3197
-44.215.133.95,dss-na.amazon.com,United States,US;US;US;US;US;US;US,43,17250,17,13010,26,4240
-44.215.129.169,dss-na.amazon.com,United States,US;US;US;US;US;US;US,22,8658,9,6538,13,2120
-50.19.109.159,*.compute-1.amazonaws.com.,United States,None,8472,738928,2854,275443,5618,463485
-54.246.178.107,fls-eu.amazon.com,Ireland,US;US;US;US;US;US;US,68,16741,30,9123,38,7618
-63.34.107.182,fls-eu.amazon.com,Ireland,US;US;US;US;US;US;US,50,14381,21,8193,29,6188
-54.73.54.181,fls-eu.amazon.com,Ireland,US;US;US;US;US;US;US,46,14115,19,8059,27,6056
-3.91.171.220,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,103,35781,46,22246,57,13535
-3.227.250.160,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,76,23961,34,15104,42,8857
-3.91.171.244,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,75,23745,33,15038,42,8707
-3.227.250.208,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,73,24260,31,14906,42,9354
-3.91.171.231,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,72,23926,31,14906,41,9020
-3.227.250.254,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,72,24140,31,14906,41,9234
-3.91.171.240,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,69,23531,32,14972,37,8559
-3.227.250.251,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,69,23942,31,14906,38,9036
-3.91.171.248,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,39,11837,17,7564,22,4273
-3.91.171.251,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,38,12202,17,7552,21,4650
-3.91.171.221,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,38,12384,16,7486,22,4898
-3.91.171.237,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,38,11657,17,7552,21,4105
-3.227.250.176,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,38,12020,17,7552,21,4468
-3.227.250.213,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,38,12074,17,7552,21,4522
-3.91.171.149,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,37,12116,16,7498,21,4618
-3.227.250.255,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,37,12286,16,7486,21,4800
-3.237.107.6,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,37,11954,16,7486,21,4468
-3.91.171.153,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,37,12040,16,7486,21,4554
-3.227.250.150,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,37,12040,17,7552,20,4488
-3.91.171.229,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,11671,16,7498,20,4173
-3.91.171.151,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,12070,15,7420,21,4650
-3.227.250.205,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,12070,15,7420,21,4650
-3.91.171.238,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,12220,15,7420,21,4800
-3.227.250.225,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,12252,18,7618,18,4634
-3.227.250.203,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,11856,16,7486,20,4370
-3.91.171.128,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,11888,16,7486,20,4402
-3.227.250.197,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,11856,16,7486,20,4370
-3.227.250.195,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,11888,16,7486,20,4402
-3.227.250.215,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,11942,15,7420,21,4522
-3.227.250.219,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,35,11561,15,7420,20,4141
-3.227.250.136,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,35,12186,14,7354,21,4832
-3.91.171.249,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,35,12186,14,7354,21,4832
-3.227.250.142,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,35,11392,18,7538,17,3854
-3.91.171.216,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,35,11876,14,7354,21,4522
-3.227.250.201,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,34,11527,14,7354,20,4173
-3.91.171.131,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,34,11938,17,7552,17,4386
-3.91.171.156,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,34,11425,17,7552,17,3873
-3.227.250.193,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,34,11756,17,7552,17,4204
-3.227.250.154,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,33,11461,16,7486,17,3975
-3.91.171.242,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,33,11872,15,7420,18,4452
-3.227.250.220,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,33,11872,15,7420,18,4452
-3.227.250.129,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,33,11359,16,7486,17,3873
-3.227.250.191,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,33,11690,16,7486,17,4204
-3.227.250.224,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,33,11690,16,7486,17,4204
-3.227.250.138,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,33,11690,16,7486,17,4204
-3.227.250.162,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,32,11806,14,7354,18,4452
-146.75.73.16,m.media-amazon.com,United Kingdom,US;US;US;US;US,2110,2190518,757,2078527,1353,111991
-52.222.166.183,m.media-amazon.com,United States,US;US;US;US;US,1077,1470204,359,1412436,718,57768
-18.155.122.209,m.media-amazon.com,United States,US;US;US;US;US,655,825154,202,784920,453,40234
-23.200.86.234,m.media-amazon.com,France,US;US;US;US,561,796919,177,766224,384,30695
-52.222.199.122,m.media-amazon.com,United States,US;US;US;US;US,219,230910,53,217447,166,13463
-18.244.31.175,m.media-amazon.com,United States,US;US;US;US;US,129,153007,40,145177,89,7830
-99.86.127.71,m.media-amazon.com,United States,US;US;US;US;US,75,82638,35,78042,40,4596
-52.84.180.239,m.media-amazon.com,United States,US;US;US;US;US,54,62846,23,59938,31,2908
-3.253.167.59,mas-ext-eu.amazon.com,Ireland,US;US;US;US;US,116,55126,43,35039,73,20087
-3.253.180.77,mas-ext-eu.amazon.com,Ireland,US;US;US;US;US,65,34026,28,25546,37,8480
-3.253.183.190,mas-ext-eu.amazon.com,Ireland,US;US;US;US;US,44,19205,16,11232,28,7973
-44.215.141.160,mas-sdk.amazon.com,United States,US;US;US;US;US;US;US,72,56362,32,47536,40,8826
-44.215.134.100,mas-sdk.amazon.com,United States,US;US;US;US;US;US;US,70,56297,30,47471,40,8826
-44.215.116.69,mas-sdk.amazon.com,United States,US;US;US;US;US;US;US,38,28264,18,23851,20,4413
-224.0.0.251,mdns.mcast.net.,None,None,5377,566573,0,0,5377,566573
-3.224.165.251,mmechocaptiveportal.com,United States,None,583,57444,293,27400,290,30044
-54.85.152.119,mmechocaptiveportal.com,United States,None,510,50337,255,23919,255,26418
-3.230.52.81,mmechocaptiveportal.com,United States,None,508,50217,254,23865,254,26352
-52.4.83.157,mmechocaptiveportal.com,United States,None,502,49482,252,23582,250,25900
-34.194.238.19,mmechocaptiveportal.com,United States,None,413,40665,208,19427,205,21238
-52.2.141.51,mmechocaptiveportal.com,United States,None,411,40533,206,19295,205,21238
-34.233.144.239,mmechocaptiveportal.com,United States,None,402,39612,202,18892,200,20720
-34.229.36.20,mmechocaptiveportal.com,United States,None,401,39546,201,18826,200,20720
-18.205.164.137,mmechocaptiveportal.com,United States,None,371,36585,186,17419,185,19166
-34.192.108.184,mmechocaptiveportal.com,United States,None,280,27636,140,13132,140,14504
-52.204.151.135,mmechocaptiveportal.com,United States,None,260,25662,130,12194,130,13468
-3.225.54.172,mmechocaptiveportal.com,United States,None,250,24675,125,11725,125,12950
-3.82.72.168,mmechocaptiveportal.com,United States,None,240,23688,120,11256,120,12432
-44.194.74.27,mmechocaptiveportal.com,United States,None,231,22767,116,10853,115,11914
-54.83.51.141,mmechocaptiveportal.com,United States,None,221,21780,111,10384,110,11396
-44.208.95.157,mmechocaptiveportal.com,United States,None,210,20727,105,9849,105,10878
-52.203.71.253,mmechocaptiveportal.com,United States,None,201,19806,101,9446,100,10360
-52.71.65.85,mmechocaptiveportal.com,United States,None,200,19740,100,9380,100,10360
-18.214.139.29,mmechocaptiveportal.com,United States,None,200,19740,100,9380,100,10360
-3.217.92.140,mmechocaptiveportal.com,United States,None,191,18819,96,8977,95,9842
-3.231.62.225,mmechocaptiveportal.com,United States,None,173,16965,87,8093,86,8872
-44.196.234.91,mmechocaptiveportal.com,United States,None,170,16779,85,7973,85,8806
-52.205.114.27,mmechocaptiveportal.com,United States,None,170,16779,85,7973,85,8806
-54.92.225.161,mmechocaptiveportal.com,United States,None,161,15858,81,7570,80,8288
-3.86.169.245,mmechocaptiveportal.com,United States,None,161,15858,81,7570,80,8288
-34.195.177.5,mmechocaptiveportal.com,United States,None,150,14805,75,7035,75,7770
-54.85.204.168,mmechocaptiveportal.com,United States,None,141,13884,71,6632,70,7252
-3.225.72.132,mmechocaptiveportal.com,United States,None,140,13818,70,6566,70,7252
-18.205.231.10,mmechocaptiveportal.com,United States,None,140,13818,70,6566,70,7252
-52.72.41.104,mmechocaptiveportal.com,United States,None,140,13818,70,6566,70,7252
-18.235.193.42,mmechocaptiveportal.com,United States,None,130,12831,65,6097,65,6734
-3.209.29.35,mmechocaptiveportal.com,United States,None,130,12831,65,6097,65,6734
-3.230.12.18,mmechocaptiveportal.com,United States,None,120,11844,60,5628,60,6216
-3.141.203.230,mmechocaptiveportal.com,United States,None,10,987,5,469,5,518
-18.223.183.157,mmechocaptiveportal.com,United States,None,10,987,5,469,5,518
-54.239.35.211,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,285,143578,117,107886,168,35692
-52.95.124.103,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,283,147358,115,109963,168,37395
-52.95.125.12,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,261,137693,105,103917,156,33776
-52.94.217.61,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,245,128443,99,96747,146,31696
-52.95.123.112,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,244,125628,100,94989,144,30639
-52.94.220.255,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,243,135761,102,100899,141,34862
-52.95.123.17,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,204,108854,84,79524,120,29330
-54.239.33.155,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,183,94658,74,71491,109,23167
-54.239.35.210,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,165,84340,68,64082,97,20258
-52.95.127.117,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,161,83565,67,63150,94,20415
-52.95.126.126,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,132,67722,55,49520,77,18202
-52.94.218.244,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,122,61981,50,46775,72,15206
-67.220.240.92,msh.amazon.com,United States,US;US;US;US;US;US;US,23,11009,10,9025,13,1984
-67.220.240.35,msh.amazon.com,United States,US;US;US;US;US;US;US,22,10984,9,9000,13,1984
-52.46.128.80,msh.amazon.com,United States,US;US;US;US;US;US;US,22,10955,9,8971,13,1984
-52.46.137.255,msh.amazon.com,United States,US;US;US;US;US;US;US,22,10984,9,9000,13,1984
-209.54.183.177,msh.amazon.com,United States,US;US;US;US;US;US;US,21,10930,8,8946,13,1984
-52.46.131.168,msh.amazon.com,United States,US;US;US;US;US;US;US,21,10901,8,8917,13,1984
-192.168.231.108,None,None,None,1156003,92917093,565513,38011373,590490,54905720
-192.168.231.112,None,None,None,6955,934749,2905,680274,4050,254475
-192.168.1.11,None,None,None,5340,341760,2670,144180,2670,197580
-192.168.231.1,None,None,None,5096,1064009,2548,847862,2548,216147
-239.255.255.250,None,None,None,3723,1371948,0,0,3723,1371948
-192.168.1.2,None,None,None,3559,227766,1780,96120,1779,131646
-192.168.231.176,None,None,None,2240,831075,1715,787955,525,43120
-255.255.255.255,None,None,None,315,23100,0,0,315,23100
-192.168.231.200,None,None,None,67,71221,67,71221,0,0
-fe80::42a2:dbff:fe2c:8a68,None,None,None,193,19035,193,19035,0,0
-ff02::fb,None,None,None,193,19035,0,0,193,19035
-3.214.58.173,ntp-g7g.amazon.com,United States,None,6,540,3,270,3,270
-52.203.151.208,ntp-g7g.amazon.com,United States,None,4,360,2,180,2,180
-34.226.24.249,ntp-g7g.amazon.com,United States,None,4,360,2,180,2,180
-34.236.6.206,ntp-g7g.amazon.com,United States,None,2,180,1,90,1,90
-18.244.28.13,prod.amazoncrl.com,United States,None,10,2116,4,1538,6,578
-18.244.28.32,prod.amazoncrl.com,United States,None,10,2116,4,1538,6,578
-18.244.28.93,prod.amazoncrl.com,United States,None,10,2116,4,1538,6,578
-18.239.50.119,prod.amazoncrl.com,United States,None,10,2116,4,1538,6,578
-13.224.68.3,prod.amazoncrl.com,United States,None,10,2115,4,1537,6,578
-44.215.142.74,softwareupdates.amazon.com,United States,US;US;US;US;US,86,65788,28,12101,58,53687
-44.215.114.101,softwareupdates.amazon.com,United States,US;US;US;US;US,42,32858,12,5933,30,26925
-44.215.115.210,todo-ta-g7g.amazon.com,United States,US;US;US;US;US,87,45823,34,17437,53,28386
-52.46.145.112,unagi-na.amazon.com,United States,US;US;US;US;US;US;US,23,11789,9,6643,14,5146
-13.249.9.70,wl.amazon-dss.com,United States,US;US;US;US;US;US;US,67,18339,32,14534,35,3805
-13.249.9.114,wl.amazon-dss.com,United States,US;US;US;US;US;US;US,35,9319,16,7302,19,2017
+IP, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+192.168.231.108,None,None,None,None,1156003,92917093,565513,38011373,590490,54905720
+52.214.227.89,alexa.eu.gateway.devices.a2z.com,alexa.eu.gateway.devices.a2z.com,Ireland,US;US;US;US;US;US;US,36181,26872181,19296,19154569,16885,7717612
+52.16.104.93,alexa.eu.gateway.devices.a2z.com,alexa.eu.gateway.devices.a2z.com,Ireland,US;US;US;US;US;US;US,23532,17655837,12356,12740787,11176,4915050
+18.203.57.224,alexa.eu.gateway.devices.a2z.com,alexa.eu.gateway.devices.a2z.com,Ireland,US;US;US;US;US;US;US,20333,14911590,10925,10656421,9408,4255169
+18.155.120.74,api.amazonalexa.com,api.amazonalexa.com,United States,US;US;US;US;US;US;US,9574,3295708,4721,2656666,4853,639042
+50.19.109.159,ec2-50-19-109-159.compute-1.amazonaws.com.,ec2-50-19-109-159.compute-1.amazonaws.com.,United States,None,8472,738928,2854,275443,5618,463485
+52.222.195.41,api.eu.amazonalexa.com,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,8297,1924419,4122,1209946,4175,714473
+192.168.231.112,None,None,None,None,6955,934749,2905,680274,4050,254475
+224.0.0.251,mdns.mcast.net.,mdns.mcast.net.,None,None,5377,566573,0,0,5377,566573
+192.168.1.11,None,None,None,None,5340,341760,2670,144180,2670,197580
+18.244.38.168,d1cg7g7aedi1wy.cloudfront.net,d1cg7g7aedi1wy.cloudfront.net,United States,US;US;US;US;US;US;US,4752,10240962,1925,9988197,2827,252765
+18.244.38.192,d1cg7g7aedi1wy.cloudfront.net,d1cg7g7aedi1wy.cloudfront.net,United States,US;US;US;US;US;US;US,4469,7631130,1461,7382904,3008,248226
+239.255.255.250,None,None,None,None,3723,1371948,0,0,3723,1371948
+192.168.1.2,None,None,None,None,3559,227766,1780,96120,1779,131646
+3.232.127.207,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,2558,2343599,885,83784,1673,2259815
+192.168.231.176,None,None,None,None,2240,831075,1715,787955,525,43120
+18.244.38.8,d1cg7g7aedi1wy.cloudfront.net,d1cg7g7aedi1wy.cloudfront.net,United States,US;US;US;US;US;US;US,2178,4102382,827,3983082,1351,119300
+146.75.73.16,m.media-amazon.com,m.media-amazon.com,United Kingdom,US;US;US;US;US,2110,2190518,757,2078527,1353,111991
+52.205.66.64,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,1370,1192552,494,68991,876,1123561
+34.232.93.236,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,1325,1150218,471,49800,854,1100418
+18.233.46.225,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,1323,1210728,443,42777,880,1167951
+35.174.51.236,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,1316,1187049,449,52245,867,1134804
+34.195.153.29,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,1242,1155966,412,49140,830,1106826
+52.70.101.206,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,1237,1123831,417,45360,820,1078471
+18.244.38.32,d1cg7g7aedi1wy.cloudfront.net,d1cg7g7aedi1wy.cloudfront.net,United States,US;US;US;US;US;US;US,1115,3106872,678,3058442,437,48430
+52.222.166.183,m.media-amazon.com,m.media-amazon.com,United States,US;US;US;US;US,1077,1470204,359,1412436,718,57768
+18.66.164.76,api.amazonalexa.com,api.amazonalexa.com,United States,US;US;US;US;US;US;US,1050,366373,525,296170,525,70203
+100.21.0.103,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,980,265317,450,197858,530,67459
+52.36.138.241,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,976,268371,443,199785,533,68586
+18.66.165.150,api.eu.amazonalexa.com,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,868,200615,424,125549,444,75066
+35.164.182.2,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,687,191564,326,144696,361,46868
+18.155.122.209,m.media-amazon.com,m.media-amazon.com,United States,US;US;US;US;US,655,825154,202,784920,453,40234
+18.244.38.214,d1x3l8x81otpfy.cloudfront.net,d1x3l8x81otpfy.cloudfront.net,United States,US;US;US;US;US;US;US,627,1414085,305,1390775,322,23310
+54.187.92.102,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,597,164838,283,124263,314,40575
+3.224.165.251,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,583,57444,293,27400,290,30044
+23.200.86.234,m.media-amazon.com,m.media-amazon.com,France,US;US;US;US,561,796919,177,766224,384,30695
+18.244.38.90,d1x3l8x81otpfy.cloudfront.net,d1x3l8x81otpfy.cloudfront.net,United States,US;US;US;US;US;US;US,559,1409610,307,1390908,252,18702
+54.85.152.119,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,510,50337,255,23919,255,26418
+3.230.52.81,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,508,50217,254,23865,254,26352
+52.4.83.157,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,502,49482,252,23582,250,25900
+52.11.127.249,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,495,136794,236,103562,259,33232
+52.222.173.74,api.amazonalexa.com,api.amazonalexa.com,United States,US;US;US;US;US;US;US,492,171721,242,138871,250,32850
+52.37.30.201,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,490,136841,237,103631,253,33210
+44.228.215.143,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,459,127668,219,96573,240,31095
+44.226.67.213,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,456,128022,219,96577,237,31445
+52.42.206.78,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,455,127305,217,96445,238,30860
+44.231.61.240,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,427,119188,202,89594,225,29594
+54.70.5.180,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,423,118083,203,89651,220,28432
+34.194.238.19,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,413,40665,208,19427,205,21238
+52.2.141.51,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,411,40533,206,19295,205,21238
+3.162.40.176,d2j591w8i2c22l.cloudfront.net,d2j591w8i2c22l.cloudfront.net,United States,US;US;US;US;US;US;US,403,96032,196,66923,207,29109
+34.233.144.239,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,402,39612,202,18892,200,20720
+34.229.36.20,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,401,39546,201,18826,200,20720
+35.161.96.40,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,398,109480,189,82862,209,26618
+35.167.225.196,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,391,109636,187,82730,204,26906
+18.205.164.137,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,371,36585,186,17419,185,19166
+54.192.217.204,api.eu.amazonalexa.com,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,366,87520,183,56922,183,30598
+34.210.228.239,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,360,100349,171,75809,189,24540
+72.44.62.198,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,357,298802,138,28962,219,269840
+13.32.158.66,detdl4ibj4fur.cloudfront.net,detdl4ibj4fur.cloudfront.net,United States,US;US;US;US;US;US;US,335,549172,105,531221,230,17951
+44.225.45.107,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,332,91279,156,68956,176,22323
+54.68.57.171,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,330,91745,156,68954,174,22791
+52.27.163.92,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,329,91786,157,69022,172,22764
+35.166.62.210,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,324,90791,156,68954,168,21837
+255.255.255.255,None,None,None,None,315,23100,0,0,315,23100
+52.84.191.74,api.amazonalexa.com,api.amazonalexa.com,United States,US;US;US;US;US;US;US,313,107670,154,87025,159,20645
+52.39.190.49,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,296,80244,139,59894,157,20350
+44.240.184.205,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,294,81807,139,61964,155,19843
+54.239.35.211,msh.amazon.co.uk,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,285,143578,117,107886,168,35692
+52.95.124.103,msh.amazon.co.uk,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,283,147358,115,109963,168,37395
+34.192.108.184,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,280,27636,140,13132,140,14504
+3.162.40.105,d2j591w8i2c22l.cloudfront.net,d2j591w8i2c22l.cloudfront.net,United States,US;US;US;US;US;US;US,280,82105,134,62975,146,19130
+18.205.100.7,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,266,170683,108,31039,158,139644
+44.227.96.221,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,265,73403,129,55440,136,17963
+54.71.86.13,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,264,73466,125,55177,139,18289
+52.7.205.185,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,261,192486,98,24350,163,168136
+52.95.125.12,msh.amazon.co.uk,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,261,137693,105,103917,156,33776
+44.234.113.198,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,261,72852,125,55175,136,17677
+52.204.151.135,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,260,25662,130,12194,130,13468
+3.162.40.170,d2j591w8i2c22l.cloudfront.net,d2j591w8i2c22l.cloudfront.net,United States,US;US;US;US;US;US;US,255,87669,116,71139,139,16530
+35.155.9.57,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,254,71108,119,54356,135,16752
+3.225.54.172,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,250,24675,125,11725,125,12950
+52.94.217.61,msh.amazon.co.uk,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,245,128443,99,96747,146,31696
+3.218.205.64,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,245,184213,101,24945,144,159268
+52.84.214.74,api.amazonalexa.com,api.amazonalexa.com,United States,US;US;US;US;US;US;US,245,84891,123,68603,122,16288
+52.95.123.112,msh.amazon.co.uk,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,244,125628,100,94989,144,30639
+52.94.220.255,msh.amazon.co.uk,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,243,135761,102,100899,141,34862
+3.82.72.168,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,240,23688,120,11256,120,12432
+52.4.158.24,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,237,170409,104,24676,133,145733
+44.194.74.27,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,231,22767,116,10853,115,11914
+54.201.253.231,arcus-uswest.amazon.com,arcus-uswest.amazon.com,United States,US;US;US;US;US;US;US,230,63799,108,48189,122,15610
+54.174.80.13,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,227,166506,88,23608,139,142898
+3.225.242.163,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,225,157574,87,23039,138,134535
+54.83.51.141,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,221,21780,111,10384,110,11396
+52.222.199.122,m.media-amazon.com,m.media-amazon.com,United States,US;US;US;US;US,219,230910,53,217447,166,13463
+3.232.13.221,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,215,164951,85,23398,130,141553
+52.84.170.76,api.amazonalexa.com,api.amazonalexa.com,United States,US;US;US;US;US;US;US,215,74448,105,60122,110,14326
+44.208.95.157,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,210,20727,105,9849,105,10878
+3.162.40.108,d2j591w8i2c22l.cloudfront.net,d2j591w8i2c22l.cloudfront.net,United States,US;US;US;US;US;US;US,207,46564,102,31385,105,15179
+52.95.123.17,msh.amazon.co.uk,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,204,108854,84,79524,120,29330
+52.203.71.253,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,201,19806,101,9446,100,10360
+52.71.65.85,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,200,19740,100,9380,100,10360
+18.214.139.29,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,200,19740,100,9380,100,10360
+91.203.187.32,crea.skyrock.net,crea.skyrock.net,France,US;US;US;US,198,186979,89,178179,109,8800
+3.217.92.140,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,191,18819,96,8977,95,9842
+184.73.130.219,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,183,61799,86,26376,97,35423
+54.239.33.155,msh.amazon.co.uk,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,183,94658,74,71491,109,23167
+3.220.182.54,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,179,64787,84,12760,95,52027
+3.231.62.225,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,173,16965,87,8093,86,8872
+44.196.234.91,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,170,16779,85,7973,85,8806
+52.205.114.27,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,170,16779,85,7973,85,8806
+3.213.195.62,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,169,135351,59,13548,110,121803
+54.239.35.210,msh.amazon.co.uk,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,165,84340,68,64082,97,20258
+13.225.235.83,api.amazonalexa.com,api.amazonalexa.com,United States,US;US;US;US;US;US;US,164,53772,78,42985,86,10787
+54.92.225.161,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,161,15858,81,7570,80,8288
+3.86.169.245,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,161,15858,81,7570,80,8288
+52.95.127.117,msh.amazon.co.uk,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,161,83565,67,63150,94,20415
+13.32.158.17,detdl4ibj4fur.cloudfront.net,detdl4ibj4fur.cloudfront.net,United States,US;US;US;US;US;US;US,161,287351,67,280316,94,7035
+23.20.118.44,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,156,118483,60,12585,96,105898
+3.208.140.212,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,155,51723,72,20490,83,31233
+34.195.177.5,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,150,14805,75,7035,75,7770
+54.86.203.154,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,142,103731,52,12560,90,91171
+54.85.204.168,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,141,13884,71,6632,70,7252
+52.73.50.224,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,141,44653,69,11220,72,33433
+3.225.72.132,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,140,13818,70,6566,70,7252
+18.205.231.10,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,140,13818,70,6566,70,7252
+52.72.41.104,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,140,13818,70,6566,70,7252
+52.46.131.169,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,137,62494,57,46494,80,16000
+52.203.138.223,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,137,93343,59,13081,78,80262
+108.138.181.195,api.eu.amazonalexa.com,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,136,28712,68,16815,68,11897
+52.1.173.208,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,135,98038,51,13044,84,84994
+54.205.113.109,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,134,92359,56,12569,78,79790
+52.95.126.126,msh.amazon.co.uk,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,132,67722,55,49520,77,18202
+3.237.53.195,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,132,44878,60,23757,72,21121
+100.26.14.217,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,132,99033,56,12333,76,86700
+18.235.193.42,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,130,12831,65,6097,65,6734
+3.209.29.35,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,130,12831,65,6097,65,6734
+44.197.43.221,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,129,49743,61,10266,68,39477
+18.244.31.175,m.media-amazon.com,m.media-amazon.com,United States,US;US;US;US;US,129,153007,40,145177,89,7830
+54.84.214.32,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,126,91220,54,12775,72,78445
+108.138.179.76,api.amazonalexa.com,api.amazonalexa.com,United States,US;US;US;US;US;US;US,126,41403,63,33085,63,8318
+44.207.176.59,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,125,90381,47,12313,78,78068
+54.91.3.155,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,124,87382,48,12331,76,75051
+54.235.158.5,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,124,84049,50,11925,74,72124
+44.203.165.173,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,123,94019,50,12463,73,81556
+52.94.218.244,msh.amazon.co.uk,msh.amazon.co.uk,Ireland,US;US;US;US;US;US;US,122,61981,50,46775,72,15206
+3.222.86.36,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,122,80932,50,12463,72,68469
+54.161.84.13,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,121,41864,56,14472,65,27392
+34.198.66.232,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,121,88757,44,12067,77,76690
+3.230.12.18,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,120,11844,60,5628,60,6216
+34.230.181.204,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,120,84498,46,12199,74,72299
+209.54.180.27,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,119,56556,49,36694,70,19862
+52.4.100.208,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,119,90881,48,12343,71,78538
+34.117.13.189,discovery.meethue.com,discovery.meethue.com,United States,US;US;US;BE;US,118,36682,46,27942,72,8740
+34.199.95.114,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,118,85948,43,11475,75,74473
+35.153.45.34,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,117,88638,48,12331,69,76307
+50.16.101.24,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,117,81015,45,11619,72,69396
+35.168.38.187,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,117,78315,47,11739,70,66576
+50.16.128.54,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,116,83375,43,12013,73,71362
+23.20.243.43,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,116,87121,48,11793,68,75328
+44.213.25.251,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,116,90842,46,12235,70,78607
+3.253.167.59,mas-ext-eu.amazon.com,mas-ext-eu.amazon.com,Ireland,US;US;US;US;US,116,55126,43,35039,73,20087
+18.205.85.213,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,116,85499,49,12445,67,73054
+34.192.115.84,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,116,89541,46,11661,70,77880
+18.211.103.112,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,116,75549,48,11793,68,63756
+23.20.115.129,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,115,78910,45,11607,70,67303
+3.81.247.209,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,115,92498,43,12013,72,80485
+54.209.4.131,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,115,82279,44,11576,71,70703
+54.173.198.118,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,115,87071,48,12331,67,74740
+3.212.241.87,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,115,80694,43,11463,72,69231
+3.220.58.223,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,114,78847,44,11529,70,67318
+54.88.199.193,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,114,81773,50,12475,64,69298
+52.207.128.220,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,113,82984,48,11793,65,71191
+23.22.68.51,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,113,90185,44,12079,69,78106
+52.203.21.18,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,113,85571,46,12211,67,73360
+52.72.185.78,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,111,79592,47,11727,64,67865
+3.211.164.164,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,111,80838,42,11444,69,69394
+35.171.72.122,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,111,79688,40,11277,71,68411
+34.226.182.0,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,111,80342,40,11265,71,69077
+18.208.88.131,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,111,79836,48,11864,63,67972
+107.23.108.62,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,111,84675,44,12067,67,72608
+3.226.173.58,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,110,76720,41,11343,69,65377
+3.222.71.134,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,110,85831,43,11522,67,74309
+23.22.199.21,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,110,79742,46,11661,64,68081
+3.82.137.139,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,110,80695,46,12211,64,68484
+52.204.137.63,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,109,80647,45,11595,64,69052
+52.54.36.84,det-ta-g7g.amazon.com,det-ta-g7g.amazon.com,United States,US;US;US;US;US,107,40663,44,20892,63,19771
+52.21.200.178,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,107,74171,40,11265,67,62906
+3.224.93.55,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,106,75268,40,10774,66,64494
+107.23.153.61,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,106,83481,42,11935,64,71546
+3.217.74.251,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,104,74827,44,11529,60,63298
+18.214.77.14,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,104,73386,45,11116,59,62270
+34.195.136.47,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,104,76567,43,11463,61,65104
+3.91.171.220,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,103,35781,46,22246,57,13535
+3.229.211.131,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,103,75977,36,10510,67,65467
+44.215.143.151,dcape-na.amazon.com,dcape-na.amazon.com,United States,US;US;US;US;US,96,37484,39,23098,57,14386
+3.234.165.228,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,95,33114,43,17724,52,15390
+54.235.163.0,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,95,71099,38,10642,57,60457
+18.161.88.75,api.amazonalexa.com,api.amazonalexa.com,United States,US;US;US;US;US;US;US,93,31885,48,25887,45,5998
+3.160.177.67,api.amazonalexa.com,api.amazonalexa.com,United States,US;US;US;US;US;US;US,92,30298,45,24196,47,6102
+54.226.11.35,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,90,31756,43,8652,47,23104
+54.209.44.8,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,90,30150,42,13122,48,17028
+3.212.205.83,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,90,30946,41,13005,49,17941
+3.226.196.104,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,88,33562,40,8454,48,25108
+44.215.115.210,todo-ta-g7g.amazon.com,todo-ta-g7g.amazon.com,United States,US;US;US;US;US,87,45823,34,17437,53,28386
+44.215.142.74,softwareupdates.amazon.com,softwareupdates.amazon.com,United States,US;US;US;US;US,86,65788,28,12101,58,53687
+52.46.128.81,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,86,39099,36,29079,50,10020
+52.204.152.47,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,84,27189,40,8454,44,18735
+18.155.130.184,api.eu.amazonalexa.com,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,82,24550,40,17680,42,6870
+13.225.233.147,api.eu.amazonalexa.com,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,81,18807,40,11893,41,6914
+176.32.101.46,device-messaging-na.amazon.com,device-messaging-na.amazon.com,United States,US;US;US;US;US;US;US,76,43060,32,20466,44,22594
+3.227.250.160,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,76,23961,34,15104,42,8857
+3.91.171.244,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,75,23745,33,15038,42,8707
+99.86.127.71,m.media-amazon.com,m.media-amazon.com,United States,US;US;US;US;US,75,82638,35,78042,40,4596
+3.227.250.208,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,73,24260,31,14906,42,9354
+3.91.171.231,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,72,23926,31,14906,41,9020
+44.215.141.160,mas-sdk.amazon.com,mas-sdk.amazon.com,United States,US;US;US;US;US;US;US,72,56362,32,47536,40,8826
+3.227.250.254,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,72,24140,31,14906,41,9234
+44.215.134.100,mas-sdk.amazon.com,mas-sdk.amazon.com,United States,US;US;US;US;US;US;US,70,56297,30,47471,40,8826
+3.91.171.240,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,69,23531,32,14972,37,8559
+3.227.250.251,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,69,23942,31,14906,38,9036
+108.156.57.75,api.amazonalexa.com,api.amazonalexa.com,United States,US;US;US;US;US;US;US,69,25363,36,19650,33,5713
+52.94.231.169,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,68,31236,28,23220,40,8016
+54.246.178.107,fls-eu.amazon.com,fls-eu.amazon.com,Ireland,US;US;US;US;US;US;US,68,16741,30,9123,38,7618
+192.168.231.200,None,None,None,None,67,71221,67,71221,0,0
+13.249.9.70,wl.amazon-dss.com,wl.amazon-dss.com,United States,US;US;US;US;US;US;US,67,18339,32,14534,35,3805
+3.253.180.77,mas-ext-eu.amazon.com,mas-ext-eu.amazon.com,Ireland,US;US;US;US;US,65,34026,28,25546,37,8480
+99.86.122.137,d2j591w8i2c22l.cloudfront.net,d2j591w8i2c22l.cloudfront.net,United States,US;US;US;US;US;US;US,63,19269,30,15132,33,4137
+18.161.103.75,api.amazonalexa.com,api.amazonalexa.com,United States,US;US;US;US;US;US;US,63,22644,31,18499,32,4145
+3.160.209.67,api.amazonalexa.com,api.amazonalexa.com,United States,US;US;US;US;US;US;US,61,21900,32,18072,29,3828
+54.166.101.241,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,60,22286,27,7170,33,15116
+176.32.98.108,device-messaging-na.amazon.com,device-messaging-na.amazon.com,United States,US;US;US;US;US;US;US,60,34887,25,14525,35,20362
+52.46.144.82,dp-discovery-na-ext.amazon.com,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,59,32767,24,23036,35,9731
+52.46.141.136,dp-discovery-na-ext.amazon.com,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,59,32794,26,23203,33,9591
+18.172.210.181,api.eu.amazonalexa.com,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,59,15384,30,10525,29,4859
+209.54.177.132,dp-discovery-na-ext.amazon.com,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,58,32681,23,22982,35,9699
+52.46.155.116,dp-discovery-na-ext.amazon.com,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,58,32739,25,23148,33,9591
+18.234.8.50,det-ta-g7g.amazon.com,det-ta-g7g.amazon.com,United States,US;US;US;US;US,58,23534,22,10446,36,13088
+209.54.181.97,dp-discovery-na-ext.amazon.com,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,57,32628,22,22929,35,9699
+34.192.154.181,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,None,55,18158,26,2568,29,15590
+52.84.180.239,m.media-amazon.com,m.media-amazon.com,United States,US;US;US;US;US,54,62846,23,59938,31,2908
+209.54.181.4,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,53,27385,23,14402,30,12983
+209.54.179.88,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,52,23481,22,17469,30,6012
+52.46.143.123,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,51,23395,21,17415,30,5980
+209.54.181.98,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,51,23427,21,17415,30,6012
+63.34.107.182,fls-eu.amazon.com,fls-eu.amazon.com,Ireland,US;US;US;US;US;US;US,50,14381,21,8193,29,6188
+54.73.54.181,fls-eu.amazon.com,fls-eu.amazon.com,Ireland,US;US;US;US;US;US;US,46,14115,19,8059,27,6056
+18.239.32.55,api.eu.amazonalexa.com,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,45,12237,22,8640,23,3597
+3.253.183.190,mas-ext-eu.amazon.com,mas-ext-eu.amazon.com,Ireland,US;US;US;US;US,44,19205,16,11232,28,7973
+44.215.133.95,dss-na.amazon.com,dss-na.amazon.com,United States,US;US;US;US;US;US;US,43,17250,17,13010,26,4240
+44.215.114.101,softwareupdates.amazon.com,softwareupdates.amazon.com,United States,US;US;US;US;US,42,32858,12,5933,30,26925
+209.54.181.78,dp-discovery-na-ext.amazon.com,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,41,21942,19,15548,22,6394
+209.54.180.131,dp-discovery-na-ext.amazon.com,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,40,21889,16,15387,24,6502
+3.91.171.248,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,39,11837,17,7564,22,4273
+44.215.116.69,mas-sdk.amazon.com,mas-sdk.amazon.com,United States,US;US;US;US;US;US;US,38,28264,18,23851,20,4413
+3.91.171.251,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,38,12202,17,7552,21,4650
+3.91.171.221,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,38,12384,16,7486,22,4898
+3.91.171.237,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,38,11657,17,7552,21,4105
+3.227.250.176,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,38,12020,17,7552,21,4468
+3.227.250.213,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,38,12074,17,7552,21,4522
+3.91.171.149,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,37,12116,16,7498,21,4618
+3.227.250.255,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,37,12286,16,7486,21,4800
+3.237.107.6,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,37,11954,16,7486,21,4468
+3.91.171.153,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,37,12040,16,7486,21,4554
+3.227.250.150,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,37,12040,17,7552,20,4488
+3.91.171.229,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,11671,16,7498,20,4173
+3.91.171.151,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,12070,15,7420,21,4650
+3.227.250.205,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,12070,15,7420,21,4650
+52.1.172.87,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,36,12714,17,6084,19,6630
+3.91.171.238,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,12220,15,7420,21,4800
+52.119.196.31,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,36,15723,16,11747,20,3976
+3.227.250.225,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,12252,18,7618,18,4634
+209.54.178.166,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,36,15755,16,11747,20,4008
+3.227.250.203,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,11856,16,7486,20,4370
+54.192.219.143,d2j591w8i2c22l.cloudfront.net,d2j591w8i2c22l.cloudfront.net,United States,None,36,5594,20,2892,16,2702
+3.91.171.128,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,11888,16,7486,20,4402
+3.227.250.197,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,11856,16,7486,20,4370
+3.227.250.195,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,11888,16,7486,20,4402
+3.227.250.215,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,36,11942,15,7420,21,4522
+3.227.250.219,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,35,11561,15,7420,20,4141
+52.46.158.193,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,35,15672,15,11664,20,4008
+52.119.198.189,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,35,15701,15,11693,20,4008
+52.119.198.2,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,35,15672,15,11664,20,4008
+3.227.250.136,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,35,12186,14,7354,21,4832
+3.91.171.249,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,35,12186,14,7354,21,4832
+52.119.198.101,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,35,15672,15,11664,20,4008
+3.227.250.142,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,35,11392,18,7538,17,3854
+13.249.9.114,wl.amazon-dss.com,wl.amazon-dss.com,United States,US;US;US;US;US;US;US,35,9319,16,7302,19,2017
+99.86.122.221,d2j591w8i2c22l.cloudfront.net,d2j591w8i2c22l.cloudfront.net,United States,None,35,5455,18,2699,17,2756
+3.91.171.216,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,35,11876,14,7354,21,4522
+3.227.250.201,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,34,11527,14,7354,20,4173
+209.54.177.153,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
+52.94.240.240,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
+52.119.198.118,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
+209.54.178.134,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,34,15586,14,11610,20,3976
+3.91.171.131,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,34,11938,17,7552,17,4386
+52.94.242.236,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
+209.54.180.44,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
+52.119.198.106,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
+72.21.207.143,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
+3.91.171.156,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,34,11425,17,7552,17,3873
+52.46.146.126,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
+3.224.166.115,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,US;US;US;US;US,34,12597,15,5952,19,6645
+209.54.180.25,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
+3.227.250.193,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,34,11756,17,7552,17,4204
+52.46.131.209,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,34,15618,14,11610,20,4008
+3.227.250.154,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,33,11461,16,7486,17,3975
+209.54.178.164,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,33,15564,13,11556,20,4008
+3.91.171.242,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,33,11872,15,7420,18,4452
+3.227.250.220,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,33,11872,15,7420,18,4452
+3.227.250.129,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,33,11359,16,7486,17,3873
+52.85.120.82,api.amazonalexa.com,api.amazonalexa.com,United States,US;US;US;US;US;US;US,33,10816,16,8606,17,2210
+3.227.250.191,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,33,11690,16,7486,17,4204
+3.227.250.224,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,33,11690,16,7486,17,4204
+3.227.250.138,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,33,11690,16,7486,17,4204
+3.227.250.162,kinesis.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,United States,US;US;US;US;US;US;US,32,11806,14,7354,18,4452
+34.195.16.139,det-ta-g7g.amazon.com,det-ta-g7g.amazon.com,United States,US;US;US;US;US,31,15011,11,5223,20,9788
+18.172.207.74,api.amazonalexa.com,api.amazonalexa.com,United States,US;US;US;US;US;US;US,31,10624,16,8611,15,2013
+18.165.180.74,api.amazonalexa.com,api.amazonalexa.com,United States,US;US;US;US;US;US;US,31,10682,15,8537,16,2145
+18.161.234.211,api.eu.amazonalexa.com,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,30,9167,15,7166,15,2001
+3.219.130.117,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,30,11551,13,7519,17,4032
+34.228.94.124,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,29,11413,13,7519,16,3894
+44.217.141.182,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,28,11421,13,7519,15,3902
+34.224.55.49,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,26,11318,13,7519,13,3799
+44.205.200.128,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,20c21bbc399f9ef2c91f0365d42531bf5023b70d32dbaf7f53f0b49d5110f72.us-east-1.prod.service.minerva.devices.a2z.com,United States,US;US;US;US;US;US;US,26,11328,13,7519,13,3809
+52.222.196.206,dxz5jxhrrzigf.cloudfront.net,dxz5jxhrrzigf.cloudfront.net,United States,US;US;US;US;US;US;US,25,8590,11,7120,14,1470
+44.215.134.203,dcape-na.amazon.com,dcape-na.amazon.com,United States,US;US;US;US;US,24,9374,10,5794,14,3580
+108.157.19.49,d2j591w8i2c22l.cloudfront.net,d2j591w8i2c22l.cloudfront.net,United States,US;US;US;US;US;US;US,24,8675,11,6925,13,1750
+3.162.41.56,api.eu.amazonalexa.com,api.eu.amazonalexa.com,United States,US;US;US;US;US;US;US,24,9220,11,7221,13,1999
+54.192.219.13,d2j591w8i2c22l.cloudfront.net,d2j591w8i2c22l.cloudfront.net,United States,US;US;US;US;US;US;US,24,8383,11,6954,13,1429
+44.215.132.72,dcape-na.amazon.com,dcape-na.amazon.com,United States,US;US;US;US;US,24,9374,10,5794,14,3580
+52.46.145.112,unagi-na.amazon.com,unagi-na.amazon.com,United States,US;US;US;US;US;US;US,23,11789,9,6643,14,5146
+52.222.196.44,dxz5jxhrrzigf.cloudfront.net,dxz5jxhrrzigf.cloudfront.net,United States,US;US;US;US;US;US;US,23,8429,11,7091,12,1338
+67.220.240.92,msh.amazon.com,msh.amazon.com,United States,US;US;US;US;US;US;US,23,11009,10,9025,13,1984
+34.239.216.180,device-metrics-us.amazon.com,device-metrics-us.amazon.com,United States,None,22,3895,11,1152,11,2743
+67.220.240.35,msh.amazon.com,msh.amazon.com,United States,US;US;US;US;US;US;US,22,10984,9,9000,13,1984
+52.46.128.80,msh.amazon.com,msh.amazon.com,United States,US;US;US;US;US;US;US,22,10955,9,8971,13,1984
+44.215.129.169,dss-na.amazon.com,dss-na.amazon.com,United States,US;US;US;US;US;US;US,22,8658,9,6538,13,2120
+18.66.212.125,d2j591w8i2c22l.cloudfront.net,d2j591w8i2c22l.cloudfront.net,United States,US;US;US;US;US;US;US,22,8222,10,6859,12,1363
+52.46.137.255,msh.amazon.com,msh.amazon.com,United States,US;US;US;US;US;US;US,22,10984,9,9000,13,1984
+209.54.183.177,msh.amazon.com,msh.amazon.com,United States,US;US;US;US;US;US;US,21,10930,8,8946,13,1984
+52.46.131.168,msh.amazon.com,msh.amazon.com,United States,US;US;US;US;US;US;US,21,10901,8,8917,13,1984
+18.239.38.68,d2j591w8i2c22l.cloudfront.net,d2j591w8i2c22l.cloudfront.net,United States,US;US;US;US;US;US;US,21,8156,10,6859,11,1297
+209.54.177.232,dp-discovery-na-ext.amazon.com,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,20,10930,9,7733,11,3197
+209.54.177.157,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,18,7863,8,5859,10,2004
+209.54.177.117,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,18,7863,8,5859,10,2004
+209.54.181.86,dp-discovery-na-ext.amazon.com,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,18,10822,7,7625,11,3197
+52.46.131.184,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,18,7863,8,5859,10,2004
+209.54.177.222,dp-discovery-na-ext.amazon.com,dp-discovery-na-ext.amazon.com,United States,US;US;US;US;US;US;US,18,10822,7,7625,11,3197
+52.119.198.109,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,18,7863,8,5859,10,2004
+99.86.122.86,d2j591w8i2c22l.cloudfront.net,d2j591w8i2c22l.cloudfront.net,United States,None,18,2761,9,1350,9,1411
+52.119.198.186,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,17,7809,7,5805,10,2004
+209.54.177.114,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,17,7809,7,5805,10,2004
+52.46.149.20,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,17,7777,7,5805,10,1972
+209.54.177.154,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,17,7809,7,5805,10,2004
+52.46.149.29,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,17,7809,7,5805,10,2004
+52.94.241.146,api.amazon.com,api.amazon.com,United States,US;US;US;US;US,17,7809,7,5805,10,2004
+99.86.122.76,d2j591w8i2c22l.cloudfront.net,d2j591w8i2c22l.cloudfront.net,United States,None,17,2694,9,1349,8,1345
+52.95.119.232,cdws.eu-west-1.amazonaws.com,cdws.eu-west-1.amazonaws.com,Ireland,US;US;US;US;US;US;US,17,7937,7,6360,10,1577
+18.244.28.13,prod.amazoncrl.com,prod.amazoncrl.com,United States,None,10,2116,4,1538,6,578
+52.222.149.14,d3h5bk8iotgjvw.cloudfront.net,d3h5bk8iotgjvw.cloudfront.net,United States,None,10,2127,4,1538,6,589
+18.244.28.32,prod.amazoncrl.com,prod.amazoncrl.com,United States,None,10,2116,4,1538,6,578
+52.222.149.109,d3h5bk8iotgjvw.cloudfront.net,d3h5bk8iotgjvw.cloudfront.net,United States,None,10,2127,4,1538,6,589
+3.141.203.230,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,10,987,5,469,5,518
+18.244.28.93,prod.amazoncrl.com,prod.amazoncrl.com,United States,None,10,2116,4,1538,6,578
+52.222.149.17,d3h5bk8iotgjvw.cloudfront.net,d3h5bk8iotgjvw.cloudfront.net,United States,None,10,2127,4,1538,6,589
+18.239.50.119,prod.amazoncrl.com,prod.amazoncrl.com,United States,None,10,2116,4,1538,6,578
+18.239.83.38,d3h5bk8iotgjvw.cloudfront.net,d3h5bk8iotgjvw.cloudfront.net,United States,None,10,2127,4,1538,6,589
+18.223.183.157,mmechocaptiveportal.com,mmechocaptiveportal.com,United States,None,10,987,5,469,5,518
+13.224.68.3,prod.amazoncrl.com,prod.amazoncrl.com,United States,None,10,2115,4,1537,6,578
+18.66.171.34,d3h5bk8iotgjvw.cloudfront.net,d3h5bk8iotgjvw.cloudfront.net,United States,None,10,2127,4,1538,6,589
+3.214.58.173,ntp-g7g.amazon.com,ntp-g7g.amazon.com,United States,None,6,540,3,270,3,270
+52.203.151.208,ntp-g7g.amazon.com,ntp-g7g.amazon.com,United States,None,4,360,2,180,2,180
+34.226.24.249,ntp-g7g.amazon.com,ntp-g7g.amazon.com,United States,None,4,360,2,180,2,180
+46.17.65.37,2.android.pool.ntp.org,2.android.pool.ntp.org,France,None,2,180,1,90,1,90
+51.68.44.27,2.android.pool.ntp.org,2.android.pool.ntp.org,France,None,2,180,1,90,1,90
+34.236.6.206,ntp-g7g.amazon.com,ntp-g7g.amazon.com,United States,None,2,180,1,90,1,90
+fe80::42a2:dbff:fe2c:8a68,None,None,None,None,193,19035,193,19035,0,0
+ff02::fb,None,None,None,None,193,19035,0,0,193,19035

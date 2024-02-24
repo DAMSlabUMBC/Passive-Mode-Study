@@ -1,0 +1,305 @@
+IP, Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+20.3.187.198,*.delivery.mp.microsoft.com,United States,US;US;US;US,159,128132,71,19609,88,108523
+52.165.164.15,*.delivery.mp.microsoft.com,United States,US;US;US;US,33,18394,14,4673,19,13721
+13.85.23.206,*.delivery.mp.microsoft.com,United States,US;US;US;US,33,18392,14,4670,19,13722
+104.114.75.26,*.deploy.static.akamaitechnologies.com,United States,None,20,1810,10,938,10,872
+23.12.145.18,*.deploy.static.akamaitechnologies.com,United States,None,10,905,5,469,5,436
+23.12.145.27,*.deploy.static.akamaitechnologies.com,United States,None,10,905,5,469,5,436
+23.12.145.29,*.deploy.static.akamaitechnologies.com,United States,None,10,905,5,469,5,436
+23.12.145.6,*.deploy.static.akamaitechnologies.com,United States,None,20,1810,10,938,10,872
+23.15.9.24,*.deploy.static.akamaitechnologies.com,United States,None,50,4396,25,2345,25,2051
+23.197.193.16,*.deploy.static.akamaitechnologies.com,United States,None,10,905,5,469,5,436
+23.197.193.32,*.deploy.static.akamaitechnologies.com,United States,None,30,2672,15,1407,15,1265
+23.197.193.67,*.deploy.static.akamaitechnologies.com,United States,None,40,3534,20,1876,20,1658
+23.205.105.63,*.deploy.static.akamaitechnologies.com,United States,None,10,905,5,469,5,436
+23.213.158.74,*.deploy.static.akamaitechnologies.com,United States,None,10,905,5,469,5,436
+23.213.158.89,*.deploy.static.akamaitechnologies.com,United States,None,10,862,5,469,5,393
+23.218.216.25,*.deploy.static.akamaitechnologies.com,United States,None,10,862,5,469,5,393
+23.218.217.159,*.deploy.static.akamaitechnologies.com,United States,None,40,3577,20,1876,20,1701
+23.218.217.188,*.deploy.static.akamaitechnologies.com,United States,None,30,2672,15,1407,15,1265
+23.218.218.137,*.deploy.static.akamaitechnologies.com,United States,None,20,1810,10,938,10,872
+23.218.218.146,*.deploy.static.akamaitechnologies.com,United States,None,20,1767,10,938,10,829
+23.218.218.148,*.deploy.static.akamaitechnologies.com,United States,None,440,39433,220,20636,220,18797
+23.218.218.158,*.deploy.static.akamaitechnologies.com,United States,None,370,33356,185,17353,185,16003
+23.218.218.172,*.deploy.static.akamaitechnologies.com,United States,None,10,905,5,469,5,436
+23.218.218.175,*.deploy.static.akamaitechnologies.com,United States,None,30,2715,15,1407,15,1308
+23.218.218.177,*.deploy.static.akamaitechnologies.com,United States,None,50,4525,25,2345,25,2180
+23.218.218.179,*.deploy.static.akamaitechnologies.com,United States,None,50,4525,25,2345,25,2180
+23.218.218.182,*.deploy.static.akamaitechnologies.com,United States,None,10,905,5,469,5,436
+23.218.218.188,*.deploy.static.akamaitechnologies.com,United States,None,40,3577,20,1876,20,1701
+23.218.218.190,*.deploy.static.akamaitechnologies.com,United States,None,50,4525,25,2345,25,2180
+23.219.154.68,*.deploy.static.akamaitechnologies.com,United States,None,9,851,4,415,5,436
+23.219.154.73,*.deploy.static.akamaitechnologies.com,United States,None,10,905,5,469,5,436
+23.222.12.40,*.deploy.static.akamaitechnologies.com,United States,None,30,2715,15,1407,15,1308
+23.222.12.42,*.deploy.static.akamaitechnologies.com,United States,None,20,1810,10,938,10,872
+23.222.12.56,*.deploy.static.akamaitechnologies.com,United States,None,10,905,5,469,5,436
+23.45.233.27,*.deploy.static.akamaitechnologies.com,United States,None,10,905,5,469,5,436
+23.46.150.40,*.deploy.static.akamaitechnologies.com,United States,None,20,1810,10,938,10,872
+23.46.150.43,*.deploy.static.akamaitechnologies.com,United States,None,20,1767,10,938,10,829
+2600:1400:9000::687e:7540,*.deploy.static.akamaitechnologies.com,None,None,10,1106,5,569,5,537
+2600:1408:17::172d:e911,*.deploy.static.akamaitechnologies.com,None,None,49,5413,25,2845,24,2568
+2600:1408:17::172d:e929,*.deploy.static.akamaitechnologies.com,None,None,100,11017,50,5690,50,5327
+2600:1408:2000::17de:c21,*.deploy.static.akamaitechnologies.com,None,None,10,1106,5,569,5,537
+2600:1408:5400:1a::173e:e66d,*.deploy.static.akamaitechnologies.com,None,None,10,1314,4,576,6,738
+2600:1408:5400:1a::173e:e672,*.deploy.static.akamaitechnologies.com,None,None,39,6162,18,2970,21,3192
+2600:1408:5400:1c::173d:b2d,*.deploy.static.akamaitechnologies.com,None,None,30,3318,15,1707,15,1611
+2600:1408:5400:1c::173d:b31,*.deploy.static.akamaitechnologies.com,None,None,30,3318,15,1707,15,1611
+2600:1408:5400:1c::173d:b40,*.deploy.static.akamaitechnologies.com,None,None,160,17653,80,9104,80,8549
+2600:1408:5400:1c::173d:b42,*.deploy.static.akamaitechnologies.com,None,None,280,30839,140,15932,140,14907
+2600:1408:5400:1c::173d:b4a,*.deploy.static.akamaitechnologies.com,None,None,29,3244,14,1633,15,1611
+2600:1408:5400:1c::173d:b4c,*.deploy.static.akamaitechnologies.com,None,None,20,2212,10,1138,10,1074
+2600:1408:5400:1c::173d:b4d,*.deploy.static.akamaitechnologies.com,None,None,10,1063,5,569,5,494
+2600:1408:5400:1c::173d:b51,*.deploy.static.akamaitechnologies.com,None,None,10,1106,5,569,5,537
+2600:1408:5400:1c::173d:b53,*.deploy.static.akamaitechnologies.com,None,None,10,1106,5,569,5,537
+2600:1408:c400:26::17da:d91f,*.deploy.static.akamaitechnologies.com,None,None,10,1106,5,569,5,537
+2600:1408:c400:29::17da:da52,*.deploy.static.akamaitechnologies.com,None,None,10,1106,5,569,5,537
+2600:1408:c400:2b::17de:4d6,*.deploy.static.akamaitechnologies.com,None,None,49,5370,25,2845,24,2525
+2600:1408:c400:2b::17de:4d8,*.deploy.static.akamaitechnologies.com,None,None,50,5530,25,2845,25,2685
+2600:141b:b000::1737:eb92,*.deploy.static.akamaitechnologies.com,None,None,10,1106,5,569,5,537
+2600:141b:b000::1737:eba0,*.deploy.static.akamaitechnologies.com,None,None,10,1106,5,569,5,537
+20.42.73.26,*.events.data.microsoft.com,United States,US;US;US;US,385,133770,181,76104,204,57666
+104.208.16.88,*.events.data.microsoft.com,United States,US;US;US;US,329,104537,158,61247,171,43290
+20.42.73.24,*.events.data.microsoft.com,United States,US;US;US;US,322,111290,152,64444,170,46846
+20.42.73.25,*.events.data.microsoft.com,United States,US;US;US;US,294,103205,136,67587,158,35618
+20.189.173.16,*.events.data.microsoft.com,United States,US;US;US;US,288,91130,135,40256,153,50874
+20.189.173.10,*.events.data.microsoft.com,United States,US;US;US;US,279,95789,132,57931,147,37858
+20.189.173.9,*.events.data.microsoft.com,United States,US;US;US;US,277,104301,129,62067,148,42234
+104.46.162.226,*.events.data.microsoft.com,Australia,US;US;US;US,260,95250,122,52519,138,42731
+52.168.112.67,*.events.data.microsoft.com,United States,US;US;US;US,235,79736,110,46857,125,32879
+20.189.173.7,*.events.data.microsoft.com,United States,US;US;US;US,232,83648,107,51057,125,32591
+20.189.173.18,*.events.data.microsoft.com,United States,US;US;US;US,232,83768,112,46918,120,36850
+13.89.179.8,*.events.data.microsoft.com,United States,US;US;US;US,199,65877,94,36294,105,29583
+52.182.143.208,*.events.data.microsoft.com,United States,US;US;US;US,197,69064,93,45270,104,23794
+20.42.65.88,*.events.data.microsoft.com,United States,US;US;US;US,196,64940,92,40517,104,24423
+20.189.173.4,*.events.data.microsoft.com,United States,US;US;US;US,193,69288,87,44608,106,24680
+52.168.112.66,*.events.data.microsoft.com,United States,US;US;US;US,192,71562,92,40531,100,31031
+20.42.65.90,*.events.data.microsoft.com,United States,US;US;US;US,191,66283,88,40338,103,25945
+20.42.65.85,*.events.data.microsoft.com,United States,US;US;US;US,190,65169,89,35721,101,29448
+20.189.173.1,*.events.data.microsoft.com,United States,US;US;US;US,183,64097,82,39790,101,24307
+13.89.179.9,*.events.data.microsoft.com,United States,US;US;US;US,181,64191,86,35561,95,28630
+20.189.173.3,*.events.data.microsoft.com,United States,US;US;US;US,174,61347,80,39407,94,21940
+20.189.173.14,*.events.data.microsoft.com,United States,US;US;US;US,172,60251,80,35013,92,25238
+13.89.178.26,*.events.data.microsoft.com,United States,US;US;US;US,172,62181,79,39154,93,23027
+51.105.71.137,*.events.data.microsoft.com,United Kingdom,US;US;US;US,157,52256,76,29861,81,22395
+20.44.10.123,*.events.data.microsoft.com,United States,US;US;US;US,148,51562,68,33773,80,17789
+104.208.16.90,*.events.data.microsoft.com,United States,US;US;US;US,147,51519,68,33774,79,17745
+52.168.117.170,*.events.data.microsoft.com,United States,US;US;US;US,146,51250,67,29084,79,22166
+51.132.193.105,*.events.data.microsoft.com,United Kingdom,US;US;US;US,139,47559,67,29037,72,18522
+20.189.173.2,*.events.data.microsoft.com,United States,US;US;US;US,134,47421,61,28633,73,18788
+20.189.173.11,*.events.data.microsoft.com,United States,US;US;US;US,133,47351,59,28503,74,18848
+20.42.65.89,*.events.data.microsoft.com,United States,US;US;US;US,125,43192,57,28145,68,15047
+20.189.173.12,*.events.data.microsoft.com,United States,US;US;US;US,117,39137,55,23407,62,15730
+20.189.173.8,*.events.data.microsoft.com,United States,US;US;US;US,110,38430,51,23082,59,15348
+52.182.143.209,*.events.data.microsoft.com,United States,US;US;US;US,110,38639,51,23074,59,15565
+52.182.143.210,*.events.data.microsoft.com,United States,US;US;US;US,109,38636,51,23115,58,15521
+52.168.117.169,*.events.data.microsoft.com,United States,US;US;US;US,108,37630,51,22890,57,14740
+20.189.173.13,*.events.data.microsoft.com,United States,US;US;US;US,108,38505,48,22870,60,15635
+20.42.72.131,*.events.data.microsoft.com,United States,US;US;US;US,99,34452,46,22607,53,11845
+52.182.143.211,*.events.data.microsoft.com,United States,US;US;US;US,97,34414,45,22469,52,11945
+52.182.141.63,*.events.data.microsoft.com,United States,US;US;US;US,96,34242,44,22456,52,11786
+51.104.15.253,*.events.data.microsoft.com,United Kingdom,US;US;US;US,90,30459,44,17715,46,12744
+20.189.173.5,*.events.data.microsoft.com,United States,US;US;US;US,89,33738,37,21954,52,11784
+51.132.193.104,*.events.data.microsoft.com,United Kingdom,US;US;US;US,87,30205,41,17553,46,12652
+20.44.10.122,*.events.data.microsoft.com,United States,US;US;US;US,87,26716,42,12989,45,13727
+13.69.116.104,*.events.data.microsoft.com,The Netherlands,US;US;US;US,86,30178,40,17498,46,12680
+13.69.239.74,*.events.data.microsoft.com,Ireland,US;US;US;US,74,28287,34,16806,40,11481
+13.89.178.27,*.events.data.microsoft.com,United States,US;US;US;US,73,25688,33,16833,40,8855
+40.79.150.120,*.events.data.microsoft.com,France,US;US;US;US,73,26167,33,16749,40,9418
+20.50.73.13,*.events.data.microsoft.com,Ireland,US;US;US;US,72,25662,33,16749,39,8913
+104.46.162.224,*.events.data.microsoft.com,Australia,US;US;US;US,71,25303,33,16748,38,8555
+20.189.173.6,*.events.data.microsoft.com,United States,US;US;US;US,69,25427,30,16586,39,8841
+40.79.141.154,*.events.data.microsoft.com,France,US;US;US;US,67,22889,32,12155,35,10734
+20.189.173.23,*.events.data.microsoft.com,United States,US;US;US;US,66,21920,33,12172,33,9748
+13.69.116.107,*.events.data.microsoft.com,The Netherlands,US;US;US;US,63,21637,30,11970,33,9667
+104.208.16.89,*.events.data.microsoft.com,United States,US;US;US;US,59,21437,27,11801,32,9636
+40.79.189.59,*.events.data.microsoft.com,Japan,US;US;US;US,52,18520,25,11436,27,7084
+51.105.71.136,*.events.data.microsoft.com,United Kingdom,US;US;US;US,51,17261,26,11424,25,5837
+52.168.117.168,*.events.data.microsoft.com,United States,US;US;US;US,51,17304,24,11357,27,5947
+20.42.65.84,*.events.data.microsoft.com,United States,US;US;US;US,50,17246,23,11302,27,5944
+20.50.201.200,*.events.data.microsoft.com,The Netherlands,US;US;US;US,49,17422,23,11220,26,6202
+51.104.15.252,*.events.data.microsoft.com,United Kingdom,US;US;US;US,48,17060,21,11112,27,5948
+13.69.109.130,*.events.data.microsoft.com,The Netherlands,US;US;US;US,48,17061,22,11166,26,5895
+20.50.201.204,*.events.data.microsoft.com,The Netherlands,US;US;US;US,47,17048,22,11208,25,5840
+13.89.179.10,*.events.data.microsoft.com,United States,US;US;US;US,47,17095,21,11194,26,5901
+20.50.80.209,*.events.data.microsoft.com,Ireland,US;US;US;US,35,12820,16,6133,19,6687
+20.189.173.15,*.events.data.microsoft.com,United States,US;US;US;US,26,8637,13,5691,13,2946
+52.178.17.2,*.events.data.microsoft.com,United States,US;US;US;US,25,8583,12,5637,13,2946
+13.78.111.199,*.events.data.microsoft.com,Japan,US;US;US;US,24,8530,11,5583,13,2947
+20.50.80.214,*.events.data.microsoft.com,Ireland,US;US;US;US,24,8528,11,5583,13,2945
+40.79.197.35,*.events.data.microsoft.com,Japan,US;US;US;US,24,8528,11,5583,13,2945
+13.69.239.72,*.events.data.microsoft.com,Ireland,US;US;US;US,24,8519,11,5583,13,2936
+40.79.150.121,*.events.data.microsoft.com,France,US;US;US;US,24,8650,11,5583,13,3067
+13.69.239.77,*.events.data.microsoft.com,Ireland,US;US;US;US,23,8492,10,5529,13,2963
+52.178.17.3,*.events.data.microsoft.com,United States,US;US;US;US,23,8475,10,5529,13,2946
+40.79.141.152,*.events.data.microsoft.com,France,US;US;US;US,23,8478,10,5529,13,2949
+40.74.98.194,*.events.data.microsoft.com,Japan,US;US;US;US,23,8534,10,5529,13,3005
+2607:f4e8:310:a000::1,*.llnw.net,None,None,918,814318,587,783086,331,31232
+2607:f4e8:310:a000::8000,*.llnw.net,None,None,133,20935,64,10585,69,10350
+2607:f4e8:d:a200::8000,*.llnw.net,None,None,14,2101,7,1037,7,1064
+69.164.0.0,*.llnw.net,United States,None,11,1659,6,843,5,816
+69.164.0.128,*.llnw.net,United States,None,3897,4409286,2442,4310372,1455,98914
+23.195.92.131,*.prod.do.dsp.mp.microsoft.com,United States,US,120,54299,72,46674,48,7625
+23.48.24.78,*.prod.do.dsp.mp.microsoft.com,United States,US,22,9147,12,7688,10,1459
+20.54.25.4,*.prod.do.dsp.mp.microsoft.com,Ireland,US;US;US;US,21,4998,9,3666,12,1332
+52.184.216.174,*.prod.do.dsp.mp.microsoft.com,United States,US;US;US;US,20,4943,8,3612,12,1331
+51.104.167.245,*.prod.do.dsp.mp.microsoft.com,Ireland,US;US;US;US,20,4943,8,3611,12,1332
+96.16.76.107,*.prod.do.dsp.mp.microsoft.com,United States,US,22,9439,12,8219,10,1220
+209.197.3.8,*.ssl.hwcdn.net.,United States,None,14,1694,9,878,5,816
+20.7.1.246,client.wns.windows.com,United States,US;US;US;US,5096,584419,2167,320132,2929,264287
+20.10.31.115,client.wns.windows.com,United States,US;US;US;US,4957,777030,1715,415673,3242,361357
+20.7.2.167,client.wns.windows.com,United States,US;US;US;US,2999,470256,1041,251657,1958,218599
+20.190.4.251,continuum.dds.microsoft.com,United States,US;US;US;US;US,179,114494,81,94666,98,19828
+13.86.61.82,continuum.dds.microsoft.com,United States,US;US;US;US;US,45,29973,19,25124,26,4849
+52.138.124.216,continuum.dds.microsoft.com,United States,US;US;US;US;US,42,29816,19,25136,23,4680
+20.96.52.198,displaycatalog.mp.microsoft.com,United States,None,160,149859,81,136184,79,13675
+52.154.209.174,displaycatalog.mp.microsoft.com,United States,None,91,36987,43,26650,48,10337
+52.185.73.156,displaycatalog.mp.microsoft.com,United States,None,47,18385,23,13397,24,4988
+20.22.113.133,displaycatalog.mp.microsoft.com,United States,None,44,18595,21,13295,23,5300
+23.199.50.2,fs.microsoft.com,United States,None,170,53708,90,44868,80,8840
+23.54.68.82,fs.microsoft.com,United States,None,21,6691,11,5586,10,1105
+20.190.152.152,graph.microsoft.com,United States,None,21,8498,10,5686,11,2812
+40.126.23.96,graph.microsoft.com,United States,None,19,8387,9,5629,10,2758
+224.0.0.22,igmp.mcast.net,None,None,5407,292426,0,0,5407,292426
+20.190.190.194,login.live.com,United States,US;US;US;US,194,233793,87,170621,107,63172
+20.190.151.7,login.live.com,United States,US;US;US;US,159,202366,67,147341,92,55025
+20.190.190.193,login.live.com,United States,US;US;US;US,132,160201,56,117133,76,43068
+20.190.151.131,login.live.com,United States,US;US;US;US,129,155612,58,112837,71,42775
+20.190.151.133,login.live.com,United States,US;US;US;US,106,119885,45,86964,61,32921
+20.190.151.70,login.live.com,United States,US;US;US;US,95,105363,42,76606,53,28757
+40.126.62.129,login.live.com,United States,US;US;US;US,88,112487,37,82009,51,30478
+40.126.62.130,login.live.com,United States,US;US;US;US,84,94657,35,67935,49,26722
+20.190.151.134,login.live.com,United States,US;US;US;US,83,106038,35,77616,48,28422
+20.190.151.9,login.live.com,United States,US;US;US;US,66,73309,29,52810,37,20499
+20.190.190.196,login.live.com,United States,US;US;US;US,63,73161,26,52662,37,20499
+20.190.151.67,login.live.com,United States,US;US;US;US,61,72111,26,49963,35,22148
+20.190.190.130,login.live.com,United States,US;US;US;US,47,60935,20,44620,27,16315
+40.126.62.132,login.live.com,United States,US;US;US;US,42,45266,18,32850,24,12416
+20.190.151.8,login.live.com,United States,US;US;US;US,25,30858,12,22654,13,8204
+20.190.190.132,login.live.com,United States,US;US;US;US,22,23136,10,16927,12,6209
+20.190.190.129,login.live.com,United States,US;US;US;US,20,22130,9,15977,11,6153
+20.190.151.69,login.live.com,United States,US;US;US;US,19,22078,7,15871,12,6207
+224.0.0.251,mdns.mcast.net,None,None,4293,750499,0,0,4293,750499
+20.114.58.89,msedge.api.cdp.microsoft.com,United States,US;US;US;US,18,7790,8,5456,10,2334
+23.102.129.60,msedge.api.cdp.microsoft.com,United States,US;US;US;US,17,7736,7,5402,10,2334
+224.0.0.252,None,None,None,1973,142056,0,0,1973,142056
+8.253.132.121,None,United States,None,779,781576,512,763507,267,18069
+8.253.131.121,None,United States,None,62,5936,38,3979,24,1957
+192.229.211.108,None,United States,None,52,9112,24,5782,28,3330
+72.21.81.240,None,United States,None,27,20733,14,19229,13,1504
+168.61.215.74,None,United States,None,24,2160,12,1080,12,1080
+fe80::e225:fe09:3bda:8d26,None,None,None,6267,1018123,6267,1018123,0,0
+2601:14d:8500:7764:ec16:56a6:5c10:5f01,None,None,None,5777,2498208,2496,1118128,3281,1380080
+ff02::fb,None,None,None,4294,836607,0,0,4294,836607
+2601:14d:8500:7764:99b0:984e:ed28:671b,None,None,None,3029,1945411,1289,557779,1740,1387632
+ff02::1:3,None,None,None,1973,181516,0,0,1973,181516
+2001:4de0:ac10::1:1:19,None,None,None,381,90697,200,65369,181,25328
+2603:1036:302:40b4::2,None,None,None,371,202722,237,116194,134,86528
+2603:1036:302:4155::2,None,None,None,330,163599,226,89148,104,74451
+2603:1036:302:874::2,None,None,None,312,150737,209,81975,103,68762
+2603:1036:302:4094::2,None,None,None,281,133587,196,72210,85,61377
+2603:1030:800:5::bfee:a08d,None,None,None,277,500062,159,290768,118,209294
+2606:2800:11f:85d:13e0:11e9:1a6:201d,None,None,None,264,65177,112,43422,152,21755
+2603:1036:302:415c::2,None,None,None,214,148767,125,82993,89,65774
+2603:1030:c02:2::284,None,None,None,173,172957,82,51679,91,121278
+2603:1036:302:4028::2,None,None,None,170,84398,103,53630,67,30768
+2a01:111:f100:9001::1761:914d,None,None,None,156,93340,72,23646,84,69694
+2603:1036:302:4847::2,None,None,None,155,86936,89,54043,66,32893
+2603:1036:302:505e::2,None,None,None,145,103793,79,60599,66,43194
+2603:1030:7::106,None,None,None,145,110518,70,20827,75,89691
+2603:1036:302:4843::2,None,None,None,144,61291,79,36584,65,24707
+2603:1036:302:415d::2,None,None,None,144,72229,88,46042,56,26187
+2603:1036:302:415a::2,None,None,None,140,74592,83,44324,57,30268
+2001:1900:2302:8f04::1fe,None,None,None,134,14202,75,7934,59,6268
+2a01:111:f100:a004::bfeb:8ad6,None,None,None,133,126385,67,16688,66,109697
+2a01:111:f100:9001::1761:91b4,None,None,None,118,77602,54,68958,64,8644
+2603:1030:408:7::3d,None,None,None,114,91630,54,15745,60,75885
+2603:1036:302:4833::2,None,None,None,114,39565,69,25941,45,13624
+2603:1036:302:4834::2,None,None,None,113,41038,64,24301,49,16737
+2001:1900:23b0:11::1fe,None,None,None,98,17566,54,13262,44,4304
+2601:14d:8500:7764:58c2:e993:a4f1:bc8c,None,None,None,97,32011,50,18283,47,13728
+2603:1036:302:4154::2,None,None,None,88,38945,58,25448,30,13497
+2603:1030:408:3::86,None,None,None,86,21406,38,14656,48,6750
+2603:1036:302:5059::2,None,None,None,85,42008,51,26397,34,15611
+2603:1036:302:4014::2,None,None,None,80,45363,48,27136,32,18227
+2603:1036:302:4836::2,None,None,None,75,26221,46,17208,29,9013
+2001:1900:2302:6f17::1fe,None,None,None,74,15149,43,12101,31,3048
+2603:1036:302:4831::2,None,None,None,72,26018,43,17005,29,9013
+2001:1900:23b0:9::1fe,None,None,None,72,7780,42,4468,30,3312
+2603:1036:302:4840::2,None,None,None,69,25512,41,16576,28,8936
+2a01:111:f100:a004::bfeb:8b31,None,None,None,65,16042,27,10831,38,5211
+2603:1036:302:505f::2,None,None,None,61,26424,40,17360,21,9064
+2603:1036:302:860::2,None,None,None,61,34153,33,20377,28,13776
+2603:1036:302:834::2,None,None,None,56,29739,31,18489,25,11250
+2a01:111:f100:a004::bfeb:8dc3,None,None,None,55,24524,24,16848,31,7676
+2a01:111:f100:9001::1761:970b,None,None,None,53,24376,23,16774,30,7602
+2603:1036:302:4830::2,None,None,None,52,22417,33,13762,19,8655
+2603:1036:302:5062::2,None,None,None,49,19418,28,12581,21,6837
+2603:1030:c02:2::2e9,None,None,None,46,10903,21,7456,25,3447
+2603:1036:302:4832::2,None,None,None,38,12993,23,8452,15,4541
+2603:1036:302:4000::2,None,None,None,37,12922,22,8380,15,4542
+2603:1030:c02:2::42d,None,None,None,37,16374,17,11306,20,5068
+2001:1900:2302:1f01::1fe,None,None,None,36,3890,21,2234,15,1656
+2603:1036:302:5061::2,None,None,None,36,13150,22,8677,14,4473
+2001:1900:230e:3037::1fe,None,None,None,36,3890,21,2234,15,1656
+2001:1900:2302:8f06::1fe,None,None,None,36,3890,21,2234,15,1656
+2001:1900:235d:d00::1fe,None,None,None,36,3890,21,2234,15,1656
+2001:1900:23b0:17::1fe,None,None,None,36,3890,21,2234,15,1656
+2001:1900:2302:6f1b::1fe,None,None,None,36,3890,21,2234,15,1656
+2603:1036:302:481e::2,None,None,None,35,13075,21,8602,14,4473
+2603:1030:7::10,None,None,None,35,16226,15,11158,20,5068
+2603:1036:302:505b::2,None,None,None,32,13338,21,8769,11,4569
+2603:1036:303:3802::2,None,None,None,32,13336,19,8619,13,4717
+2603:1036:302:505d::2,None,None,None,31,12999,20,8430,11,4569
+2603:1036:302:40e0::2,None,None,None,31,12989,20,8420,11,4569
+2603:1036:206:15::2,None,None,None,31,13276,20,8707,11,4569
+2603:1036:302:415b::2,None,None,None,30,13151,20,8644,10,4507
+2603:1036:302:505c::2,None,None,None,30,13190,20,8695,10,4495
+2603:1036:302:403c::2,None,None,None,30,12915,20,8420,10,4495
+2603:1036:302:840::2,None,None,None,30,13188,20,8693,10,4495
+2001:1900:23b0:7::1fe,None,None,None,30,4672,14,2396,16,2276
+2603:1036:302:4159::2,None,None,None,30,13200,20,8705,10,4495
+2603:1036:302:415e::2,None,None,None,30,12915,20,8420,10,4495
+2603:1036:302:854::2,None,None,None,29,13116,19,8621,10,4495
+2603:1036:302:40d0::2,None,None,None,29,13254,19,8759,10,4495
+2603:1036:302:4845::2,None,None,None,29,13116,19,8621,10,4495
+2603:1036:302:505a::2,None,None,None,28,13096,18,8601,10,4495
+2001:1900:23b0:1b::1fe,None,None,None,26,2533,12,1233,14,1300
+2001:1900:23b0:15::1fe,None,None,None,26,2565,12,1235,14,1330
+2603:1030:7::107,None,None,None,22,5358,9,3596,13,1762
+2601:14d:8500:7764:8c75:e0f:4036:2208,None,None,None,20,2126,10,988,10,1138
+2a01:111:f100:4002::9d37:c1c2,None,None,None,19,8224,9,5690,10,2534
+2603:1037:1:130::80,None,None,None,18,8693,8,5735,10,2958
+2001:1900:2302:6f0d::1fe,None,None,None,15,2336,7,1198,8,1138
+2001:1900:2302:8f09::1fe,None,None,None,15,2336,7,1198,8,1138
+2001:1900:23b0:1::1fe,None,None,None,15,2336,7,1198,8,1138
+2001:1900:235c:f00::1fe,None,None,None,15,9557,7,8757,8,800
+2001:4de0:ac10::1:1:18,None,None,None,10,1544,5,663,5,881
+52.96.179.114,outlook.office365.com,United States,US;US;US;US,339,188812,233,106637,106,82175
+52.96.9.178,outlook.office365.com,United States,US;US;US;US,250,220512,153,143767,97,76745
+52.96.242.18,outlook.office365.com,United States,US;US;US;US,158,69420,87,44555,71,24865
+40.97.190.18,outlook.office365.com,United States,US;US;US;US,155,114349,94,68045,61,46304
+52.96.111.114,outlook.office365.com,United States,US;US;US;US,147,106050,85,64295,62,41755
+52.96.40.242,outlook.office365.com,United States,US;US;US;US,75,49143,43,28367,32,20776
+52.96.181.98,outlook.office365.com,United States,US;US;US;US,49,29795,29,18890,20,10905
+20.211.142.183,settings-win.data.microsoft.com,Australia,US;US;US;US,1613,498970,743,370527,870,128443
+52.167.249.196,settings-win.data.microsoft.com,United States,US;US;US;US,1547,501378,722,377753,825,123625
+52.191.219.104,settings-win.data.microsoft.com,United States,US;US;US;US,1113,342505,510,252833,603,89672
+20.106.86.13,settings-win.data.microsoft.com,United States,US;US;US;US,1099,331971,508,245434,591,86537
+13.71.55.58,settings-win.data.microsoft.com,India,US;US;US;US,878,271725,398,200959,480,70766
+52.140.118.28,settings-win.data.microsoft.com,India,US;US;US;US,680,446351,322,391000,358,55351
+20.44.239.154,settings-win.data.microsoft.com,Singapore,US;US;US;US,618,225471,280,175391,338,50080
+52.185.211.133,settings-win.data.microsoft.com,United States,US;US;US;US,578,205025,244,156244,334,48781
+20.72.205.209,settings-win.data.microsoft.com,United States,US;US;US;US,453,137677,201,101300,252,36377
+52.183.220.149,settings-win.data.microsoft.com,United States,US;US;US;US,417,128043,190,92561,227,35482
+52.137.106.217,settings-win.data.microsoft.com,United States,US;US;US;US,385,114817,179,84302,206,30515
+40.119.249.228,settings-win.data.microsoft.com,Singapore,US;US;US;US,370,114580,167,86630,203,27950
+52.167.17.97,settings-win.data.microsoft.com,United States,US;US;US;US,330,100737,148,73298,182,27439
+20.49.150.241,settings-win.data.microsoft.com,United Kingdom,US;US;US;US,194,61306,86,46561,108,14745
+51.11.168.232,settings-win.data.microsoft.com,United Kingdom,US;US;US;US,43,27879,20,23350,23,4529
+20.12.23.50,slscr.update.microsoft.com,United States,US;US;US;US,46,10024,22,7131,24,2893
+40.68.123.157,slscr.update.microsoft.com,The Netherlands,US;US;US;US,22,4916,9,3415,13,1501
+23.4.176.235,storecatalogrevocation.storequality.microsoft.com,United States,US,64,25068,37,21567,27,3501
+23.73.237.222,storecatalogrevocation.storequality.microsoft.com,United States,US,21,8338,12,7171,9,1167
+104.112.25.149,storecatalogrevocation.storequality.microsoft.com,United States,US,21,8338,12,7171,9,1167
+104.108.126.232,storecatalogrevocation.storequality.microsoft.com,United States,US,20,8284,12,7171,8,1113
+40.65.209.51,tsfe.trafficshaping.dsp.mp.microsoft.com,United States,US;US;US;US,77,33735,35,20127,42,13608
