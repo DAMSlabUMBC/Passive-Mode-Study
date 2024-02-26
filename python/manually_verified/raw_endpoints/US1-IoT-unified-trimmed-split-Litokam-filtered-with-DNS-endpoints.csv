@@ -1,4 +1,4 @@
 IP, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
 255.255.255.255,None,None,None,None,120858,31664796,0,0,120858,31664796
-54.188.109.168,ec2-54-188-109-168.us-west-2.compute.amazonaws.com.,ec2-54-188-109-168.us-west-2.compute.amazonaws.com.,United States,None,89040,7290792,39580,3306846,49460,3983946
-44.230.212.240,a2.tuyaus.com,a2.tuyaus.com,United States,US;US,10505,2518740,4825,1648627,5680,870113
+54.188.109.168,ec2-54-188-109-168.us-west-2.compute.amazonaws.com.,*.us.amazonaws.com,United States,None,89040,7290792,39580,3306846,49460,3983946
+44.230.212.240,a2.tuyaus.com,*.tuyaus.com,United States,US;US,10505,2518740,4825,1648627,5680,870113

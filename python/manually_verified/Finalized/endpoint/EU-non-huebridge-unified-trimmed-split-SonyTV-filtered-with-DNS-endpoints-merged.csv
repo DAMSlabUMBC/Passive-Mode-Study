@@ -1,0 +1,56 @@
+IP,Hostnames,Aggregated Hostname,Type,IP Geolocation,Cert Geolocations,Packets,Bytes,TxPackets,TxBytes,RxPackets,RxBytes
+104.84.81.161,static.internet.sony.tv,*.sony.tv,First-Party,United Kingdom,None,14,5729,5,5011,9,718
+44.225.84.51;44.240.111.222;50.112.17.37,api.meta.ndmdhs.com;bdcore-apr-lb.bda.ndmdhs.com,*.ndmdhs.com,First-Party,United States,BE;JP,84,23883,39,17536,45,6347
+13.224.68.66;13.32.145.49;13.32.145.58,bravia-cfgdst-ore-pro.bda.ndmdhs.com,*.ndmdhs.com,First-Party,United States,BE,72,26053,34,21547,38,4506
+13.32.145.105;13.32.145.21,cdn.meta.ndmdhs.com,*.ndmdhs.com,First-Party,United States,None,20,2788,10,1536,10,1252
+13.224.68.118;18.239.69.44;52.84.174.104;52.84.174.89;18.239.69.3;18.66.171.30;52.222.174.103;52.222.174.123;52.222.174.21;54.201.66.14;44.239.233.189;52.25.158.229,api.erabu.sony.tv;metadata.erabu.sony.tv;reg.biv.sony.tv;service.biv.sony.tv;ssm1.internet.sony.tv,*.sony.tv,First-Party,United States,US,647,199555,303,132652,344,66903
+192.168.231.108,None,None,Local (Echo Dot 3),None,None,2220,823055,525,43120,1695,779935
+192.168.231.171,None,None,Local (Echo Show 5),None,None,2240,831075,525,43120,1715,787955
+224.0.0.251,mdns.mcast.net.,mdns.mcast.net,Local Multicast (mDNS),None,None,23083,5362511,0,0,23083,5362511
+239.255.255.250,None,None,Local Multicast (SSDP),None,None,6816,2475344,0,0,6816,2475344
+18.196.27.158,atv-ar8de21s8pinm-sony-mt5893-bravia4kur3-sonybraviareleasekeys.api.amazonvideo.com,*.amazonvideo.com,Third-Party,Germany,US,28,13146,11,10664,17,2482
+34.255.15.69;46.137.170.241;52.211.179.103;54.170.173.133;54.217.21.108;54.217.35.13;99.81.251.69;52.16.177.193;52.209.135.12;52.30.55.190;34.240.160.76;34.252.29.56;52.17.126.117;52.17.211.173;52.210.62.227;52.212.197.118;176.34.214.23;3.248.68.85;3.248.72.3;34.252.142.55;54.155.136.132;54.195.14.93;54.220.170.166;54.228.171.0;54.73.99.78;54.75.143.18;54.77.110.160;63.35.92.152;3.251.50.149;52.214.181.141;54.155.178.5;54.155.246.232;54.170.196.176;54.246.79.9;54.73.148.110;54.74.73.31,android.prod.cloud.netflix.com;logs.netflix.com;nrdp70-appboot.netflix.com;nrdp-ipv6.prod.ftl.netflix.com;www.netflix.com,*.netflix.com,Third-Party,Ireland,None,8425,5307597,3454,2420053,4971,2887544
+34.240.52.30;34.242.150.220;34.248.133.31;34.250.84.59;52.210.63.192;52.49.41.243;52.17.111.227;52.211.14.11;52.213.164.31;52.213.79.183;54.229.254.136,api-global.netflix.com;uiboot.netflix.com,*.netflix.com,Third-Party,Ireland,US,685,638509,272,416897,413,221612
+52.214.249.246;63.35.126.25;99.81.216.237,preapp.prod.partner.netflix.net,*.netflix.net,Third-Party,Ireland,None,213,138843,101,99667,112,39176
+142.251.168.188,wh-in-f188.1e100.net.,*.1e100.net,Third-Party,United States,None,21424,1965863,12884,1131630,8540,834233
+34.192.183.83;44.203.165.173,e2df123a4dcaeaae2c830c6c288fe47f0fe4e2d4c7a754637f0ef83434a988b.us-east-1.prod.service.minerva.devices.a2z.com,*.a2z.com,Third-Party,United States,US,104,39587,44,20154,60,19433
+44.231.61.240;34.195.175.66;34.237.111.59,arcus-uswest.amazon.com;device-metrics-us-2.amazon.com,*.amazon.com,Third-Party,United States,US,90,25138,43,14588,47,10550
+52.222.169.67,threeplr-abdx8mxr6q3e.api.amazonvideo.com,*.amazonvideo.com,Third-Party,United States,US,30,17831,13,15838,17,1993
+142.250.178.142;142.250.179.78;142.250.74.238;142.250.75.238;142.250.201.174;216.58.214.68,android.clients.google.com;clients3.google.com;www.google.com,*.google.com,Third-Party,United States,US;BE,9133,7783194,3696,6484373,5437,1298821
+173.194.76.188;64.233.167.188;74.125.133.188,mtalk.google.com,*.google.com,Third-Party,United States,None,2557,310853,1397,206010,1160,104843
+142.250.178.138;142.250.179.106;142.250.201.170;142.250.75.234;172.217.18.202;216.58.215.42;216.58.214.170;216.58.213.74;216.58.214.74;142.250.74.234;142.250.179.74;172.217.20.170;172.217.20.202,android.googleapis.com;imasdk.googleapis.com;play.googleapis.com;speechs3proto2-pa.googleapis.com;www.googleapis.com;youtubei.googleapis.com,*.googleapis.com,Third-Party,United States,US;BE,22907,9969130,11186,6783370,11721,3185760
+216.239.36.55;216.239.36.57;216.239.38.55;216.239.38.57;142.250.179.110,fcm.googleapis.com;play-fe.googleapis.com,*.googleapis.com,Third-Party,United States,None,5825,2100615,2625,1276726,3200,823889
+142.250.75.227;216.58.214.163,connectivitycheck.gstatic.com,*.gstatic.com,Third-Party,United States,US;BE,13763,2996912,4750,958786,9013,2038126
+45.57.90.1,secure.netflix.com,*.netflix.com,Third-Party,United States,None,3279,7030386,1434,6886092,1845,144294
+45.57.91.1,assets.nflxext.com,*.nflxext.com,Third-Party,United States,None,779,1645806,334,1608590,445,37216
+52.11.230.198,log.core.cloud.vewd.com,*.vewd.com,Third-Party,United States,AT;US;GB,59,16895,26,13063,33,3832
+23.200.87.150;23.210.249.137,a248.e.akamai.net,*.akamai.net,Third-Party (Cloud),France,US,68,40516,28,37096,40,3420
+216.239.35.0;216.239.35.4,time.android.com,time.android.com,Third-Party (Time),United States,None,4,360,2,180,2,180
+,,,,,,,,,,,
+,,,,,Local P2P,4460,1654130,1050,86240,3410,1567890
+,,,,,Local Multicast,29899,7837855,0,0,29899,7837855
+,,,,,First-Party,837,258008,391,178282,446,79726
+,,,,,Third-Party,89369,40040821,42298,28383597,47071,11657224
+,,,,,Time,4,360,2,180,2,180
+,,,,,,,,,,,
+,,,,,Local P2P %,0.03580345,0.03322135,0.024004938,0.003010301,0.042188351,0.074156897
+,,,,,Local Multicast %,0.240019588,0.157414545,0,0,0.369908942,0.370709045
+,,,,,First-Party %,0.006719168,0.005181802,0.008938982,0.006223127,0.00551789,0.003770821
+,,,,,Third-Party %,0.717425684,0.804175073,0.967010356,0.990760289,0.582360073,0.551354724
+,,,,,Time %,3.21107E-05,7.2302E-06,4.57237E-05,6.2831E-06,2.47439E-05,8.51351E-06
+,,,,,Check,1,1,1,1,1,1
+,,,,,,,,,,,
+,,,,,United States,79950,33902210,38432,25399220,41518,8502990
+,,,,,Germany,28,13146,11,10664,17,2482
+,,,,,Ireland,9323,6084949,3827,2936617,5496,3148332
+,,,,,France,68,40516,28,37096,40,3420
+,,,,,United Kingdom,14,5729,5,5011,9,718
+,,,,,Local,34359,9491985,1050,86240,33309,9405745
+,,,,,,,,,,,
+,,,,,United States %,0.646102374,0.684360367,0.886489978,0.891987905,0.516463695,0.403680039
+,,,,,Germany %,0.000226277,0.000265369,0.000253731,0.000374506,0.000211472,0.000117833
+,,,,,Ireland %,0.075342244,0.122832639,0.088275321,0.103130208,0.068367563,0.14946728
+,,,,,France %,0.00054953,0.000817868,0.000645861,0.001302764,0.000497581,0.000162365
+,,,,,United Kingdom %,0.000113139,0.000115647,0.000115332,0.00017598,0.000111956,3.40871E-05
+,,,,,Local  %,0.277666435,0.191608109,0.024219777,0.003028638,0.414347734,0.446538396
+,,,,,Check,1,1,1,1,1,1

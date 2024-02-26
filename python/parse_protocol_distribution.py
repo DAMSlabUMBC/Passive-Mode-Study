@@ -196,10 +196,10 @@ def parse_pcap_for_protos(protocol_dict, pcap_file_location, mac):
                 filter_string += f",tcp.port == 8883 && {global_filter}"
                 filter_string += f",tcp.port == 8883 && {global_filter} && eth.src == {mac}"
                 filter_string += f",tcp.port == 8883 && {global_filter} && eth.dst == {mac}"
-            elif proto == "http": # Sometimes packets will be sent over HTTP ports without being a true HTTP packet, we count these
-                filter_string += f",(http || tcp.port == 80 || udp.port == 80) && {global_filter}"
-                filter_string += f",(http || tcp.port == 80 || udp.port == 80) && {global_filter} && eth.src == {mac}"
-                filter_string += f",(http || tcp.port == 80 || udp.port == 80) && {global_filter} && eth.dst == {mac}"
+            elif proto == "http":
+                filter_string += f",http && {global_filter}"
+                filter_string += f",http && {global_filter} && eth.src == {mac}"
+                filter_string += f",http && {global_filter} && eth.dst == {mac}"
             else:
                 filter_string += f",{proto} && {global_filter}"
                 filter_string += f",{proto} && {global_filter} && eth.src == {mac}"
@@ -249,9 +249,9 @@ def parse_pcap_for_protos(protocol_dict, pcap_file_location, mac):
                 filter_string += f",tcp.port == 8883 && {global_filter} && {lan_filter} && eth.src == {mac}"
                 filter_string += f",tcp.port == 8883 && {global_filter} && {lan_filter} && eth.dst == {mac}"
             elif proto == "http": # Sometimes packets will be sent over HTTP ports without being a true HTTP packet, we count these
-                filter_string += f",(http || tcp.port == 80 || udp.port == 80) && {global_filter} && {lan_filter}"
-                filter_string += f",(http || tcp.port == 80 || udp.port == 80) && {global_filter} && {lan_filter} && eth.src == {mac}"
-                filter_string += f",(http || tcp.port == 80 || udp.port == 80) && {global_filter} && {lan_filter} && eth.dst == {mac}"
+                filter_string += f",http && {global_filter} && {lan_filter}"
+                filter_string += f",http && {global_filter} && {lan_filter} && eth.src == {mac}"
+                filter_string += f",http && {global_filter} && {lan_filter} && eth.dst == {mac}"
             else:
                 filter_string += f",{proto} && {global_filter} && {lan_filter}"
                 filter_string += f",{proto} && {global_filter} && {lan_filter} && eth.src == {mac}"
@@ -300,9 +300,9 @@ def parse_pcap_for_protos(protocol_dict, pcap_file_location, mac):
                 filter_string += f",tcp.port == 8883 && {global_filter} && {wan_filter} && eth.src == {mac}"
                 filter_string += f",tcp.port == 8883 && {global_filter} && {wan_filter} && eth.dst == {mac}"
             elif proto == "http": # Sometimes packets will be sent over HTTP ports without being a true HTTP packet, we count these
-                filter_string += f",(http || tcp.port == 80 || udp.port == 80) && {global_filter} && {wan_filter}"
-                filter_string += f",(http || tcp.port == 80 || udp.port == 80) && {global_filter} && {wan_filter} && eth.src == {mac}"
-                filter_string += f",(http || tcp.port == 80 || udp.port == 80) && {global_filter} && {wan_filter} && eth.dst == {mac}"
+                filter_string += f",http && {global_filter} && {wan_filter}"
+                filter_string += f",http && {global_filter} && {wan_filter} && eth.src == {mac}"
+                filter_string += f",http && {global_filter} && {wan_filter} && eth.dst == {mac}"
             else:
                 filter_string += f",{proto} && {global_filter} && {wan_filter}"
                 filter_string += f",{proto} && {global_filter} && {wan_filter} && eth.src == {mac}"

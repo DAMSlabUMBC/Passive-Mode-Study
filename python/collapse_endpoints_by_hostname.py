@@ -5,6 +5,19 @@ import sys
 import csv
 from tqdm import tqdm
 
+IP_INDEX = 0
+ORIG_HOST_INDEX = 1
+MOD_HOST_INDEX = 2
+IP_GEO_INDEX = 3
+CERT_GEO_INDEX = 4
+PACKET_COUNT_INDEX = 5
+BYTE_COUNT_INDEX = 6
+TXPACKET_COUNT_INDEX = 7
+TXBYTE_COUNT_INDEX = 8
+RXPACKET_COUNT_INDEX = 9
+RXBYTE_COUNT_INDEX = 10
+FILENAME_INDEX = 11
+
 def main(argv):
 
     parser = argparse.ArgumentParser()
@@ -16,17 +29,26 @@ def main(argv):
     paths = list(pathlist)
     task_count = len(list(paths))
 
+    raw_file_data = dict()
+
     all_hosts_overall = []
+    hostname_locations = dict()
 
     with tqdm(total=task_count) as pbar:
+
+        # We need to do several passes to properly collapse the information
+        # In the first pass we map country information to hostnames
+        # We do this since we don't want to erroneously assume a collapsed hostname
+        # is anycast when they had different uncollapsed hostanmes
+        pbar.set_description(f"Reading geolocation information")
         for path in paths:
 
-            file_location = str(path) # turn into string 
+            file_location = str(path)
             file_name = os.path.basename(file_location).replace(".csv","")
-            pbar.set_description(f"{file_name}: Reading file")
 
-            all_hosts_in_file = []
-
+            # Store raw file data so we don't have to do disk IO every time
+            raw_file_data[file_name] = []
+            
             # Load CSV
             with open(file_location, newline='') as infile:
                 
@@ -35,17 +57,13 @@ def main(argv):
 
                 for row in file_reader:
                     
-                    # Name fields to be clearer
-                    ip = row[0]
-                    hostname = row[1]
-                    ip_geo = row[2]
-                    cert_geo = row[3]
-                    packet_count = int(row[4])
-                    byte_count = int(row[5])
-                    txpacket_count = int(row[6])
-                    txbyte_count = int(row[7])
-                    rxpacket_count = int(row[8])
-                    rxbyte_count = int(row[9])
+                    raw_file_data[file_name].append(row)
+
+                    # Only care about geolocation for hosts now
+                    ip = row[IP_INDEX]
+                    unmodified_hostname = row[ORIG_HOST_INDEX]
+                    ip_geo = row[IP_GEO_INDEX]
+                    cert_geo = row[CERT_GEO_INDEX]
 
                     # Collapse certs to only contain unique elements
                     if(cert_geo != "None"):
@@ -54,159 +72,203 @@ def main(argv):
                         [trimmed_cert_list.append(x) for x in cert_list if x not in trimmed_cert_list]
                         cert_geo = ';'.join(trimmed_cert_list)
 
-                    # If hostname is unknown, we just add as is
-                    if hostname == "None":
-                        out_row = [[ip], hostname, ip_geo, cert_geo, packet_count, byte_count, txpacket_count, txbyte_count, rxpacket_count, rxbyte_count]
-                        all_hosts_in_file.append(out_row)
+                    # Only use IP if no hostname was found
+                    key_to_use = unmodified_hostname
+                    if key_to_use == "None":
+                        key_to_use = ip
 
-                    # Otherwise, we process for merges and updates
+                    if key_to_use in hostname_locations:
+                        stored_ip_geo = hostname_locations[key_to_use][0]
+                        stored_cert_geo = hostname_locations[key_to_use][1]
+
+                        # Determine if we should update the mapping
+                        if ip_geo != "None" and stored_ip_geo == "None":
+                            hostname_locations[key_to_use][0] = ip_geo
+
+                        if cert_geo != "None" and stored_cert_geo == "None":
+                            hostname_locations[key_to_use][1] = cert_geo
+
+                        # Determine if this is anycast
+                        if stored_ip_geo != "None" and stored_ip_geo != "Anycast" and ip_geo != "None" and stored_ip_geo != ip_geo:
+                            hostname_locations[key_to_use][0] = "Anycast"
+
+                        if stored_cert_geo != "None" and stored_cert_geo != "Anycast" and cert_geo != "None" and stored_cert_geo != cert_geo:
+                            hostname_locations[key_to_use][1] = "Anycast"
+
                     else:
+                        hostname_locations[key_to_use] = [ip_geo, cert_geo]
 
-                        # First we preprocess for updates or anycast
-                        for known_host in all_hosts_in_file:
+        # Now process each file using the country mappings we found on the previous pass
+        # Use the in-memory files to avoid IO
+        for file_name, file_data in raw_file_data.items():
 
-                            # First we check for hostname match
-                            if hostname == known_host[1]:
+            pbar.set_description(f"{file_name}: Processing file")
 
-                                # Check for anycast
-                                # We can't truly detect anycast, however we assume that if there is the same hostname
-                                # resolving to multiple geographic locations, it may be anycast                          
-                                if ip_geo != "None" and known_host[2] != "None" and ip_geo != known_host[2]:
-                                    
-                                    # Could be anycast mark them both
-                                    if '*' not in ip_geo:
-                                        ip_geo = f"*{ip_geo}"
-                                    if '*' not in known_host[2]:
-                                        known_host[2] = f"*{known_host[2]}"
+            all_hosts_in_file = []
 
-                                if cert_geo != "None" and known_host[3] != "None" and cert_geo != known_host[3]:
-                                    
-                                    # Could be anycast mark them both
-                                    if '*' not in cert_geo:
-                                        cert_geo = f"*{cert_geo}"
-                                    if '*' not in known_host[3]:
-                                        known_host[3] = f"*{known_host[3]}"
+            for row in file_data:
+                        
+                # Name fields to be clearer
+                ip = row[IP_INDEX]
+                unmodified_hostname = row[ORIG_HOST_INDEX]
+                modified_hostname = row[MOD_HOST_INDEX]
+                ip_geo = row[IP_GEO_INDEX]
+                cert_geo = row[CERT_GEO_INDEX]
+                packet_count = int(row[PACKET_COUNT_INDEX])
+                byte_count = int(row[BYTE_COUNT_INDEX])
+                txpacket_count = int(row[TXPACKET_COUNT_INDEX])
+                txbyte_count = int(row[TXBYTE_COUNT_INDEX])
+                rxpacket_count = int(row[RXPACKET_COUNT_INDEX])
+                rxbyte_count = int(row[RXBYTE_COUNT_INDEX])
 
+                # Override the ip_geo and cert_geo fields with what we found from the whole dataset
+                key_to_use = unmodified_hostname
+                if key_to_use == "None":
+                    key_to_use = ip
 
-                        # Now merge rows as needed
-                        found = False
-                        for known_host in all_hosts_in_file:
+                if key_to_use in hostname_locations:
+                    ip_geo = hostname_locations[key_to_use][0]
+                    cert_geo = hostname_locations[key_to_use][1]   
 
-                            if hostname == known_host[1]:
-                                # Check to see if the country / geo ip needs updating
-                                if ip_geo != "None" and known_host[2] == "None":
-                                    known_host[2] = ip_geo
-                                elif ip_geo == "None" and known_host[2] != "None":
-                                    ip_geo = known_host[2]
+                # If hostname is unknown, we just add as is
+                if modified_hostname == "None":
+                    out_row = [[ip], [unmodified_hostname], modified_hostname, ip_geo, cert_geo, packet_count, byte_count, txpacket_count, txbyte_count, rxpacket_count, rxbyte_count]
+                    all_hosts_in_file.append(out_row)
 
-                                if cert_geo != "None" and known_host[3] == "None":
-                                    known_host[3] = cert_geo
-                                elif cert_geo == "None" and known_host[3] != "None":
-                                    cert_geo = known_host[3]
+                # Otherwise, we process for merges and updates
+                else:
 
-                                # Check for equivelance in hostname and locations
-                                if ip_geo == known_host[2] and cert_geo == known_host[3]:
-                                    found = True
-                                    
-                                    # Update IPs and counts
-                                    known_host[0].append(ip)
-                                    known_host[4] += packet_count
-                                    known_host[5] += byte_count
-                                    known_host[6] += txpacket_count
-                                    known_host[7] += txbyte_count
-                                    known_host[8] += rxpacket_count
-                                    known_host[9] += rxbyte_count
-
-                        # If it doesn't exist, add as is
-                        if not found:
-                            out_row = [[ip], hostname, ip_geo, cert_geo, packet_count, byte_count, txpacket_count, txbyte_count, rxpacket_count, rxbyte_count]
-                            all_hosts_in_file.append(out_row)
-                                
-                # Now write file-based output
-                pbar.set_description(f"{file_name}: Writing output")
-
-                # Create output dir if it doesn't exist
-                if not os.path.isdir("results"):
-                    os.makedirs("results")
-
-                outfile_name = f"{file_name}-merged.csv"
-                outfile_location = os.path.join("results", outfile_name)
-                with open(outfile_location, "w", newline='') as outfile: # open the csv
-                    
-                    writer = csv.writer(outfile)
-                    header = ["IP", "Hostname", "IP Geolocation", "Cert Geolocations", "Packets", "Bytes", "TxPackets", "TxBytes", "RxPackets", "RxBytes"]
-                    writer.writerow(header)
-
+                    found = False
                     for known_host in all_hosts_in_file:
 
-                        # Convert string array into a comma seperated list before writing
-                        known_host[0] = ",".join(known_host[0])
-                        writer.writerow(known_host)   
+                        # First we check for hostname match
+                        if modified_hostname == known_host[MOD_HOST_INDEX]:
 
-                pbar.set_description(f"{file_name}: Processing overall data")
+                            # Check for equivelance in hostname and locations
+                            if ip_geo == known_host[IP_GEO_INDEX] and cert_geo == known_host[CERT_GEO_INDEX]:
+                                found = True
+                                
+                                # Update IPs and counts
+                                if ip not in known_host[IP_INDEX]:
+                                    known_host[IP_INDEX].append(ip)
+                                if unmodified_hostname not in known_host[ORIG_HOST_INDEX]:
+                                    known_host[ORIG_HOST_INDEX].append(unmodified_hostname)
 
-                # Save master data
-                for this_host in all_hosts_in_file:
+                                known_host[PACKET_COUNT_INDEX] += packet_count
+                                known_host[BYTE_COUNT_INDEX] += byte_count
+                                known_host[TXPACKET_COUNT_INDEX] += txpacket_count
+                                known_host[TXBYTE_COUNT_INDEX] += txbyte_count
+                                known_host[RXPACKET_COUNT_INDEX] += rxpacket_count
+                                known_host[RXBYTE_COUNT_INDEX] += rxbyte_count
 
-                    # If hostname is unknown, we just add as is
-                    if this_host[1] == "None":
-                        out_row = [[this_host[0]], this_host[1], this_host[2], this_host[3], this_host[4], this_host[5], this_host[6], this_host[7], this_host[8], this_host[9], [file_name]]
+                    # If it doesn't exist, add as is
+                    if not found:
+                        out_row = [[ip], [unmodified_hostname], modified_hostname, ip_geo, cert_geo, packet_count, byte_count, txpacket_count, txbyte_count, rxpacket_count, rxbyte_count]
+                        all_hosts_in_file.append(out_row)
+
+            # Create output dir if it doesn't exist
+            if not os.path.isdir("results"):
+                os.makedirs("results")
+
+            outfile_name = f"{file_name}-merged.csv"
+            outfile_location = os.path.join("results", outfile_name)
+            with open(outfile_location, "w", newline='') as outfile: # open the csv
+                
+                writer = csv.writer(outfile)
+                header = ["IP", "Hostnames", "Aggregated Hostname", "IP Geolocation", "Cert Geolocations", "Packets", "Bytes", "TxPackets", "TxBytes", "RxPackets", "RxBytes"]
+                writer.writerow(header)
+
+                for known_host in all_hosts_in_file:
+
+                    # Make a copy to prevent changing the list in memory
+                    print_host = list(known_host)
+
+                    # Convert string arrays into a semicolon seperated list before writing
+                    print_host[IP_INDEX] = ";".join(known_host[IP_INDEX])
+                    print_host[ORIG_HOST_INDEX] = ";".join(known_host[ORIG_HOST_INDEX])
+                    writer.writerow(print_host)   
+
+
+            # We also need to merge the master list
+            for this_host in all_hosts_in_file:
+
+                # If hostname is unknown, we just add as is
+                if this_host[MOD_HOST_INDEX] == "None":
+
+                    # Copy the list, convert multi-fields to arrays for later appending, and add the filename to the end
+                    out_row = list(this_host)
+                    out_row[IP_INDEX] = out_row[IP_INDEX]
+                    out_row[ORIG_HOST_INDEX] = out_row[ORIG_HOST_INDEX]
+                    out_row.append([file_name])
+                    all_hosts_overall.append(out_row)
+
+                else:
+                
+                    found = False
+                    for other_host in all_hosts_overall:
+
+                        if other_host[MOD_HOST_INDEX] == this_host[MOD_HOST_INDEX]:
+                                found = True
+
+                                # Merge names
+                                for elem in this_host[IP_INDEX]:
+                                    if elem not in other_host[IP_INDEX]:
+                                        other_host[IP_INDEX] = other_host[IP_INDEX] + this_host[IP_INDEX]
+
+                                for elem in this_host[ORIG_HOST_INDEX]:
+                                    if elem not in other_host[ORIG_HOST_INDEX]:
+                                        other_host[ORIG_HOST_INDEX] = other_host[ORIG_HOST_INDEX] + this_host[ORIG_HOST_INDEX]
+
+                                # Update counts
+                                other_host[PACKET_COUNT_INDEX] += this_host[PACKET_COUNT_INDEX]
+                                other_host[BYTE_COUNT_INDEX] += this_host[BYTE_COUNT_INDEX]
+                                other_host[TXPACKET_COUNT_INDEX] += this_host[TXPACKET_COUNT_INDEX]
+                                other_host[TXBYTE_COUNT_INDEX] += this_host[TXBYTE_COUNT_INDEX]
+                                other_host[RXPACKET_COUNT_INDEX] += this_host[RXPACKET_COUNT_INDEX]
+                                other_host[RXBYTE_COUNT_INDEX] += this_host[RXBYTE_COUNT_INDEX]
+
+                                if file_name not in other_host[FILENAME_INDEX]:
+                                    other_host[FILENAME_INDEX].append(file_name)
+
+                    # If it doesn't exist, add as is
+                    if not found:
+
+                        # Copy the list, convert multi-fields to arrays for later appending, and add the filename to the end
+                        out_row = list(this_host)
+                        out_row[IP_INDEX] = out_row[IP_INDEX]
+                        out_row[ORIG_HOST_INDEX] = out_row[ORIG_HOST_INDEX]
+                        out_row.append([file_name])
                         all_hosts_overall.append(out_row)
 
-                    else:
-                    
-                        found = False
-                        for host in all_hosts_overall:
-
-                            if host[1] == this_host[1]:
-                                # Check to see if the country / geo ip needs updating
-                                if host[2] != "None" and this_host[2] == "None":
-                                    this_host[2] = host[2]
-                                elif host[2] == "None" and this_host[2] != "None":
-                                    host[2] = this_host[2]
-
-                                if host[3] != "None" and this_host[3] == "None":
-                                    this_host[3] = host[3]
-                                elif host[3] == "None" and this_host[3] != "None":
-                                    host[3] = this_host[3]
-                            
-                                # Check for equivelance in hostname and locations
-                                if host[2] == this_host[2] and host[3] == this_host[3]:
-                                    found = True
-                                    
-                                    # Update IPs and counts
-                                    host[0].append(this_host[0])
-                                    host[4] += this_host[4]
-                                    host[5] += this_host[5]
-                                    host[6] += this_host[6]
-                                    host[7] += this_host[7]
-                                    host[8] += this_host[8]
-                                    host[9] += this_host[9]
-                                    host[10].append(file_name)
-
-                        # If it doesn't exist, add as is
-                        if not found:
-                            out_row = [[this_host[0]], this_host[1], this_host[2], this_host[3], this_host[4], this_host[5], this_host[6], this_host[7], this_host[8], this_host[9], [file_name]]
-                            all_hosts_overall.append(out_row)
-
             pbar.update(1)
+
+    # Before writing, we do a sanity check to make sure we account for every IP
 
     outfile_name = "overall-endpoints.csv"
     outfile_location = os.path.join("results", outfile_name)
     with open(outfile_location, "w", newline='') as outfile: # open the csv
         
         writer = csv.writer(outfile)
-        header = ["IP", "Hostname", "IP Geolocation", "Cert Geolocations", "Packets", "Bytes", "TxPackets", "TxBytes", "RxPackets", "RxBytes", "Files"]
+        header = ["IPs", "Hostnames", "Aggregated Hostname", "IP Geolocation", "Cert Geolocations", "Packets", "Bytes", "TxPackets", "TxBytes", "RxPackets", "RxBytes", "Files"]
         writer.writerow(header)
 
         for known_host in all_hosts_overall:
 
             # Convert string array into a comma seperated list before writing
-            known_host[0] = ",".join(known_host[0])
-            known_host[10] = ",".join(known_host[10])
+            known_host[IP_INDEX] = ";".join(known_host[IP_INDEX])
+            known_host[ORIG_HOST_INDEX] = ";".join(known_host[ORIG_HOST_INDEX])
+            known_host[FILENAME_INDEX] = ";".join(known_host[FILENAME_INDEX])
 
-            tokens = known_host[1].split(".")
-            known_host = known_host + tokens[::-1]
+            # We add a breakdown of the aggregated hostname at the end so we can filter
+            # It will tokenize with the base domain then subdomains
+            # E.g. s3.us-east-1.amazonaws.com will tokenize to [amazonaws.com, us-east-1, s3]
+            if known_host[MOD_HOST_INDEX] != "None":
+                tokens = known_host[MOD_HOST_INDEX].split(".")
+                base_domain = tokens[-2] + "." + tokens[-1]
+                tokens = tokens[:-2]
+                tokens.append(base_domain)
+                known_host = known_host + tokens[::-1]
+
 
             writer.writerow(known_host)
 

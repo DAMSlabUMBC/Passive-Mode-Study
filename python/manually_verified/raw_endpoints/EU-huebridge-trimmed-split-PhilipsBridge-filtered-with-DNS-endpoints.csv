@@ -1,17 +1,17 @@
-IP, Original Hostname, Modified Hostname,Classification, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
-239.255.255.250,None,None,,None,None,30354,10654254,0,0,30354,10654254
-34.117.13.189,ws.meethue.com,ws.meethue.com,,United States,None,22971,1769565,11477,685280,11494,1084285
-64.233.184.206,mqtt.2030.ltsapis.goog,mqtt.2030.ltsapis.goog,,United States,None,17335,971769,8559,484336,8776,487433
-224.0.0.22,igmp.mcast.net.,igmp.mcast.net.,,None,None,4244,229176,0,0,4244,229176
-52.48.41.28,diag.meethue.com,diag.meethue.com,,Ireland,US;NL;US;US,1594,384780,754,175959,840,208821
-46.51.188.91,diag.meethue.com,diag.meethue.com,,Ireland,US;NL;US;US,1536,363346,727,173773,809,189573
-99.80.116.23,diag.meethue.com,diag.meethue.com,,Ireland,US;NL;US;US,1305,290758,615,146211,690,144547
-120.25.115.20,None,None,,China,None,204,18360,66,5940,138,12420
-203.107.6.88,None,None,,China,None,177,15930,76,6840,101,9090
-216.239.35.4,time2.google.com.,time2.google.com.,,United States,None,164,14760,82,7380,82,7380
-216.239.35.12,time4.google.com.,time4.google.com.,,United States,None,164,14760,82,7380,82,7380
-216.239.35.8,time3.google.com.,time3.google.com.,,United States,None,164,14760,82,7380,82,7380
-216.239.35.0,time1.google.com.,time1.google.com.,,United States,None,164,14760,82,7380,82,7380
-3.251.22.95,data.meethue.com,data.meethue.com,,Ireland,US;NL;US;US,111,56666,51,13842,60,42824
-54.216.117.174,data.meethue.com,data.meethue.com,,Ireland,US;NL;US;US,72,41772,31,9066,41,32706
-52.211.152.148,data.meethue.com,data.meethue.com,,Ireland,US;NL;US;US,40,27257,18,4668,22,22589
+IP, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+239.255.255.250,None,None,None,None,30354,10654254,0,0,30354,10654254
+34.117.13.189,ws.meethue.com,*.meethue.com,United States,None,22971,1769565,11477,685280,11494,1084285
+64.233.184.206,mqtt.2030.ltsapis.goog,*.ltsapis.goog,United States,None,17335,971769,8559,484336,8776,487433
+224.0.0.22,igmp.mcast.net.,igmp.mcast.net,None,None,4244,229176,0,0,4244,229176
+52.48.41.28,diag.meethue.com,*.meethue.com,Ireland,US;NL;US;US,1594,384780,754,175959,840,208821
+46.51.188.91,diag.meethue.com,*.meethue.com,Ireland,US;NL;US;US,1536,363346,727,173773,809,189573
+99.80.116.23,diag.meethue.com,*.meethue.com,Ireland,US;NL;US;US,1305,290758,615,146211,690,144547
+120.25.115.20,ntp.aliyun.com,ntp.aliyun.com,China,None,204,18360,66,5940,138,12420
+203.107.6.88,ntp.aliyun.com,ntp.aliyun.com,China,None,177,15930,76,6840,101,9090
+216.239.35.4,time2.google.com.,time.google.com,United States,None,164,14760,82,7380,82,7380
+216.239.35.12,time4.google.com.,time.google.com,United States,None,164,14760,82,7380,82,7380
+216.239.35.8,time3.google.com.,time.google.com,United States,None,164,14760,82,7380,82,7380
+216.239.35.0,time1.google.com.,time.google.com,United States,None,164,14760,82,7380,82,7380
+3.251.22.95,data.meethue.com,*.meethue.com,Ireland,US;NL;US;US,111,56666,51,13842,60,42824
+54.216.117.174,data.meethue.com,*.meethue.com,Ireland,US;NL;US;US,72,41772,31,9066,41,32706
+52.211.152.148,data.meethue.com,*.meethue.com,Ireland,US;NL;US;US,40,27257,18,4668,22,22589
