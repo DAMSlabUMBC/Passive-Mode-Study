@@ -1,0 +1,5 @@
+MAC,Layer 3,Layer 4,Layer 5,Layer 7,
+B0:C5:54:4A:30:B0,ip,tcp,tls,http,"Used to fetch certs and upgrade Websocket to secure websocket, then secure websocket is used for communication"
+,,udp,,mdns,Responds with type and name
+,,,,https,
+,,,,stun,STUN for VoIP

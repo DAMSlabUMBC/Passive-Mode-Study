@@ -1,0 +1,7 @@
+MAC,Layer 3,Layer 4,Layer 5,Layer 7,
+64:FF:0A:88:AF:4A,ip,tcp,tls,http,"Connectivity/Captive portal, response to echo show SSDP requests, contacts netflix APIs, fetches icons from sony, fetches other data from sony"
+,ipv6,udp,,mdns,Responds with type and name
+,,,,ssdp,UPnP
+,,,,ntp,
+,,,,https,
+,,,,5228,"Google Talk, reaches out to mtalk.google.com TCP, encrypted, WAN, Enables push messaging"

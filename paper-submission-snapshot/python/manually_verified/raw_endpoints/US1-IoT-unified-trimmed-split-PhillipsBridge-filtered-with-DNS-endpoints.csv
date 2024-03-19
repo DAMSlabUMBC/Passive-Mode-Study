@@ -1,0 +1,21 @@
+IP, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+52.211.152.148,data.meethue.com,*.meethue.com,Ireland,US;NL;US;US,217,81871,92,27144,125,54727
+54.216.117.174,data.meethue.com,*.meethue.com,Ireland,US;NL;US;US,195,72501,80,22800,115,49701
+3.251.22.95,data.meethue.com,*.meethue.com,Ireland,US;NL;US;US,110,37513,45,13518,65,23995
+46.51.188.91,diag.meethue.com,*.meethue.com,Ireland,US;NL;US;US,4241,951503,1918,476350,2323,475153
+99.80.116.23,diag.meethue.com,*.meethue.com,Ireland,US;NL;US;US,3693,813112,1669,418224,2024,394888
+52.48.41.28,diag.meethue.com,*.meethue.com,Ireland,US;NL;US;US,3254,718692,1460,379597,1794,339095
+224.0.0.22,igmp.mcast.net.,igmp.mcast.net,None,None,13101,786078,0,0,13101,786078
+224.0.0.251,mdns.mcast.net.,mdns.mcast.net,None,None,14916,4872736,0,0,14916,4872736
+74.125.201.206,mqtt.2030.ltsapis.goog,*.ltsapis.goog,United States,None,35224,2082287,17401,987981,17823,1094306
+74.125.69.206,mqtt.2030.ltsapis.goog,*.ltsapis.goog,United States,None,5910,349565,2921,166213,2989,183352
+192.168.1.107,None,None,None,None,639562,135434556,287927,24011580,351635,111422976
+239.255.255.250,None,None,None,None,69660,24450660,0,0,69660,24450660
+192.168.1.109,None,None,None,None,7924,1605138,2900,241802,5024,1363336
+203.107.6.88,ntp.aliyun.com,ntp.aliyun.com,China,None,362,32580,164,14760,198,17820
+120.25.115.20,ntp1.aliyun.com,ntp.aliyun.com,China,None,403,36270,146,13140,257,23130
+216.239.35.4,time2.google.com.,time.google.com,United States,None,336,30240,168,15120,168,15120
+216.239.35.0,time1.google.com.,time.google.com,United States,None,336,30240,168,15120,168,15120
+216.239.35.8,time3.google.com.,time.google.com,United States,None,336,30240,168,15120,168,15120
+216.239.35.12,time4.google.com.,time.google.com,United States,None,336,30240,168,15120,168,15120
+34.117.13.189,ws.meethue.com,*.meethue.com,United States,None,51174,3250044,25567,1544802,25607,1705242

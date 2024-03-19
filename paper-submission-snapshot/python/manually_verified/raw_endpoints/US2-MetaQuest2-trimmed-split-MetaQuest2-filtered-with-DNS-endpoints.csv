@@ -1,0 +1,25 @@
+IP, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+31.13.66.10,*.facebook.com,*.facebook.com,United States,US;US;US;US,1192,110156,572,57928,620,52228
+157.240.229.20,*.facebook.com,*.facebook.com,United States,US;US;US;US,282,27004,143,15094,139,11910
+157.240.241.20,*.facebook.com,*.facebook.com,United States,US;US;US;US,215,22532,76,10653,139,11879
+172.253.122.94,bh-in-f94.1e100.net.,*.1e100.net,United States,None,30,3147,15,1452,15,1695
+172.253.63.94,bi-in-f94.1e100.net.,*.1e100.net,United States,None,10,1049,5,484,5,565
+142.250.31.94,bj-in-f94.1e100.net.,*.1e100.net,United States,None,10,1049,5,484,5,565
+157.240.229.55,graph.oculus.com,*.oculus.com,United States,US;US;US;US,276,63200,129,37255,147,25945
+142.251.35.163,lga25s78-in-f3.1e100.net.,*.1e100.net,United States,None,10,1049,5,484,5,565
+157.240.229.34,mqtt-mini.facebook.com,*.facebook.com,United States,None,813,73132,401,36352,412,36780
+31.13.66.34,mqtt-mini.facebook.com,*.facebook.com,United States,None,440,42115,217,22558,223,19557
+157.240.241.34,mqtt-mini.facebook.com,*.facebook.com,United States,None,38,7262,16,4824,22,2438
+31.13.66.48,securecdn.oculus.com,*.oculus.com,United States,US;US;US;US,218,56608,100,36519,118,20089
+157.240.241.55,securecdn.oculus.com,*.oculus.com,United States,US;US;US;US,103,30463,48,21071,55,9392
+129.134.29.123,time2.facebook.com.,time.facebook.com,United States,None,2,180,1,90,1,90
+129.134.27.123,time5.facebook.com.,time.facebook.com,United States,None,4,360,2,180,2,180
+172.253.122.99,www.google.com,*.google.com,United States,None,22,7367,11,5794,11,1573
+142.250.31.106,www.google.com,*.google.com,United States,None,21,7300,10,5727,11,1573
+172.253.115.104,www.google.com,*.google.com,United States,None,21,7300,10,5727,11,1573
+142.251.16.147,www.google.com,*.google.com,United States,None,21,7301,10,5728,11,1573
+142.251.167.106,www.google.com,*.google.com,United States,None,21,7301,10,5728,11,1573
+172.253.115.106,www.google.com,*.google.com,United States,None,21,7302,10,5729,11,1573
+31.13.66.4,www.meta.com,*.meta.com,United States,None,230,173994,100,162975,130,11019
+157.240.229.17,www.meta.com,*.meta.com,United States,None,146,115332,71,108740,75,6592
+31.13.71.1,www.meta.com,*.meta.com,United States,None,65,56966,36,54231,29,2735

@@ -1,0 +1,8 @@
+MAC,Layer 3,Layer 4,Layer 5,Layer 7,
+EC:B5:FA:99:AC:15,ip,tcp,tls,http,"UPnP with netvue camera, requested by Echo but declines"
+,ipv6,udp,,ssdp,
+,,,,ntp,
+,,,,mdns,
+,,,,https,
+,,,,,
+,,,,,"IGMP: 239.255.255.250,224.0.0.251"

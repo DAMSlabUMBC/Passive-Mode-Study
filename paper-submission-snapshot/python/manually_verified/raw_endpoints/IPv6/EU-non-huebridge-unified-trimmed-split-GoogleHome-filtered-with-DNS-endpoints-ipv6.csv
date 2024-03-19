@@ -1,0 +1,6 @@
+IP, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+fe80::a677:33ff:fedf:c24d,None,None,None,None,35780,8570378,35780,8570378,0,0
+ff02::fb,None,None,None,None,35778,8570164,0,0,35778,8570164
+ff02::c:c,None,None,None,None,2,214,0,0,2,214
+fdc4:22e1:d5d:0:d5df:30a:d02d:b5dd,None,None,None,None,1,107,1,107,0,0
+ff05::c0c,None,None,None,None,1,107,0,0,1,107

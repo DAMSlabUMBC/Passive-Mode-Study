@@ -1,0 +1,4 @@
+MAC,Layer 3,Layer 4,Layer 5,Layer 7,
+AC:84:C6:20:FE:4B,ip,tcp,tls,ntp,
+,,udp,,tplink-smarthome,Responds to amazon device udp only
+,,,,https,

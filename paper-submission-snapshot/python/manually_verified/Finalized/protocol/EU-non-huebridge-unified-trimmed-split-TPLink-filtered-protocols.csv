@@ -1,0 +1,5 @@
+MAC,Layer 3,Layer 4,Layer 5,Layer 7,
+1C:3B:F3:8D:29:4A,ip,udp,tls,tplink-smarthome,"Recved from google/amazon, uses tcp/udp and send device info"
+,,tcp,,ntp,
+,,,,1111,"Received from google devices, not responded to, used to be able to use Local Home SDK, this was disabled for security reasons, google still sends."
+,,,,https,

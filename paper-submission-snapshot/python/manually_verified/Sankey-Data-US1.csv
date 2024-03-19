@@ -1,0 +1,11 @@
+Source,Dest,SentPackets,SentBytes
+Echo Dot 5,Hue Bridge,2900,241802
+Echo Dot 5,Broadcast,348,25926
+Echo Dot 5,Multicast,2633,291954
+Litokam Camera,Broadcast,120858,31664796
+Netvue Camera,Hue Bridge,287927,24011580
+Netvue Camera,Multicast,10629,1897332
+Hue Bridge,Echo Dot 5,5024,1363336
+Hue Bridge,Netvue Camera,351635,111422976
+Hue Bridge,Multicast,7972,606280
+TP-Link Plug,Echo Dot 5,173,111758

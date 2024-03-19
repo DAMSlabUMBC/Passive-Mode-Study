@@ -1,0 +1,4 @@
+MAC,Layer 3,Layer 4,Layer 5,Layer 7
+64:B7:08:A9:2B:20,ip,tcp,tls,ntp
+,,udp,,secure-mqtt
+,,,,https

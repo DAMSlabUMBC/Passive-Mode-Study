@@ -1,0 +1,35 @@
+Source,Dest,SentPackets,SentBytes
+TP-Link Plug,Echo Show 5,2905,680274
+TP-Link Plug,Echo Dot 3,2776,647763
+TP-Link Plug,Google Speaker,4246,2687718
+TP-Link Plug,Nest Mini,4247,2688351
+Sony TV,Echo Dot 3,1695,779935
+Sony TV,Echo Show 5,1715,787955
+Sony TV,Multicast,29899,7837855
+Google Speaker,Nest Mini,451886,36471945
+Google Speaker,TP-Link Plug,1732,76208
+Google Speaker,TP-Link Bulb,1691,74404
+Google Speaker,Multicast,44328,9314056
+Nest Mini,Google Speaker,455940,38192888
+Nest Mini,TP-Link Plug,1363,59972
+Nest Mini,TP-Link Bulb,1286,56584
+Nest Mini,Multicast,72660,16455610
+Nest Mini,Broadcast,8512,651201
+TP-Link Bulb,Echo Show 5,67,71221
+TP-Link Bulb,Echo Dot 3,55,58465
+TP-Link Bulb,Google Speaker,4214,4479482
+TP-Link Bulb,Nest Mini,4208,4473104
+Echo Show 5,Echo Dot 3,590490,54905720
+Echo Show 5,Sony TV,525,43120
+Echo Show 5,TP-Link Bulb,0,0
+Echo Show 5,TP-Link Plug,4050,254475
+Echo Show 5,Multicast,5570,585608
+Echo Show 5,Broadcast,315,23100
+Hue Bridge,Multicast,34598,10883430
+D-Link Camera,Multicast,184,33504
+Echo Dot 3,Echo Show 5,565513,38011373
+Echo Dot 3,Sony TV,525,43120
+Echo Dot 3,TP-Link Bulb,0,0
+Echo Dot 3,TP-Link Plug,3888,244296
+Echo Dot 3,Broadcast,291,21396
+Echo Dot 3,Multicast,836,94256

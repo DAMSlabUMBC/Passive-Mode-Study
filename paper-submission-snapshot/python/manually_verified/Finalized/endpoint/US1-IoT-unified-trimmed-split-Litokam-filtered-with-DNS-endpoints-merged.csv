@@ -1,0 +1,18 @@
+IP,Hostnames,Aggregated Hostname,Type,IP Geolocation,Cert Geolocations,Packets,Bytes,TxPackets,TxBytes,RxPackets,RxBytes
+255.255.255.255,None,None,Local Broadcast (Global),None,None,120858,31664796,0,0,120858,31664796
+54.188.109.168,ec2-54-188-109-168.us-west-2.compute.amazonaws.com.,*.us.amazonaws.com,Third-Party (Cloud),United States,None,89040,7290792,39580,3306846,49460,3983946
+44.230.212.240,a2.tuyaus.com,*.tuyaus.com,Third-Party,United States,US,10505,2518740,4825,1648627,5680,870113
+,,,,,,,,,,,
+,,,,,Local Broadcast,120858,31664796,0,0,120858,31664796
+,,,,,Third-Party,99545,9809532,44405,4955473,55140,4854059
+,,,,,,,,,,,
+,,,,,Local %,0.548350068,0.763479423,0,0,0.686700985,0.867080745
+,,,,,Third-Party %,0.451649932,0.236520577,1,1,0.313299015,0.132919255
+,,,,,Check,1,1,1,1,1,1
+,,,,,,,,,,,
+,,,,,United States,99545,9809532,44405,4955473,55140,4854059
+,,,,,Local,120858,31664796,0,0,120858,31664796
+,,,,,,,,,,,
+,,,,,United States %,0.451649932,0.236520577,1,1,0.313299015,0.132919255
+,,,,,Local %,0.548350068,0.763479423,0,0,0.686700985,0.867080745
+,,,,,Check,1,1,1,1,1,1

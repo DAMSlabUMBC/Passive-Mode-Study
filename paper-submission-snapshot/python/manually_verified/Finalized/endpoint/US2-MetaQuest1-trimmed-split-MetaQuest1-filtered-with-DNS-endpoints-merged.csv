@@ -1,0 +1,28 @@
+IP,Hostnames,Aggregated Hostname,Type,IP Geolocation,Cert Geolocations,Packets,Bytes,TxPackets,TxBytes,RxPackets,RxBytes
+31.13.66.10,*.facebook.com,*.facebook.com,First-Party,United States,US,32,6525,14,4301,18,2224
+157.240.229.17;31.13.66.4;31.13.66.34;157.240.229.34,edge-star-shv-02-iad3.facebook.com.;graph.facebook.com;mqtt-mini.facebook.com,*.facebook.com,First-Party,United States,None,1350,478858,646,63454,704,415404
+157.240.229.55;31.13.66.48,graph.oculus.com,*.oculus.com,First-Party,United States,US,1394,313981,594,165115,800,148866
+2a03:2880:f003:c09:face:b00c:0:6206;2a03:2880:f003:116:face:b00c:0:6206;2a03:2880:f003:c05:face:b00c:0:8e;2a03:2880:f003:115:face:b00c:0:8e;2a03:2880:f012:113:face:b00c:0:8e;2a03:2880:f103:80:face:b00c:0:1ea0;2a03:2880:f103:183:face:b00c:0:1ea0;2a03:2880:f003:c1b:face:b00c:0:2b80;2a03:2880:f003:110:face:b00c:0:2b80;2a03:2880:f012:10f:face:b00c:0:2b80;2a03:2880:f011:1:face:b00c:0:1;2a03:2880:f003:c07:face:b00c:0:2;2a03:2880:f012:1:face:b00c:0:1;2a03:2880:f082:e:face:b00c:0:2;2a03:2880:f011:110:face:b00c:0:2;2a03:2880:f003:112:face:b00c:0:2;2a03:2880:f012:100:face:b00c:0:2;2a03:2880:f103:83:face:b00c:0:25de;2a03:2880:f103:181:face:b00c:0:25de,edge-dgw6-shv-01-iad3.facebook.com.;edge-dgw6-shv-02-iad3.facebook.com.;edge-mqtt6-shv-01-iad3.facebook.com.;edge-mqtt6-shv-02-iad3.facebook.com.;edge-mqtt6-shv-02-lga3.facebook.com.;edge-mqtt-mini6-shv-01-iad3.facebook.com.;edge-mqtt-mini6-shv-02-iad3.facebook.com.;edge-secure6-shv-01-iad3.facebook.com.;edge-secure6-shv-02-iad3.facebook.com.;edge-secure6-shv-02-lga3.facebook.com.;edge-star6-shv-01-atl3.facebook.com.;edge-star6-shv-01-iad3.facebook.com.;edge-star6-shv-01-lga3.facebook.com.;edge-star6-shv-01-ord5.facebook.com.;edge-star6-shv-02-atl3.facebook.com.;edge-star6-shv-02-iad3.facebook.com.;edge-star6-shv-02-lga3.facebook.com.;edge-star-mini6-shv-01-iad3.facebook.com.;edge-star-mini6-shv-02-iad3.facebook.com.,*.facebook.com,First-Party,United States,None,659481,652902481,324299,61557451,335182,591345030
+2a03:2880:f211:c1:face:b00c:0:32c2;2a03:2880:f272:ca:face:b00c:0:32c2;2a03:2880:f203:c1:face:b00c:0:32c2;2a03:2880:f212:c1:face:b00c:0:32c2;2a03:2880:f211:1ce:face:b00c:0:32c2;2a03:2880:f203:1cc:face:b00c:0:32c2;2a03:2880:f212:1c8:face:b00c:0:32c2;2a03:2880:f003:100:face:b00c:0:3,edge-oculus6-shv-01-atl3.fbcdn.net.;edge-oculus6-shv-01-bos5.fbcdn.net.;edge-oculus6-shv-01-iad3.fbcdn.net.;edge-oculus6-shv-01-lga3.fbcdn.net.;edge-oculus6-shv-02-atl3.fbcdn.net.;edge-oculus6-shv-02-iad3.fbcdn.net.;edge-oculus6-shv-02-lga3.fbcdn.net.;xx-fbcdn6-shv-02-iad3.fbcdn.net.,*.fbcdn.net,First-Party,Ireland,None,6461618,9453206405,2976287,8885999959,3485331,567206446
+142.251.111.94,bk-in-f94.1e100.net.,*.1e100.net,Third-Party,United States,None,10,1049,5,484,5,565
+2607:f8b0:4004:c07::68;2607:f8b0:4004:c07::5e;2607:f8b0:4004:c06::67;2607:f8b0:4004:c06::68;2607:f8b0:4004:c06::69;2607:f8b0:4004:c06::6a;2607:f8b0:4004:c06::93;2607:f8b0:4004:c06::63;2607:f8b0:4004:c09::68;2607:f8b0:4004:c09::69;2607:f8b0:4004:c0b::69;2607:f8b0:4004:c0b::6a;2607:f8b0:4004:c19::68;2607:f8b0:4004:c17::67;2607:f8b0:4004:c17::68;2607:f8b0:4004:c17::69;2607:f8b0:4004:c17::5e;2607:f8b0:4004:c1b::67;2607:f8b0:4004:c1b::69;2607:f8b0:4004:c1b::93;2607:f8b0:4004:c1b::5e;2607:f8b0:4004:c1b::63;2607:f8b0:4004:c1d::5e;2607:f8b0:4004:c1d::63,bc-in-f104.1e100.net.;bc-in-f94.1e100.net.;bg-in-f103.1e100.net.;bg-in-f104.1e100.net.;bg-in-f105.1e100.net.;bg-in-f106.1e100.net.;bg-in-f147.1e100.net.;bg-in-f99.1e100.net.;bh-in-f104.1e100.net.;bh-in-f105.1e100.net.;bj-in-f105.1e100.net.;bj-in-f106.1e100.net.;bk-in-f104.1e100.net.;bl-in-f103.1e100.net.;bl-in-f104.1e100.net.;bl-in-f105.1e100.net.;bl-in-f94.1e100.net.;wv-in-f103.1e100.net.;wv-in-f105.1e100.net.;wv-in-f147.1e100.net.;wv-in-f94.1e100.net.;wv-in-f99.1e100.net.;ww-in-f94.1e100.net.;ww-in-f99.1e100.net.,*.1e100.net,Third-Party,United States,None,664,199735,321,146761,343,52974
+2607:f8b0:4004:c09::5e;2607:f8b0:4004:c08::5e;2607:f8b0:4004:c0b::5e,bh-in-f94.1e100.net.;bi-in-f94.1e100.net.;bj-in-f94.1e100.net.,*.1e100.net,Third-Party,United States,None,50,6245,25,2920,25,3325
+129.134.29.123;129.134.25.123;129.134.26.123,time2.facebook.com.;time3.facebook.com.;time4.facebook.com.,time.facebook.com,Time,United States,None,6,540,3,270,3,270
+2a03:2880:ff0b::123,time1.facebook.com.,time.facebook.com,Time,United States,None,248,27280,124,13640,124,13640
+2a03:2880:ff0c::123;2a03:2880:ff08::123;2a03:2880:ff09::123;2a03:2880:ff0a::123,time2.facebook.com.;time3.facebook.com.;time4.facebook.com.;time5.facebook.com.,time.facebook.com,Time,United States,None,1180,129800,590,64900,590,64900
+,,,,,,,,,,,
+,,,,,First-Party,7123875,10106908250,3301840,8947790280,3822035,1159117970
+,,,,,Third-Party,724,207029,351,150165,373,56864
+,,,,,Time,1434,157620,717,78810,717,78810
+,,,,,,,,,,,
+,,,,,First-Party %,0.999697167,0.999963922,0.999676649,0.999974411,0.999714893,0.999882964
+,,,,,Third-Party %,0.000101599,2.04832E-05,0.00010627,1.67819E-05,9.75642E-05,4.90523E-05
+,,,,,Time %,0.000201234,1.55947E-05,0.000217081,8.80754E-06,0.000187543,6.79834E-05
+,,,,,Check,1,1,1,1,1,1
+,,,,,,,,,,,
+,,,,,United States,664415,654066494,326621,62019296,337794,592047198
+,,,,,Ireland,6461618,9453206405,2976287,8885999959,3485331,567206446
+,,,,,,,,,,,
+,,,,,United States %,0.09323771,0.06471246,0.098888918,0.006931064,0.088355468,0.510714114
+,,,,,Ireland  %,0.90676229,0.93528754,0.901111082,0.993068936,0.911644532,0.489285886
+,,,,,Check,1,1,1,1,1,1

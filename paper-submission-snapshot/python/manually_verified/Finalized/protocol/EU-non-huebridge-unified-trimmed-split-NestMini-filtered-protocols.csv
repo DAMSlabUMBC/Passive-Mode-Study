@@ -1,0 +1,20 @@
+MAC,Layer 3,Layer 4,Layer 5,Layer 7,Notes
+20:DF:B9:3B:00:90,ip,tcp,tls,http,Used for connectivity checks and device metrics
+,ipv6,udp,,mdns,Responds with type and name
+,,,,tplink-smarthome,"Requests information from tp link devices via broadcast, Recv over UDP"
+,,,,ntp,
+,,,,10006,"Exchanging STUN with google home speaker and nest mini, nothing is responding, mistmatched protocols? LAN, no servers"
+,,,,10001,"Exchanging STUN with google home speaker and nest mini, nothing is responding, mistmatched protocols? LAN, no servers"
+,,,,9478,"Unknown broadcast to LAN, potentially local home sdk?"
+,,,,10101,"Undocumented, reaches out between nestmini and google home speaker, on LAN, TCP, Certificates signed by chromecast, undocumented port"
+,,,,1111,"Reaches out to kasa smart plug and tplink (one way), used to be able to use Local Home SDK, this was disabled for security reasons, google still sends."
+,,,,https,
+,,,,5228,"Google Talk, reaches out to mtalk.google.com TCP, encrypted, WAN, Enables push messaging"
+,,,,10005,"Undocumented, reaches out between nestmini and google home speaker, on LAN, TCP, Certificates signed by chromecast, undocumented port"
+,,,,8012,"Undocumented, reaches out between nestmini and google home speaker, on LAN, TCP, Certificates signed by chromecast, undocumented port"
+,,,,9000,"Undocumented, reaches out between nestmini and google home speaker, on LAN, TCP, Certificates signed by chromecast, undocumented port"
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,"IGMP joins, 239.255.255.250, 239.255.255.251, 224.0.0.250, 224.0.0.251, 239.255.3.22"

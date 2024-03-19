@@ -1,0 +1,9 @@
+MAC,Layer 3,Layer 4,Layer 5,Layer 7,
+44:3D:54:BE:12:3C,ip,tcp,tls,http,Connectivity checks and captive portal checks. Tries to connect to hue bridge but fails because of button press
+,ipv6,udp,,mdns,Responds with type and name
+,,,,ssdp,UPnP
+,,,,tplink-smarthome,Requests information from tp link devices via UDP broadcast
+,,,,ntp,
+,,,,https,
+,,,,56700,"Broadcast, probably lifx, https://lan.developer.lifx.com/docs/querying-the-device-for-data#getservice---packet-2"
+,,,,1982,Query SSDP (wifi bulb)
