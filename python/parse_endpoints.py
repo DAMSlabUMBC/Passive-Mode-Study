@@ -182,7 +182,7 @@ def resolve_ip_geolocation(file_location, ip_data):
                 ip_data[ip]["IP Geolocation"] = country
 
     # Repeat for dst IPs
-    tshark_command = ["tshark", "-nr", file_location, f"-Y{remote_filter}", "-Tfields", "-eip.dst", "-eip.geoip.dst_country"]
+    tshark_command = ["tshark", "-Ng", "-r", file_location, f"-Y{remote_filter}", "-Tfields", "-eip.dst", "-eip.geoip.dst_country"]
     command = subprocess.run(tshark_command, capture_output=True, text=True)
     
     if(command.returncode != 0): 
