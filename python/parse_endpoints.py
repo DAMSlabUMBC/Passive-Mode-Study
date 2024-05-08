@@ -5,6 +5,7 @@ import os
 import sys
 from dns import resolver,reversename
 from tqdm import tqdm
+import extract_certs
 
 # We only need to resolve names for remote IPs, don't worry about local/broadcast/multicast IPs
 remote_filter = "eth.dst.ig == 0 && !((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16))"
@@ -58,8 +59,9 @@ def main(argv):
             ip_data = resolve_with_post_processing_dns(ip_data)
             pbar.update(1)
 
-            # Lookup up certificate to find the website owner
-            
+            # Extract certificate data for owner lookup
+            cert_data = extract_certs.extract_cert_information_from_pcap(file_location)
+            ip_data = resolve_owner_with_cert_information(ip_data, cert_data)
 
             # Lookup whois information based on name if possible, otherwise look based on IP
 
@@ -88,12 +90,12 @@ def main(argv):
             with open(outfile_location, "w", newline='') as outfile: # open the csv
 
                 lines_to_write = []
-                header = "IP, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes\n"
+                header = "IP, Owner, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes\n"
                 lines_to_write.append(header)
                 
                 for ip in ip_data.keys():
                     data_dict = ip_data[ip]
-                    line_to_write = f"{ip},{data_dict['Hostname']},{data_dict['Hostname']},{data_dict['IP Geolocation']},{data_dict['Cert Geolocation']},{data_dict['Packets']},{data_dict['Bytes']},{data_dict['TxPackets']},{data_dict['TxBytes']},{data_dict['RxPackets']},{data_dict['RxBytes']}\n"
+                    line_to_write = f"{ip},{data_dict['Owner']},{data_dict['Hostname']},{data_dict['Hostname']},{data_dict['IP Geolocation']},{data_dict['Cert Geolocation']},{data_dict['Packets']},{data_dict['Bytes']},{data_dict['TxPackets']},{data_dict['TxBytes']},{data_dict['RxPackets']},{data_dict['RxBytes']}\n"
                     lines_to_write.append(line_to_write)
                     
                 outfile.writelines(lines_to_write)
@@ -354,6 +356,45 @@ def resolve_with_post_processing_dns(ip_data):
                 continue
 
     return ip_data
+
+def resolve_owner_with_cert_information(ip_data, cert_data):
+    
+    for ip in ip_data.keys():
+        if ip_data[ip]["Owner"] == None and ip_data[ip]["Hostname"] != None:
+            hostname = ip_data[ip]["Hostname"]
+
+            # We only care about certs that contain owner information for this
+            for serial in cert_data:
+                if "orgName" in cert_data[serial]:
+                    orgName = cert_data[serial]["orgName"]
+
+                    # Check if either the common names or the alt names match the current hostname
+                    cert = cert_data[serial]
+                    names_to_check = list()
+
+                    if "commonName" in cert:
+                        names_to_check.append(cert["commonName"])
+
+                    if "altNames" in cert:
+                        names_to_check.extend(cert["altNames"])
+
+                    for name in names_to_check:
+
+                        # Remove the star if this is a wildcarded name
+                        if name.startswith("*"):
+                            name = name[1:]
+
+                        # Found owner
+                        if hostname.endswith(name):
+                            ip_data[ip]["Owner"] = orgName
+                            break
+
+                # Stop if we've already found the owner
+                if ip_data[ip]["Owner"] != None:
+                    break
+
+    return ip_data
+
 
 if __name__ == "__main__":
    main(sys.argv[1:])

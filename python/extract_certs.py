@@ -67,7 +67,7 @@ def extract_cert_information_from_pcap(pcap_file):
                         if hasattr(cert.signedCertificate_element, "extensions_tree"):
                             altnames = extract_altnames_from_extensions(cert.signedCertificate_element.extensions_tree)
                             if len(altnames) > 0:
-                                attributes["alt_names"] = altnames
+                                attributes["altNames"] = altnames
 
                         # Store results
                         cert_dict[serial] = attributes
@@ -142,10 +142,7 @@ def extract_attribute_from_RDNItem(rdn_item):
         return "stateProvince", stateProvince
     
     if oid == COUNTRY_OID:
-        if hasattr(rdn_item.DirectoryString_tree, "printableString"):
-            countryName = rdn_item.DirectoryString_tree.printableString
-        elif hasattr(rdn_item.DirectoryString_tree, "uTF8String"):
-            countryName = rdn_item.DirectoryString_tree.uTF8String
+        countryName = rdn_item.CountryName
         return "countryName", countryName
     
     return None, None
@@ -170,10 +167,11 @@ def extract_altnames_from_extensions(extensions_tree):
             general_name_tree = extensions_tree.Extension_element.GeneralNames_tree.GeneralName_tree
 
     # Now parse general names, of which there may be multiple
-    if isinstance(general_name_tree, list):
-        for general_name in general_name_tree:
-            altnames.append(general_name.dNSName)
-    else:
-        altnames.append(general_name_tree.dNSName)
+    if general_name_tree != None:
+        if isinstance(general_name_tree, list):
+            for general_name in general_name_tree:
+                altnames.append(general_name.dNSName)
+        else:
+            altnames.append(general_name_tree.dNSName)
 
     return altnames
