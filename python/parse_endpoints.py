@@ -33,12 +33,12 @@ def main(argv):
 
             # Now try to geolocate using MaxMind's database configured in tshark
             pbar.set_description(f"{file_name}: Resolving IP geolocation")
-            ip_data = resolve_ip_geolocation(file_location, ip_data)
+            #ip_data = resolve_ip_geolocation(file_location, ip_data)
             pbar.update(1)
           
             # Next try to geolocate the certificate using the x509 extensions
             pbar.set_description(f"{file_name}: Resolving cert geolocation")
-            ip_data = resolve_cert_geolocation(file_location, ip_data)
+            #ip_data = resolve_cert_geolocation(file_location, ip_data)
             pbar.update(1)
 
             # Then try to resolve name
@@ -57,6 +57,25 @@ def main(argv):
             pbar.set_description(f"{file_name}: Resolving hostnames with current DNS queries")
             ip_data = resolve_with_post_processing_dns(ip_data)
             pbar.update(1)
+
+            # Lookup up certificate to find the website owner
+            
+
+            # Lookup whois information based on name if possible, otherwise look based on IP
+
+
+            # We now have the data for this file. We're going to write two files for output, one with the raw data
+            # and one with aggregated wildcarded addresses
+
+
+
+
+
+
+
+
+
+
 
             pbar.set_description(f"{file_name}: Writing results")
 
@@ -131,6 +150,7 @@ def fetch_ip_list(file_location):
         tokens = line.split()
         line_dict = dict()
         line_dict["Hostname"] = None
+        line_dict["Owner"] = None
         line_dict["IP Geolocation"] = None
         line_dict["Cert Geolocation"] = None
         line_dict["Packets"] = tokens[1]
@@ -145,6 +165,7 @@ def fetch_ip_list(file_location):
         tokens = line.split()
         line_dict = dict()
         line_dict["Hostname"] = None
+        line_dict["Owner"] = None
         line_dict["IP Geolocation"] = None
         line_dict["Cert Geolocation"] = None
         line_dict["Packets"] = tokens[1]
@@ -252,6 +273,9 @@ def resolve_with_SNIs(file_location, ip_data):
             hostname = tokens[1]
 
             if ip in ip_data:
+                # Remove trailing dot if it exists
+                if hostname.endswith('.'):
+                    hostname = hostname[:-1]
                 ip_data[ip]["Hostname"] = hostname
 
     return ip_data
@@ -277,6 +301,9 @@ def resolve_with_x509(file_location, ip_data):
             hostname = tokens[1].split(',')[0]
 
             if ip in ip_data and ip_data[ip]["Hostname"] == None:
+                # Remove trailing dot if it exists
+                if hostname.endswith('.'):
+                    hostname = hostname[:-1]
                 ip_data[ip]["Hostname"] = hostname
 
     return ip_data
@@ -303,6 +330,9 @@ def resolve_with_captured_dns(file_location, ip_data):
 
             for ip in ip_list:
                 if ip in ip_data and ip_data[ip]["Hostname"] == None:
+                    # Remove trailing dot if it exists
+                    if hostname.endswith('.'):
+                        hostname = hostname[:-1]
                     ip_data[ip]["Hostname"] = hostname
 
     return ip_data
@@ -315,6 +345,10 @@ def resolve_with_post_processing_dns(ip_data):
                 # Try to query the DNS server
                 addr = reversename.from_address(ip)
                 name = str(resolver.resolve(addr,"PTR")[0])
+                
+                # Remove trailing dot if it exists
+                if hostname.endswith('.'):
+                    hostname = hostname[:-1]
                 ip_data[ip]["Hostname"] = name
             except:
                 continue

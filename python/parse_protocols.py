@@ -7,13 +7,17 @@ import pandas
 import numpy
 
 layer_3_protos = ["ip", "ipv6"]
-layer_4_protos = ["tcp", "udp", "igmp"]
+layer_4_protos = ["tcp", "udp"]
 layer_5_protos = ["tls"]
 layer_7_protos = ["http", "https", "ssdp", "mdns", "ntp", "tplink-smarthome", "mqtt", "secure-mqtt"]
 
 # Additional protocol list was manually constructed from evaluation of observed ports
 known_other_protos = { "56700" : "lifx" }
 
+# Wireshark will assign protcol names based on IANA port assignments even if not correct
+# No devices we have use the below protocols as named in IANA and should be represented
+# by port number, not name
+incorrect_proto_associations = { "estamp" : "1982" }
 
 def main(argv):
 
@@ -215,6 +219,12 @@ def extract_protos_from_conversations(conv_list):
         if port_src in known_other_protos:
             port_src = known_other_protos[port_src]
 
+        if port_dst in incorrect_proto_associations:
+            port_dst = incorrect_proto_associations[port_dst]
+
+        if port_src in incorrect_proto_associations:
+            port_src = incorrect_proto_associations[port_src]
+
         write_src = False
         write_dst = False
 
@@ -286,7 +296,7 @@ def parse_ips_and_ports(text):
             tcp_lines = parsed_output[:i]
             
             # The next 5 lines are UDP header
-            udp_lines = parsed_output[i+5:]
+            udp_lines = parsed_output[i+6:]
 
             break
     
