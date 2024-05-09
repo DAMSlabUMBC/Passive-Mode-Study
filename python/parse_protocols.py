@@ -5,14 +5,15 @@ import os
 import sys
 import pandas
 import numpy
+import csv
 
 layer_3_protos = ["ip", "ipv6"]
 layer_4_protos = ["tcp", "udp"]
 layer_5_protos = ["tls"]
 layer_7_protos = ["http", "https", "ssdp", "mdns", "ntp", "tplink-smarthome", "mqtt", "secure-mqtt"]
 
-# Additional protocol list was manually constructed from evaluation of observed ports
-known_other_protos = { "56700" : "lifx" }
+lan_filter = "(eth.dst.ig == 1 || ((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16)))"
+wan_filter = "(eth.dst.ig == 0 && !((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16)))"
 
 # Wireshark will assign protcol names based on IANA port assignments even if not correct
 # No devices we have use the below protocols as named in IANA and should be represented
@@ -22,20 +23,19 @@ incorrect_proto_associations = { "estamp" : "1982" }
 def main(argv):
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('pcap_dir', type=is_dir, help="A directory containing pcap files to scan for protocols")
+    parser.add_argument('input_csv', type=is_file, help="A CSV mapping pcap files to MACs to analyze")
     args = parser.parse_args()
+    pcap_to_macs_mapping = parse_cfg_csv(args.input_csv)
 
-    # load the pathlist for the section of .pcaps
-    pathlist = Path(args.pcap_dir).glob('**/*.pcap') # go through a folder of .pcaps
-
-    for path in pathlist: # iterate through each path
-        file_location = str(path) # turn into string 
-        file_name = os.path.basename(file_location).replace(".pcap","")
+    # Process each pcap file while analyzing the desired MACs
+    for pcap_file in pcap_to_macs_mapping:
+        file_name = os.path.basename(pcap_file).replace(".pcap","")
+        macs_to_analyze = pcap_to_macs_mapping[pcap_file]
 
         print(f"Processing file {file_name}...")
 
         print(f"    ...Parsing protos")
-        tshark_command_one = ["tshark", "-Nt", "-qr", file_location, "-z", "io,phs"] # create an array for both template commands
+        tshark_command_one = ["tshark", "-Nt", "-qr", pcap_file, "-z", "io,phs"] # create an array for both template commands
 
         command_one = subprocess.run(tshark_command_one, capture_output=True, text=True)   # Run tshark command
 
@@ -57,8 +57,12 @@ def main(argv):
             protocol_list = unwind_phs_tree(parsed_output)
             known_protos, unknown_protos = parse_protocol_list(protocol_list)
 
-            print(f"    ...Parsing conversations")
-            all_protos = resolve_unknown_protos(known_protos, unknown_protos, file_location)
+            print(f"    ...Parsing ports for unknown protocols")
+            all_protos = resolve_unknown_protos(known_protos, unknown_protos, pcap_file)
+
+            # Now gather metrics for each protocol
+            # We want to both gather metrics of transceived data to each IP as well as aggregates for the device
+            proto_data_by_mac = extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos)
 
             # Create output dir if it doesn't exist
             if not os.path.isdir("results"):
@@ -73,12 +77,30 @@ def main(argv):
                 output_df.to_csv(outfile, index=False)
 
 
-def is_dir(path):
-    if os.path.isdir(path):
+def is_file(path):
+    if os.path.isfile(path):
         return path
     else:
-        raise argparse.ArgumentTypeError(f"{path} not found or isn't a directory")
+        raise argparse.ArgumentTypeError(f"{path} not found or isn't a file")
     
+
+def parse_cfg_csv(file_location):
+
+    ret_dict = dict()
+
+    # Load CSV
+    with open(file_location, newline='') as infile:
+        
+        file_reader = csv.reader(infile)
+        next(file_reader, None)  # skip the headers
+
+        for row in file_reader:
+            pcap_file = row[0]
+            mac_list = row[1].split(',')
+            ret_dict[pcap_file] = mac_list
+
+    return ret_dict
+
 
 def unwind_phs_tree(parsed_output):
     proto_list, output_lines = unwind_phs_tree_step(-1, [], parsed_output, [])
@@ -209,16 +231,10 @@ def extract_protos_from_conversations(conv_list):
         # Helpful flags for processing later
         port_dst_alpha = port_dst.replace("-","").isalpha()
         port_src_alpha = port_src.replace("-","").isalpha()
-        port_dst_well_known = (port_dst in layer_7_protos) or (port_dst in known_other_protos)
-        port_src_well_known = (port_src in layer_7_protos) or (port_src in known_other_protos)
+        port_dst_well_known = (port_dst in layer_7_protos)
+        port_src_well_known = (port_src in layer_7_protos)
 
-        # Rewrite ports to the name if it's a manual mapping
-        if port_dst in known_other_protos:
-            port_dst = known_other_protos[port_dst]
-
-        if port_src in known_other_protos:
-            port_src = known_other_protos[port_src]
-
+        # Rewrite names to port if the IANA resolution is wrong
         if port_dst in incorrect_proto_associations:
             port_dst = incorrect_proto_associations[port_dst]
 
@@ -332,6 +348,72 @@ def parse_ips_and_ports(text):
         udp_conv_endpoints.append(udp_conv_data)
 
     return tcp_conv_endpoints, udp_conv_endpoints
+
+def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos):
+
+    protocol_metrics_by_mac = dict()
+
+    # There are 3 tshark calls per protocol per mac, this could take a decent bit of time
+    for mac in macs_to_analyze:
+        for layer in all_protos:
+            for proto in layer:
+
+                # Tshark will name protocols that are recognized by port but aren't
+                # directly queryable with a filter, e.g. it recognizes "https" but can't filter directly on "https"
+                if proto.isnumeric():
+                    filter_string += f",tcp.port == {int(proto)} || udp.port == {int(proto)}"
+                elif proto == "https":
+                    filter_string += f",tcp.port == 443"
+                elif proto == "secure-mqtt":
+                    filter_string += f",tcp.port == 8883"
+                else:
+                    filter_string += f",{proto}"
+
+                # Now we want to parse the output to store the metrics of protocols transceived to and from endpoints
+
+                 # # Run the tshark command
+            # tshark_command = ["tshark", "-qr", pcap_file_location, "-z", f"io,stat,0{filter_string}"]
+            # command = subprocess.run(tshark_command, capture_output=True, text=True)
+            
+            # # Check if the command was successful
+            # if(command.returncode == 0):  
+            
+            #     parsed_output = command.stdout
+            #     lines = parsed_output.split('\n') 
+                
+            #     # We only care about the one data line that has <>
+            #     lines = [x for x in lines if "<>" in x]
+            #     tokens = lines[0].split("|")
+                
+            #     # Cut out the empty strings and the interval
+            #     all_tokens = [x for x in tokens if x and not "<>" in x]
+
+            # else:
+            #     print(f"ERROR: Cannot process {pcap_file_location} - {command.stderr}")
+
+                # We repeat the process filtering on LAN and WAN
+                if proto.isnumeric():
+                    filter_string += f",tcp.port == {int(proto)} || udp.port == {int(proto)} && {lan_filter}"
+                elif proto == "https":
+                    filter_string += f",tcp.port == 443 && {lan_filter}"
+                elif proto == "secure-mqtt":
+                    filter_string += f",tcp.port == 8883 && {lan_filter}"
+                else:
+                    filter_string += f",{proto} && {lan_filter}"
+
+
+                if proto.isnumeric():
+                    filter_string += f",tcp.port == {int(proto)} || udp.port == {int(proto)} && {wan_filter}"
+                elif proto == "https":
+                    filter_string += f",tcp.port == 443 && {wan_filter}"
+                elif proto == "secure-mqtt":
+                    filter_string += f",tcp.port == 8883 && {wan_filter}"
+                else:
+                    filter_string += f",{proto} && {wan_filter}"
+
+        # Now that we've stored the data, we do a final aggregation of all information
+
+    return protocol_metrics_by_mac
 
 
 if __name__ == "__main__":
