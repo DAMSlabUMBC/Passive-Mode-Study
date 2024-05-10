@@ -625,8 +625,9 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, rich_
                     for line in lines:
                         tokens = line.split()
 
-                        # Tokens are in order <ip>,<total_packets>,<total_bytes>,<packets_from_ip>,<bytes_from_ip>,<packets_to_ip>,<packets_to_ip>
-                        # We parse from the perspective of the MAC being analyzed, so if the tshark output says "X packets Tx from IP", we record that as "MAC Rx X packets from IP"
+                        # Tokens are in order <ip>,<total_packets>,<total_bytes>,<packets_from_endpoint>,<bytes_from_endpoint>,<packets_to_endpoint>,<packets_to_endpoint>
+                        # We parse from the perspective of the MAC being analyzed, but the output is from the perspective of the endpoint
+                        # So "bytes from endpoint" is actually bytes received by our MAC
                         metric_dict = dict()
                         metric_dict["PktTotal"] = tokens[1]
                         metric_dict["ByteTotal"] = tokens[2]
@@ -685,7 +686,7 @@ def write_output(proto_data_by_mac, out_dir, file_name):
                 byte_rx = metric_dict["ByteRx"]
                 packet_tx = metric_dict["PktTx"]
                 byte_tx = metric_dict["ByteTx"]
-                line_to_write = f"{mac},ALL,{protocol},{ip},{packet_total},{byte_total},{packet_rx},{byte_rx},{packet_tx},{byte_tx}\n"
+                line_to_write = f"{mac},ALL,{protocol},{ip},{packet_total},{byte_total},{packet_tx},{byte_tx},{packet_rx},{byte_rx}\n"
                 lines_to_write.append(line_to_write)
 
         protocol_dict = proto_data_by_mac[mac]["LAN"]
@@ -697,7 +698,7 @@ def write_output(proto_data_by_mac, out_dir, file_name):
                 byte_rx = metric_dict["ByteRx"]
                 packet_tx = metric_dict["PktTx"]
                 byte_tx = metric_dict["ByteTx"]
-                line_to_write = f"{mac},ALL,{protocol},{ip},{packet_total},{byte_total},{packet_rx},{byte_rx},{packet_tx},{byte_tx}\n"
+                line_to_write = f"{mac},ALL,{protocol},{ip},{packet_total},{byte_total},{packet_tx},{byte_tx},{packet_rx},{byte_rx}\n"
                 lan_lines_to_write.append(line_to_write)
 
         protocol_dict = proto_data_by_mac[mac]["WAN"]
@@ -709,7 +710,7 @@ def write_output(proto_data_by_mac, out_dir, file_name):
                 byte_rx = metric_dict["ByteRx"]
                 packet_tx = metric_dict["PktTx"]
                 byte_tx = metric_dict["ByteTx"]
-                line_to_write = f"{mac},ALL,{protocol},{ip},{packet_total},{byte_total},{packet_rx},{byte_rx},{packet_tx},{byte_tx}\n"
+                line_to_write = f"{mac},ALL,{protocol},{ip},{packet_total},{byte_total},{packet_tx},{byte_tx},{packet_rx},{byte_rx}\n"
                 wan_lines_to_write.append(line_to_write)
 
     # Write the files
