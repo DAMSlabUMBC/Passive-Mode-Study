@@ -4,7 +4,7 @@ import argparse
 import os
 import sys
 import csv
-from socket import inet_aton
+from ipaddress import ip_address
 from rich.progress import Progress
 from rich.progress import Group
 from rich.live import Live
@@ -16,7 +16,7 @@ from rich.progress import TimeRemainingColumn
 layer_3_protos = ["ip", "ipv6"]
 layer_4_protos = ["tcp", "udp"]
 layer_5_protos = ["tls"]
-layer_7_protos = ["http", "https", "ssdp", "mdns", "ntp", "tplink-smarthome", "mqtt", "secure-mqtt", "classicstun", "stun"]
+layer_7_protos = ["http", "https", "ssdp", "mdns", "ntp", "tplink-smarthome", "mqtt", "secure-mqtt", "classicstun", "stun", "ajp13"]
 
 lan_filter = "(eth.dst.ig == 1 || ((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16)))"
 wan_filter = "(eth.dst.ig == 0 && !((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16)))"
@@ -640,9 +640,9 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, rich_
                     print(f"ERROR: Cannot process WAN for {pcap_file} - {command.stderr}")
 
                 # Sort by IP for nicer printing
-                all_endpoint_data = dict(sorted(all_endpoint_data.items(), key=lambda item: inet_aton(item[0])))
-                lan_endpoint_data = dict(sorted(lan_endpoint_data.items(), key=lambda item: inet_aton(item[0])))
-                wan_endpoint_data = dict(sorted(wan_endpoint_data.items(), key=lambda item: inet_aton(item[0])))
+                all_endpoint_data = dict(sorted(all_endpoint_data.items(), key=sort_ips))
+                lan_endpoint_data = dict(sorted(lan_endpoint_data.items(), key=sort_ips))
+                wan_endpoint_data = dict(sorted(wan_endpoint_data.items(), key=sort_ips))
 
                 all_proto_data[proto] = all_endpoint_data
                 lan_proto_data[proto] = lan_endpoint_data
@@ -662,6 +662,13 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, rich_
 
     protocol_metrics_by_mac = dict(sorted(protocol_metrics_by_mac.items()))
     return protocol_metrics_by_mac
+
+def sort_ips(s):
+    try:
+        ip = int(ip_address(s))
+    except ValueError:
+        return (1, s)
+    return (0, ip)
 
 def write_output(proto_data_by_mac, out_dir, file_name):
 

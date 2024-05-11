@@ -90,12 +90,18 @@ def parse_cert_from_record(record_layer):
 
                         # Verify the handshake is of type "certificate"
                         if handshake_layer.handshake.type == CERTIFICATE_HANDSHAKE_TYPE:
-                            cert_list.append(handshake_layer.handshake.certificates.certificate_tree[0])
+                            if isinstance(handshake_layer.handshake.certificates.certificate_tree, list):
+                                cert_list.append(handshake_layer.handshake.certificates.certificate_tree[0])
+                            else:
+                                cert_list.append(handshake_layer.handshake.certificates.certificate_tree)
                 else:
 
                     # Verify the handshake is of type "certificate"
                     if record_layer.handshake.type == CERTIFICATE_HANDSHAKE_TYPE:
-                        cert_list.append(record_layer.handshake.certificates.certificate_tree[0])
+                        if isinstance(record_layer.handshake.certificates.certificate_tree, list):
+                            cert_list.append(record_layer.handshake.certificates.certificate_tree[0])
+                        else:
+                            cert_list.append(record_layer.handshake.certificates.certificate_tree)
         
     return cert_list
 
