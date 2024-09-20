@@ -61,7 +61,7 @@ def main(argv):
     
     group = Group(overall_progress, file_progress, task_progress, task_progress_no_count)
     file_count = len(pcap_to_macs_mapping)
-    inter_file_tasks = 4 # We just statically update this progress
+    inter_file_tasks = 5 # We just statically update this progress
     
     # Process each pcap file while analyzing the desired MACs   
     with Live(group):
@@ -83,14 +83,18 @@ def main(argv):
 
                 # Now gather metrics for each protocol
                 # We want to both gather metrics of transceived data to each IP as well as aggregates for the device
-                file_progress.update(file_task, advance=1, description=f"Extracting metrics")
-                proto_data_by_mac = extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, task_progress_no_count)
+                file_progress.update(file_task, advance=1, description=f"Extracting metrics (IPv4)")
+                proto_data_by_mac = extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, False, task_progress_no_count)
+
+                file_progress.update(file_task, advance=1, description=f"Extracting metrics (IPv6)")
+                proto_data_by_mac_v6 = extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, True, task_progress_no_count)
                 
                 file_progress.update(file_task, advance=1, description=f"Writing output")
                 # Create output dir if it doesn't exist and write final results
                 if not os.path.isdir("results"):
                     os.makedirs("results")
                 write_output(proto_data_by_mac, "results", file_name)
+                write_output(proto_data_by_mac_v6, "results", f"{file_name}-ipv6")
 
             # If it failed, we can't do anything else
             else:
@@ -463,7 +467,7 @@ def parse_ips_and_ports(text):
     return wan_tcp_conv_endpoints, wan_udp_conv_endpoints, lan_tcp_conv_endpoints, lan_udp_conv_endpoints
 
 
-def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, rich_progress=None):
+def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, is_ipv6, rich_progress=None):
 
     # Setup progress bar
     if rich_progress != None:
@@ -475,6 +479,11 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, rich_
         extract_task = rich_progress.add_task(f"Analyzing MACs", total=task_count)
 
     protocol_metrics_by_mac = dict()
+
+    if is_ipv6:
+        filter = "ipv6"
+    else:
+        filter = "ip"
 
     # There are 3 tshark calls per protocol per mac, this could take a decent bit of time
     for mac in macs_to_analyze:
@@ -510,7 +519,7 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, rich_
                     filter_string = f"{proto} && eth.addr == {mac}"
 
                 # Now we want to parse the output to store the metrics of protocols transceived to and from endpoints
-                tshark_command = ["tshark", "-qr", pcap_file, "-z", f"endpoints,ipv6,{filter_string}"]
+                tshark_command = ["tshark", "-qr", pcap_file, "-z", f"endpoints,{filter},{filter_string}"]
                 command = subprocess.run(tshark_command, capture_output=True, text=True)
                 
                 # Check if the command was successful
@@ -559,7 +568,7 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, rich_
                     filter_string = f"{proto} && {lan_filter} && eth.addr == {mac}"
 
                 # Now we want to parse the output to store the metrics of protocols transceived to and from endpoints
-                tshark_command = ["tshark", "-qr", pcap_file, "-z", f"endpoints,ipv6,{filter_string}"]
+                tshark_command = ["tshark", "-qr", pcap_file, "-z", f"endpoints,{filter},{filter_string}"]
                 command = subprocess.run(tshark_command, capture_output=True, text=True)
                 
                 # Check if the command was successful
@@ -607,7 +616,7 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, rich_
                     filter_string = f"{proto} && {wan_filter} && eth.addr == {mac}"
 
                 # Now we want to parse the output to store the metrics of protocols transceived to and from endpoints
-                tshark_command = ["tshark", "-qr", pcap_file, "-z", f"endpoints,ipv6,{filter_string}"]
+                tshark_command = ["tshark", "-qr", pcap_file, "-z", f"endpoints,{filter},{filter_string}"]
                 command = subprocess.run(tshark_command, capture_output=True, text=True)
                 
                 # Check if the command was successful
