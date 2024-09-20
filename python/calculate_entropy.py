@@ -15,7 +15,7 @@ from rich.progress import TaskProgressColumn
 
 lan_filter = "(eth.dst.ig == 1 || ((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16 || ipv6.dst == ff00::/8 || ipv6.dst == fe80::/10)))"
 wan_filter = "(eth.dst.ig == 0 && !((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16 || ipv6.dst == ff00::/8 || ipv6.dst == fe80::/10)))"
-exclude_ips = ("192.168.1.1", "192.168.3.1", "192.168.231.1")
+exclude_ips = ("192.168.1.1", "192.168.3.1", "192.168.231.1", "192.168.1.100")
 
 def main(argv):
 
