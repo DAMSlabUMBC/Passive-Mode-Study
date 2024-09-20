@@ -364,6 +364,10 @@ def count_udp_flows(file_location):
             else:
                 key = src_ip
 
+            # Skip if IP excluded
+            if key in exclude_ips:
+                continue
+
             if not key in udp_flows:
                 udp_flows[key] = (packet_count, byte_count)
             else:
