@@ -298,31 +298,31 @@ def _get_positions_and_total_widths(df, labels, side, aspect):
     return widths, topEdge
 
 
-url = "Sankey-Data-US1.csv"
+url = "results/Lan_fin.csv"
 data_field = pd.read_csv(url, sep=",") # reads the csv
 
 
 # device name in csv
-device = "Source"
+device = "DeviceName"
 # location in csv
-location = "Dest"
+location = "EndpointType"
 # total packet to that destination
-packets = "SentBytes"
+packets = "TotalBytes"
 
 # Create Sankey diagram 
 sankey(
     left = data_field[device], right=data_field[location], 
     leftWeight = data_field[packets], rightWeight=data_field[packets], 
-    aspect=20, fontsize=8
+    aspect=9, fontsize=8
 )
 
 
 fig = plt.gcf() # Get current figure
 
 
-fig.set_size_inches(5, 2.5) # Set size in inches
+fig.set_size_inches(5, 4.75) # Set size in inches
 
 
 fig.set_facecolor("w") # Set the color of the background to white
 
-fig.savefig(url + ".png", bbox_inches="tight", dpi=150) # Save the figure
+fig.savefig("LanDistribution" + ".png", bbox_inches="tight", dpi=150) # Save the figure

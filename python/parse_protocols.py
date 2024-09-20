@@ -16,7 +16,7 @@ from rich.progress import TimeRemainingColumn
 layer_3_protos = ["ip", "ipv6"]
 layer_4_protos = ["tcp", "udp"]
 layer_5_protos = ["tls"]
-layer_7_protos = ["http", "https", "ssdp", "mdns", "ntp", "tplink-smarthome", "mqtt", "secure-mqtt", "classicstun", "stun", "ajp13"]
+layer_7_protos = ["http", "https", "ssdp", "mdns", "ntp", "tplink-smarthome", "mqtt", "secure-mqtt", "classicstun", "stun", "ajp13", "quic"]
 
 lan_filter = "(eth.dst.ig == 1 || ((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16)))"
 wan_filter = "(eth.dst.ig == 0 && !((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16)))"
@@ -510,7 +510,7 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, rich_
                     filter_string = f"{proto} && eth.addr == {mac}"
 
                 # Now we want to parse the output to store the metrics of protocols transceived to and from endpoints
-                tshark_command = ["tshark", "-qr", pcap_file, "-z", f"endpoints,ip,{filter_string}"]
+                tshark_command = ["tshark", "-qr", pcap_file, "-z", f"endpoints,ipv6,{filter_string}"]
                 command = subprocess.run(tshark_command, capture_output=True, text=True)
                 
                 # Check if the command was successful
@@ -559,7 +559,7 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, rich_
                     filter_string = f"{proto} && {lan_filter} && eth.addr == {mac}"
 
                 # Now we want to parse the output to store the metrics of protocols transceived to and from endpoints
-                tshark_command = ["tshark", "-qr", pcap_file, "-z", f"endpoints,ip,{filter_string}"]
+                tshark_command = ["tshark", "-qr", pcap_file, "-z", f"endpoints,ipv6,{filter_string}"]
                 command = subprocess.run(tshark_command, capture_output=True, text=True)
                 
                 # Check if the command was successful
@@ -607,7 +607,7 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, rich_
                     filter_string = f"{proto} && {wan_filter} && eth.addr == {mac}"
 
                 # Now we want to parse the output to store the metrics of protocols transceived to and from endpoints
-                tshark_command = ["tshark", "-qr", pcap_file, "-z", f"endpoints,ip,{filter_string}"]
+                tshark_command = ["tshark", "-qr", pcap_file, "-z", f"endpoints,ipv6,{filter_string}"]
                 command = subprocess.run(tshark_command, capture_output=True, text=True)
                 
                 # Check if the command was successful
