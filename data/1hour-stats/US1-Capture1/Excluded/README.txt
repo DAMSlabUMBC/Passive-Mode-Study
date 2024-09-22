@@ -1,0 +1,1 @@
+DreamGlass and Metaquest Pro were excluded from Capture 1 as they were tested individually and may have skewed results away from LAN if they were included here

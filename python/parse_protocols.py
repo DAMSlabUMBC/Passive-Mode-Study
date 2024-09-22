@@ -1,5 +1,8 @@
+import math
 import subprocess
 from pathlib import Path
+import numpy
+import itertools
 import argparse
 import os
 import sys
@@ -81,20 +84,39 @@ def main(argv):
                 file_progress.update(file_task, advance=1, description=f"Resolving unknown protos")
                 all_protos = resolve_unknown_protos(known_protos, unknown_protos, pcap_file, task_progress)
 
+                # Determine if we need IPv4 or IPv6 (or both)
+                use_ipv4 = False
+                use_ipv6 = False
+                if "ip" in all_protos["Layer 3"]:
+                    use_ipv4 = True
+                if "ipv6" in all_protos["Layer 3"]:
+                    use_ipv6 = True
+
                 # Now gather metrics for each protocol
                 # We want to both gather metrics of transceived data to each IP as well as aggregates for the device
-                file_progress.update(file_task, advance=1, description=f"Extracting metrics (IPv4)")
-                proto_data_by_mac = extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, False, task_progress_no_count)
+                if use_ipv4:
+                    text = "Extracting metrics (IPv4)" if use_ipv6 else "Extracting metrics"
+                    advance_num = 1 if use_ipv6 else 2
 
-                file_progress.update(file_task, advance=1, description=f"Extracting metrics (IPv6)")
-                proto_data_by_mac_v6 = extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, True, task_progress_no_count)
+                    file_progress.update(file_task, advance=advance_num, description=f"{text}")
+                    proto_data_by_mac = extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, False, task_progress)
+
+                if use_ipv6:
+                    text = "Extracting metrics (IPv6)" if use_ipv4 else "Extracting metrics"
+                    advance_num = 1 if use_ipv4 else 2
+
+                    file_progress.update(file_task, advance=advance_num, description=f"{text}")
+                    proto_data_by_mac_v6 = extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, True, task_progress)
                 
                 file_progress.update(file_task, advance=1, description=f"Writing output")
                 # Create output dir if it doesn't exist and write final results
                 if not os.path.isdir("results"):
                     os.makedirs("results")
-                write_output(proto_data_by_mac, "results", file_name)
-                write_output(proto_data_by_mac_v6, "results", f"{file_name}-ipv6")
+                
+                if use_ipv4:    
+                    write_output(proto_data_by_mac, "results", file_name)
+                if use_ipv6:
+                    write_output(proto_data_by_mac_v6, "results", f"{file_name}-ipv6")
 
             # If it failed, we can't do anything else
             else:
@@ -466,41 +488,44 @@ def parse_ips_and_ports(text):
 
     return wan_tcp_conv_endpoints, wan_udp_conv_endpoints, lan_tcp_conv_endpoints, lan_udp_conv_endpoints
 
-
 def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, is_ipv6, rich_progress=None):
-
-    # Setup progress bar
-    if rich_progress != None:
-        task_count = 0
-        for layer in all_protos.values():
-                for proto in layer:
-                    task_count = task_count + 1
-        task_count = task_count * len(macs_to_analyze)
-        extract_task = rich_progress.add_task(f"Analyzing MACs", total=task_count)
 
     protocol_metrics_by_mac = dict()
 
     if is_ipv6:
-        filter = "ipv6"
+        ip_type = "ipv6"
     else:
-        filter = "ip"
+        ip_type = "ip"
 
-    # There are 3 tshark calls per protocol per mac, this could take a decent bit of time
+    # tshark can take a long time to run based on filesize but is efficient at processing multiple
+    # statistics at one time. Because of this, we batch the protocols in sets of ~10. However,
+    # this does require careful processing as all batched protocols are in the same output text
+    flattened_protos = list(itertools.chain(*all_protos.values()))
+    it = iter(flattened_protos)
+    batched_protos = list(iter(lambda: tuple(itertools.islice(it, 20)), ()))
+
+    # Setup progress bar
+    if rich_progress != None:
+        task_count = len(batched_protos)
+        task_count = task_count * len(macs_to_analyze)
+        extract_task = rich_progress.add_task(f"Analyzing MACs", total=task_count)
+
+    # There is a tshark call per batch per mac, this could take a decent bit of time
     for mac in macs_to_analyze:
 
         all_proto_data = dict()
         lan_proto_data = dict()
         wan_proto_data = dict()
 
-        for layer in all_protos.values():
-            for proto in layer:
-                if rich_progress != None:
-                    rich_progress.update(extract_task, description=f"Analyzing MACs - {mac}")
+        for batch in batched_protos:
+            if rich_progress != None:
+                rich_progress.update(extract_task, description=f"Analyzing MACs - {mac} for batched protocols")
 
-                all_endpoint_data = dict()
-                lan_endpoint_data = dict()
-                wan_endpoint_data = dict()
+            # Need to construct command for batched protocols
+            tshark_command = ["tshark", "-qr", pcap_file]
 
+            # Since tshark puts output with the last -z flag first, we process the protocols in reverse 
+            for proto in reversed(batch):
                 # Tshark will name protocols that are recognized by port but aren't
                 # directly queryable with a filter, e.g. it recognizes "https" but can't filter directly on "https"
                 if proto.isnumeric():
@@ -518,23 +543,119 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, is_ip
                 else:
                     filter_string = f"{proto} && eth.addr == {mac}"
 
-                # Now we want to parse the output to store the metrics of protocols transceived to and from endpoints
-                tshark_command = ["tshark", "-qr", pcap_file, "-z", f"endpoints,{filter},{filter_string}"]
-                command = subprocess.run(tshark_command, capture_output=True, text=True)
-                
-                # Check if the command was successful
-                if(command.returncode == 0):  
-                
-                    parsed_output = command.stdout
-                    lines = parsed_output.split('\n') 
-                    
-                    # Trim off header and footer
-                    # We also trim out the first line since it will be the IP associated with the
-                    # MAC in question (we assume the MAC is only communicating over one IP in the pcap)
-                    lines = lines[5:]
-                    lines = lines[:-2]
+                # Repeat this process again for LAN/WAN filters
+                if proto.isnumeric():
+                    lan_filter_string = f"tcp.port == {int(proto)} || udp.port == {int(proto)} && {lan_filter} && eth.addr == {mac}"
+                elif "tcp:" in proto:
+                    proto_to_use = proto.replace("tcp:", "")
+                    lan_filter_string = f"tcp.port == {int(proto_to_use)} && {lan_filter} && eth.addr == {mac}"
+                elif "udp:" in proto:
+                    proto_to_use = proto.replace("udp:", "")
+                    lan_filter_string = f"udp.port == {int(proto_to_use)} && {lan_filter} && eth.addr == {mac}"
+                elif proto == "https":
+                    lan_filter_string = f"tcp.port == 443 && {lan_filter} && eth.addr == {mac}"
+                elif proto == "secure-mqtt":
+                    lan_filter_string = f"tcp.port == 8883 && {lan_filter} && eth.addr == {mac}"
+                else:
+                    lan_filter_string = f"{proto} && {lan_filter} && eth.addr == {mac}"
 
+                if proto.isnumeric():
+                    wan_filter_string = f"tcp.port == {int(proto)} || udp.port == {int(proto)} && {wan_filter} && eth.addr == {mac}"
+                elif "tcp:" in proto:
+                    proto_to_use = proto.replace("tcp:", "")
+                    wan_filter_string = f"tcp.port == {int(proto_to_use)} && {wan_filter}  && eth.addr == {mac}"
+                elif "udp:" in proto:
+                    proto_to_use = proto.replace("udp:", "")
+                    wan_filter_string = f"udp.port == {int(proto_to_use)} && {wan_filter}  && eth.addr == {mac}"
+                elif proto == "https":
+                    wan_filter_string = f"tcp.port == 443 && {wan_filter} && eth.addr == {mac}"
+                elif proto == "secure-mqtt":
+                    wan_filter_string = f"tcp.port == 8883 && {wan_filter} && eth.addr == {mac}"
+                else:
+                    wan_filter_string = f"{proto} && {wan_filter} && eth.addr == {mac}"
+
+                tshark_command += ["-z", f"endpoints,{ip_type},{filter_string}", "-z", f"endpoints,{ip_type},{lan_filter_string}", "-z", f"endpoints,{ip_type},{wan_filter_string}"]
+
+            # Now process the command
+            command = subprocess.run(tshark_command, capture_output=True, text=True)
+
+            # Check if the command was successful
+            if(command.returncode == 0):  
+                parsed_output = command.stdout
+
+                with open("temp.txt", "w") as outfile:
+                    outfile.write(parsed_output)
+
+                lines = parsed_output.split('\n') 
+                
+                # Process WAN -> LAN -> Both
+                # We revered to create the command so we go forward here
+                for proto in batch:
+
+                    all_endpoint_data = dict()
+                    lan_endpoint_data = dict()
+                    wan_endpoint_data = dict()
+
+                    # Starts WAN
+                    # Trim off header
+                    lines = lines[4:]        
+
+                    # Loop until we find the end of this section
+                    index = 0
                     for line in lines:
+                        
+                        if "========" in line:
+                            wan_lines = lines[:index]
+                            lines = lines[index+1:]
+                            break
+
+                        index += 1
+
+                    # If we found any results, trim off the first one, it's going
+                    # to be the host itself
+                    if len(wan_lines) > 1:
+                        wan_lines = wan_lines[1:]
+
+                    # Next up is LAN
+                    lines = lines[4:]
+
+                    # Loop until we find the end of this section
+                    index = 0
+                    for line in lines:
+                        
+                        if "========" in line:
+                            lan_lines = lines[:index]
+                            lines = lines[index+1:]
+                            break
+
+                        index += 1
+
+                    # If we found any results, trim off the first one, it's going
+                    # to be the host itself
+                    if len(lan_lines) > 1:
+                        lan_lines = lan_lines[1:]
+
+                    # Finally both
+                    lines = lines[4:]
+
+                    # Loop until we find the end of this section
+                    index = 0
+                    for line in lines:
+                        
+                        if "========" in line:
+                            both_lines = lines[:index]
+                            lines = lines[index+1:]
+                            break
+
+                        index += 1
+
+                    # If we found any results, trim off the first one, it's going
+                    # to be the host itself
+                    if len(both_lines) > 1:
+                        both_lines = both_lines[1:]
+
+                    # Now we can process each
+                    for line in wan_lines:
                         tokens = line.split()
 
                         # Tokens are in order <ip>,<total_packets>,<total_bytes>,<packets_from_ip>,<bytes_from_ip>,<packets_to_ip>,<packets_to_ip>
@@ -546,44 +667,9 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, is_ip
                         metric_dict["ByteRx"] = tokens[4]
                         metric_dict["PktTx"] = tokens[5]
                         metric_dict["ByteTx"] = tokens[6]
-                        all_endpoint_data[tokens[0]] = metric_dict
-    
-                else:
-                    print(f"ERROR: Cannot process ALL for {pcap_file} - {command.stderr}")
+                        wan_endpoint_data[tokens[0]] = metric_dict
 
-                # We repeat the process filtering on LAN and WAN
-                if proto.isnumeric():
-                    filter_string = f"tcp.port == {int(proto)} || udp.port == {int(proto)} && {lan_filter} && eth.addr == {mac}"
-                elif "tcp:" in proto:
-                    proto_to_use = proto.replace("tcp:", "")
-                    filter_string = f"tcp.port == {int(proto_to_use)} && {lan_filter} && eth.addr == {mac}"
-                elif "udp:" in proto:
-                    proto_to_use = proto.replace("udp:", "")
-                    filter_string = f"udp.port == {int(proto_to_use)} && {lan_filter} && eth.addr == {mac}"
-                elif proto == "https":
-                    filter_string = f"tcp.port == 443 && {lan_filter} && eth.addr == {mac}"
-                elif proto == "secure-mqtt":
-                    filter_string = f"tcp.port == 8883 && {lan_filter} && eth.addr == {mac}"
-                else:
-                    filter_string = f"{proto} && {lan_filter} && eth.addr == {mac}"
-
-                # Now we want to parse the output to store the metrics of protocols transceived to and from endpoints
-                tshark_command = ["tshark", "-qr", pcap_file, "-z", f"endpoints,{filter},{filter_string}"]
-                command = subprocess.run(tshark_command, capture_output=True, text=True)
-                
-                # Check if the command was successful
-                if(command.returncode == 0):  
-                
-                    parsed_output = command.stdout
-                    lines = parsed_output.split('\n') 
-                    
-                    # Trim off header and footer
-                    # We also trim out the first line since it will be the IP associated with the
-                    # MAC in question (we assume the MAC is only communicating over one IP in the pcap)
-                    lines = lines[5:]
-                    lines = lines[:-2]
-
-                    for line in lines:
+                    for line in lan_lines:
                         tokens = line.split()
 
                         # Tokens are in order <ip>,<total_packets>,<total_bytes>,<packets_from_ip>,<bytes_from_ip>,<packets_to_ip>,<packets_to_ip>
@@ -596,47 +682,12 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, is_ip
                         metric_dict["PktTx"] = tokens[5]
                         metric_dict["ByteTx"] = tokens[6]
                         lan_endpoint_data[tokens[0]] = metric_dict
-    
-                else:
-                    print(f"ERROR: Cannot process LAN for {pcap_file} - {command.stderr}")
 
-                if proto.isnumeric():
-                    filter_string = f"tcp.port == {int(proto)} || udp.port == {int(proto)} && {wan_filter} && eth.addr == {mac}"
-                elif "tcp:" in proto:
-                    proto_to_use = proto.replace("tcp:", "")
-                    filter_string = f"tcp.port == {int(proto_to_use)} && {wan_filter}  && eth.addr == {mac}"
-                elif "udp:" in proto:
-                    proto_to_use = proto.replace("udp:", "")
-                    filter_string = f"udp.port == {int(proto_to_use)} && {wan_filter}  && eth.addr == {mac}"
-                elif proto == "https":
-                    filter_string = f"tcp.port == 443 && {wan_filter} && eth.addr == {mac}"
-                elif proto == "secure-mqtt":
-                    filter_string = f"tcp.port == 8883 && {wan_filter} && eth.addr == {mac}"
-                else:
-                    filter_string = f"{proto} && {wan_filter} && eth.addr == {mac}"
-
-                # Now we want to parse the output to store the metrics of protocols transceived to and from endpoints
-                tshark_command = ["tshark", "-qr", pcap_file, "-z", f"endpoints,{filter},{filter_string}"]
-                command = subprocess.run(tshark_command, capture_output=True, text=True)
-                
-                # Check if the command was successful
-                if(command.returncode == 0):  
-                
-                    parsed_output = command.stdout
-                    lines = parsed_output.split('\n') 
-                    
-                    # Trim off header and footer
-                    # We also trim out the first line since it will be the IP associated with the
-                    # MAC in question (we assume the MAC is only communicating over one IP in the pcap)
-                    lines = lines[5:]
-                    lines = lines[:-2]
-
-                    for line in lines:
+                    for line in both_lines:
                         tokens = line.split()
 
-                        # Tokens are in order <ip>,<total_packets>,<total_bytes>,<packets_from_endpoint>,<bytes_from_endpoint>,<packets_to_endpoint>,<packets_to_endpoint>
-                        # We parse from the perspective of the MAC being analyzed, but the output is from the perspective of the endpoint
-                        # So "bytes from endpoint" is actually bytes received by our MAC
+                        # Tokens are in order <ip>,<total_packets>,<total_bytes>,<packets_from_ip>,<bytes_from_ip>,<packets_to_ip>,<packets_to_ip>
+                        # We parse from the perspective of the MAC being analyzed, so if the tshark output says "X packets Tx from IP", we record that as "MAC Rx X packets from IP"
                         metric_dict = dict()
                         metric_dict["PktTotal"] = tokens[1]
                         metric_dict["ByteTotal"] = tokens[2]
@@ -644,28 +695,30 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, is_ip
                         metric_dict["ByteRx"] = tokens[4]
                         metric_dict["PktTx"] = tokens[5]
                         metric_dict["ByteTx"] = tokens[6]
-                        wan_endpoint_data[tokens[0]] = metric_dict
-    
-                else:
-                    print(f"ERROR: Cannot process WAN for {pcap_file} - {command.stderr}")
+                        all_endpoint_data[tokens[0]] = metric_dict
 
-                # Sort by IP for nicer printing
-                all_endpoint_data = dict(sorted(all_endpoint_data.items(), key=sort_ips))
-                lan_endpoint_data = dict(sorted(lan_endpoint_data.items(), key=sort_ips))
-                wan_endpoint_data = dict(sorted(wan_endpoint_data.items(), key=sort_ips))
+                    # Sort by IP for nicer printing
+                    all_endpoint_data = dict(sorted(all_endpoint_data.items(), key=sort_ips))
+                    lan_endpoint_data = dict(sorted(lan_endpoint_data.items(), key=sort_ips))
+                    wan_endpoint_data = dict(sorted(wan_endpoint_data.items(), key=sort_ips))
 
-                all_proto_data[proto] = all_endpoint_data
-                lan_proto_data[proto] = lan_endpoint_data
-                wan_proto_data[proto] = wan_endpoint_data
+                    # Save protocol data
+                    all_proto_data[proto] = all_endpoint_data
+                    lan_proto_data[proto] = lan_endpoint_data
+                    wan_proto_data[proto] = wan_endpoint_data
 
-                if rich_progress != None:
-                    rich_progress.update(extract_task, advance=1)
+            else:
+                print(f"ERROR: Cannot process ALL for {pcap_file} - {command.stderr}")
 
-            # Now that we've stored the data, we do a final aggregation of all information
-            protocol_metrics_by_mac[mac] = dict()
-            protocol_metrics_by_mac[mac]["All"] = all_proto_data
-            protocol_metrics_by_mac[mac]["LAN"] = lan_proto_data
-            protocol_metrics_by_mac[mac]["WAN"] = wan_proto_data
+            # Update batch count
+            if rich_progress != None:
+                rich_progress.update(extract_task, advance=1)
+        
+        # Now that we've stored the data, we do a final aggregation of all information
+        protocol_metrics_by_mac[mac] = dict()
+        protocol_metrics_by_mac[mac]["All"] = all_proto_data
+        protocol_metrics_by_mac[mac]["LAN"] = lan_proto_data
+        protocol_metrics_by_mac[mac]["WAN"] = wan_proto_data
 
     if rich_progress != None:
         rich_progress.remove_task(extract_task)

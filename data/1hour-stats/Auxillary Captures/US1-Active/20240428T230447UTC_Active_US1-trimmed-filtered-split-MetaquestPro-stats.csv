@@ -1,0 +1,4 @@
+Device,StartTime,Frames,Bytes,TxFrames,TxBytes,RxFrames,RxBytes
+MetaquestPro (US1-Active),0,4877,1830304,2716,1474050,2161,356254
+MetaquestPro (US1-Active),3600,4503,1494517,2528,1160454,1975,334063
+MetaquestPro (US1-Active),7200,811,228621,452,169073,359,59548
