@@ -165,8 +165,8 @@ def count_tcp_flows(file_location):
         for line in wan_lines:
             tokens = line.split()
 
-            src_ip = tokens[0].split(':')[0]
-            dst_ip = tokens[2].split(':')[0]
+            src_ip = tokens[0].rsplit(':', 1)[0]
+            dst_ip = tokens[2].rsplit(':', 1)[0]
 
             # Skip if excluded
             if src_ip in exclude_ips or dst_ip in exclude_ips:
@@ -188,8 +188,8 @@ def count_tcp_flows(file_location):
         for line in lan_lines:
             tokens = line.split()
 
-            src_ip = tokens[0].split(':')[0]
-            dst_ip = tokens[2].split(':')[0]
+            src_ip = tokens[0].rsplit(':', 1)[0]
+            dst_ip = tokens[2].rsplit(':', 1)[0]
 
             # Skip if excluded
             if src_ip in exclude_ips or dst_ip in exclude_ips:
@@ -252,54 +252,109 @@ def count_udp_flows(file_location):
         # We need to determine what this node's IP is. This is the only IP that exist in every flow
         # All we have to do is check which IP is shared between multiple flows
         possible_ips = list()
+        possible_ipv6s = list()
         for line in wan_lines:
             tokens = line.split()
-            src_ip = tokens[0].split(':')[0]
-            dst_ip = tokens[2].split(':')[0]
+            src_ip = tokens[0].rsplit(':', 1)[0]
+            dst_ip = tokens[2].rsplit(':', 1)[0]
 
-            # Only true if this is the first loop
-            if len(possible_ips) == 0:
-                possible_ips.append(src_ip)
-                possible_ips.append(dst_ip)
-            
+            # IPv6
+            if(':' in src_ip):
+
+                # Only true if this is the first loop of ipv6
+                if len(possible_ipv6s) == 0:
+                    possible_ipv6s.append(src_ip)
+                    possible_ipv6s.append(dst_ip)
+                
+                else:
+                    for ip in possible_ipv6s:
+
+                        # If the IP was not found, it's not this device's IP
+                        if ip != src_ip and ip != dst_ip:
+                            possible_ipv6s.remove(ip)
+            # IPv4
             else:
-                for ip in possible_ips:
 
-                    # If the IP was not found, it's not this device's IP
-                    if ip != src_ip and ip != dst_ip:
-                        possible_ips.remove(ip)
+                # Only true if this is the first loop
+                if len(possible_ips) == 0:
+                    possible_ips.append(src_ip)
+                    possible_ips.append(dst_ip)
+                
+                else:
+                    for ip in possible_ips:
 
-                if len(possible_ips) == 1:
-                    break
+                        # If the IP was not found, it's not this device's IP
+                        if ip != src_ip and ip != dst_ip:
+                            possible_ips.remove(ip)
+
+            if len(possible_ipv6s) == 1 and len(possible_ips) == 1:
+                break
+
 
         # This loop is only processed if there were < 2 results in the wan list
         for line in lan_lines:
             tokens = line.split()
-            src_ip = tokens[0].split(':')[0]
-            dst_ip = tokens[2].split(':')[0]
+            src_ip = tokens[0].rsplit(':', 1)[0]
+            dst_ip = tokens[2].rsplit(':', 1)[0]
 
-            # Only true if this is the first loop
-            if len(possible_ips) == 0:
-                possible_ips.append(src_ip)
-                possible_ips.append(dst_ip)
-            
+            # IPv6
+            if(':' in src_ip):
+
+                # Only true if this is the first loop of ipv6
+                if len(possible_ipv6s) == 0:
+                    possible_ipv6s.append(src_ip)
+                    possible_ipv6s.append(dst_ip)
+                
+                else:
+                    for ip in possible_ipv6s:
+
+                        # If the IP was not found, it's not this device's IP
+                        if ip != src_ip and ip != dst_ip:
+                            possible_ipv6s.remove(ip)
+            # IPv4
             else:
-                for ip in possible_ips:
 
-                    # If the IP was not found, it's not this device's IP
-                    if ip != src_ip and ip != dst_ip:
-                        possible_ips.remove(ip)
+                # Only true if this is the first loop
+                if len(possible_ips) == 0:
+                    possible_ips.append(src_ip)
+                    possible_ips.append(dst_ip)
+                
+                else:
+                    for ip in possible_ips:
 
-                if len(possible_ips) == 1:
-                    break
+                        # If the IP was not found, it's not this device's IP
+                        if ip != src_ip and ip != dst_ip:
+                            possible_ips.remove(ip)
+
+            if len(possible_ipv6s) == 1 and len(possible_ips) == 1:
+                break
 
         # If this is true, there was only one IP contacted via UDP, treat it as one flow
-        if len(possible_ips) == 2:
-            one_flow = True
+        if len(possible_ipv6s) == 2:
+            one_v6_flow = True
 
+        elif len(possible_ipv6s) > 0:
+            this_v6_ip = possible_ipv6s[0]
+            one_v6_flow = False
+
+        # This is possible if a device uses multiple IPs for communication
+        # If this is the case, we have to key off of both IPs to identify flows
         else:
-            this_ip = possible_ips[0]
-            one_flow = False
+            this_v6_ip = None
+            one_v6_flow = False
+
+        if len(possible_ips) == 2:
+            one_v4_flow = True
+
+        elif len(possible_ips) > 0:
+            this_v4_ip = possible_ips[0]
+            one_v4_flow = False
+
+        # This is possible if a device uses multiple IPs for communication
+        # If this is the case, we have to key off of both IPs to identify flows
+        else:
+            this_v4_ip = None
+            one_v4_flow = False
 
         # We're going to key each flow to remote_ip
         udp_flows = dict()
@@ -308,8 +363,8 @@ def count_udp_flows(file_location):
         for line in wan_lines:
             tokens = line.split()
 
-            src_ip = tokens[0].split(':')[0]
-            dst_ip = tokens[2].split(':')[0]
+            src_ip = tokens[0].rsplit(':', 1)[0]
+            dst_ip = tokens[2].rsplit(':', 1)[0]
 
             packet_count = int(tokens[9])
             byte_count = int(tokens[10].replace(',',''))
@@ -320,11 +375,61 @@ def count_udp_flows(file_location):
             elif data_unit == "mB":
                 byte_count = byte_count * 1000 * 1000
 
-            # We only have one flow or the src is this device, key to the remote destination
-            if one_flow or src_ip == this_ip:
-                key = dst_ip
+            # IPv6
+            if ':' in src_ip:
+
+                # If we have a multi-IP situation, we need to key off of both
+                if one_v6_flow == False and this_v6_ip == None:
+                    
+                    # We have two option for keys, we need to check both since UDP
+                    # may reverse paths in tshark
+                    key1 = src_ip + "-" + dst_ip
+                    key2 = dst_ip + "-" + src_ip
+
+                    # Check if we've used a key and use the same one
+                    if key1 in udp_flows:
+                        key = key1
+                    elif key2 in udp_flows:
+                        key = key2
+                    
+                    # Default to key1
+                    else:
+                        key = key1
+
+                # If only have one flow or the src is this device, key to the remote destination
+                elif one_v6_flow or src_ip == this_v6_ip:
+                    key = dst_ip
+
+                # Otherwise key to source
+                else:
+                    key = src_ip
+
+            # IPv4
             else:
-                key = src_ip
+
+                # If we have a multi-IP situation, we need to key off of both
+                if one_v4_flow == False and this_v4_ip == None:
+                    
+                    # We have two option for keys, we need to check both since UDP
+                    # may reverse paths in tshark
+                    key1 = src_ip + "-" + dst_ip
+                    key2 = dst_ip + "-" + src_ip
+
+                    # Check if we've used a key and use the same one
+                    if key1 in udp_flows:
+                        key = key1
+                    elif key2 in udp_flows:
+                        key = key2
+                    
+                    # Default to key1
+                    else:
+                        key = key1
+
+                # We only have one flow or the src is this device, key to the remote destination
+                if one_v4_flow or src_ip == this_v4_ip:
+                    key = dst_ip
+                else:
+                    key = src_ip    
 
             # Skip if IP excluded
             if key in exclude_ips:
@@ -346,8 +451,8 @@ def count_udp_flows(file_location):
         for line in lan_lines:
             tokens = line.split()
 
-            src_ip = tokens[0].split(':')[0]
-            dst_ip = tokens[2].split(':')[0]
+            src_ip = tokens[0].rsplit(':', 1)[0]
+            dst_ip = tokens[2].rsplit(':', 1)[0]
 
             packet_count = int(tokens[9])
             byte_count = int(tokens[10].replace(',',''))
@@ -358,11 +463,65 @@ def count_udp_flows(file_location):
             elif data_unit == "mB":
                 byte_count = byte_count * 1000 * 1000
 
-            # We only have one flow or the src is this device, key to the remote destination
-            if one_flow or src_ip == this_ip:
-                key = dst_ip
+            # IPv6
+            if ':' in src_ip:
+
+                # If we have a multi-IP situation, we need to key off of both
+                if one_v6_flow == False and this_v6_ip == None:
+                    
+                    # We have two option for keys, we need to check both since UDP
+                    # may reverse paths in tshark
+                    key1 = src_ip + "-" + dst_ip
+                    key2 = dst_ip + "-" + src_ip
+
+                    # Check if we've used a key and use the same one
+                    if key1 in udp_flows:
+                        key = key1
+                    elif key2 in udp_flows:
+                        key = key2
+                    
+                    # Default to key1
+                    else:
+                        key = key1
+
+                # If only have one flow or the src is this device, key to the remote destination
+                elif one_v6_flow or src_ip == this_v6_ip:
+                    key = dst_ip
+
+                # Otherwise key to source
+                else:
+                    key = src_ip
+
+            # IPv4
             else:
-                key = src_ip
+
+                # If we have a multi-IP situation, we need to key off of both
+                if one_v4_flow == False and this_v4_ip == None:
+                    
+                    # We have two option for keys, we need to check both since UDP
+                    # may reverse paths in tshark
+                    key1 = src_ip + "-" + dst_ip
+                    key2 = dst_ip + "-" + src_ip
+
+                    # Check if we've used a key and use the same one
+                    if key1 in udp_flows:
+                        key = key1
+                    elif key2 in udp_flows:
+                        key = key2
+                    
+                    # Default to key1
+                    else:
+                        key = key1
+
+                # We only have one flow or the src is this device, key to the remote destination
+                if one_v4_flow or src_ip == this_v4_ip:
+                    key = dst_ip
+                else:
+                    key = src_ip    
+
+            # Skip if IP excluded
+            if key in exclude_ips:
+                continue
 
             # Skip if IP excluded
             if key in exclude_ips:
