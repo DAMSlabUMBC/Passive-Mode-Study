@@ -19,6 +19,7 @@ def main(argv):
 
     # First find unique protocols for each MAC
     unique_per_mac_dict = dict()
+    all_app_protocols = list()
     for file_name in os.listdir(args.input_dir):
         file_location = os.path.join(args.input_dir, file_name)
 
@@ -67,13 +68,17 @@ def main(argv):
                     elif proto in layer_5_protos:
                         proto_type = "Session"
 
+                    # If an application protocols, add to master list
+                    if proto_type == "Application" and proto not in all_app_protocols:
+                        all_app_protocols.append(proto)
+
                     # If unique, add to dict
                     if proto not in unique_per_mac_dict[mac][network_type][proto_type]:
                         unique_per_mac_dict[mac][network_type][proto_type].append(proto)
 
-    # Write the files
+    # Write the unique protos for each mac
     dir_name = pathlib.PurePath(args.input_dir)
-    outfile_name = f"{dir_name.name}-unique-protos.csv"
+    outfile_name = f"{dir_name.name}-unique-protos-per-mac.csv"
     outfile_location = os.path.join(args.input_dir, outfile_name)
 
     lines_to_write = list()
@@ -90,6 +95,19 @@ def main(argv):
 
             line = f"{mac},{network_type},\"{network_protos}\",\"{transport_protos}\",\"{session_protos}\",\"{app_protos}\"\n"
             lines_to_write.append(line)
+
+    with open(outfile_location, "w", newline='') as outfile:
+        outfile.writelines(lines_to_write)
+
+    # Write the unique protos overall (for investigating what they do)
+    outfile_name = f"{dir_name.name}-unique-app-protos-overall.csv"
+    outfile_location = os.path.join(args.input_dir, outfile_name)
+
+    lines_to_write = list()
+    lines_to_write.append("Protocol,Purpose\n")
+
+    for proto in all_app_protocols:
+        lines_to_write.append(f"{proto},\n") # Purpose needs to be manually filled out
 
     with open(outfile_location, "w", newline='') as outfile:
         outfile.writelines(lines_to_write)
