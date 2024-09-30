@@ -21,6 +21,8 @@ layer_4_protos = ["tcp", "udp"]
 layer_5_protos = ["tls"]
 layer_7_protos = ["http", "https", "ssdp", "mdns", "ntp", "tplink-smarthome", "mqtt", "secure-mqtt", "classicstun", "stun", "ajp13", "quic"]
 
+known_udp_ports = ["udp:1982","udp:50000","udp:5355","udp:6667","udp:10101", "udp:1111","udp:56700","udp:58866","udp:8555","udp:9478","udp:9700","udp:55444"]
+
 lan_filter = "(eth.dst.ig == 1 || ((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16 || ipv6.dst == ff00::/8 || ipv6.dst == fe80::/10)))"
 wan_filter = "(eth.dst.ig == 0 && !((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16 || ipv6.dst == ff00::/8 || ipv6.dst == fe80::/10)))"
 
@@ -82,7 +84,7 @@ def main(argv):
          
             if known_protos != None:
                 file_progress.update(file_task, advance=1, description=f"Resolving unknown protos")
-                all_protos = resolve_unknown_protos(known_protos, unknown_protos, pcap_file, task_progress)
+                all_protos, manual_verification_ports = resolve_unknown_protos(known_protos, unknown_protos, pcap_file, task_progress)
 
                 # Determine if we need IPv4 or IPv6 (or both)
                 use_ipv4 = False
@@ -99,14 +101,14 @@ def main(argv):
                     advance_num = 1 if use_ipv6 else 2
 
                     file_progress.update(file_task, advance=advance_num, description=f"{text}")
-                    proto_data_by_mac = extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, False, task_progress)
+                    proto_data_by_mac = extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, manual_verification_ports, False, task_progress)
 
                 if use_ipv6:
                     text = "Extracting metrics (IPv6)" if use_ipv4 else "Extracting metrics"
                     advance_num = 1 if use_ipv4 else 2
 
                     file_progress.update(file_task, advance=advance_num, description=f"{text}")
-                    proto_data_by_mac_v6 = extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, True, task_progress)
+                    proto_data_by_mac_v6 = extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, manual_verification_ports, True, task_progress)
                 
                 file_progress.update(file_task, advance=1, description=f"Writing output")
                 # Create output dir if it doesn't exist and write final results
@@ -282,69 +284,78 @@ def resolve_unknown_protos(known_protos, unknown_protos, file_location, rich_pro
             rich_progress.update(resolve_task, description=f"Attempting to resolve \"{unknown_proto}\" to port mappings")
         
         # We record all TCP and UDP conversations involving this protocol
-        # For port resolution we need to get both the LAN and WAN data seperately
-        # as they have different rules for resolution
+        # We pull TCP, UDP broadcast and multicast (designated by eth.dst.ig == 1), and UDP unicast seperately
+        # as they have different rules for assignment
 
         # We can get this with one tshark command
-        lan_udp_command = f"conv,udp,{unknown_proto} && {lan_filter}"
-        lan_tcp_command = f"conv,tcp,{unknown_proto} && {lan_filter}"
-        wan_udp_command = f"conv,udp,{unknown_proto} && {wan_filter}"
-        wan_tcp_command = f"conv,tcp,{unknown_proto} && {wan_filter}"
-        tshark_command = ["tshark","-nqr", file_location, "-z", lan_udp_command, "-z", lan_tcp_command, "-z", wan_udp_command, "-z", wan_tcp_command]
+        tcp_command = f"conv,tcp,{unknown_proto}"
+        multi_broadcast_udp_command = f"conv,udp,{unknown_proto} && eth.dst.ig == 1"
+        unicast_udp = f"conv,udp,{unknown_proto} && eth.dst.ig == 0"
+        tshark_command = ["tshark","-nqr", file_location, "-z", unicast_udp, "-z", multi_broadcast_udp_command, "-z", tcp_command]
         command = subprocess.run(tshark_command, capture_output=True, text=True)   # Run tshark command
 
         # Parse info from the conversation
-        wan_tcp_conv_endpoints, wan_udp_conv_endpoints, lan_tcp_conv_endpoints, lan_udp_conv_endpoints = parse_ips_and_ports(command.stdout)
+        tcp_conv_endpoints_, multi_broadcast_udp_conv_endpoints, unicast_udp_conv_endpoints = parse_ips_and_ports(command.stdout)
 
         # Pull the protos out of the conversations
 
-        # For WAN connections, we assume the conversation always starts outgoing
-        # This is due to the assumption that most home firewalls will be configured
-        # to not allow unsolicited traffic directly to the device through the network
-        # both for security reasons and since the home router wouldn't know how to 
-        # properly forward the traffic. Therefore we can assume the destination port
-        # is the port that signifies the protocol for WAN traffic
-
-        resolved_protos = list()
-        for conv in wan_tcp_conv_endpoints:
-            port_to_record = F"tcp:{conv['port_dst']}"
-            if port_to_record not in resolved_protos:
-                resolved_protos.append(port_to_record)
-
-        for conv in wan_udp_conv_endpoints:
-            port_to_record = F"udp:{conv['port_dst']}"
-            if port_to_record not in resolved_protos:
-                resolved_protos.append(port_to_record)
-
-        # For LAN TCP, since this is a stateful connection we can assume the 
+        # For TCP, since this is a stateful connection we can assume the 
         # destination is the port to examine, since that had to be the original destination
 
-        for conv in lan_tcp_conv_endpoints:
+        resolved_protos = list()
+        for conv in tcp_conv_endpoints_:
             port_to_record = F"tcp:{conv['port_dst']}"
+
+            # HTTPS is a special case of being very well known but
+            # sometimes enapsulated in tls in a way that can't be pulled out easily.
+            # Convert to "https"
+
+            if port_to_record == "tcp:443":
+                port_to_record = "https"
+
             if port_to_record not in resolved_protos:
                 resolved_protos.append(port_to_record)
 
-        # UDP LAN is more complicated as solicitations can occur over broadcast 
-        # traffic may be sent to a seemingly "random" port that was contained
-        # within the broadcast traffic not included in the pcap (as it was
-        # not sent or directly recieved by the devices filtered within the capture)
+        # For multicast and broadcast addresses, we also assume the destination has the be
+        # the port to examine since that's how we contacted the group address
 
-        # In this case we record both ports for manual processing later to avoid
-        # missing relevant data. While it is *potentially* safe to discard higher
-        # numbered ports in the dynamic range, we don't do this for completeness
-        for conv in lan_udp_conv_endpoints:
-            port_to_record = F"udp:{conv['port_src']}"
-            if port_to_record not in resolved_protos:
-                resolved_protos.append(port_to_record)
-
+        for conv in multi_broadcast_udp_conv_endpoints:
             port_to_record = F"udp:{conv['port_dst']}"
             if port_to_record not in resolved_protos:
                 resolved_protos.append(port_to_record)
 
-        # Note that this filtering isn't perfect as other factors such as a capture beginning in the middle of 
-        # the TCP session could cause tshark to recognize improper ports as the starting port, however,
-        # we err on the side of over-capturing data and filtering out through manual verification instead of
-        # risking relevant data is filtered out by an automated process
+        # UDP unicast is more complicated since we can't assume that destination port
+        # is what was originally contacted. In this case, we first see if either port
+        # is a known UDP port, and assign the communication to that if one is present
+
+        # Otherwise, we record both ports for manual processing later, but flag it for
+        # manual verification later, since double checking for both ports will double
+        # the traffic values and will need to be manually corrected
+
+        manual_verification_ports = list()
+        for conv in unicast_udp_conv_endpoints:
+            dst_port = F"udp:{conv['port_dst']}"
+            src_port = F"udp:{conv['port_src']}"
+
+            if dst_port in known_udp_ports:
+                if dst_port not in resolved_protos:
+                    resolved_protos.append(dst_port)
+                continue
+
+            elif src_port in known_udp_ports:
+                if src_port not in resolved_protos:
+                    resolved_protos.append(src_port)
+                continue
+
+            else:
+                # Record both, but flag for manual verification
+                if dst_port not in resolved_protos:
+                    resolved_protos.append(dst_port)
+                    manual_verification_ports.append(dst_port)
+
+                if src_port not in resolved_protos:
+                    resolved_protos.append(src_port)
+                    manual_verification_ports.append(src_port)
 
         # When performing a manual verification, you should remove any entries for data already covered for an earlier port/proto pair.
         # For example if udp:8888 and udp:34823 are both present in the resulting dataset, but all udp:34823 conversations involve udp:8888
@@ -358,23 +369,22 @@ def resolve_unknown_protos(known_protos, unknown_protos, file_location, rich_pro
 
     if rich_progress != None:
         rich_progress.remove_task(resolve_task)
-    return known_protos
+    
+    return known_protos, manual_verification_ports
 
 def parse_ips_and_ports(text):
     
     # Responses
-    lan_tcp_conv_endpoints = []
-    lan_udp_conv_endpoints = []
-    wan_tcp_conv_endpoints = []
-    wan_udp_conv_endpoints = []
+    tcp_conv_endpoints_ = []
+    multi_broadcast_udp_conv_endpoints = []
+    unicast_udp_conv_endpoints = []
 
     # Trim header and footer
     parsed_output = text.splitlines()
 
-    lan_tcp_lines = None
-    lan_udp_lines = None
-    wan_tcp_lines = None
-    wan_udp_lines = None
+    tcp_lines = None
+    multi_broadcast_udp_lines = None
+    unicast_udp_lines = None
 
     # Seperate sections
     # Need to iterate with indicies since section sizes are variable
@@ -389,21 +399,17 @@ def parse_ips_and_ports(text):
 
             if found_first:
 
-                # First is WAN TCP
-                if wan_tcp_lines == None:
-                    wan_tcp_lines = parsed_output[:i]
+                # First is TCP
+                if tcp_lines == None:
+                    tcp_lines = parsed_output[:i]
                     curr_index = i
 
-                # Next is WAN UDP
-                elif wan_udp_lines == None:
-                    wan_udp_lines = parsed_output[curr_index:i]
+                # Next is eth.dst.ig == 1 which we can use to find the rest
+                elif multi_broadcast_udp_lines == None:
+                    multi_broadcast_udp_lines = parsed_output[curr_index:i]
+                    unicast_udp_lines = parsed_output[i:]
                     curr_index = i
-
-                # Next is LAN TCP which we can use to find LAN UDP
-                elif lan_tcp_lines == None:
-                    lan_tcp_lines = parsed_output[curr_index:i]
-                    lan_udp_lines = parsed_output[i:]
-                    break # We're done
+                    break
 
                 found_first = False
             else:
@@ -412,20 +418,17 @@ def parse_ips_and_ports(text):
             found_first = False
 
     # Trim headers and footers
-    wan_tcp_lines = wan_tcp_lines[5:]
-    wan_tcp_lines = wan_tcp_lines[:-1]
+    tcp_lines = tcp_lines[5:]
+    tcp_lines = tcp_lines[:-1]
 
-    wan_udp_lines = wan_udp_lines[5:]
-    wan_udp_lines = wan_udp_lines[:-1]
+    multi_broadcast_udp_lines = multi_broadcast_udp_lines[5:]
+    multi_broadcast_udp_lines = multi_broadcast_udp_lines[:-1]
 
-    lan_tcp_lines = lan_tcp_lines[5:]
-    lan_tcp_lines = lan_tcp_lines[:-1]
+    unicast_udp_lines = unicast_udp_lines[5:]
+    unicast_udp_lines = unicast_udp_lines[:-1]
 
-    lan_udp_lines = lan_udp_lines[5:]
-    lan_udp_lines = lan_udp_lines[:-1]
-    
-    # Process WAN
-    for line in wan_tcp_lines:
+    # Process TCP
+    for line in tcp_lines:
         line = line.split()
         src_part = line[0]
         dst_part = line[2]
@@ -438,9 +441,10 @@ def parse_ips_and_ports(text):
         conv_data["port_src"] = port_src
         conv_data["ip_dst"] = ip_dst
         conv_data["port_dst"] = port_dst
-        wan_tcp_conv_endpoints.append(conv_data)
+        tcp_conv_endpoints_.append(conv_data)
 
-    for line in wan_udp_lines:
+    # Process broadcast/multicast
+    for line in multi_broadcast_udp_lines:
         line = line.split()
         src_part = line[0]
         dst_part = line[2]
@@ -453,10 +457,10 @@ def parse_ips_and_ports(text):
         conv_data["port_src"] = port_src
         conv_data["ip_dst"] = ip_dst
         conv_data["port_dst"] = port_dst
-        wan_udp_conv_endpoints.append(conv_data)
+        multi_broadcast_udp_conv_endpoints.append(conv_data)
 
-    # Now TCP
-    for line in lan_tcp_lines:
+    # Process unicast
+    for line in unicast_udp_lines:
         line = line.split()
         src_part = line[0]
         dst_part = line[2]
@@ -469,26 +473,12 @@ def parse_ips_and_ports(text):
         conv_data["port_src"] = port_src
         conv_data["ip_dst"] = ip_dst
         conv_data["port_dst"] = port_dst
-        lan_tcp_conv_endpoints.append(conv_data)
+        unicast_udp_conv_endpoints.append(conv_data)
 
-    for line in lan_udp_lines:
-        line = line.split()
-        src_part = line[0]
-        dst_part = line[2]
-        port_src = src_part.split(':')[-1]
-        ip_src = src_part.replace(port_src, "")
-        port_dst = dst_part.split(':')[-1]
-        ip_dst = dst_part.replace(port_dst, "")
-        conv_data = dict()
-        conv_data["ip_src"] = ip_src
-        conv_data["port_src"] = port_src
-        conv_data["ip_dst"] = ip_dst
-        conv_data["port_dst"] = port_dst
-        lan_udp_conv_endpoints.append(conv_data)
+    return tcp_conv_endpoints_, multi_broadcast_udp_conv_endpoints, unicast_udp_conv_endpoints
 
-    return wan_tcp_conv_endpoints, wan_udp_conv_endpoints, lan_tcp_conv_endpoints, lan_udp_conv_endpoints
 
-def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, is_ipv6, rich_progress=None):
+def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, manual_verification_ports, is_ipv6, rich_progress=None):
 
     protocol_metrics_by_mac = dict()
 
@@ -526,6 +516,9 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, is_ip
 
             # Since tshark puts output with the last -z flag first, we process the protocols in reverse 
             for proto in reversed(batch):
+
+                # We want to record
+
                 # Tshark will name protocols that are recognized by port but aren't
                 # directly queryable with a filter, e.g. it recognizes "https" but can't filter directly on "https"
                 if proto.isnumeric():
@@ -596,6 +589,15 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, is_ip
                     lan_endpoint_data = dict()
                     wan_endpoint_data = dict()
 
+                    # Check if we need to flag this
+                    flag_wan = False
+                    flag_lan = False
+                    flag_overall = False
+                    if proto in manual_verification_ports:
+                        flag_wan = True
+                        flag_lan = True
+                        flag_overall = True
+
                     # Starts WAN
                     # Trim off header
                     lines = lines[4:]        
@@ -611,10 +613,15 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, is_ip
 
                         index += 1
 
-                    # If we found any results, trim off the first one, it's going
+                    # If we found more than 2 endpoints, trim off the first one, it's going
                     # to be the host itself
-                    if len(wan_lines) > 1:
+                    if len(wan_lines) > 2:
                         wan_lines = wan_lines[1:]
+
+                    # If we only found two, we don't know which one is this host,
+                    # need to manually verify
+                    elif len(wan_lines) == 2:
+                        flag_wan = True
 
                     # Next up is LAN
                     lines = lines[4:]
@@ -632,8 +639,13 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, is_ip
 
                     # If we found any results, trim off the first one, it's going
                     # to be the host itself
-                    if len(lan_lines) > 1:
+                    if len(lan_lines) > 2:
                         lan_lines = lan_lines[1:]
+
+                    # If we only found two, we don't know which one is this host,
+                    # need to manually verify
+                    elif len(lan_lines) == 2:
+                        flag_lan = True
 
                     # Finally both
                     lines = lines[4:]
@@ -651,8 +663,13 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, is_ip
 
                     # If we found any results, trim off the first one, it's going
                     # to be the host itself
-                    if len(both_lines) > 1:
+                    if len(both_lines) > 2:
                         both_lines = both_lines[1:]
+
+                    # If we only found two, we don't know which one is this host,
+                    # need to manually verify
+                    elif len(both_lines) == 2:
+                        flag_overall = True
 
                     # Now we can process each
                     for line in wan_lines:
@@ -661,13 +678,16 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, is_ip
                         # Tokens are in order <ip>,<total_packets>,<total_bytes>,<packets_from_ip>,<bytes_from_ip>,<packets_to_ip>,<packets_to_ip>
                         # We parse from the perspective of the MAC being analyzed, so if the tshark output says "X packets Tx from IP", we record that as "MAC Rx X packets from IP"
                         metric_dict = dict()
+                        name = tokens[0]
+                        if flag_wan:
+                            name += "*"
                         metric_dict["PktTotal"] = tokens[1]
                         metric_dict["ByteTotal"] = tokens[2]
                         metric_dict["PktRx"] = tokens[3]
                         metric_dict["ByteRx"] = tokens[4]
                         metric_dict["PktTx"] = tokens[5]
                         metric_dict["ByteTx"] = tokens[6]
-                        wan_endpoint_data[tokens[0]] = metric_dict
+                        wan_endpoint_data[name] = metric_dict
 
                     for line in lan_lines:
                         tokens = line.split()
@@ -675,13 +695,16 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, is_ip
                         # Tokens are in order <ip>,<total_packets>,<total_bytes>,<packets_from_ip>,<bytes_from_ip>,<packets_to_ip>,<packets_to_ip>
                         # We parse from the perspective of the MAC being analyzed, so if the tshark output says "X packets Tx from IP", we record that as "MAC Rx X packets from IP"
                         metric_dict = dict()
+                        name = tokens[0]
+                        if flag_lan:
+                            name += "*"
                         metric_dict["PktTotal"] = tokens[1]
                         metric_dict["ByteTotal"] = tokens[2]
                         metric_dict["PktRx"] = tokens[3]
                         metric_dict["ByteRx"] = tokens[4]
                         metric_dict["PktTx"] = tokens[5]
                         metric_dict["ByteTx"] = tokens[6]
-                        lan_endpoint_data[tokens[0]] = metric_dict
+                        lan_endpoint_data[name] = metric_dict
 
                     for line in both_lines:
                         tokens = line.split()
@@ -689,13 +712,16 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, is_ip
                         # Tokens are in order <ip>,<total_packets>,<total_bytes>,<packets_from_ip>,<bytes_from_ip>,<packets_to_ip>,<packets_to_ip>
                         # We parse from the perspective of the MAC being analyzed, so if the tshark output says "X packets Tx from IP", we record that as "MAC Rx X packets from IP"
                         metric_dict = dict()
+                        name = tokens[0]
+                        if flag_overall:
+                            name += "*"
                         metric_dict["PktTotal"] = tokens[1]
                         metric_dict["ByteTotal"] = tokens[2]
                         metric_dict["PktRx"] = tokens[3]
                         metric_dict["ByteRx"] = tokens[4]
                         metric_dict["PktTx"] = tokens[5]
                         metric_dict["ByteTx"] = tokens[6]
-                        all_endpoint_data[tokens[0]] = metric_dict
+                        all_endpoint_data[name] = metric_dict
 
                     # Sort by IP for nicer printing
                     all_endpoint_data = dict(sorted(all_endpoint_data.items(), key=sort_ips))
@@ -728,6 +754,8 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, is_ip
 
 def sort_ips(s):
     try:
+        if '*' in s:
+            s = s.replace('*', '')
         ip = int(ip_address(s))
     except ValueError:
         return (1, s)
