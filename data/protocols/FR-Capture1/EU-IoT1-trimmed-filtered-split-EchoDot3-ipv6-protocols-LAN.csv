@@ -1,0 +1,4 @@
+MAC,WAN/LAN,Protocol,IP,TotalPackets,TotalBytes,TxPackets,TxBytes,RxPackets,RxBytes
+FC:49:2D:34:98:28,ALL,ipv6,ff02::fb,175,17325,175,17325,0,0
+FC:49:2D:34:98:28,ALL,udp,ff02::fb,175,17325,175,17325,0,0
+FC:49:2D:34:98:28,ALL,mdns,ff02::fb,175,17325,175,17325,0,0
