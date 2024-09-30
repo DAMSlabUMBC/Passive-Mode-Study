@@ -23,9 +23,19 @@ generate_stats_for_file() {
 
     out_dir="output_stats"
     out_file=$(filename $pcap_file | sed "s/.pcap/-stats.csv/")
+    lan_out_file=$(filename $pcap_file | sed "s/.pcap/-LAN-stats.csv/")
+    wan_out_file=$(filename $pcap_file | sed "s/.pcap/-WAN-stats.csv/")
+
+    # By default don't include router traffic in these metrics
+    global_filter="!(ip && (ip.addr == 192.168.1.1 || ip.addr == 192.168.3.1 || ip.addr == 192.168.231.1 || ip.addr == 192.168.1.100))"
+
+    lan_filter="(eth.dst.ig == 1 || ((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16 || ipv6.dst == ff00::/8 || ipv6.dst == fe80::/10)))"
+    wan_filter="(eth.dst.ig == 0 && !((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16 || ipv6.dst == ff00::/8 || ipv6.dst == fe80::/10)))"
 
     # Use tshark to parse the statistics
-    tshark -q -r $pcap_file -z io,stat,$interval_size,,"eth.src == $mac","eth.dst == $mac" | grep "<>" > "stats.tmp"
+    tshark -q -r $pcap_file -z io,stat,$interval_size,"${global_filter}","eth.src == $mac && ${global_filter}","eth.dst == $mac && ${global_filter}" | grep "<>" > "stats.tmp"
+
+
 
     # Create CSV
     mkdir -p $out_dir
@@ -40,6 +50,50 @@ generate_stats_for_file() {
         rxframe=$(echo $line | cut -d'|' -f7 | xargs)
         rxbyte=$(echo $line | cut -d'|' -f8 | xargs)
         echo "$dev_name,$interval,$frame,$byte,$txframe,$txbyte,$rxframe,$rxbyte" >> "$out_dir/$out_file"
+
+    done <"stats.tmp"
+
+    # Clean up files
+    rm -f "stats.tmp"
+
+    # Use tshark to parse the LAN statistics
+    tshark -q -r $pcap_file -z io,stat,$interval_size,"${lan_filter} && ${global_filter}","eth.src == $mac && ${lan_filter} && ${global_filter}","eth.dst == $mac && ${lan_filter} && ${global_filter}" | grep "<>" > "stats.tmp"
+
+    # Create CSV
+    mkdir -p $out_dir
+    echo "Device,StartTime,Frames,Bytes,TxFrames,TxBytes,RxFrames,RxBytes" > "$out_dir/$lan_out_file"
+    while IFS="" read -r line || [ -n "$line" ]; do
+
+        interval=$(echo $line | cut -d'|' -f2 | cut -d'<' -f1 | xargs)
+        frame=$(echo $line | cut -d'|' -f3 | xargs)
+        byte=$(echo $line | cut -d'|' -f4 | xargs)
+        txframe=$(echo $line | cut -d'|' -f5 | xargs)
+        txbyte=$(echo $line | cut -d'|' -f6 | xargs)
+        rxframe=$(echo $line | cut -d'|' -f7 | xargs)
+        rxbyte=$(echo $line | cut -d'|' -f8 | xargs)
+        echo "$dev_name,$interval,$frame,$byte,$txframe,$txbyte,$rxframe,$rxbyte" >> "$out_dir/$lan_out_file"
+
+    done <"stats.tmp"
+
+    # Clean up files
+    rm -f "stats.tmp"
+
+    # Use tshark to parse the WAN statistics
+    tshark -q -r $pcap_file -z io,stat,$interval_size,"${wan_filter} && ${global_filter}","eth.src == $mac && ${wan_filter} && ${global_filter}","eth.dst == $mac && ${wan_filter} && ${global_filter}" | grep "<>" > "stats.tmp"
+
+    # Create CSV
+    mkdir -p $out_dir
+    echo "Device,StartTime,Frames,Bytes,TxFrames,TxBytes,RxFrames,RxBytes" > "$out_dir/$wan_out_file"
+    while IFS="" read -r line || [ -n "$line" ]; do
+
+        interval=$(echo $line | cut -d'|' -f2 | cut -d'<' -f1 | xargs)
+        frame=$(echo $line | cut -d'|' -f3 | xargs)
+        byte=$(echo $line | cut -d'|' -f4 | xargs)
+        txframe=$(echo $line | cut -d'|' -f5 | xargs)
+        txbyte=$(echo $line | cut -d'|' -f6 | xargs)
+        rxframe=$(echo $line | cut -d'|' -f7 | xargs)
+        rxbyte=$(echo $line | cut -d'|' -f8 | xargs)
+        echo "$dev_name,$interval,$frame,$byte,$txframe,$txbyte,$rxframe,$rxbyte" >> "$out_dir/$wan_out_file"
 
     done <"stats.tmp"
 
@@ -94,7 +148,7 @@ do
     elif [ -d $1 ]; then
 
         # Find every pcap file under the input directory
-        for filepath in $(find $1 -name *$name*.pcap); do
+        for filepath in $(find $1 -maxdepth 1 -name *$name*.pcap); do
             generate_stats_for_file "$filepath" "$interval_size" "$name$name_suffix" "$mac"
         done
 

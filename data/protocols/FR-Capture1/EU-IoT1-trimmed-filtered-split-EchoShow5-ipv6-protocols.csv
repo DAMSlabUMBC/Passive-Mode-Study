@@ -1,0 +1,4 @@
+MAC,WAN/LAN,Protocol,IP,TotalPackets,TotalBytes,TxPackets,TxBytes,RxPackets,RxBytes
+40:A2:DB:2C:8A:68,ALL,ipv6,ff02::fb,193,19035,193,19035,0,0
+40:A2:DB:2C:8A:68,ALL,udp,ff02::fb,193,19035,193,19035,0,0
+40:A2:DB:2C:8A:68,ALL,mdns,ff02::fb,193,19035,193,19035,0,0

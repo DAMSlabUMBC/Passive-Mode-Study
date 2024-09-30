@@ -6,11 +6,21 @@ usage() {
 
 Breaks a single unified pcap file into multiple files for analysis based on MAC addresses of desired devices.
 It will trim the pcap within the two given epoch times to ensure desired alignment
-    Usage: $(basename "${BASH_SOURCE[0]}") <input_pcap> <mac_mapping_file> <trim_start_epoch> <trim_end_epoch> <output_dir>
+Trimming parameters may be omitted if trimming is not desired
+    Usage: $(basename "${BASH_SOURCE[0]}") <input_pcap> <mac_mapping_file> <output_dir> <trim_start_epoch> <trim_end_epoch>
 
 EOF
     exit
 }
+
+# Ensure parameter count is correct
+if [ "$#" -eq 5 ]; then
+    trim=true
+elif [ "$#" -eq 3 ]; then
+    trim=false
+else
+    usage
+fi
 
 echo "========================================================================"
 echo "WARNING!! This script will generate multiple copies of the pcap file"
@@ -25,39 +35,36 @@ then
     [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1 # handle exits from shell or function but don't exit interactive shell
 fi
 
-# Ensure parameter count is correct
-if [ "$#" -ne 5 ]; then
-    usage
-fi
+# Verify epoch times are numbers if trimming
+if [ "$trim" = true ] ; then
+    if [ -n "$4" ] && [ "$4" -eq "$4" ]; then
+    start_epoch=$4
+    else
+        echo "ERROR: Start trimming time must be a number"
+        usage
+        exit
+    fi
 
-# Verify epoch times are numbers
-if [ -n "$3" ] && [ "$3" -eq "$3" ]; then
-  start_epoch=$3
-else
-    echo "ERROR: Start trimming time must be a number"
-    usage
-    exit
-fi
+    if [ $start_epoch -le 0 ]; then
+        echo "ERROR: Start trimming time must be greater than 0"
+        usage
+        exit
+    fi
 
-if [ $start_epoch -le 0 ]; then
-    echo "ERROR: Start trimming time must be greater than 0"
-    usage
-    exit
-fi
+    # Verify epoch times are numbers
+    if [ -n "$5" ] && [ "$5" -eq "$5" ]; then
+    end_epoch=$5
+    else
+        echo "ERROR: End trimming time must be a number"
+        usage
+        exit
+    fi
 
-# Verify epoch times are numbers
-if [ -n "$4" ] && [ "$4" -eq "$4" ]; then
-  end_epoch=$4
-else
-    echo "ERROR: End trimming time must be a number"
-    usage
-    exit
-fi
-
-if [ $end_epoch -le 0 ]; then
-    echo "ERROR: End trimming time must be greater than 0"
-    usage
-    exit
+    if [ $end_epoch -le 0 ]; then
+        echo "ERROR: End trimming time must be greater than 0"
+        usage
+        exit
+    fi
 fi
 
 # Ensure pcap exists
@@ -80,10 +87,9 @@ fi
 mac_file=$2
 
 # Setup output directory structure
-out_dir=$5
+out_dir=$3
 
 mkdir -p $out_dir
-mkdir -p $out_dir/raw
 mkdir -p $out_dir/unfiltered
 mkdir -p $out_dir/unfiltered/per-device
 mkdir -p $out_dir/filtered
@@ -98,13 +104,19 @@ mkdir -p $out_dir/filtered/with-DNS/per-device/WAN
 
 # Start processing the file
 
-# Copy raw file to output dir
+# If trimming is desired we also save the raw
 echo "Copying raw file..."
-cp $in_pcap $out_dir/raw
+if [ "$trim" = true ] ; then
+    mkdir -p $out_dir/raw
+    cp $in_pcap $out_dir/raw
 
-# First we trim
-echo "Trimming raw file..."
-editcap -A $start_epoch -B $end_epoch $in_pcap $out_dir/unfiltered/$pcap_name-trimmed.pcap
+    # Then trim
+    echo "Trimming raw file..."
+    editcap -A $start_epoch -B $end_epoch $in_pcap $out_dir/unfiltered/$pcap_name-trimmed.pcap
+else
+    # Else just copy the raw file 
+    cp $in_pcap $out_dir/unfiltered/$pcap_name-trimmed.pcap
+fi
 
 # Split trimmed file per device
 echo "Splitting by MAC..."

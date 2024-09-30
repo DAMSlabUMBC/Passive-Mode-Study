@@ -306,13 +306,13 @@ plot_data_over_time <- function(dataset, outlier_filter_column, column_name, sli
     no_outlier_dataframe <- no_outlier_dataframe %>% mutate(rolling_avg=rollmean(no_outlier_dataframe[[column_name]], k=sliding_window_size, fill=NA, align='right'))
     no_outlier_dataframe <- na.omit(no_outlier_dataframe)
     
-    the_plot <- ggplot(data=dataframe, aes(x=StartTime)) + 
+    the_plot <- ggplot(data=no_outlier_dataframe, aes(x=StartTime)) + 
       geom_line(aes(y=.data[[column_name]]), color="gray30") +
       
       # We suppress messages here since the rolling mean doesn't start until X value of 11 which causes warnings
       suppressMessages(geom_line(data=no_outlier_dataframe, aes(y=rolling_avg), color="darkred", linetype="solid")) +
       
-      scale_y_continuous(expand=c(0,0), limits=c(0,(max(dataframe[[column_name]]) * 1.05))) +
+      scale_y_continuous(expand=c(0,0), limits=c(0,(max(no_outlier_dataframe[[column_name]]) * 1.05))) +
       scale_x_continuous(expand=c(0,0), breaks = scales::breaks_width(3600 * 6), labels = function(x) format(x / 3600)) +
       xlab("Capture Time (Hours)") +
       ylab(paste(column_name,"(Total)"))
