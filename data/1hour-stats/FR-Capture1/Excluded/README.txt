@@ -1,1 +1,0 @@
-PhilipsBridge captures we excluded from Capture 1 as they were determine to have been unable to reach the other devices after the capture was complete
