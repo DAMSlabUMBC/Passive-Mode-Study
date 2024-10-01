@@ -1,10 +1,8 @@
-import subprocess
 import pathlib
 import argparse
 import os
 import sys
 import csv
-import pandas
 
 def main(argv):
 

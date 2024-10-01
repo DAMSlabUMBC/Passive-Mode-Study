@@ -15,9 +15,9 @@ def main(argv):
     args = parser.parse_args()
 
     protos_to_skip = ["ip", "udp", "tls", "tcp", "ipv6"]
-    discovery_protos = ["mdns","ssdp","tplink-smarthome","udp:1982","udp:50000","udp:5355","udp:6667", "llmnr"]
-    enc_protos = ["https","quic","secure-mqtt","tcp:10005","tcp:10101","tcp:50443","tcp:5228","tcp:55443","tcp:8012","tcp:8886","tcp:9000","tcp:9543","udp:10101"]
-    unenc_protos = ["http","udp:1111","udp:56700","udp:58866","udp:8555","udp:9478","udp:9700","tcp:8009"]
+    discovery_protos = ["mdns","ssdp","tplink-smarthome","udp:1982","udp:50000","udp:6667", "llmnr"]
+    enc_protos = ["https","quic","secure-mqtt","tcp:10005","tcp:10101","tcp:50443","tcp:5228","tcp:55443","tcp:8012", "tcp:8883", "tcp:8886","tcp:9000","tcp:9543"]
+    unenc_protos = ["http","udp:1111", "udp:10101", "udp:56700","udp:58866","udp:8555","udp:9478","udp:9700"]
     manage_protos = ["classicstun","ntp","stun","udp:55444"]
 
     # Get list of endpoint files

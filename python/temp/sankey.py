@@ -1,3 +1,12 @@
+# Existing sankey libraries weren't working with our python environment
+# Here we just copy the sankey generation libraries from 
+# Anneya Golob & marcomanz & pierre-sassoulas & jorwoods & vgalisson
+# into this file.
+#
+# The code to actually configure what gets generated as at the bottom
+# of this file in generate_sankey()
+
+
 # -*- coding: utf-8 -*-
 r"""
 Produces simple Sankey Diagrams with matplotlib.
@@ -297,32 +306,32 @@ def _get_positions_and_total_widths(df, labels, side, aspect):
 
     return widths, topEdge
 
+def generate_sankey():
 
-url = "results/Lan_fin.csv"
-data_field = pd.read_csv(url, sep=",") # reads the csv
+    url = "results/Lan_fin.csv"
+    data_field = pd.read_csv(url, sep=",") # reads the csv
 
+    # device name in csv
+    device = "DeviceName"
+    # location in csv
+    location = "EndpointType"
+    # total packet to that destination
+    packets = "TotalBytes"
 
-# device name in csv
-device = "DeviceName"
-# location in csv
-location = "EndpointType"
-# total packet to that destination
-packets = "TotalBytes"
+    # Create Sankey diagram 
+    sankey(
+        left = data_field[device], right=data_field[location], 
+        leftWeight = data_field[packets], rightWeight=data_field[packets], 
+        aspect=9, fontsize=8
+    )
 
-# Create Sankey diagram 
-sankey(
-    left = data_field[device], right=data_field[location], 
-    leftWeight = data_field[packets], rightWeight=data_field[packets], 
-    aspect=9, fontsize=8
-)
+    fig = plt.gcf() # Get current figure
 
+    fig.set_size_inches(5, 4.75) # Set size in inches
 
-fig = plt.gcf() # Get current figure
+    fig.set_facecolor("w") # Set the color of the background to white
 
+    fig.savefig("LanDistribution" + ".png", bbox_inches="tight", dpi=150) # Save the figure
 
-fig.set_size_inches(5, 4.75) # Set size in inches
-
-
-fig.set_facecolor("w") # Set the color of the background to white
-
-fig.savefig("LanDistribution" + ".png", bbox_inches="tight", dpi=150) # Save the figure
+if __name__ == "__main__":
+   generate_sankey()

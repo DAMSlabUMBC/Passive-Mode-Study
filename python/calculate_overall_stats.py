@@ -1,8 +1,5 @@
-import subprocess
-from pathlib import Path
 import argparse
 import os
-import csv
 import sys
 import pandas as pd
 
@@ -23,7 +20,7 @@ def main(argv):
         # Don't recurse into sub-directories
         if os.path.isdir(full_filename):
             continue
-        
+
         df = pd.read_csv(full_filename)
 
         # Get device name
