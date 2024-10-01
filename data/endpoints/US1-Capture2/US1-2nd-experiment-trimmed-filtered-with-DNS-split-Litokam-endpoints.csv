@@ -1,0 +1,17 @@
+IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+100.21.15.118,Support,None,None,None,None,"AMAZON-02, US",US,a2.tuyaus.com,a2.tuyaus.com,None,None,12046,2878138,5513,1880376,6533,997762
+192.168.1.106,Hue Bridge (US),None,None,None,None,NA,,None,None,None,None,10,2310,6,796,4,1514
+34.214.145.236,Support,None,None,None,None,"AMAZON-02, US",US,h2.iot-dns.com,h2.iot-dns.com,None,None,13,2374,4,1514,9,860
+35.155.166.214,Third,None,None,None,None,"AMAZON-02, US",US,None,None,None,None,5,370,0,0,5,370
+44.230.212.240,Support,None,None,None,None,"AMAZON-02, US",US,a2.tuyaus.com,a2.tuyaus.com,None,None,24,5922,11,3954,13,1968
+44.240.74.103,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaus.com,m2.tuyaus.com,None,None,90,14204,34,8316,56,5888
+52.12.196.80,Third,None,None,None,None,"AMAZON-02, US",US,None,None,None,None,1,232,0,0,1,232
+52.25.166.155,Support,None,None,None,None,"AMAZON-02, US",US,h2.iot-dns.com,h2.iot-dns.com,None,None,24,4113,10,2554,14,1559
+54.148.153.241,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaus.com,m2.tuyaus.com,None,None,3148,262517,1420,120480,1728,142037
+54.188.109.168,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaus.com,m2.tuyaus.com,None,None,40119,3289889,18061,1507226,22058,1782663
+54.188.99.4,Third,None,None,None,None,"AMAZON-02, US",US,None,None,None,None,58938,4830989,26432,2206605,32506,2624384
+8.8.4.4,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,43,3283,3,363,40,2920
+8.8.8.8,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,46,3550,4,484,42,3066
+192.168.1.106,Hue Bridge (US),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,2,336,1,262,1,74
+192.168.1.109,Echo Dot 5,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,1,74,1,74,0,0
+255.255.255.255,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,140220,36737640,0,0,140220,36737640

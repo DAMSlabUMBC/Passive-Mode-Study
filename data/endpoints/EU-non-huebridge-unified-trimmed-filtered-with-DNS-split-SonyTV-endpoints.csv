@@ -1,0 +1,128 @@
+IP, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+104.84.81.161,"None","None","None","None","AKAMAI-ASN1, NL","US",static.internet.sony.tv,static.internet.sony.tv,None,None,14,5729,5,5011,9,718
+13.224.68.118,"None","None","None","None","AMAZON-02, US","US",api.erabu.sony.tv,api.erabu.sony.tv,None,None,98,25432,52,14901,46,10531
+13.224.68.66,"Sony Corporation","JP","None","None","AMAZON-02, US","US",bravia-cfgdst-ore-pro.bda.ndmdhs.com,bravia-cfgdst-ore-pro.bda.ndmdhs.com,None,None,23,8610,11,7152,12,1458
+13.32.145.105,"Sony Corporation","JP","None","None","AMAZON-02, US","US",cdn.meta.ndmdhs.com,cdn.meta.ndmdhs.com,None,None,10,1394,5,768,5,626
+13.32.145.21,"Sony Corporation","JP","None","None","AMAZON-02, US","US",cdn.meta.ndmdhs.com,cdn.meta.ndmdhs.com,None,None,10,1394,5,768,5,626
+13.32.145.49,"Sony Corporation","JP","None","None","AMAZON-02, US","US",bravia-cfgdst-ore-pro.bda.ndmdhs.com,bravia-cfgdst-ore-pro.bda.ndmdhs.com,None,None,25,8743,12,7219,13,1524
+13.32.145.58,"Sony Corporation","JP","None","None","AMAZON-02, US","US",bravia-cfgdst-ore-pro.bda.ndmdhs.com,bravia-cfgdst-ore-pro.bda.ndmdhs.com,None,None,24,8700,11,7176,13,1524
+142.250.178.138,"None","None","None","None","GOOGLE, US","US",android.googleapis.com,android.googleapis.com,None,None,2611,1116931,1270,779941,1341,336990
+142.250.178.142,"None","None","None","None","GOOGLE, US","US",android.clients.google.com,android.clients.google.com,None,None,53,24423,25,20029,28,4394
+142.250.179.106,"None","None","None","None","GOOGLE, US","US",android.googleapis.com,android.googleapis.com,None,None,2059,920733,1016,654171,1043,266562
+142.250.179.110,"None","None","None","None","GOOGLE, US","US",play-fe.googleapis.com,play-fe.googleapis.com,None,None,1134,713479,523,286282,611,427197
+142.250.179.74,"None","None","None","None","GOOGLE, US","US",www.googleapis.com,www.googleapis.com,None,None,2058,854332,1018,510339,1040,343993
+142.250.179.78,"None","None","None","None","GOOGLE, US","US",android.clients.google.com,android.clients.google.com,None,None,53,24348,25,19954,28,4394
+142.250.201.170,"None","None","None","None","GOOGLE, US","US",android.googleapis.com,android.googleapis.com,None,None,2376,1217431,1137,865196,1239,352235
+142.250.201.174,"None","None","None","None","GOOGLE, US","US",clients3.google.com,clients3.google.com,None,None,8965,7707699,3623,6422365,5342,1285334
+142.250.74.234,"None","None","None","None","GOOGLE, US","US",speechs3proto2-pa.googleapis.com,speechs3proto2-pa.googleapis.com,None,None,1006,313738,485,187462,521,126276
+142.250.74.238,"None","None","None","None","GOOGLE, US","US",android.clients.google.com,android.clients.google.com,None,None,25,10896,11,9167,14,1729
+142.250.75.227,"None","None","None","None","GOOGLE, US","US",connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,5234,1152217,1811,379783,3423,772434
+142.250.75.234,"None","None","None","None","GOOGLE, US","US",android.googleapis.com,android.googleapis.com,None,None,1825,736095,894,456521,931,279574
+142.250.75.238,"None","None","None","None","GOOGLE, US","US",android.clients.google.com,android.clients.google.com,None,None,24,10818,10,9101,14,1717
+142.251.168.188,"None","None","None","None","GOOGLE, US","US",None,None,None,None,21424,1965863,12884,1131630,8540,834233
+172.217.18.202,"None","None","None","None","GOOGLE, US","US",android.googleapis.com,android.googleapis.com,None,None,1162,421315,573,265052,589,156263
+172.217.20.170,"None","None","None","None","GOOGLE, US","US",www.googleapis.com,www.googleapis.com,None,None,1457,519477,733,316318,724,203159
+172.217.20.202,"None","None","None","None","GOOGLE, US","US",youtubei.googleapis.com,youtubei.googleapis.com,None,None,2393,824083,1199,481222,1194,342861
+173.194.76.188,"None","None","None","None","GOOGLE, US","US",mtalk.google.com,mtalk.google.com,None,None,597,115532,300,91227,297,24305
+176.34.214.23,"None","None","None","None","AMAZON-02, US","IE",nrdp-ipv6.prod.ftl.netflix.com,nrdp-ipv6.prod.ftl.netflix.com,None,None,224,139304,94,75832,130,63472
+18.196.27.158,"None","None","None","None","AMAZON-02, US","US",atv-ar8de21s8pinm-sony-mt5893-bravia4kur3-sonybraviareleasekeys.api.amazonvideo.com,atv-ar8de21s8pinm-sony-mt5893-bravia4kur3-sonybraviareleasekeys.api.amazonvideo.com,None,None,28,13146,11,10664,17,2482
+18.239.69.3,"None","None","None","None","AMAZON-02, US","US",metadata.erabu.sony.tv,metadata.erabu.sony.tv,None,None,22,8664,10,7247,12,1417
+18.239.69.44,"None","None","None","None","AMAZON-02, US","US",api.erabu.sony.tv,api.erabu.sony.tv,None,None,89,25206,44,14741,45,10465
+18.66.171.30,"None","None","None","None","AMAZON-02, US","US",metadata.erabu.sony.tv,metadata.erabu.sony.tv,None,None,23,8730,10,7247,13,1483
+216.239.35.0,"None","None","None","None","GOOGLE, US","US",time.android.com,time.android.com,None,None,2,180,1,90,1,90
+216.239.35.4,"None","None","None","None","GOOGLE, US","US",time.android.com,time.android.com,None,None,2,180,1,90,1,90
+216.239.36.55,"None","None","None","None","GOOGLE, US","US",fcm.googleapis.com,fcm.googleapis.com,None,None,1158,343326,518,245379,640,97947
+216.239.36.57,"None","None","None","None","GOOGLE, US","US",fcm.googleapis.com,fcm.googleapis.com,None,None,833,245573,375,175571,458,70002
+216.239.38.55,"None","None","None","None","GOOGLE, US","US",fcm.googleapis.com,fcm.googleapis.com,None,None,1289,382288,581,273586,708,108702
+216.239.38.57,"None","None","None","None","GOOGLE, US","US",fcm.googleapis.com,fcm.googleapis.com,None,None,1419,421389,636,301348,783,120041
+216.58.213.74,"None","None","None","None","GOOGLE, US","US",play.googleapis.com,play.googleapis.com,None,None,919,447199,449,321971,470,125228
+216.58.214.163,"None","None","None","None","GOOGLE, US","US",connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,8529,1844695,2939,579003,5590,1265692
+216.58.214.170,"None","None","None","None","GOOGLE, US","US",imasdk.googleapis.com,imasdk.googleapis.com,None,None,2985,1525915,1438,1138890,1547,387025
+216.58.214.68,"None","None","None","None","GOOGLE, US","US",www.google.com,www.google.com,None,None,18,6430,7,5177,11,1253
+216.58.214.74,"None","None","None","None","GOOGLE, US","US",play.googleapis.com,play.googleapis.com,None,None,1308,653153,633,469645,675,183508
+216.58.215.42,"None","None","None","None","GOOGLE, US","US",android.googleapis.com,android.googleapis.com,None,None,761,425671,354,343585,407,82086
+23.200.87.150,"Akamai Technologies, Inc.","US","None","None","AKAMAI-ASN1, NL","US",a248.e.akamai.net,a248.e.akamai.net,None,None,34,20258,14,18548,20,1710
+23.210.249.137,"Akamai Technologies, Inc.","US","None","None","AKAMAI-ASN1, NL","US",a248.e.akamai.net,a248.e.akamai.net,None,None,34,20258,14,18548,20,1710
+3.248.68.85,"None","None","None","None","AMAZON-02, US","US",nrdp-ipv6.prod.ftl.netflix.com,nrdp-ipv6.prod.ftl.netflix.com,None,None,287,155192,127,93890,160,61302
+3.248.72.3,"None","None","None","None","AMAZON-02, US","US",nrdp-ipv6.prod.ftl.netflix.com,nrdp-ipv6.prod.ftl.netflix.com,None,None,168,79178,75,50456,93,28722
+3.251.50.149,"None","None","None","None","AMAZON-02, US","US",www.netflix.com,www.netflix.com,None,None,69,18946,32,11248,37,7698
+34.192.183.83,"None","None","None","None","AMAZON-AES, US","US",e2df123a4dcaeaae2c830c6c288fe47f0fe4e2d4c7a754637f0ef83434a988b.us-east-1.prod.service.minerva.devices.a2z.com,e2df123a4dcaeaae2c830c6c288fe47f0fe4e2d4c7a754637f0ef83434a988b.us-east-1.prod.service.minerva.devices.a2z.com,None,None,49,18515,21,9520,28,8995
+34.195.175.66,"None","None","None","None","AMAZON-AES, US","US",device-metrics-us-2.amazon.com,device-metrics-us-2.amazon.com,None,None,36,10958,16,6515,20,4443
+34.237.111.59,"None","None","None","None","AMAZON-AES, US","US",device-metrics-us-2.amazon.com,device-metrics-us-2.amazon.com,None,None,22,5146,11,1152,11,3994
+34.240.160.76,"None","None","None","None","AMAZON-02, US","US",nrdp70-appboot.netflix.com,nrdp70-appboot.netflix.com,None,None,63,51743,22,19936,41,31807
+34.240.52.30,"None","None","None","None","AMAZON-02, US","US",api-global.netflix.com,api-global.netflix.com,None,None,85,85640,34,72092,51,13548
+34.242.150.220,"None","None","None","None","AMAZON-02, US","US",api-global.netflix.com,api-global.netflix.com,None,None,43,42482,18,35741,25,6741
+34.248.133.31,"None","None","None","None","AMAZON-02, US","US",api-global.netflix.com,api-global.netflix.com,None,None,130,116868,49,68025,81,48843
+34.250.84.59,"None","None","None","None","AMAZON-02, US","US",api-global.netflix.com,api-global.netflix.com,None,None,81,79445,33,51983,48,27462
+34.252.142.55,"None","None","None","None","AMAZON-02, US","US",nrdp-ipv6.prod.ftl.netflix.com,nrdp-ipv6.prod.ftl.netflix.com,None,None,214,106296,96,67455,118,38841
+34.252.29.56,"None","None","None","None","AMAZON-02, US","US",nrdp70-appboot.netflix.com,nrdp70-appboot.netflix.com,None,None,69,52140,28,20332,41,31808
+34.255.15.69,"None","None","None","None","AMAZON-02, US","US",android.prod.cloud.netflix.com,android.prod.cloud.netflix.com,None,None,22,8086,10,5890,12,2196
+44.203.165.173,"None","None","None","None","AMAZON-AES, US","US",e2df123a4dcaeaae2c830c6c288fe47f0fe4e2d4c7a754637f0ef83434a988b.us-east-1.prod.service.minerva.devices.a2z.com,e2df123a4dcaeaae2c830c6c288fe47f0fe4e2d4c7a754637f0ef83434a988b.us-east-1.prod.service.minerva.devices.a2z.com,None,None,55,21072,23,10634,32,10438
+44.225.84.51,"Sony Corporation","JP","None","None","AMAZON-02, US","US",api.meta.ndmdhs.com,api.meta.ndmdhs.com,None,None,29,7899,15,6144,14,1755
+44.231.61.240,"None","None","None","None","AMAZON-02, US","US",arcus-uswest.amazon.com,arcus-uswest.amazon.com,None,None,32,9034,16,6921,16,2113
+44.239.233.189,"None","None","None","None","AMAZON-02, US","US",service.biv.sony.tv,service.biv.sony.tv,None,None,22,10035,8,7554,14,2481
+44.240.111.222,"Sony Corporation","JP","None","None","AMAZON-02, US","US",api.meta.ndmdhs.com,api.meta.ndmdhs.com,None,None,35,8295,16,6210,19,2085
+45.57.90.1,"None","None","None","None","NETFLIX-ASN, US","US",secure.netflix.com,secure.netflix.com,None,None,3279,7030386,1434,6886092,1845,144294
+45.57.91.1,"None","None","None","None","NETFLIX-ASN, US","US",assets.nflxext.com,assets.nflxext.com,None,None,779,1645806,334,1608590,445,37216
+46.137.170.241,"None","None","None","None","AMAZON-02, US","IE",android.prod.cloud.netflix.com,android.prod.cloud.netflix.com,None,None,41,10627,19,6291,22,4336
+50.112.17.37,"Sony Corporation","JP","None","None","AMAZON-02, US","US",bdcore-apr-lb.bda.ndmdhs.com,bdcore-apr-lb.bda.ndmdhs.com,None,None,20,7689,8,5182,12,2507
+52.11.230.198,"None","None","None","None","AMAZON-02, US","US",log.core.cloud.vewd.com,log.core.cloud.vewd.com,None,None,59,16895,26,13063,33,3832
+52.16.177.193,"None","None","None","None","AMAZON-02, US","US",logs.netflix.com,logs.netflix.com,None,None,1366,920425,544,375351,822,545074
+52.17.111.227,"None","None","None","None","AMAZON-02, US","US",uiboot.netflix.com,uiboot.netflix.com,None,None,84,79848,35,52320,49,27528
+52.17.126.117,"None","None","None","None","AMAZON-02, US","US",nrdp70-appboot.netflix.com,nrdp70-appboot.netflix.com,None,None,37,26235,15,10232,22,16003
+52.17.211.173,"None","None","None","None","AMAZON-02, US","US",nrdp70-appboot.netflix.com,nrdp70-appboot.netflix.com,None,None,28,25641,10,9902,18,15739
+52.209.135.12,"None","None","None","None","AMAZON-02, US","US",logs.netflix.com,logs.netflix.com,None,None,1704,1162468,676,466927,1028,695541
+52.210.62.227,"None","None","None","None","AMAZON-02, US","US",nrdp70-appboot.netflix.com,nrdp70-appboot.netflix.com,None,None,24,25377,11,9968,13,15409
+52.210.63.192,"None","None","None","None","AMAZON-02, US","US",api-global.netflix.com,api-global.netflix.com,None,None,42,42461,16,35655,26,6806
+52.211.14.11,"None","None","None","None","AMAZON-02, US","US",uiboot.netflix.com,uiboot.netflix.com,None,None,46,37307,18,16255,28,21052
+52.211.179.103,"None","None","None","None","AMAZON-02, US","US",android.prod.cloud.netflix.com,android.prod.cloud.netflix.com,None,None,21,5381,10,3213,11,2168
+52.212.197.118,"None","None","None","None","AMAZON-02, US","US",nrdp70-appboot.netflix.com,nrdp70-appboot.netflix.com,None,None,26,25509,12,10034,14,15475
+52.213.164.31,"None","None","None","None","AMAZON-02, US","US",uiboot.netflix.com,uiboot.netflix.com,None,None,42,37086,15,16100,27,20986
+52.213.79.183,"None","None","None","None","AMAZON-02, US","US",uiboot.netflix.com,uiboot.netflix.com,None,None,44,37271,17,16285,27,20986
+52.214.181.141,"None","None","None","None","AMAZON-02, US","US",www.netflix.com,www.netflix.com,None,None,21,6187,9,3640,12,2547
+52.214.249.246,"None","None","None","None","AMAZON-02, US","US",preapp.prod.partner.netflix.net,preapp.prod.partner.netflix.net,None,None,53,34534,25,24740,28,9794
+52.222.169.67,"None","None","None","None","AMAZON-02, US","US",threeplr-abdx8mxr6q3e.api.amazonvideo.com,threeplr-abdx8mxr6q3e.api.amazonvideo.com,None,None,30,17831,13,15838,17,1993
+52.222.174.103,"None","None","None","None","AMAZON-02, US","US",metadata.erabu.sony.tv,metadata.erabu.sony.tv,None,None,23,8684,10,7201,13,1483
+52.222.174.123,"None","None","None","None","AMAZON-02, US","US",metadata.erabu.sony.tv,metadata.erabu.sony.tv,None,None,24,8750,10,7201,14,1549
+52.222.174.21,"None","None","None","None","AMAZON-02, US","US",metadata.erabu.sony.tv,metadata.erabu.sony.tv,None,None,23,8684,10,7201,13,1483
+52.25.158.229,"None","None","None","None","AMAZON-02, US","US",ssm1.internet.sony.tv,ssm1.internet.sony.tv,None,None,24,10650,9,8631,15,2019
+52.30.55.190,"None","None","None","None","AMAZON-02, US","US",logs.netflix.com,logs.netflix.com,None,None,1901,1286375,756,517551,1145,768824
+52.49.41.243,"None","None","None","None","AMAZON-02, US","US",api-global.netflix.com,api-global.netflix.com,None,None,45,42900,20,36160,25,6740
+52.84.174.104,"None","None","None","None","AMAZON-02, US","US",api.erabu.sony.tv,api.erabu.sony.tv,None,None,184,50567,88,29241,96,21326
+52.84.174.89,"None","None","None","None","AMAZON-02, US","US",api.erabu.sony.tv,api.erabu.sony.tv,None,None,94,25288,44,14493,50,10795
+54.155.136.132,"None","None","None","None","AMAZON-02, US","US",nrdp-ipv6.prod.ftl.netflix.com,nrdp-ipv6.prod.ftl.netflix.com,None,None,126,65967,57,40735,69,25232
+54.155.178.5,"None","None","None","None","AMAZON-02, US","US",www.netflix.com,www.netflix.com,None,None,21,6185,9,3638,12,2547
+54.155.246.232,"None","None","None","None","AMAZON-02, US","US",www.netflix.com,www.netflix.com,None,None,111,34022,47,21031,64,12991
+54.170.173.133,"None","None","None","None","AMAZON-02, US","US",android.prod.cloud.netflix.com,android.prod.cloud.netflix.com,None,None,23,5509,11,3275,12,2234
+54.170.196.176,"None","None","None","None","AMAZON-02, US","US",www.netflix.com,www.netflix.com,None,None,42,12368,18,7278,24,5090
+54.195.14.93,"None","None","None","None","AMAZON-02, US","US",nrdp-ipv6.prod.ftl.netflix.com,nrdp-ipv6.prod.ftl.netflix.com,None,None,125,90819,49,45066,76,45753
+54.201.66.14,"None","None","None","None","AMAZON-02, US","US",reg.biv.sony.tv,reg.biv.sony.tv,None,None,21,8865,8,6994,13,1871
+54.217.21.108,"None","None","None","None","AMAZON-02, US","US",android.prod.cloud.netflix.com,android.prod.cloud.netflix.com,None,None,22,5443,10,3209,12,2234
+54.217.35.13,"None","None","None","None","AMAZON-02, US","US",android.prod.cloud.netflix.com,android.prod.cloud.netflix.com,None,None,20,5315,9,3147,11,2168
+54.220.170.166,"None","None","None","None","AMAZON-02, US","US",nrdp-ipv6.prod.ftl.netflix.com,nrdp-ipv6.prod.ftl.netflix.com,None,None,178,118477,72,62247,106,56230
+54.228.171.0,"None","None","None","None","AMAZON-02, US","US",nrdp-ipv6.prod.ftl.netflix.com,nrdp-ipv6.prod.ftl.netflix.com,None,None,344,228875,140,119735,204,109140
+54.229.254.136,"None","None","None","None","AMAZON-02, US","US",uiboot.netflix.com,uiboot.netflix.com,None,None,43,37201,17,16281,26,20920
+54.246.79.9,"None","None","None","None","AMAZON-02, US","US",www.netflix.com,www.netflix.com,None,None,21,6185,9,3640,12,2545
+54.73.148.110,"None","None","None","None","AMAZON-02, US","US",www.netflix.com,www.netflix.com,None,None,44,12496,19,7343,25,5153
+54.73.99.78,"None","None","None","None","AMAZON-02, US","US",nrdp-ipv6.prod.ftl.netflix.com,nrdp-ipv6.prod.ftl.netflix.com,None,None,379,219759,166,123580,213,96179
+54.74.73.31,"None","None","None","None","AMAZON-02, US","US",www.netflix.com,www.netflix.com,None,None,42,12365,18,7278,24,5087
+54.75.143.18,"None","None","None","None","AMAZON-02, US","US",nrdp-ipv6.prod.ftl.netflix.com,nrdp-ipv6.prod.ftl.netflix.com,None,None,238,151185,99,80946,139,70239
+54.77.110.160,"None","None","None","None","AMAZON-02, US","US",nrdp-ipv6.prod.ftl.netflix.com,nrdp-ipv6.prod.ftl.netflix.com,None,None,141,74269,62,45554,79,28715
+63.35.126.25,"None","None","None","None","AMAZON-02, US","US",preapp.prod.partner.netflix.net,preapp.prod.partner.netflix.net,None,None,82,52064,39,37307,43,14757
+63.35.92.152,"None","None","None","None","AMAZON-02, US","US",nrdp-ipv6.prod.ftl.netflix.com,nrdp-ipv6.prod.ftl.netflix.com,None,None,241,147805,103,80994,138,66811
+64.233.167.188,"None","None","None","None","GOOGLE, US","US",mtalk.google.com,mtalk.google.com,None,None,1491,133363,889,74556,602,58807
+74.125.133.188,"None","None","None","None","GOOGLE, US","US",mtalk.google.com,mtalk.google.com,None,None,469,61958,208,40227,261,21731
+8.8.8.8,"None","None","None","None","GOOGLE, US","US",None,None,None,None,650,100592,325,74182,325,26410
+99.81.216.237,"None","None","None","None","AMAZON-02, US","US",preapp.prod.partner.netflix.net,preapp.prod.partner.netflix.net,None,None,78,52245,37,37620,41,14625
+99.81.251.69,"None","None","None","None","AMAZON-02, US","US",android.prod.cloud.netflix.com,android.prod.cloud.netflix.com,None,None,22,5443,10,3209,12,2234
+192.168.231.1,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,654,170882,327,144306,327,26576
+192.168.231.108,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,2220,823055,525,43120,1695,779935
+192.168.231.171,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,2240,831075,525,43120,1715,787955
+224.0.0.251,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,23083,5362511,0,0,23083,5362511
+239.255.255.250,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,6816,2475344,0,0,6816,2475344
+fdc4:22e1:d5d:0:3545:ee40:6984:507e,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,836,234513,418,42534,418,191979
+fdc4:22e1:d5d:0:35d0:b757:86d6:c0ec,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,832,232370,416,42071,416,190299
+fdc4:22e1:d5d:0:57c:d141:6ee2:3389,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,800,221417,400,40408,400,181009
+fdc4:22e1:d5d::1,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,2468,688300,1234,563287,1234,125013
+fe80::66ff:aff:fe88:af4a,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,23078,5993467,23078,5993467,0,0
+ff02::fb,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,23078,5993467,0,0,23078,5993467

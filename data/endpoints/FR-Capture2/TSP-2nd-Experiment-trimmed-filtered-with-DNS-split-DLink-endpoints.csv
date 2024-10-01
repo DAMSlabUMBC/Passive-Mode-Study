@@ -1,0 +1,14 @@
+IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+18.200.177.60,First,D-LINK CORPORATION,TW,None,None,"AMAZON-02, US",US,mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,999,254542,384,132793,615,121749
+34.240.70.139,First,D-LINK CORPORATION,TW,None,None,"AMAZON-02, US",US,mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,1830,430947,707,223733,1123,207214
+34.254.122.144,First,D-LINK CORPORATION,TW,None,None,"AMAZON-02, US",US,mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,595,189040,255,116010,340,73030
+52.19.172.170,First,D-LINK CORPORATION,TW,None,None,"AMAZON-02, US",US,mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,4604,940629,1694,424591,2910,516038
+52.215.192.18,First,D-LINK CORPORATION,TW,None,None,"AMAZON-02, US",US,mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,275,110780,123,69055,152,41725
+52.215.192.19,First,D-LINK CORPORATION,TW,None,None,"AMAZON-02, US",US,mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,222,94030,100,61220,122,32810
+52.51.81.227,First,D-LINK CORPORATION,TW,None,None,"AMAZON-02, US",US,mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,91,46825,49,36656,42,10169
+54.194.135.95,First,D-LINK CORPORATION,TW,None,None,"AMAZON-02, US",US,mp-eu-fwd.auto.mydlink.com,mp-eu-fwd.auto.mydlink.com,None,None,262,111156,117,89675,145,21481
+54.220.151.155,First,D-LINK CORPORATION,TW,None,None,"AMAZON-02, US",US,mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,537,193485,228,116324,309,77161
+54.77.239.235,First,D-LINK CORPORATION,TW,None,None,"AMAZON-02, US",US,mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,1726,370916,646,176511,1080,194405
+99.80.0.240,First,D-LINK CORPORATION,TW,None,None,"AMAZON-02, US",US,mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,4785,937996,1711,415535,3074,522461
+99.81.252.178,First,D-LINK CORPORATION,TW,None,None,"AMAZON-02, US",US,mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,443,159569,199,102568,244,57001
+224.0.0.251,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,417,62273,0,0,417,62273

@@ -1,0 +1,14 @@
+IP, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+18.214.50.20,"None","None","None","None","AMAZON-AES, US","US",app.govee.com,app.govee.com,None,None,76,8541,39,4533,37,4008
+203.107.6.88,"None","None","None","None","ALIBABA-CN-NET Hangzhou Alibaba Advertising Co.,Ltd., CN","CN",ntp.aliyun.com,ntp.aliyun.com,None,None,62,5580,31,2790,31,2790
+216.239.35.0,"None","None","None","None","GOOGLE, US","US",time.google.com,time.google.com,None,None,59,5310,29,2610,30,2700
+216.239.35.12,"None","None","None","None","GOOGLE, US","US",time.google.com,time.google.com,None,None,40,3600,20,1800,20,1800
+216.239.35.4,"None","None","None","None","GOOGLE, US","US",time.google.com,time.google.com,None,None,38,3420,19,1710,19,1710
+216.239.35.8,"None","None","None","None","GOOGLE, US","US",time.google.com,time.google.com,None,None,44,3960,22,1980,22,1980
+3.209.71.57,"None","None","None","None","AMAZON-AES, US","US",app.govee.com,app.govee.com,None,None,92,10884,44,5612,48,5272
+3.215.33.68,"None","None","None","None","AMAZON-AES, US","US",app.govee.com,app.govee.com,None,None,236,27535,113,14193,123,13342
+3.223.139.253,"None","None","None","None","AMAZON-AES, US","US",app.govee.com,app.govee.com,None,None,117,13713,55,7015,62,6698
+52.5.162.6,"None","None","None","None","AMAZON-AES, US","US",None,None,None,None,20473,2020344,6914,830757,13559,1189587
+54.198.184.189,"None","None","None","None","AMAZON-AES, US","US",app.govee.com,app.govee.com,None,None,47,5496,22,2806,25,2690
+54.87.230.241,"None","None","None","None","AMAZON-AES, US","US",app.govee.com,app.govee.com,None,None,116,13660,56,7070,60,6590
+192.168.3.1,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,186,19089,91,12060,95,7029

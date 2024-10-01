@@ -1,0 +1,25 @@
+IP, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+120.25.115.20,"None","None","None","None","ALIBABA-CN-NET Hangzhou Alibaba Advertising Co.,Ltd., CN","CN",ntp1.aliyun.com,ntp1.aliyun.com,None,None,593,53370,236,21240,357,32130
+203.107.6.88,"None","None","None","None","ALIBABA-CN-NET Hangzhou Alibaba Advertising Co.,Ltd., CN","CN",ntp2.aliyun.com,ntp2.aliyun.com,None,None,516,46440,256,23040,260,23400
+216.239.35.0,"None","None","None","None","GOOGLE, US","US",time1.google.com,time1.google.com,None,None,518,46620,259,23310,259,23310
+216.239.35.12,"None","None","None","None","GOOGLE, US","US",time4.google.com,time4.google.com,None,None,515,46350,257,23130,258,23220
+216.239.35.4,"None","None","None","None","GOOGLE, US","US",time2.google.com,time2.google.com,None,None,518,46620,259,23310,259,23310
+216.239.35.8,"None","None","None","None","GOOGLE, US","US",time3.google.com,time3.google.com,None,None,511,45990,255,22950,256,23040
+3.251.22.95,"Signify Netherlands B.V.","NL","None","None","AMAZON-02, US","US",data.meethue.com,data.meethue.com,None,None,156,56848,64,18252,92,38596
+34.117.13.189,"None","None","None","None","GOOGLE-CLOUD-PLATFORM, US","US",ws.meethue.com,ws.meethue.com,None,None,60425,3913323,30181,1869401,30244,2043922
+34.117.13.23,"Signify Netherlands B.V.","NL","None","None","GOOGLE-CLOUD-PLATFORM, US","US",time.meethue.com,time.meethue.com,None,None,17,5234,7,4303,10,931
+34.214.145.236,"None","None","None","None","AMAZON-02, US","US",None,None,None,None,1,66,1,66,0,0
+34.75.80.250,"None","None","None","None","GOOGLE-CLOUD-PLATFORM, US","US",mqtt-us-01.iot.meethue.com,mqtt-us-01.iot.meethue.com,None,None,47440,2754137,23398,1294270,24042,1459867
+35.241.40.143,"Signify Netherlands B.V.","NL","None","None","GOOGLE-CLOUD-PLATFORM, US","US",otau.meethue.com,otau.meethue.com,None,None,6263,12631740,4386,12518258,1877,113482
+46.51.188.91,"Signify Netherlands B.V.","NL","None","None","AMAZON-02, US","IE",diag.meethue.com,diag.meethue.com,None,None,4827,1100783,2170,552452,2657,548331
+52.211.152.148,"Signify Netherlands B.V.","NL","None","None","AMAZON-02, US","US",data.meethue.com,data.meethue.com,None,None,128,54985,51,13851,77,41134
+52.48.41.28,"Signify Netherlands B.V.","NL","None","None","AMAZON-02, US","US",diag.meethue.com,diag.meethue.com,None,None,5961,1355696,2713,631729,3248,723967
+54.216.117.174,"Signify Netherlands B.V.","NL","None","None","AMAZON-02, US","US",data.meethue.com,data.meethue.com,None,None,328,114982,139,40797,189,74185
+99.80.116.23,"Signify Netherlands B.V.","NL","None","None","AMAZON-02, US","US",diag.meethue.com,diag.meethue.com,None,None,5804,1251627,2615,646079,3189,605548
+192.168.1.1,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,2638,403902,1085,282048,1553,121854
+192.168.1.107,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,90,22008,30,2502,60,19506
+192.168.1.109,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,7244,1467813,2650,220957,4594,1246856
+224.0.0.251,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,17221,5618538,0,0,17221,5618538
+239.255.255.250,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,83298,29237598,0,0,83298,29237598
+fe80::eeb5:faff:fe99:ac15,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,17221,5962958,17221,5962958,0,0
+ff02::fb,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,17221,5962958,0,0,17221,5962958

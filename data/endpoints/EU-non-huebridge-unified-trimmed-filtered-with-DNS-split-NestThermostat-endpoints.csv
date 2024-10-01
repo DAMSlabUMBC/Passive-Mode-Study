@@ -1,0 +1,124 @@
+IP, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+0.0.0.0,"None","None","None","None","NA","",None,None,None,None,19,1536,19,1536,0,0
+107.21.146.204,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe112-front01-iad01.transport.home.nest.com,czfe112-front01-iad01.transport.home.nest.com,None,None,183,43108,78,25936,105,17172
+107.23.175.250,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe120-front01-iad01.transport.home.nest.com,czfe120-front01-iad01.transport.home.nest.com,None,None,62,14556,20,9672,42,4884
+142.250.201.174,"None","None","None","None","GOOGLE, US","US",clients3.google.com,clients3.google.com,None,None,106,9238,50,4586,56,4652
+18.204.152.154,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe87-front01-iad01.transport.home.nest.com,czfe87-front01-iad01.transport.home.nest.com,None,None,126,41980,57,25981,69,15999
+18.204.60.159,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe49-front01-iad01.transport.home.nest.com,czfe49-front01-iad01.transport.home.nest.com,None,None,27,7024,15,5585,12,1439
+18.204.62.133,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe62-front01-iad01.transport.home.nest.com,czfe62-front01-iad01.transport.home.nest.com,None,None,41,12653,17,8851,24,3802
+18.205.174.64,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe98-front01-iad01.transport.home.nest.com,czfe98-front01-iad01.transport.home.nest.com,None,None,56,17697,26,10198,30,7499
+18.205.224.178,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe30-front01-iad01.transport.home.nest.com,czfe30-front01-iad01.transport.home.nest.com,None,None,83,24895,39,16258,44,8637
+18.208.2.216,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe82-front01-iad01.transport.home.nest.com,czfe82-front01-iad01.transport.home.nest.com,None,None,16,6792,7,5184,9,1608
+18.209.26.40,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe06-front01-iad01.transport.home.nest.com,czfe06-front01-iad01.transport.home.nest.com,None,None,20,7118,9,5347,11,1771
+18.209.53.160,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe29-front01-iad01.transport.home.nest.com,czfe29-front01-iad01.transport.home.nest.com,None,None,24,6826,14,5519,10,1307
+18.209.86.148,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe69-front01-iad01.transport.home.nest.com,czfe69-front01-iad01.transport.home.nest.com,None,None,84,24925,38,16194,46,8731
+18.210.159.117,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe37-front01-iad01.transport.home.nest.com,czfe37-front01-iad01.transport.home.nest.com,None,None,22,7226,11,5455,11,1771
+18.210.177.236,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe53-front01-iad01.transport.home.nest.com,czfe53-front01-iad01.transport.home.nest.com,None,None,20,7106,9,5335,11,1771
+18.210.177.46,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe59-front01-iad01.transport.home.nest.com,czfe59-front01-iad01.transport.home.nest.com,None,None,21,6660,11,5349,10,1311
+18.210.25.50,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe45-front01-iad01.transport.home.nest.com,czfe45-front01-iad01.transport.home.nest.com,None,None,97,28876,44,16890,53,11986
+18.210.94.215,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe04-front01-iad01.transport.home.nest.com,czfe04-front01-iad01.transport.home.nest.com,None,None,66,23027,31,15098,35,7929
+192.168.231.1,"None","None","None","None","NA","",None,None,None,None,19,1536,0,0,19,1536
+216.239.35.0,"None","None","None","None","GOOGLE, US","US",time.nest.com,time.nest.com,None,None,70,6300,35,3150,35,3150
+3.83.229.35,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe121-front01-iad01.transport.home.nest.com,czfe121-front01-iad01.transport.home.nest.com,None,None,60,21201,27,14631,33,6570
+34.231.209.135,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe24-front01-iad01.transport.home.nest.com,czfe24-front01-iad01.transport.home.nest.com,None,None,213,49907,100,27208,113,22699
+34.237.131.21,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe93-front01-iad01.transport.home.nest.com,czfe93-front01-iad01.transport.home.nest.com,None,None,109,35763,44,16787,65,18976
+34.239.79.85,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe81-front01-iad01.transport.home.nest.com,czfe81-front01-iad01.transport.home.nest.com,None,None,157,44213,71,23371,86,20842
+35.168.175.128,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe85-front01-iad01.transport.home.nest.com,czfe85-front01-iad01.transport.home.nest.com,None,None,62,15891,26,10610,36,5281
+35.169.204.9,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe39-front01-iad01.transport.home.nest.com,czfe39-front01-iad01.transport.home.nest.com,None,None,69,23729,31,15626,38,8103
+35.171.116.112,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe61-front01-iad01.transport.home.nest.com,czfe61-front01-iad01.transport.home.nest.com,None,None,44,13842,17,10554,27,3288
+35.171.141.52,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe19-front01-iad01.transport.home.nest.com,czfe19-front01-iad01.transport.home.nest.com,None,None,38,13703,15,10489,23,3214
+35.171.224.183,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe16-front01-iad01.transport.home.nest.com,czfe16-front01-iad01.transport.home.nest.com,None,None,79,27351,35,16026,44,11325
+35.190.54.210,"Nest Labs, Inc.","US","None","None","GOOGLE, US","US",logsink.devices.nest.com,logsink.devices.nest.com,None,None,20316,9277493,9539,2756741,10777,6520752
+52.205.228.132,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",squeakydoor.nest.com,squeakydoor.nest.com,None,None,1221,438400,576,329132,645,109268
+52.206.238.53,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe67-front01-iad01.transport.home.nest.com,czfe67-front01-iad01.transport.home.nest.com,None,None,62,21987,27,17011,35,4976
+52.22.184.96,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",weather.nest.com,weather.nest.com,None,None,8,3957,4,3168,4,789
+52.22.4.251,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",weather.nest.com,weather.nest.com,None,None,18,7150,9,5482,9,1668
+52.54.204.6,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",weather.nest.com,weather.nest.com,None,None,10,2905,4,2008,6,897
+52.54.95.86,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe18-front01-iad01.transport.home.nest.com,czfe18-front01-iad01.transport.home.nest.com,None,None,22,6714,12,5403,10,1311
+52.55.159.10,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",weather.nest.com,weather.nest.com,None,None,24,10747,11,9030,13,1717
+52.55.205.241,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe91-front01-iad01.transport.home.nest.com,czfe91-front01-iad01.transport.home.nest.com,None,None,84,26598,39,16848,45,9750
+52.6.94.39,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe44-front01-iad01.transport.home.nest.com,czfe44-front01-iad01.transport.home.nest.com,None,None,98,23729,45,15824,53,7905
+52.70.53.18,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",squeakydoor.nest.com,squeakydoor.nest.com,None,None,191,58450,82,40879,109,17571
+52.72.161.88,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",weather.nest.com,weather.nest.com,None,None,7,4167,3,3378,4,789
+52.73.226.79,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",weather.nest.com,weather.nest.com,None,None,31,8168,12,5762,19,2406
+52.87.106.218,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",weather.nest.com,weather.nest.com,None,None,9,2839,5,2050,4,789
+52.91.103.86,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe111-front01-iad01.transport.home.nest.com,czfe111-front01-iad01.transport.home.nest.com,None,None,69,23924,34,15891,35,8033
+54.146.20.238,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",weather.nest.com,weather.nest.com,None,None,60,22168,23,18092,37,4076
+54.152.190.163,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",weather.nest.com,weather.nest.com,None,None,24,10718,10,8935,14,1783
+54.156.213.123,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe108-front01-iad01.transport.home.nest.com,czfe108-front01-iad01.transport.home.nest.com,None,None,121,37480,54,26126,67,11354
+54.156.64.150,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",squeakydoor.nest.com,squeakydoor.nest.com,None,None,909,325157,426,242633,483,82524
+54.164.236.255,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",weather.nest.com,weather.nest.com,None,None,3,202,1,74,2,128
+54.164.247.81,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",squeakydoor.nest.com,squeakydoor.nest.com,None,None,1064,378760,506,284058,558,94702
+54.166.199.222,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe116-front01-iad01.transport.home.nest.com,czfe116-front01-iad01.transport.home.nest.com,None,None,53,20761,25,14504,28,6257
+54.173.243.106,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe110-front01-iad01.transport.home.nest.com,czfe110-front01-iad01.transport.home.nest.com,None,None,130,40870,61,26479,69,14391
+54.205.92.207,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",weather.nest.com,weather.nest.com,None,None,46,17827,19,14184,27,3643
+54.208.172.57,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",squeakydoor.nest.com,squeakydoor.nest.com,None,None,444,131080,194,89382,250,41698
+54.88.60.177,"Nest Labs, Inc.","US","None","None","AMAZON-AES, US","US",czfe100-front01-iad01.transport.home.nest.com,czfe100-front01-iad01.transport.home.nest.com,None,None,20,6606,10,5295,10,1311
+fd50:af72:1bad:2:6616:6600:e9:5f29,"None","None","None","None","NA","",None,None,None,None,30,2869,30,2869,0,0
+fdc4:22e1:d5d::1,"None","None","None","None","NA","",None,None,None,None,30,2869,0,0,30,2869
+192.168.231.1,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,17362,2360542,8119,1602467,9243,758075
+fdc4:22e1:d5d:0:11d2:a9ff:cfc1:6a95,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,50,7143,28,2809,22,4334
+fdc4:22e1:d5d:0:14bb:cbac:e493:b526,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,482,73064,253,25752,229,47312
+fdc4:22e1:d5d:0:180f:2444:530e:216a,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,390,59608,217,22016,173,37592
+fdc4:22e1:d5d:0:1d30:8f2b:2cbe:49d7,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,110,17104,63,6371,47,10733
+fdc4:22e1:d5d:0:1dc2:f6d3:abd4:1255,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,206,30696,111,11316,95,19380
+fdc4:22e1:d5d:0:2007:f542:d26b:b3ce,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,191,28036,113,11457,78,16579
+fdc4:22e1:d5d:0:2dbb:8060:6d8a:8546,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,482,71342,256,26028,226,45314
+fdc4:22e1:d5d:0:35b7:69d5:a563:6337,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,136,21554,79,7973,57,13581
+fdc4:22e1:d5d:0:3dfa:6985:3784:834b,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,123,15437,66,6875,57,8562
+fdc4:22e1:d5d:0:442c:798f:7591:d5e9,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,171,25242,88,8960,83,16282
+fdc4:22e1:d5d:0:499:151e:deab:4f07,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,775,114948,421,42860,354,72088
+fdc4:22e1:d5d:0:55b1:8653:f799:2b80,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,8,1871,4,397,4,1474
+fdc4:22e1:d5d:0:55e7:f9ac:9058:5e7d,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,779,115316,448,45541,331,69775
+fdc4:22e1:d5d:0:5c37:d3f0:fe70:3d5,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,6,731,5,504,1,227
+fdc4:22e1:d5d:0:5c77:3a61:d36d:6a55,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,52,8273,27,3020,25,5253
+fdc4:22e1:d5d:0:613e:5154:8ebd:e497,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,138,23009,72,7756,66,15253
+fdc4:22e1:d5d:0:6485:69bd:e655:ccb6,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,199,31989,106,10768,93,21221
+fdc4:22e1:d5d:0:65ab:d1f4:ea5d:52a3,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,281,40143,171,17353,110,22790
+fdc4:22e1:d5d:0:6616:66ff:febe:449c,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,33,4480,26,2548,7,1932
+fdc4:22e1:d5d:0:6c57:28ca:f997:5e59,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,1203,180955,649,66285,554,114670
+fdc4:22e1:d5d:0:6dee:9fb2:59a7:2bad,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,56,7772,33,3464,23,4308
+fdc4:22e1:d5d:0:70fa:86f4:dff5:7d6,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,798,118191,443,45117,355,73074
+fdc4:22e1:d5d:0:747c:11be:a60c:fd21,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,54,7869,31,3355,23,4514
+fdc4:22e1:d5d:0:7dc7:76d0:9429:a77c,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,707,110300,379,38546,328,71754
+fdc4:22e1:d5d:0:898a:3ea6:f4aa:fd9b,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,92,12809,53,5360,39,7449
+fdc4:22e1:d5d:0:89a4:8121:eeda:6ca9,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,146,22934,75,7724,71,15210
+fdc4:22e1:d5d:0:8c5f:87a7:87f8:90bf,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,139,21559,84,8556,55,13003
+fdc4:22e1:d5d:0:8c63:3110:22f6:5a1,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,551,80470,301,30596,250,49874
+fdc4:22e1:d5d:0:903e:5fd3:e862:8a13,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,248,36016,157,15942,91,20074
+fdc4:22e1:d5d:0:92f:5062:a8f3:dcdb,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,28,5140,14,1417,14,3723
+fdc4:22e1:d5d:0:988e:6a6c:2eee:499,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,322,48090,175,17832,147,30258
+fdc4:22e1:d5d:0:98a5:2a4a:b012:a3ea,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,120,19200,71,7603,49,11597
+fdc4:22e1:d5d:0:9ce9:23cc:4d66:5f6d,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,765,115520,434,43936,331,71584
+fdc4:22e1:d5d:0:9ddc:39a6:476c:3743,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,54,7387,31,3164,23,4223
+fdc4:22e1:d5d:0:a5c7:4bb6:98c1:2731,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,24,4520,12,1182,12,3338
+fdc4:22e1:d5d:0:a88b:2477:ac7e:1fb7,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,182,30292,96,9697,86,20595
+fdc4:22e1:d5d:0:a99a:d9f7:84db:3004,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,650,97081,350,35580,300,61501
+fdc4:22e1:d5d:0:b03a:317a:16a5:96a,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,367,59713,200,20272,167,39441
+fdc4:22e1:d5d:0:b4e0:46a9:a8b5:aa74,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,28,4127,15,1498,13,2629
+fdc4:22e1:d5d:0:b575:4a45:1c82:513d,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,38,6741,21,2082,17,4659
+fdc4:22e1:d5d:0:b949:59de:31b5:93c5,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,26,4322,20,1980,6,2342
+fdc4:22e1:d5d:0:c03:d48f:81d7:478a,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,79,12726,44,4468,35,8258
+fdc4:22e1:d5d:0:c2b:c6d1:aa7c:8387,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,20,3437,10,974,10,2463
+fdc4:22e1:d5d:0:c44c:b328:9217:d52b,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,37,5087,22,2252,15,2835
+fdc4:22e1:d5d:0:c4b9:4762:8530:a135,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,176,26674,90,9148,86,17526
+fdc4:22e1:d5d:0:c961:9edb:5bb3:a0e3,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,70,10309,37,3792,33,6517
+fdc4:22e1:d5d:0:cd5c:1fc:64f5:2f7c,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,410,62584,223,22633,187,39951
+fdc4:22e1:d5d:0:cde:2cac:4de1:d47a,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,94,15984,52,5226,42,10758
+fdc4:22e1:d5d:0:d492:14e3:5789:4d5a,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,86,13404,44,4467,42,8937
+fdc4:22e1:d5d:0:d54:4911:7610:5eaa,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,93,12812,52,5403,41,7409
+fdc4:22e1:d5d:0:d558:fc60:b0f8:710e,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,44,7441,23,2483,21,4958
+fdc4:22e1:d5d:0:d864:ec9:2d86:3fe0,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,57,7762,30,3059,27,4703
+fdc4:22e1:d5d:0:dcc5:9d7a:718c:661e,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,151,23549,87,9358,64,14191
+fdc4:22e1:d5d:0:dda9:9d3a:3948:6693,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,697,99984,404,41057,293,58927
+fdc4:22e1:d5d:0:e5b6:4324:46f8:fd56,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,19,2569,12,1208,7,1361
+fdc4:22e1:d5d:0:e825:3219:f091:e1ea,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,26,3843,13,1351,13,2492
+fdc4:22e1:d5d:0:ec7b:fb03:9fb7:9eb1,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,259,39027,146,14844,113,24183
+fdc4:22e1:d5d:0:f007:3698:6d2f:ca35,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,192,28468,100,10192,92,18276
+fdc4:22e1:d5d:0:f53f:91f9:6cbb:a3,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,42,6581,22,2202,20,4379
+fdc4:22e1:d5d:0:f849:8681:7e8:3077,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,115,17454,58,5941,57,11513
+fdc4:22e1:d5d:0:f9b6:3ab0:b7bd:25f0,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,221,32906,126,12754,95,20152
+fdc4:22e1:d5d:0:f9ce:dc7d:8482:4fca,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,34,4760,18,1848,16,2912
+fdc4:22e1:d5d:0:f9f6:f087:5ef2:183a,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,51,7824,27,2771,24,5053
+fdc4:22e1:d5d:0:fd7f:a69a:7add:f7d,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,32,5980,16,1699,16,4281
+fdc4:22e1:d5d::1,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,14215,2142159,6361,1341537,7854,800622

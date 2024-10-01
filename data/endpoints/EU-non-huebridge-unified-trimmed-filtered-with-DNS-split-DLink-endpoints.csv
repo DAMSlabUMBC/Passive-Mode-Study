@@ -1,0 +1,26 @@
+IP, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+108.128.237.136,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-rcdda-10.auto.mydlink.com,mp-eu-rcdda-10.auto.mydlink.com,None,None,15303,15509452,5679,388193,9624,15121259
+18.200.177.60,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,3,202,1,74,2,128
+34.247.193.243,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-rcdda-3.auto.mydlink.com,mp-eu-rcdda-3.auto.mydlink.com,None,None,10867,11082583,4106,277740,6761,10804843
+34.254.122.144,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,78,35601,34,21226,44,14375
+52.17.90.193,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-rcdda-2.auto.mydlink.com,mp-eu-rcdda-2.auto.mydlink.com,None,None,17675,18316214,6671,460047,11004,17856167
+52.19.172.170,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,44,23013,22,15954,22,7059
+52.210.1.214,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-rcdda-4.auto.mydlink.com,mp-eu-rcdda-4.auto.mydlink.com,None,None,5734,5720816,2150,148519,3584,5572297
+52.212.170.9,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-sas-1.auto.mydlink.com,mp-eu-sas-1.auto.mydlink.com,None,None,214,128673,88,6522,126,122151
+52.215.192.18,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,108,29868,41,15475,67,14393
+52.222.161.73,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",ca-mgr.auto.mydlink.com,ca-mgr.auto.mydlink.com,None,None,10,2002,4,1514,6,488
+52.50.138.222,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-rcdda-12.auto.mydlink.com,mp-eu-rcdda-12.auto.mydlink.com,None,None,14916,15737264,5462,373819,9454,15363445
+52.51.223.120,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-rcdda-6.auto.mydlink.com,mp-eu-rcdda-6.auto.mydlink.com,None,None,11703,12259077,4411,304292,7292,11954785
+52.51.81.227,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,27,15184,13,9600,14,5584
+54.194.135.95,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-fwd.auto.mydlink.com,mp-eu-fwd.auto.mydlink.com,None,None,58,24051,24,19167,34,4884
+54.216.215.110,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-rcdda-9.auto.mydlink.com,mp-eu-rcdda-9.auto.mydlink.com,None,None,5720,5877784,2152,148615,3568,5729169
+54.220.151.155,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,48,19185,20,11109,28,8076
+54.229.69.45,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-rcdda-11.auto.mydlink.com,mp-eu-rcdda-11.auto.mydlink.com,None,None,5702,5888376,2204,152047,3498,5736329
+54.75.216.227,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-rcdda-8.auto.mydlink.com,mp-eu-rcdda-8.auto.mydlink.com,None,None,11947,12539477,4561,314276,7386,12225201
+54.77.239.235,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,4908,898466,1703,368595,3205,529871
+63.33.29.77,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-rcdda-5.auto.mydlink.com,mp-eu-rcdda-5.auto.mydlink.com,None,None,9377,9774803,3581,243102,5796,9531701
+99.80.0.240,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,3301,606368,1119,243951,2182,362417
+99.81.252.178,"D-LINK CORPORATION","TW","None","None","AMAZON-02, US","US",mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,7036,3205376,2479,422901,4557,2782475
+192.168.1.100,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,36,2412,0,0,36,2412
+192.168.231.1,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,2148,383402,1073,288870,1075,94532
+224.0.0.251,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,184,33504,0,0,184,33504

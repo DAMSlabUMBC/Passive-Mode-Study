@@ -1,0 +1,12 @@
+IP, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+104.199.109.192,"Dropcam","US","None","None","GOOGLE-CLOUD-PLATFORM, US","US",oculus346-eu1.dropcam.com,oculus346-eu1.dropcam.com,None,None,172,42312,78,17373,94,24939
+129.151.225.244,"None","None","None","None","ORACLE-BMC-31898, US","US",pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
+129.250.35.251,"None","None","None","None","NTT-LTD-2914, US","US",pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
+130.211.135.74,"Dropcam","US","None","None","GOOGLE-CLOUD-PLATFORM, US","US",oculus10798-us1.dropcam.com,oculus10798-us1.dropcam.com,None,None,203,68623,92,19811,111,48812
+146.59.35.38,"None","None","None","None","OVH, FR","FR",pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
+162.159.200.123,"None","None","None","None","CLOUDFLARENET, US","US",pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
+194.57.169.1,"None","None","None","None","FR-RENATER Reseau National de telecommunications pour la Technologie, FR","FR",pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
+195.154.226.102,"None","None","None","None","Online SAS, FR","FR",pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
+35.195.102.202,"Dropcam","US","None","None","GOOGLE-CLOUD-PLATFORM, US","US",oculus395-eu1.dropcam.com,oculus395-eu1.dropcam.com,None,None,65247,6748121,32637,2728414,32610,4019707
+5.39.80.51,"None","None","None","None","OVH, FR","FR",pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
+192.168.231.1,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,337,55361,147,41091,190,14270

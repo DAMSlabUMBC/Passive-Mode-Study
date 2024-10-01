@@ -1,0 +1,67 @@
+IP, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+108.177.15.188,"None","None","None","None","GOOGLE, US","US",None,None,None,None,2014,155722,869,72623,1145,83099
+142.250.178.138,"None","None","None","None","GOOGLE, US","US",play.googleapis.com,play.googleapis.com,None,None,3625,1162008,1673,725886,1952,436122
+142.250.178.142,"None","None","None","None","GOOGLE, US","US",www.youtube.com,www.youtube.com,None,None,4333,877876,2226,244093,2107,633783
+142.250.179.106,"None","None","None","None","GOOGLE, US","US",geller-pa.googleapis.com,geller-pa.googleapis.com,None,None,3231,1169470,1507,786523,1724,382947
+142.250.179.110,"None","None","None","None","GOOGLE, US","US",www.youtube.com,www.youtube.com,None,None,2908,591775,1494,163583,1414,428192
+142.250.179.74,"None","None","None","None","GOOGLE, US","US",play.googleapis.com,play.googleapis.com,None,None,5724,1845856,2668,1090201,3056,755655
+142.250.179.78,"None","None","None","None","GOOGLE, US","US",tools.google.com,tools.google.com,None,None,5676,2255052,2984,1474510,2692,780542
+142.250.179.91,"None","None","None","None","GOOGLE, US","US",storage.googleapis.com,storage.googleapis.com,None,None,869,2260518,678,2245189,191,15329
+142.250.201.170,"None","None","None","None","GOOGLE, US","US",embeddedassistant.googleapis.com,embeddedassistant.googleapis.com,None,None,3717,1226720,1700,745377,2017,481343
+142.250.201.174,"None","None","None","None","GOOGLE, US","US",clients4.google.com,clients4.google.com,None,None,3122,677152,1584,178401,1538,498751
+142.250.74.234,"None","None","None","None","GOOGLE, US","US",play.googleapis.com,play.googleapis.com,None,None,3038,962806,1418,602715,1620,360091
+142.250.74.238,"None","None","None","None","GOOGLE, US","US",www.youtube.com,www.youtube.com,None,None,2448,498741,1256,145999,1192,352742
+142.250.75.230,"None","None","None","None","GOOGLE, US","US",static.doubleclick.net,static.doubleclick.net,None,None,145,37905,66,27695,79,10210
+142.250.75.234,"None","None","None","None","GOOGLE, US","US",play.googleapis.com,play.googleapis.com,None,None,5890,1975324,2736,1075823,3154,899501
+142.250.75.238,"None","None","None","None","GOOGLE, US","US",www.youtube.com,www.youtube.com,None,None,4735,976858,2431,267154,2304,709704
+142.250.75.251,"None","None","None","None","GOOGLE, US","US",storage.googleapis.com,storage.googleapis.com,None,None,1872,4529913,1425,4494929,447,34984
+142.251.168.188,"None","None","None","None","GOOGLE, US","US",mtalk.google.com,mtalk.google.com,None,None,3718,419521,1857,293923,1861,125598
+172.217.18.195,"None","None","None","None","GOOGLE, US","US",www.gstatic.com,www.gstatic.com,None,None,449,633575,277,602574,172,31001
+172.217.18.202,"None","None","None","None","GOOGLE, US","US",play.googleapis.com,play.googleapis.com,None,None,2256,715317,1041,445057,1215,270260
+172.217.18.206,"None","None","None","None","GOOGLE, US","US",clients4.google.com,clients4.google.com,None,None,72459,31096379,34195,13199931,38264,17896448
+172.217.20.163,"None","None","None","None","GOOGLE, US","US",connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,28890,4583012,11632,1544435,17258,3038577
+172.217.20.170,"None","None","None","None","GOOGLE, US","US",play.googleapis.com,play.googleapis.com,None,None,4194,1364751,1956,782924,2238,581827
+172.217.20.174,"None","None","None","None","GOOGLE, US","US",www.youtube.com,www.youtube.com,None,None,3177,647353,1629,179361,1548,467992
+172.217.20.187,"None","None","None","None","GOOGLE, US","US",storage.googleapis.com,storage.googleapis.com,None,None,960,2266499,755,2250270,205,16229
+172.217.20.202,"None","None","None","None","GOOGLE, US","US",play.googleapis.com,play.googleapis.com,None,None,2801,1160208,1324,855949,1477,304259
+172.217.20.206,"None","None","None","None","GOOGLE, US","US",www.youtube.com,www.youtube.com,None,None,3932,1766349,2113,1207194,1819,559155
+216.239.35.0,"None","None","None","None","GOOGLE, US","US",time.google.com,time.google.com,None,None,226,20340,113,10170,113,10170
+216.239.35.12,"None","None","None","None","GOOGLE, US","US",time.google.com,time.google.com,None,None,188,16920,94,8460,94,8460
+216.239.35.4,"None","None","None","None","GOOGLE, US","US",time.google.com,time.google.com,None,None,156,14040,78,7020,78,7020
+216.239.35.8,"None","None","None","None","GOOGLE, US","US",time.google.com,time.google.com,None,None,166,14940,83,7470,83,7470
+216.58.213.67,"None","None","None","None","GOOGLE, US","US",gstatic.com,gstatic.com,None,None,280,84776,118,58317,162,26459
+216.58.213.74,"None","None","None","None","GOOGLE, US","US",play.googleapis.com,play.googleapis.com,None,None,3411,1129573,1568,671754,1843,457819
+216.58.213.78,"None","None","None","None","GOOGLE, US","US",www.youtube.com,www.youtube.com,None,None,3844,775083,1972,216212,1872,558871
+216.58.214.170,"None","None","None","None","GOOGLE, US","US",play.googleapis.com,play.googleapis.com,None,None,4119,1363149,1951,759322,2168,603827
+216.58.214.174,"None","None","None","None","GOOGLE, US","US",www.youtube.com,www.youtube.com,None,None,4840,2932355,2678,2245915,2162,686440
+216.58.214.67,"None","None","None","None","GOOGLE, US","US",www.gstatic.com,www.gstatic.com,None,None,650,686323,389,644775,261,41548
+216.58.214.74,"None","None","None","None","GOOGLE, US","US",play.googleapis.com,play.googleapis.com,None,None,3525,1181022,1639,691153,1886,489869
+216.58.214.78,"None","None","None","None","GOOGLE, US","US",www.youtube.com,www.youtube.com,None,None,7310,3184702,3623,1770073,3687,1414629
+216.58.215.42,"None","None","None","None","GOOGLE, US","US",play.googleapis.com,play.googleapis.com,None,None,1942,764734,911,528603,1031,236131
+216.58.215.46,"None","None","None","None","GOOGLE, US","US",www.youtube.com,www.youtube.com,None,None,2053,442499,1061,117490,992,325009
+66.102.1.188,"None","None","None","None","GOOGLE, US","US",mtalk.google.com,mtalk.google.com,None,None,255,36102,124,25456,131,10646
+74.125.133.188,"None","None","None","None","GOOGLE, US","US",mtalk.google.com,mtalk.google.com,None,None,17533,1407864,8089,742509,9444,665355
+74.125.206.188,"None","None","None","None","GOOGLE, US","US",mtalk.google.com,mtalk.google.com,None,None,8055,758629,3677,445122,4378,313507
+74.125.71.188,"None","None","None","None","GOOGLE, US","US",mtalk.google.com,mtalk.google.com,None,None,4778,401288,2205,219428,2573,181860
+8.8.8.8,"None","None","None","None","GOOGLE, US","US",None,None,None,None,31638,3163869,15819,1965363,15819,1198506
+192.168.231.1,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,2,350,1,271,1,79
+192.168.231.109,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,8018,3528326,5419,3413970,2599,114356
+192.168.231.184,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,348473,37810510,169163,16618363,179310,21192147
+192.168.231.200,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,7624,5611838,5178,5504214,2446,107624
+192.168.231.223,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,946253,69634820,474835,34592390,471418,35042430
+192.168.231.237,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,77721,28947624,39626,25042494,38095,3905130
+224.0.0.250,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,5533,481363,0,0,5533,481363
+224.0.0.251,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,36416,8474203,0,0,36416,8474203
+239.255.255.251,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,5537,481703,0,0,5537,481703
+255.255.255.255,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,11032,843970,0,0,11032,843970
+fdc4:22e1:d5d:0:22df:b9ff:fe3b:90,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,2249,193402,1100,94588,1149,98814
+fdc4:22e1:d5d:0:4498:fe3a:ce22:79bd,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,24,9680,13,4046,11,5634
+fdc4:22e1:d5d:0:54bf:f033:1d0a:d956,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,26,9864,13,4063,13,5801
+fdc4:22e1:d5d:0:701a:be6e:e3ec:6881,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,80,32684,37,19677,43,13007
+fdc4:22e1:d5d:0:88ce:ca82:ced1:8c2b,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,2273,203082,1160,104448,1113,98634
+fdc4:22e1:d5d:0:897:fc1a:6cc2:8b4c,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,26,9864,13,5801,13,4063
+fdc4:22e1:d5d:0:a677:33ff:fedf:c24d,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,271,105319,127,62664,144,42655
+fdc4:22e1:d5d:0:e524:5ecf:33da:b223,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,247,95639,131,38609,116,57030
+fdc4:22e1:d5d:0:f024:529:4742:9517,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,104,42364,56,17053,48,25311
+fe80::a677:33ff:fedf:c24d,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,37380,9830637,37380,9830637,0,0
+ff02::fb,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,37380,9830637,0,0,37380,9830637

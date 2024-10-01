@@ -1,0 +1,20 @@
+IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+18.184.31.90,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaeu.com,m2.tuyaeu.com,None,None,1000,90381,462,44642,538,45739
+18.185.182.159,Support,None,None,None,None,"AMAZON-02, US",US,a3.tuyaeu.com,a3.tuyaeu.com,None,None,3923,426506,2117,221300,1806,205206
+18.185.218.106,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaeu.com,m2.tuyaeu.com,None,None,1321,122257,617,60449,704,61808
+18.185.31.196,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaeu.com,m2.tuyaeu.com,None,None,1082,101472,485,49207,597,52265
+18.192.43.219,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaeu.com,m2.tuyaeu.com,None,None,1420,132580,648,64592,772,67988
+18.195.249.137,Support,None,None,None,None,"AMAZON-02, US",US,a3.tuyaeu.com,a3.tuyaeu.com,None,None,3506,386612,1909,202106,1597,184506
+3.120.92.134,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaeu.com,m2.tuyaeu.com,None,None,1568,148430,694,70366,874,78064
+3.121.131.36,Support,None,None,None,None,"AMAZON-02, US",US,a3.tuyaeu.com,a3.tuyaeu.com,None,None,2841,308631,1541,161706,1300,146925
+3.121.210.75,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaeu.com,m2.tuyaeu.com,None,None,2258,211316,1044,103646,1214,107670
+3.124.225.12,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaeu.com,m2.tuyaeu.com,None,None,912,83681,403,39699,509,43982
+3.64.85.28,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaeu.com,m2.tuyaeu.com,None,None,2619,243578,1173,117289,1446,126289
+3.65.95.68,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaeu.com,m2.tuyaeu.com,None,None,1925,179915,872,86866,1053,93049
+3.66.126.37,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaeu.com,m2.tuyaeu.com,None,None,2864,266214,1293,129054,1571,137160
+3.67.242.33,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaeu.com,m2.tuyaeu.com,None,None,3282,310643,1459,148778,1823,161865
+35.156.42.116,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaeu.com,m2.tuyaeu.com,None,None,2637,245390,1222,120763,1415,124627
+35.156.44.172,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaeu.com,m2.tuyaeu.com,None,None,3111,294500,1383,141120,1728,153380
+52.57.38.165,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaeu.com,m2.tuyaeu.com,None,None,2089,196732,954,95918,1135,100814
+52.58.249.45,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaeu.com,m2.tuyaeu.com,None,None,3104,291373,1396,140156,1708,151217
+255.255.255.255,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,26413,6074990,0,0,26413,6074990

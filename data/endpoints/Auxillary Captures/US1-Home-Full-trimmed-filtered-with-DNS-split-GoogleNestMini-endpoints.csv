@@ -1,0 +1,66 @@
+IP, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+142.250.176.195,"None","None","None","None","GOOGLE, US","US",connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,1798,281888,733,102151,1065,179737
+142.250.176.202,"None","None","None","None","GOOGLE, US","US",embeddedassistant.googleapis.com,embeddedassistant.googleapis.com,None,None,532,223878,267,90486,265,133392
+142.250.176.206,"None","None","None","None","GOOGLE, US","US",clients3.google.com,clients3.google.com,None,None,436,177057,198,87573,238,89484
+142.250.31.188,"None","None","None","None","GOOGLE, US","US",mtalk.google.com,mtalk.google.com,None,None,4437,318599,2222,169063,2215,149536
+142.250.64.106,"None","None","None","None","GOOGLE, US","US",geller-pa.googleapis.com,geller-pa.googleapis.com,None,None,166,58132,80,35209,86,22923
+142.250.64.74,"None","None","None","None","GOOGLE, US","US",embeddedassistant.googleapis.com,embeddedassistant.googleapis.com,None,None,293,101903,150,42153,143,59750
+142.250.64.78,"None","None","None","None","GOOGLE, US","US",clients3.google.com,clients3.google.com,None,None,1370,1370752,894,1200981,476,169771
+142.250.65.170,"None","None","None","None","GOOGLE, US","US",embeddedassistant.googleapis.com,embeddedassistant.googleapis.com,None,None,523,180576,253,70045,270,110531
+142.250.65.202,"None","None","None","None","GOOGLE, US","US",geller-pa.googleapis.com,geller-pa.googleapis.com,None,None,342,141321,164,64015,178,77306
+142.250.65.234,"None","None","None","None","GOOGLE, US","US",geller-pa.googleapis.com,geller-pa.googleapis.com,None,None,319,114861,144,56162,175,58699
+142.250.72.106,"None","None","None","None","GOOGLE, US","US",geller-pa.googleapis.com,geller-pa.googleapis.com,None,None,265,90363,129,56653,136,33710
+142.250.80.10,"None","None","None","None","GOOGLE, US","US",embeddedassistant.googleapis.com,embeddedassistant.googleapis.com,None,None,17,7022,7,5638,10,1384
+142.250.80.106,"None","None","None","None","GOOGLE, US","US",geller-pa.googleapis.com,geller-pa.googleapis.com,None,None,288,103147,131,55966,157,47181
+142.250.80.110,"None","None","None","None","GOOGLE, US","US",android.clients.google.com,android.clients.google.com,None,None,890,733739,581,623066,309,110673
+142.250.80.42,"None","None","None","None","GOOGLE, US","US",geller-pa.googleapis.com,geller-pa.googleapis.com,None,None,197,69674,89,35151,108,34523
+142.250.80.74,"None","None","None","None","GOOGLE, US","US",embeddedassistant.googleapis.com,embeddedassistant.googleapis.com,None,None,201,67134,96,43482,105,23652
+142.250.80.78,"None","None","None","None","GOOGLE, US","US",android.clients.google.com,android.clients.google.com,None,None,43,13278,22,10718,21,2560
+142.250.80.99,"None","None","None","None","GOOGLE, US","US",connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,1016,154193,414,52313,602,101880
+142.250.81.234,"None","None","None","None","GOOGLE, US","US",device-provisioning.googleapis.com,device-provisioning.googleapis.com,None,None,106,33044,53,22670,53,10374
+142.251.16.188,"None","None","None","None","GOOGLE, US","US",mtalk.google.com,mtalk.google.com,None,None,3939,272844,1970,139676,1969,133168
+142.251.163.188,"None","None","None","None","GOOGLE, US","US",mtalk.google.com,mtalk.google.com,None,None,4912,350612,2458,185352,2454,165260
+142.251.167.102,"None","None","None","None","GOOGLE, US","US",clients3.google.com,clients3.google.com,None,None,58,26586,29,17228,29,9358
+142.251.167.188,"None","None","None","None","GOOGLE, US","US",mtalk.google.com,mtalk.google.com,None,None,7857,565038,3934,299220,3923,265818
+142.251.179.188,"None","None","None","None","GOOGLE, US","US",mtalk.google.com,mtalk.google.com,None,None,280,26643,140,16553,140,10090
+142.251.32.106,"None","None","None","None","GOOGLE, US","US",lycraservice-pa.googleapis.com,lycraservice-pa.googleapis.com,None,None,398,157271,196,85577,202,71694
+142.251.32.110,"None","None","None","None","GOOGLE, US","US",clients3.google.com,clients3.google.com,None,None,14927,12065868,9264,9994934,5663,2070934
+142.251.32.99,"None","None","None","None","GOOGLE, US","US",connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,28893,4432766,11735,1520068,17158,2912698
+142.251.35.170,"None","None","None","None","GOOGLE, US","US",www.googleapis.com,www.googleapis.com,None,None,212,74808,98,42110,114,32698
+142.251.35.174,"None","None","None","None","GOOGLE, US","US",tools.google.com,tools.google.com,None,None,30,11594,15,9138,15,2456
+142.251.40.106,"None","None","None","None","GOOGLE, US","US",embeddedassistant.googleapis.com,embeddedassistant.googleapis.com,None,None,228,82740,103,42903,125,39837
+142.251.40.131,"None","None","None","None","GOOGLE, US","US",connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,644,96730,273,33566,371,63164
+142.251.40.138,"None","None","None","None","GOOGLE, US","US",embeddedassistant.googleapis.com,embeddedassistant.googleapis.com,None,None,305,102131,150,51572,155,50559
+142.251.40.170,"None","None","None","None","GOOGLE, US","US",www.googleapis.com,www.googleapis.com,None,None,228,76023,109,43008,119,33015
+142.251.40.174,"None","None","None","None","GOOGLE, US","US",tools.google.com,tools.google.com,None,None,30,12094,15,9638,15,2456
+142.251.40.202,"None","None","None","None","GOOGLE, US","US",www.googleapis.com,www.googleapis.com,None,None,261,107388,134,77224,127,30164
+142.251.40.227,"None","None","None","None","GOOGLE, US","US",connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,3295,506960,1338,174646,1957,332314
+142.251.40.234,"None","None","None","None","GOOGLE, US","US",geller-pa.googleapis.com,geller-pa.googleapis.com,None,None,159,59406,75,34671,84,24735
+142.251.40.238,"None","None","None","None","GOOGLE, US","US",android.clients.google.com,android.clients.google.com,None,None,80,18235,40,13260,40,4975
+142.251.41.10,"None","None","None","None","GOOGLE, US","US",embeddedassistant.googleapis.com,embeddedassistant.googleapis.com,None,None,282,102733,134,56165,148,46568
+142.251.41.14,"None","None","None","None","GOOGLE, US","US",tools.google.com,tools.google.com,None,None,92,34955,45,27284,47,7671
+142.251.41.3,"None","None","None","None","GOOGLE, US","US",www.gstatic.com,www.gstatic.com,None,None,138,44375,70,35823,68,8552
+172.217.165.138,"None","None","None","None","GOOGLE, US","US",geller-pa.googleapis.com,geller-pa.googleapis.com,None,None,155,50908,74,29392,81,21516
+172.217.165.142,"None","None","None","None","GOOGLE, US","US",clients3.google.com,clients3.google.com,None,None,4916,3097035,2621,2151398,2295,945637
+172.253.115.188,"None","None","None","None","GOOGLE, US","US",mtalk.google.com,mtalk.google.com,None,None,2015,143468,1008,74988,1007,68480
+172.253.122.101,"None","None","None","None","GOOGLE, US","US",clients3.google.com,clients3.google.com,None,None,54,26313,27,17105,27,9208
+172.253.122.188,"None","None","None","None","GOOGLE, US","US",mtalk.google.com,mtalk.google.com,None,None,174,19685,88,13123,86,6562
+172.253.63.188,"None","None","None","None","GOOGLE, US","US",None,None,None,None,7533,505687,3766,253451,3767,252236
+172.253.63.94,"None","None","None","None","GOOGLE, US","US",connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,314,47855,128,16222,186,31633
+216.239.32.223,"None","None","None","None","GOOGLE, US","US",play.googleapis.com,play.googleapis.com,None,None,3,210,1,54,2,156
+216.239.34.223,"None","None","None","None","GOOGLE, US","US",play.googleapis.com,play.googleapis.com,None,None,118,32699,64,21912,54,10787
+216.239.35.0,"None","None","None","None","GOOGLE, US","US",time.google.com,time.google.com,None,None,207,18630,103,9270,104,9360
+216.239.35.12,"None","None","None","None","GOOGLE, US","US",time.google.com,time.google.com,None,None,276,24840,137,12330,139,12510
+216.239.35.4,"None","None","None","None","GOOGLE, US","US",time.google.com,time.google.com,None,None,244,21960,122,10980,122,10980
+216.239.35.8,"None","None","None","None","GOOGLE, US","US",time.google.com,time.google.com,None,None,233,20970,115,10350,118,10620
+216.239.36.223,"None","None","None","None","GOOGLE, US","US",play.googleapis.com,play.googleapis.com,None,None,73,27751,35,13593,38,14158
+216.239.38.223,"None","None","None","None","GOOGLE, US","US",play.googleapis.com,play.googleapis.com,None,None,149,52568,74,27667,75,24901
+34.104.35.123,"None","None","None","None","GOOGLE-CLOUD-PLATFORM, US","US",edgedl.me.gvt1.com,edgedl.me.gvt1.com,None,None,42117,116520206,37501,116213986,4616,306220
+64.233.180.188,"None","None","None","None","GOOGLE, US","US",mtalk.google.com,mtalk.google.com,None,None,7453,545965,3733,292981,3720,252984
+8.8.8.8,"None","None","None","None","GOOGLE, US","US",None,None,None,None,31090,2789810,15544,1627767,15546,1162043
+192.168.3.1,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,190,22400,95,15281,95,7119
+224.0.0.250,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,6977,606983,0,0,6977,606983
+224.0.0.251,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,27105,5085001,0,0,27105,5085001
+239.255.255.251,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,6981,607323,0,0,6981,607323
+fe80::d6f5:47ff:fe82:ec6,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,27123,5790565,27123,5790565,0,0
+ff02::fb,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,27123,5790565,0,0,27123,5790565

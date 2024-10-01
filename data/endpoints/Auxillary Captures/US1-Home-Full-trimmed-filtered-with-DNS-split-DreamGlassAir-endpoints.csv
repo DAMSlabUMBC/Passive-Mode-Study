@@ -1,0 +1,99 @@
+IP, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+1.12.250.150,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,748,63037,252,22791,496,40246
+1.14.240.120,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,507,42731,173,15577,334,27154
+1.14.243.105,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",gslb.hpplay.cn,gslb.hpplay.cn,None,None,78,9244,35,4976,43,4268
+1.14.243.123,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",sdkauth.hpplay.cn,sdkauth.hpplay.cn,None,None,42,10624,17,5909,25,4715
+1.14.243.233,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",sdkauth.hpplay.cn,sdkauth.hpplay.cn,None,None,30,6489,12,3010,18,3479
+1.14.243.65,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",gslb.hpplay.cn,gslb.hpplay.cn,None,None,35,4047,15,2133,20,1914
+1.14.243.73,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",sdkauth.hpplay.cn,sdkauth.hpplay.cn,None,None,31,6543,13,3064,18,3479
+101.226.26.196,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,10,1592,4,966,6,626
+101.226.26.201,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,25,4016,11,2092,14,1924
+101.226.28.237,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,12,1979,5,1017,7,962
+101.226.28.241,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,11,1644,5,1018,6,626
+101.33.212.175,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+101.33.225.190,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+101.33.239.106,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+101.89.125.241,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,14,2088,6,1072,8,1016
+101.89.125.248,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,13,2034,6,1072,7,962
+101.89.125.249,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,12,1981,5,1019,7,962
+106.52.178.223,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,679,57218,229,20698,450,36520
+114.132.171.88,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+114.132.173.132,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+114.132.178.46,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,2,148,0,0,2,148
+114.132.178.5,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+114.132.231.239,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+114.80.179.241,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,48,7064,20,4062,28,3002
+119.147.179.152,"None","None","None","None","CHINANET-BACKBONE No.31,Jin-rong Street, CN","CN",android.bugly.qq.com,android.bugly.qq.com,None,None,17,5190,7,934,10,4256
+119.29.217.205,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,758,63862,256,23130,502,40732
+119.91.249.55,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+123.207.47.70,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,720,60639,244,22013,476,38626
+123.207.63.97,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,765,64324,263,23592,502,40732
+139.199.75.154,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,65,5529,22,1961,43,3568
+14.22.7.140,"None","None","None","None","CHINANET-BACKBONE No.31,Jin-rong Street, CN","CN",android.bugly.qq.com,android.bugly.qq.com,None,None,12,2821,5,595,7,2226
+14.22.7.199,"None","None","None","None","CHINANET-BACKBONE No.31,Jin-rong Street, CN","CN",android.bugly.qq.com,android.bugly.qq.com,None,None,47,13184,19,2463,28,10721
+152.70.159.102,"None","None","None","None","ORACLE-BMC-31898, US","US",2.android.pool.ntp.org,2.android.pool.ntp.org,None,None,2,180,1,90,1,90
+157.240.229.17,"Meta Platforms, Inc.","US","None","None","FACEBOOK, US","US",graph.facebook.com,graph.facebook.com,None,None,22,7011,9,5241,13,1770
+157.240.241.17,"Meta Platforms, Inc.","US","None","None","FACEBOOK, US","US",graph.facebook.com,graph.facebook.com,None,None,27,10437,10,6208,17,4229
+159.75.147.131,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+159.75.148.208,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+159.75.151.232,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,2,148,0,0,2,148
+159.75.153.240,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+159.75.155.250,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+159.75.155.47,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+159.75.159.198,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+159.75.160.54,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,2,148,0,0,2,148
+159.75.161.28,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+159.75.162.175,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+159.75.167.109,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+159.75.169.153,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+159.75.174.107,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+159.75.180.34,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,2,148,0,0,2,148
+159.75.185.17,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+159.75.186.92,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+175.178.181.237,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+180.163.140.215,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,40,6201,18,3261,22,2940
+180.163.145.180,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,89,13822,40,7378,49,6444
+180.163.147.214,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,14,2090,6,1074,8,1016
+180.163.147.215,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,25,4014,11,2090,14,1924
+180.163.147.216,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,13,2044,6,1082,7,962
+180.163.147.217,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,26,4081,12,2157,14,1924
+180.163.147.218,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,13,2046,6,1084,7,962
+180.163.147.221,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,10,1590,4,964,6,626
+180.163.148.198,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,12,1979,5,1017,7,962
+180.163.148.214,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,13,2033,6,1071,7,962
+180.163.148.217,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,16,2195,8,1179,8,1016
+180.163.148.218,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,15,2155,8,1193,7,962
+180.163.148.219,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,10,1590,4,964,6,626
+180.163.148.220,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,10,1601,4,963,6,638
+209.51.161.238,"None","None","None","None","HURRICANE, US","US",2.android.pool.ntp.org,2.android.pool.ntp.org,None,None,2,180,1,90,1,90
+31.13.66.4,"Meta Platforms, Inc.","US","None","None","FACEBOOK, US","IE",graph.facebook.com,graph.facebook.com,None,None,59,20604,24,15522,35,5082
+37.48.77.180,"None","None","None","None","LEASEWEB-NL-AMS-01 Netherlands, NL","NL",ws75.aptoide.com,ws75.aptoide.com,None,None,23,6633,10,4854,13,1779
+42.193.219.66,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1484,125062,500,45218,984,79844
+42.193.243.54,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1501,126404,509,45912,992,80492
+42.193.243.66,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,630,52965,214,19299,416,33666
+42.194.224.216,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,2,148,0,0,2,148
+42.194.233.237,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+42.194.238.150,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+42.194.238.51,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+42.194.244.81,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+43.138.147.121,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+43.138.216.52,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+43.139.81.130,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+47.107.217.159,"None","None","None","None","ALIBABA-CN-NET Hangzhou Alibaba Advertising Co.,Ltd., CN","CN",rp.hpplay.cn,rp.hpplay.cn,None,None,294,33224,145,12106,149,21118
+47.113.57.36,"None","None","None","None","ALIBABA-CN-NET Hangzhou Alibaba Advertising Co.,Ltd., CN","CN",rp.hpplay.cn,rp.hpplay.cn,None,None,388,43800,190,15864,198,27936
+47.113.57.59,"None","None","None","None","ALIBABA-CN-NET Hangzhou Alibaba Advertising Co.,Ltd., CN","CN",rp.hpplay.cn,rp.hpplay.cn,None,None,301,33498,145,12064,156,21434
+47.113.66.37,"None","None","None","None","ALIBABA-CN-NET Hangzhou Alibaba Advertising Co.,Ltd., CN","CN",rp.hpplay.cn,rp.hpplay.cn,None,None,307,34707,150,12522,157,22185
+50.218.103.254,"None","None","None","None","COMCAST-7922, US","US",2.android.pool.ntp.org,2.android.pool.ntp.org,None,None,2,180,1,90,1,90
+61.170.77.217,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,74,11482,32,6274,42,5208
+61.170.80.226,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,12,1982,5,1020,7,962
+61.170.80.227,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,39,5857,18,3253,21,2604
+61.170.80.229,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,14,2088,6,1072,8,1016
+61.170.80.231,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,14,2088,6,1072,8,1016
+61.170.80.232,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,27,4137,13,2213,14,1924
+61.170.80.233,"None","None","None","None","CHINANET-SH-AP China Telecom Group, CN","CN",imdns.hpplay.cn,imdns.hpplay.cn,None,None,14,2089,6,1073,8,1016
+74.208.25.46,"None","None","None","None","IONOS-AS This is the joint network for IONOS, Fasthosts, Arsys, 1&1 Mail and Media and 1&1 Telecom. Formerly known as 1&1 Internet SE., DE","US",2.android.pool.ntp.org,2.android.pool.ntp.org,None,None,5,450,2,180,3,270
+74.6.138.65,"None","None","None","None","YAHOO-BF1, US","US",data.flurry.com,data.flurry.com,None,None,19,5962,8,4289,11,1673
+81.71.98.32,"None","None","None","None","TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN","CN",None,None,None,None,1,74,0,0,1,74
+fe80::200:ff:fe00:99,"None","None","None","None","NA","",None,None,None,None,422,49961,211,30174,211,19787
+fe80::c284:7dff:fe2e:9c86,"None","None","None","None","NA","",None,None,None,None,422,49961,211,19787,211,30174
+192.168.3.1,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,2,160,1,88,1,72

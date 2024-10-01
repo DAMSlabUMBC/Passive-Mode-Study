@@ -1,0 +1,68 @@
+IP, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+129.134.26.123,"None","None","None","None","FACEBOOK, US","US",None,None,None,None,2,180,1,90,1,90
+129.134.27.123,"None","None","None","None","FACEBOOK, US","US",None,None,None,None,6,540,3,270,3,270
+129.134.29.123,"None","None","None","None","FACEBOOK, US","US",None,None,None,None,2,180,1,90,1,90
+142.250.31.106,"None","None","None","None","GOOGLE, US","US",www.google.com,www.google.com,None,None,21,7300,10,5727,11,1573
+142.250.31.94,"None","None","None","None","GOOGLE, US","US",None,None,None,None,10,1049,5,484,5,565
+142.251.111.94,"None","None","None","None","GOOGLE, US","US",None,None,None,None,20,2098,10,968,10,1130
+142.251.16.103,"None","None","None","None","GOOGLE, US","US",www.google.com,www.google.com,None,None,21,7300,10,5727,11,1573
+142.251.16.147,"None","None","None","None","GOOGLE, US","US",www.google.com,www.google.com,None,None,21,7301,10,5728,11,1573
+142.251.16.99,"None","None","None","None","GOOGLE, US","US",www.google.com,www.google.com,None,None,21,7301,10,5728,11,1573
+142.251.167.103,"None","None","None","None","GOOGLE, US","US",www.google.com,www.google.com,None,None,21,7299,10,5726,11,1573
+142.251.167.106,"None","None","None","None","GOOGLE, US","US",www.google.com,www.google.com,None,None,21,7301,10,5728,11,1573
+142.251.35.163,"None","None","None","None","GOOGLE, US","US",None,None,None,None,10,1049,5,484,5,565
+157.240.229.15,"None","None","None","None","FACEBOOK, US","US",graph.facebook-hardware.com,graph.facebook-hardware.com,None,None,27,7470,14,5413,13,2057
+157.240.229.17,"None","None","None","None","FACEBOOK, US","US",www.meta.com,www.meta.com,None,None,459,438715,234,294889,225,143826
+157.240.229.20,"Meta Platforms, Inc.","US","None","None","FACEBOOK, US","US",*.facebook.com,*.facebook.com,None,None,282,27004,143,15094,139,11910
+157.240.229.34,"Meta Platforms, Inc.","US","None","None","FACEBOOK, US","US",mqtt-mini.facebook.com,mqtt-mini.facebook.com,None,None,1411,127780,694,63290,717,64490
+157.240.229.35,"Meta Platforms, Inc.","US","None","None","FACEBOOK, US","US",www.facebook.com,www.facebook.com,None,None,28,21393,13,9712,15,11681
+157.240.229.55,"Meta Platforms, Inc.","US","None","None","FACEBOOK, US","US",graph.oculus.com,graph.oculus.com,None,None,696,166341,321,101885,375,64456
+157.240.241.20,"Meta Platforms, Inc.","US","None","None","FACEBOOK, US","US",*.facebook.com,*.facebook.com,None,None,215,22532,76,10653,139,11879
+157.240.241.34,"Meta Platforms, Inc.","US","None","None","FACEBOOK, US","US",mqtt-mini.facebook.com,mqtt-mini.facebook.com,None,None,38,7262,16,4824,22,2438
+157.240.241.55,"Meta Platforms, Inc.","US","None","None","FACEBOOK, US","US",securecdn.oculus.com,securecdn.oculus.com,None,None,103,30463,48,21071,55,9392
+172.253.115.104,"None","None","None","None","GOOGLE, US","US",www.google.com,www.google.com,None,None,21,7300,10,5727,11,1573
+172.253.115.106,"None","None","None","None","GOOGLE, US","US",www.google.com,www.google.com,None,None,21,7302,10,5729,11,1573
+172.253.122.94,"None","None","None","None","GOOGLE, US","US",None,None,None,None,30,3147,15,1452,15,1695
+172.253.122.99,"None","None","None","None","GOOGLE, US","US",www.google.com,www.google.com,None,None,22,7367,11,5794,11,1573
+172.253.62.147,"None","None","None","None","GOOGLE, US","US",www.google.com,www.google.com,None,None,21,7300,10,5727,11,1573
+172.253.62.94,"None","None","None","None","GOOGLE, US","US",None,None,None,None,21,2164,10,968,11,1196
+172.253.63.94,"None","None","None","None","GOOGLE, US","US",None,None,None,None,10,1049,5,484,5,565
+2601:14d:8500:7764:a481:d289:98da:29cf,"None","None","None","None","COMCAST-7922, US","US",None,None,None,None,203859,119832243,100579,87336527,103280,32495716
+2a03:2880:f003:100:face:b00c:0:3,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,4544,7810947,2333,7613474,2211,197473
+2a03:2880:f003:110:face:b00c:0:2b80,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,1065,326336,508,221637,557,104699
+2a03:2880:f003:112:face:b00c:0:2,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,74244,55590142,40531,7067823,33713,48522319
+2a03:2880:f003:115:face:b00c:0:8e,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,3382,458816,1630,253109,1752,205707
+2a03:2880:f003:116:face:b00c:0:6206,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,3388,417963,1365,202086,2023,215877
+2a03:2880:f003:c05:face:b00c:0:8e,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,1819,225158,794,114789,1025,110369
+2a03:2880:f003:c07:face:b00c:0:2,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,42982,34202576,23653,4178173,19329,30024403
+2a03:2880:f003:c09:face:b00c:0:6206,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,2835,348495,1114,165409,1721,183086
+2a03:2880:f003:c1b:face:b00c:0:2b80,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,775,250164,360,164590,415,85574
+2a03:2880:f011:10e:face:b00c:0:2b80,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,26,7950,12,5530,14,2420
+2a03:2880:f011:110:face:b00c:0:2,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,256,266469,135,46660,121,219809
+2a03:2880:f011:1:face:b00c:0:1,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,350,278122,191,63963,159,214159
+2a03:2880:f012:100:face:b00c:0:2,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,19,6252,9,4576,10,1676
+2a03:2880:f082:e:face:b00c:0:2,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,49,59799,29,6715,20,53084
+2a03:2880:f103:181:face:b00c:0:25de,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,2222,2059452,1132,1582642,1090,476810
+2a03:2880:f103:183:face:b00c:0:1ea0,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,512,63428,249,32265,263,31163
+2a03:2880:f103:80:face:b00c:0:1ea0,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,61,7354,29,3464,32,3890
+2a03:2880:f103:83:face:b00c:0:25de,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,2186,2451495,921,2053801,1265,397694
+2a03:2880:f203:1cc:face:b00c:0:32c2,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,39626,9474983,17672,5502357,21954,3972626
+2a03:2880:f203:c1:face:b00c:0:32c2,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,22315,5295052,10047,3074682,12268,2220370
+2a03:2880:f211:1ce:face:b00c:0:32c2,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,190,50785,82,31892,108,18893
+2a03:2880:f211:c1:face:b00c:0:32c2,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,336,87435,150,54777,186,32658
+2a03:2880:f212:1c8:face:b00c:0:32c2,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,87,22827,39,14674,48,8153
+2a03:2880:f212:c1:face:b00c:0:32c2,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,32,8863,16,5938,16,2925
+2a03:2880:ff08::123,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,120,13200,60,6600,60,6600
+2a03:2880:ff09::123,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,148,16280,74,8140,74,8140
+2a03:2880:ff0a::123,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,104,11440,52,5720,52,5720
+2a03:2880:ff0b::123,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,82,9020,41,4510,41,4510
+2a03:2880:ff0c::123,"None","None","None","None","FACEBOOK, US","IE",None,None,None,None,104,11440,52,5720,52,5720
+31.13.66.10,"Meta Platforms, Inc.","US","None","None","FACEBOOK, US","IE",*.facebook.com,*.facebook.com,None,None,1255,115220,604,60481,651,54739
+31.13.66.2,"Meta Platforms, Inc.","US","None","None","FACEBOOK, US","IE",gateway.facebook.com,gateway.facebook.com,None,None,1442,142224,550,65812,892,76412
+31.13.66.34,"Meta Platforms, Inc.","US","None","None","FACEBOOK, US","IE",mqtt-mini.facebook.com,mqtt-mini.facebook.com,None,None,470,44551,233,23894,237,20657
+31.13.66.4,"None","None","None","None","FACEBOOK, US","IE",www.meta.com,www.meta.com,None,None,300,231103,129,216581,171,14522
+31.13.66.48,"Meta Platforms, Inc.","US","None","None","FACEBOOK, US","IE",securecdn.oculus.com,securecdn.oculus.com,None,None,314,83190,145,53996,169,29194
+31.13.71.1,"None","None","None","None","FACEBOOK, US","IE",www.meta.com,www.meta.com,None,None,65,56966,36,54231,29,2735
+fdb3:3744:776d:0:a481:d289:98da:29cf,"None","None","None","None","NA","",None,None,None,None,20,1720,10,980,10,740
+fdb3:3744:776d::1,"None","None","None","None","NA","",None,None,None,None,20,1720,10,740,10,980
+192.168.1.1,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,60,3960,30,1620,30,2340
