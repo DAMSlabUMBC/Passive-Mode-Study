@@ -19,6 +19,7 @@ def main(argv):
 
     # First find unique protocols for each MAC
     unique_per_mac_dict = dict()
+    all_app_protos = list()
     for file_name in os.listdir(args.input_dir):
         file_location = os.path.join(args.input_dir, file_name)
 
@@ -67,13 +68,20 @@ def main(argv):
                     elif proto in layer_5_protos:
                         proto_type = "Session"
 
+                    # Save all application protos
+                    if proto_type == "Application" and not proto in all_app_protos:
+                        all_app_protos.append(proto)
+
                     # If unique, add to dict
                     if proto not in unique_per_mac_dict[mac][network_type][proto_type]:
                         unique_per_mac_dict[mac][network_type][proto_type].append(proto)
 
+    all_app_protos.sort()
+
     # Write the files
+    # First write unique protocols per MAC
     dir_name = pathlib.PurePath(args.input_dir)
-    outfile_name = f"{dir_name.name}-unique-protos.csv"
+    outfile_name = f"{dir_name.name}-unique-protos-per-mac.csv"
     outfile_location = os.path.join(args.input_dir, outfile_name)
 
     lines_to_write = list()
@@ -94,30 +102,20 @@ def main(argv):
     with open(outfile_location, "w", newline='') as outfile:
         outfile.writelines(lines_to_write)
 
+    # Now write full list of protos for the directory
+    outfile_name = f"{dir_name.name}-unique-app-protos-overall.csv"
+    outfile_location = os.path.join(args.input_dir, outfile_name)
 
-    # data_list = list()
-    # data_list.append(["File","MAC","Protocol","IP","TotalPackets","TotalBytes","TxPackets","TxBytes","RxPackets","RxBytes"])
+    lines_to_write = list()
+    lines_to_write.append("Proto,Purpose,Type\n")
 
-    # if os.path.isfile(os.path.join(args.input_dir, "Merged.csv")):
-    #     os.remove(os.path.join(args.input_dir, "Merged.csv"))
+    for proto in all_app_protos:
+        line = f"{proto},,\n"
+        lines_to_write.append(line)
 
-    # for file_name in os.listdir(args.input_dir):
-    #     file_location = os.path.join(args.input_dir, file_name)
+    with open(outfile_location, "w", newline='') as outfile:
+        outfile.writelines(lines_to_write)
 
-    #     with open(file_location, newline='') as f:
-    #         reader = csv.reader(f)
-    #         for row in reader:
-    #             if row[0] != 'MAC' and row[2] not in protos_to_skip:
-    #                 data = [file_name, row[0],row[2],row[3],row[4],row[5],row[6],row[7],row[8],row[9]]
-    #                 data_list.append(data)
-
-    # df = pandas.DataFrame(data_list, index=None)
-    # new_header = df.iloc[0]
-    # df = df[1:]
-    # df.columns = new_header
-
-    # out_path = os.path.join(args.input_dir, "Merged.csv")
-    # df.to_csv(index=False, path_or_buf=out_path)
 
 def is_dir(path):
     if os.path.isdir(path):

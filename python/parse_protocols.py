@@ -23,8 +23,8 @@ layer_7_protos = ["http", "https", "ssdp", "mdns", "ntp", "tplink-smarthome", "m
 
 known_udp_ports = ["udp:1982","udp:50000","udp:5355","udp:6667","udp:10101", "udp:1111","udp:56700","udp:58866","udp:8555","udp:9478","udp:9700","udp:55444"]
 
-lan_filter = "(eth.dst.ig == 1 || ((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16 || ipv6.dst == ff00::/8 || ipv6.dst == fe80::/10)))"
-wan_filter = "(eth.dst.ig == 0 && !((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16 || ipv6.dst == ff00::/8 || ipv6.dst == fe80::/10)))"
+lan_filter = "(eth.dst.ig == 1 || ((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16 || ipv6.src == 2620:0:5300::/44 || ipv6.src == fdc4:22e1:d500::/32) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16 || ipv6.dst == ff00::/8 || ipv6.dst == fe80::/10 ||  ipv6.dst == 2620:0:5300::/44 || ipv6.dst == fdc4:22e1:d500::/32)))"
+wan_filter = "(eth.dst.ig == 0 && !((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16 || ipv6.src == 2620:0:5300::/44 || ipv6.src == fdc4:22e1:d500::/32) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16 || ipv6.dst == ff00::/8 || ipv6.dst == fe80::/10 ||  ipv6.dst == 2620:0:5300::/44 || ipv6.dst == fdc4:22e1:d500::/32)))"
 
 def main(argv):
 
@@ -613,10 +613,15 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, manua
 
                         index += 1
 
-                    # If we found more than 2 endpoints, trim off the first one, it's going
-                    # to be the host itself
-                    if len(wan_lines) > 2:
+                    # If we found more than 2 endpoints and it's IPv4 trim off the first one, it's going to be the host itself
+                    if len(wan_lines) > 2 and not is_ipv6:
                         wan_lines = wan_lines[1:]
+
+                    # Else if it's IPv6, this host can start with anything in the 2620:0:5300::/44 address range
+                    # or anything in the fdc4:22e1:d500::/44 address range
+                    elif len(wan_lines) > 2 and is_ipv6:
+                        wan_lines = [line for line in wan_lines if not (line.startswith("2620:0:53"))]
+                        wan_lines = [line for line in wan_lines if not (line.startswith("fdc4:22e1:d5"))]
 
                     # If we only found two, we don't know which one is this host,
                     # need to manually verify
@@ -637,14 +642,13 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, manua
 
                         index += 1
 
-                    # If we found any results, trim off the first one, it's going
-                    # to be the host itself
-                    if len(lan_lines) > 2:
+                    # If we found more than 2 endpoints and it's IPv4 trim off the first one, it's going to be the host itself
+                    if len(lan_lines) > 2 and not is_ipv6:
                         lan_lines = lan_lines[1:]
 
-                    # If we only found two, we don't know which one is this host,
+                    # If we only found two or it's IPv6, we don't know which one is this host,
                     # need to manually verify
-                    elif len(lan_lines) == 2:
+                    elif len(lan_lines) == 2 or is_ipv6:
                         flag_lan = True
 
                     # Finally both
@@ -661,14 +665,13 @@ def extract_protocol_data_for_macs(pcap_file, macs_to_analyze, all_protos, manua
 
                         index += 1
 
-                    # If we found any results, trim off the first one, it's going
-                    # to be the host itself
-                    if len(both_lines) > 2:
+                    # If we found more than 2 endpoints and it's IPv4 trim off the first one, it's going to be the host itself
+                    if len(both_lines) > 2 and not is_ipv6:
                         both_lines = both_lines[1:]
 
-                    # If we only found two, we don't know which one is this host,
+                    # If we only found two or it's IPv6, we don't know which one is this host,
                     # need to manually verify
-                    elif len(both_lines) == 2:
+                    elif len(both_lines) == 2 or is_ipv6:
                         flag_overall = True
 
                     # Now we can process each

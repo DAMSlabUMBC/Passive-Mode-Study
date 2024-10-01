@@ -1,0 +1,32 @@
+Proto,Purpose,Type
+classicstun,"Exchanging STUN with google home speaker and nest mini, nothing is responding, mistmatched protocols? LAN, no servers",Management
+http,Well known,Unencrypted App
+https,Well known,Encrypted App
+llmnr,Similar to mdns,Discovery
+mdns,Well known,Discovery
+ntp,Well known,Management
+quic,Protocol designed by google for transmitting stateful often encrypted traffic over UDP,Encrypted App
+ssdp,Well known,Discovery
+stun,Well known,Management
+tcp:10005,"Undocumented, reaches out between nestmini and google home speaker, on LAN, TCP, Certificates signed by chromecast, undocumented port",Encrypted App
+tcp:10101,"Undocumented, reaches out between nestmini and google home speaker, on LAN, TCP, Certificates signed by chromecast, undocumented port",Encrytped  APP
+tcp:50443,Reaches out to TP-Link servers,Encrypted App
+tcp:5228,"Google Talk, reaches out to mtalk.google.com TCP, encrypted, WAN, Enables push messaging",Encrypted App
+tcp:55443,"Encrypted comms between amazon devices, cert says alexa",Encrypted App
+tcp:8012,"Undocumented, reaches out between nestmini and google home speaker, on LAN, TCP, Certificates signed by chromecast, undocumented port",Encrypted App
+secure-mqtt,Well known,Encrypted App
+tcp:8886,Tuya MQTT  https://support.tuya.com/en/help/_detail/Kb6bjb8yyf1nf,Encrypted App
+tcp:9000,"Undocumented, reaches out between nestmini and google home speaker, on LAN, TCP, Certificates signed by chromecast, undocumented port",Encrypted App
+tcp:9543,Sends to home.net.com,Encrypted App
+tplink-smarthome,TP Link discovery protocol,Discovery
+udp:10101,"LAN traffic, send both multicast data and data directly to other google devices",Unencrypted App
+udp:1111,"Received from google devices, not responded to, used to be able to use Local Home SDK, this was disabled for security reasons, google still sends.",Unencrypted App
+udp:1982,Query SSDP (wifi bulb),Discovery
+udp:50000,Recv UPnP,Discovery
+udp:55444,"Echo dot communication, most likely time sync, https://media.defcon.org/DEF%20CON%2026/DEF%20CON%2026%20presentations/DEFCON-26-Wu-HuiYu-and-Qian-Wenxiang-Breaking-Smart-Speakers-Updated.pdf",Management
+udp:56700,"Broadcast, probably lifx, https://lan.developer.lifx.com/docs/querying-the-device-for-data#getservice---packet-2",Unencrypted App
+udp:58866,Integration with home assistants,Unencrypted App
+udp:6667,Tuya device discovery  https://kth.diva-portal.org/smash/get/diva2:1697718/FULLTEXT01.pdf https://support.tuya.com/en/help/_detail/Kd9ym28csm58k This is encrypted but I don't know where it says that,Discovery
+udp:8555,sync587264985- ???,Unencrypted App
+udp:9478,"Unknown broadcast to LAN, potentially local home sdk?",Unencrypted App
+udp:9700,Unknown,Unencrypted App
