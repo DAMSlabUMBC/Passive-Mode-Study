@@ -1,0 +1,4 @@
+MAC,WAN/LAN,Protocol,IP,TotalPackets,TotalBytes,TxPackets,TxBytes,RxPackets,RxBytes
+44:3D:54:BE:12:3C,ALL,ipv6,ff02::fb,1691,192052,1691,192052,0,0
+44:3D:54:BE:12:3C,ALL,udp,ff02::fb,1691,192052,1691,192052,0,0
+44:3D:54:BE:12:3C,ALL,mdns,ff02::fb,1691,192052,1691,192052,0,0
