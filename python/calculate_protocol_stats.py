@@ -17,9 +17,23 @@ def main(argv):
     layer_5_protos = ["tls"]
     # Assume all other protocols are application protocols
 
-    # First find unique protocols for each MAC
+    # For calculating distribution
+    discovery_protos = ["mdns","ssdp","tplink-smarthome","udp:1982","udp:50000","udp:6667", "llmnr"]
+    enc_protos = ["https","quic","secure-mqtt","tcp:10005","tcp:10101","tcp:50443","tcp:5228","tcp:55443","tcp:8012", "tcp:8883", "tcp:8886","tcp:9000","tcp:9543"]
+    unenc_protos = ["http","udp:1111", "udp:10101", "udp:56700","udp:58866","udp:8555","udp:9478","udp:9700"]
+    manage_protos = ["classicstun","ntp","stun","udp:55444"]
+
+    # Want to find
+    # Distribution of application protocols
+    distribution_per_mac_dict = dict()
+
+    # Unique protocols per MAC
     unique_per_mac_dict = dict()
-    all_app_protocols = list()
+
+    # Unique application protocols overall
+    all_app_protos = list()
+
+    # For each file
     for file_name in os.listdir(args.input_dir):
         file_location = os.path.join(args.input_dir, file_name)
 
@@ -39,7 +53,29 @@ def main(argv):
             for row in reader:
                 if row[0] != 'MAC': # Skip header
                     mac = row[0]
-                    
+
+                    # Initialize dicts
+                    if mac not in distribution_per_mac_dict:
+                        distribution_per_mac_dict[mac] = dict()
+                        distribution_per_mac_dict[mac]["ALL"] = dict()
+                        distribution_per_mac_dict[mac]["ALL"]["Discovery"] = 0
+                        distribution_per_mac_dict[mac]["ALL"]["Management"] = 0
+                        distribution_per_mac_dict[mac]["ALL"]["Encrypted"] = 0
+                        distribution_per_mac_dict[mac]["ALL"]["NonEncrypted"] = 0
+                        distribution_per_mac_dict[mac]["ALL"]["Unknown"] = 0 # Should be 0, used as a check
+                        distribution_per_mac_dict[mac]["LAN"] = dict()
+                        distribution_per_mac_dict[mac]["LAN"]["Discovery"] = 0
+                        distribution_per_mac_dict[mac]["LAN"]["Management"] = 0
+                        distribution_per_mac_dict[mac]["LAN"]["Encrypted"] = 0
+                        distribution_per_mac_dict[mac]["LAN"]["NonEncrypted"] = 0
+                        distribution_per_mac_dict[mac]["LAN"]["Unknown"] = 0 # Should be 0, used as a check
+                        distribution_per_mac_dict[mac]["WAN"] = dict()
+                        distribution_per_mac_dict[mac]["WAN"]["Discovery"] = 0
+                        distribution_per_mac_dict[mac]["WAN"]["Management"] = 0
+                        distribution_per_mac_dict[mac]["WAN"]["Encrypted"] = 0
+                        distribution_per_mac_dict[mac]["WAN"]["NonEncrypted"] = 0
+                        distribution_per_mac_dict[mac]["WAN"]["Unknown"] = 0 # Should be 0, used as a check
+                                        
                     if mac not in unique_per_mac_dict:
                         unique_per_mac_dict[mac] = dict()
                         unique_per_mac_dict[mac]["ALL"] = dict()
@@ -60,23 +96,41 @@ def main(argv):
 
                     # Check what type of protocol this is
                     proto = row[2]
-                    proto_type = "Application"
+                    proto_layer = "Application"
                     if proto in layer_3_protos:
-                        proto_type = "Network"
+                        proto_layer = "Network"
                     elif proto in layer_4_protos:
-                        proto_type = "Transport"
+                        proto_layer = "Transport"
                     elif proto in layer_5_protos:
-                        proto_type = "Session"
+                        proto_layer = "Session"
 
-                    # If an application protocols, add to master list
-                    if proto_type == "Application" and proto not in all_app_protocols:
-                        all_app_protocols.append(proto)
+                    proto_type = "Unknown"
+                    if proto in discovery_protos:
+                        proto_type = "Discovery"
+                    elif proto in manage_protos:
+                        proto_type = "Management"
+                    elif proto in enc_protos:
+                        proto_type = "Encrypted"
+                    elif proto in unenc_protos:
+                        proto_type = "NonEncrypted"
+
+                    # Increase counts
+                    if proto_layer == "Application":
+                        packet_count = int(row[4])
+                        distribution_per_mac_dict[mac][network_type][proto_type] += packet_count
+
+                    # Save all application protos
+                    if proto_layer == "Application" and not proto in all_app_protos:
+                        all_app_protos.append(proto)
 
                     # If unique, add to dict
-                    if proto not in unique_per_mac_dict[mac][network_type][proto_type]:
-                        unique_per_mac_dict[mac][network_type][proto_type].append(proto)
+                    if proto not in unique_per_mac_dict[mac][network_type][proto_layer]:
+                        unique_per_mac_dict[mac][network_type][proto_layer].append(proto)
 
-    # Write the unique protos for each mac
+    all_app_protos.sort()
+
+    # Write the files
+    # First write unique protocols per MAC
     dir_name = pathlib.PurePath(args.input_dir)
     outfile_name = f"{dir_name.name}-unique-protos-per-mac.csv"
     outfile_location = os.path.join(args.input_dir, outfile_name)
@@ -99,43 +153,57 @@ def main(argv):
     with open(outfile_location, "w", newline='') as outfile:
         outfile.writelines(lines_to_write)
 
-    # Write the unique protos overall (for investigating what they do)
+    # Now write full list of protos for the directory
     outfile_name = f"{dir_name.name}-unique-app-protos-overall.csv"
     outfile_location = os.path.join(args.input_dir, outfile_name)
 
     lines_to_write = list()
-    lines_to_write.append("Protocol,Purpose\n")
+    lines_to_write.append("Proto,Purpose,Type\n")
 
-    for proto in all_app_protocols:
-        lines_to_write.append(f"{proto},\n") # Purpose needs to be manually filled out
+    for proto in all_app_protos:
+        line = f"{proto},,\n"
+        lines_to_write.append(line)
 
     with open(outfile_location, "w", newline='') as outfile:
         outfile.writelines(lines_to_write)
 
+    # Calculate and write distributions
+    outfile_name = f"{dir_name.name}-proto-distributions.csv"
+    outfile_location = os.path.join(args.input_dir, outfile_name)
 
-    # data_list = list()
-    # data_list.append(["File","MAC","Protocol","IP","TotalPackets","TotalBytes","TxPackets","TxBytes","RxPackets","RxBytes"])
+    lines_to_write = list()
+    lines_to_write.append("MAC,Type,TotalCount,DiscoveryCount,DiscoveryPct,ManagementCount,ManagementPct,EncryptedCount,EncryptedPct,NonEncryptedCount,NonEncryptedPct,UnknownCount,UnknownPct\n")
 
-    # if os.path.isfile(os.path.join(args.input_dir, "Merged.csv")):
-    #     os.remove(os.path.join(args.input_dir, "Merged.csv"))
+    for mac in distribution_per_mac_dict:
+        for network_type in distribution_per_mac_dict[mac]:
+            mac_dict = distribution_per_mac_dict[mac][network_type]
 
-    # for file_name in os.listdir(args.input_dir):
-    #     file_location = os.path.join(args.input_dir, file_name)
+            disc_count = mac_dict["Discovery"]
+            manage_count = mac_dict["Management"]
+            enc_count = mac_dict["Encrypted"]
+            non_enc_count = mac_dict["NonEncrypted"]
+            unk_count = mac_dict["Unknown"]
 
-    #     with open(file_location, newline='') as f:
-    #         reader = csv.reader(f)
-    #         for row in reader:
-    #             if row[0] != 'MAC' and row[2] not in protos_to_skip:
-    #                 data = [file_name, row[0],row[2],row[3],row[4],row[5],row[6],row[7],row[8],row[9]]
-    #                 data_list.append(data)
+            total = disc_count + manage_count + enc_count + non_enc_count + unk_count
 
-    # df = pandas.DataFrame(data_list, index=None)
-    # new_header = df.iloc[0]
-    # df = df[1:]
-    # df.columns = new_header
+            disc_pct = 0
+            manage_pct = 0
+            enc_pct = 0
+            non_enc_pct = 0
+            unk_pct = 0
+            
+            if total != 0:
+                disc_pct = disc_count / total
+                manage_pct = manage_count / total
+                enc_pct = enc_count / total
+                non_enc_pct = non_enc_count / total
+                unk_pct = unk_count / total
 
-    # out_path = os.path.join(args.input_dir, "Merged.csv")
-    # df.to_csv(index=False, path_or_buf=out_path)
+            line = f"{mac},{network_type},{total},{disc_count},{disc_pct},{manage_count},{manage_pct},{enc_count},{enc_pct},{non_enc_count},{non_enc_pct},{unk_count},{unk_pct}\n"
+            lines_to_write.append(line)
+
+    with open(outfile_location, "w", newline='') as outfile:
+        outfile.writelines(lines_to_write)
 
 def is_dir(path):
     if os.path.isdir(path):
