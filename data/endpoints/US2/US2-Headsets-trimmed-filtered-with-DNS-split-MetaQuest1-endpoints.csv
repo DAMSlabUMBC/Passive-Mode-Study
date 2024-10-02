@@ -1,0 +1,71 @@
+IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+31.13.66.10,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,*.facebook.com,*.facebook.com,None,None,32,6525,14,4301,18,2224
+31.13.66.4,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,graph.facebook.com,graph.facebook.com,None,None,297,385582,153,18614,144,366968
+157.240.229.55,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,graph.oculus.com,graph.oculus.com,None,None,916,201954,387,109964,529,91990
+31.13.66.48,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,graph.oculus.com,graph.oculus.com,None,None,478,112027,207,55151,271,56876
+157.240.229.34,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,mqtt-mini.facebook.com,mqtt-mini.facebook.com,None,None,464,40366,228,19269,236,21097
+31.13.66.34,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,mqtt-mini.facebook.com,mqtt-mini.facebook.com,None,None,537,49406,248,24329,289,25077
+129.134.25.123,Time,None,None,None,None,"FACEBOOK, US",US,None,None,None,None,2,180,1,90,1,90
+129.134.26.123,Time,None,None,None,None,"FACEBOOK, US",US,None,None,None,None,2,180,1,90,1,90
+129.134.29.123,Time,None,None,None,None,"FACEBOOK, US",US,None,None,None,None,2,180,1,90,1,90
+142.251.111.94,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,10,1049,5,484,5,565
+157.240.229.17,First,None,None,None,None,"FACEBOOK, US",US,None,None,None,None,52,3504,17,1242,35,2262
+2607:f8b0:4004:c06::63,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,21,7720,10,5927,11,1793
+2607:f8b0:4004:c06::67,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,21,7721,10,5928,11,1793
+2607:f8b0:4004:c06::68,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,43,15530,21,11944,22,3586
+2607:f8b0:4004:c06::69,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,21,7720,10,5927,11,1793
+2607:f8b0:4004:c06::6a,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,21,7721,10,5928,11,1793
+2607:f8b0:4004:c06::93,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,21,7721,10,5928,11,1793
+2607:f8b0:4004:c07::5e,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,30,3747,15,1752,15,1995
+2607:f8b0:4004:c07::68,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,21,7720,10,5927,11,1793
+2607:f8b0:4004:c08::5e,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,20,2498,10,1168,10,1330
+2607:f8b0:4004:c09::5e,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,20,2498,10,1168,10,1330
+2607:f8b0:4004:c09::68,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,22,7807,10,5928,12,1879
+2607:f8b0:4004:c09::69,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,45,15698,21,11940,24,3758
+2607:f8b0:4004:c0b::5e,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,10,1249,5,584,5,665
+2607:f8b0:4004:c0b::69,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,21,7721,10,5928,11,1793
+2607:f8b0:4004:c0b::6a,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,21,7720,10,5927,11,1793
+2607:f8b0:4004:c17::5e,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,60,7494,30,3504,30,3990
+2607:f8b0:4004:c17::67,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,21,7721,10,5928,11,1793
+2607:f8b0:4004:c17::68,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,21,7719,10,5926,11,1793
+2607:f8b0:4004:c17::69,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,21,7720,10,5927,11,1793
+2607:f8b0:4004:c19::68,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,22,7807,10,5928,12,1879
+2607:f8b0:4004:c1b::5e,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,50,6245,25,2920,25,3325
+2607:f8b0:4004:c1b::63,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,43,15524,21,11938,22,3586
+2607:f8b0:4004:c1b::67,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,21,7720,10,5927,11,1793
+2607:f8b0:4004:c1b::69,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,21,7720,10,5927,11,1793
+2607:f8b0:4004:c1b::93,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,22,7806,11,6013,11,1793
+2607:f8b0:4004:c1d::5e,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,30,3747,15,1752,15,1995
+2607:f8b0:4004:c1d::63,Third,None,None,None,None,"GOOGLE, US",US,None,None,None,None,24,7966,12,6087,12,1879
+2a03:2880:f003:100:face:b00c:0:3,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,50,14495,23,10501,27,3994
+2a03:2880:f003:110:face:b00c:0:2b80,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,1801,567371,864,377623,937,189748
+2a03:2880:f003:112:face:b00c:0:2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,280885,380847788,145650,22033537,135235,358814251
+2a03:2880:f003:115:face:b00c:0:8e,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,128738,13587723,56824,6236762,71914,7350961
+2a03:2880:f003:116:face:b00c:0:6206,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,18619,2045140,9287,1019442,9332,1025698
+2a03:2880:f003:c05:face:b00c:0:8e,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,36718,4024770,13479,1640778,23239,2383992
+2a03:2880:f003:c07:face:b00c:0:2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,155265,215755204,81379,12476446,73886,203278758
+2a03:2880:f003:c09:face:b00c:0:6206,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,6713,728575,3344,368523,3369,360052
+2a03:2880:f003:c1b:face:b00c:0:2b80,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,1316,410145,633,281862,683,128283
+2a03:2880:f011:110:face:b00c:0:2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,40,35581,16,5594,24,29987
+2a03:2880:f011:1:face:b00c:0:1,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,1010,1470390,512,82489,498,1387901
+2a03:2880:f012:100:face:b00c:0:2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,8424,12530598,4579,676721,3845,11853877
+2a03:2880:f012:10f:face:b00c:0:2b80,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,27,8018,13,5615,14,2403
+2a03:2880:f012:113:face:b00c:0:8e,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,207,25990,75,12038,132,13952
+2a03:2880:f012:1:face:b00c:0:1,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,1986,3003526,1077,160113,909,2843413
+2a03:2880:f082:e:face:b00c:0:2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,298,409590,149,21252,149,388338
+2a03:2880:f103:181:face:b00c:0:25de,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,7362,8453614,2740,7876825,4622,576789
+2a03:2880:f103:183:face:b00c:0:1ea0,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,2089,244353,869,102537,1220,141816
+2a03:2880:f103:80:face:b00c:0:1ea0,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,634,76301,266,31235,368,45066
+2a03:2880:f103:83:face:b00c:0:25de,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,7207,8641541,2543,8148059,4664,493482
+2a03:2880:f203:1cc:face:b00c:0:32c2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,4920157,7306179704,2289352,6923232584,2630805,382947120
+2a03:2880:f203:c1:face:b00c:0:32c2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,1538156,2145666637,685820,1961920569,852336,183746068
+2a03:2880:f211:1ce:face:b00c:0:32c2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,607,216166,278,156076,329,60090
+2a03:2880:f211:c1:face:b00c:0:32c2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,524,177873,244,127198,280,50675
+2a03:2880:f212:1c8:face:b00c:0:32c2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,909,488638,414,384777,495,103861
+2a03:2880:f212:c1:face:b00c:0:32c2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,177,60030,81,43478,96,16552
+2a03:2880:f272:ca:face:b00c:0:32c2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,16,6710,6,5042,10,1668
+2a03:2880:ff08::123,Time,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,322,35420,161,17710,161,17710
+2a03:2880:ff09::123,Time,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,328,36080,164,18040,164,18040
+2a03:2880:ff0a::123,Time,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,222,24420,111,12210,111,12210
+2a03:2880:ff0b::123,Time,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,248,27280,124,13640,124,13640
+2a03:2880:ff0c::123,Time,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,308,33880,154,16940,154,16940

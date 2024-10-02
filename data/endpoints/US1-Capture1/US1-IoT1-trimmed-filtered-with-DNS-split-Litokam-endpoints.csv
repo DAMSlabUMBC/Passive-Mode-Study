@@ -1,4 +1,0 @@
-IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
-44.230.212.240,Support,None,None,None,None,"AMAZON-02, US",US,a2.tuyaus.com,a2.tuyaus.com,None,None,10505,2518740,4825,1648627,5680,870113
-54.188.109.168,Support,None,None,None,None,"AMAZON-02, US",US,m2.tuyaus.com,m2.tuyaus.com,None,None,89041,7290858,39580,3306846,49461,3984012
-255.255.255.255,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,120858,31664796,0,0,120858,31664796

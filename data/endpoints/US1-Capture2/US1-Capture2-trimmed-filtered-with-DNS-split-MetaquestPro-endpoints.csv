@@ -1,0 +1,105 @@
+IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+142.250.31.94,Support,None,None,None,None,"GOOGLE, US",US,connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,10,1049,5,484,5,565
+142.250.80.99,Support,None,None,None,None,"GOOGLE, US",US,connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,10,1049,5,484,5,565
+142.251.111.94,Support,None,None,None,None,"GOOGLE, US",US,connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,11,1115,5,484,6,631
+142.251.16.94,Support,None,None,None,None,"GOOGLE, US",US,connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,10,1049,5,484,5,565
+142.251.163.94,Support,None,None,None,None,"GOOGLE, US",US,connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,40,4196,20,1936,20,2260
+142.251.167.94,Support,None,None,None,None,"GOOGLE, US",US,connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,10,1049,5,484,5,565
+142.251.40.99,Support,None,None,None,None,"GOOGLE, US",US,connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,20,2098,10,968,10,1130
+172.253.115.94,Support,None,None,None,None,"GOOGLE, US",US,connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,10,1049,5,484,5,565
+172.253.122.94,Support,None,None,None,None,"GOOGLE, US",US,connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,110,11539,55,5324,55,6215
+157.240.229.20,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,edge-mqtt.facebook.com,edge-mqtt.facebook.com,None,None,1302,198426,542,118703,760,79723
+157.240.241.20,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,edge-mqtt.facebook.com,edge-mqtt.facebook.com,None,None,3874,574014,1628,342132,2246,231882
+31.13.65.3,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,edge-mqtt.facebook.com,edge-mqtt.facebook.com,None,None,21,5932,10,4165,11,1767
+31.13.66.10,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,edge-mqtt.facebook.com,edge-mqtt.facebook.com,None,None,26608,4149514,11638,2548614,14970,1600900
+31.13.71.3,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,edge-mqtt.facebook.com,edge-mqtt.facebook.com,None,None,1169,185737,528,116085,641,69652
+157.240.229.21,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,gateway.facebook.com,gateway.facebook.com,None,None,702,138738,328,84016,374,54722
+157.240.241.11,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,gateway.facebook.com,gateway.facebook.com,None,None,6513,847786,3079,486767,3434,361019
+31.13.66.2,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,gateway.facebook.com,gateway.facebook.com,None,None,43987,6469417,21677,3820873,22310,2648544
+31.13.71.8,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,gateway.facebook.com,gateway.facebook.com,None,None,5595,776296,2676,447793,2919,328503
+31.13.88.9,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,gateway.facebook.com,gateway.facebook.com,None,None,679,77763,303,44583,376,33180
+157.240.245.13,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,graph.facebook.com,graph.facebook.com,None,None,31,7974,14,5095,17,2879
+157.240.249.13,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,graph.facebook.com,graph.facebook.com,None,None,553,474506,201,29922,352,444584
+31.13.65.1,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,graph.facebook.com,graph.facebook.com,None,None,116,90954,47,11544,69,79410
+157.240.229.15,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,graph.facebook-hardware.com,graph.facebook-hardware.com,None,None,204,64974,104,47517,100,17457
+157.240.241.15,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,graph.facebook-hardware.com,graph.facebook-hardware.com,None,None,441,145877,221,98226,220,47651
+31.13.66.1,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,graph.facebook-hardware.com,graph.facebook-hardware.com,None,None,1450,488515,728,343343,722,145172
+31.13.71.17,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,graph.facebook-hardware.com,graph.facebook-hardware.com,None,None,92,28962,46,21116,46,7846
+157.240.229.55,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,graph.oculus.com,graph.oculus.com,None,None,22369,8215013,11145,5781937,11224,2433076
+157.240.241.55,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,graph.oculus.com,graph.oculus.com,None,None,61340,41590931,30546,35781070,30794,5809861
+157.240.245.53,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,graph.oculus.com,graph.oculus.com,None,None,383,145281,191,105692,192,39589
+157.240.249.54,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,graph.oculus.com,graph.oculus.com,None,None,65,21799,31,15853,34,5946
+31.13.66.48,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,graph.oculus.com,graph.oculus.com,None,None,286822,169738210,143355,141404351,143467,28333859
+31.13.71.51,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,graph.oculus.com,graph.oculus.com,None,None,48493,48355673,24269,44585173,24224,3770500
+157.240.229.34,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,mqtt-mini.facebook.com,mqtt-mini.facebook.com,None,None,384,36234,136,13306,248,22928
+157.240.241.34,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,mqtt-mini.facebook.com,mqtt-mini.facebook.com,None,None,184,19303,63,9003,121,10300
+31.13.66.34,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,mqtt-mini.facebook.com,mqtt-mini.facebook.com,None,None,6072,546584,2105,212758,3967,333826
+31.13.71.34,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,mqtt-mini.facebook.com,mqtt-mini.facebook.com,None,None,905,86796,310,37756,595,49040
+2a03:2880:f003:100:face:b00c:0:3,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,144,151287,78,141081,66,10206
+2a03:2880:f003:110:face:b00c:0:2b80,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,24,7786,12,5545,12,2241
+2a03:2880:f003:112:face:b00c:0:2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,4779,3675975,2003,1200429,2776,2475546
+2a03:2880:f003:115:face:b00c:0:8e,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,215,51791,108,34772,107,17019
+2a03:2880:f003:116:face:b00c:0:6206,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,1349,257321,696,155418,653,101903
+2a03:2880:f003:c05:face:b00c:0:8e,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,5364,1089683,2495,690697,2869,398986
+2a03:2880:f003:c07:face:b00c:0:2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,55560,42945270,24447,19184779,31113,23760491
+2a03:2880:f003:c09:face:b00c:0:6206,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,18542,3304244,9207,1940460,9335,1363784
+2a03:2880:f003:c0e:face:b00c:0:3,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,1040,1069939,545,993283,495,76656
+2a03:2880:f003:c1b:face:b00c:0:2b80,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,571,198673,300,136277,271,62396
+2a03:2880:f012:100:face:b00c:0:2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,11254,9308337,4645,2857702,6609,6450635
+2a03:2880:f012:106:face:b00c:0:6206,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,2549,439534,1345,260202,1204,179332
+2a03:2880:f012:10c:face:b00c:0:3,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,57,54217,30,50383,27,3834
+2a03:2880:f012:10f:face:b00c:0:2b80,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,73,23440,37,16722,36,6718
+2a03:2880:f012:113:face:b00c:0:8e,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,871,169292,434,108918,437,60374
+2a03:2880:f012:1:face:b00c:0:1,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,4212,3441790,1851,1530486,2361,1911304
+2a03:2880:f012:1a:face:b00c:0:2b80,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,75,23377,39,16712,36,6665
+2a03:2880:f012:3:face:b00c:0:1,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,365,71222,184,46065,181,25157
+2a03:2880:f012:7:face:b00c:0:6206,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,818,122692,396,70261,422,52431
+2a03:2880:f012:8:face:b00c:0:1,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,134,115224,72,105750,62,9474
+2a03:2880:f103:181:face:b00c:0:25de,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,181,616256,76,606363,105,9893
+2a03:2880:f103:80:face:b00c:0:1ea0,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,84,10905,33,4140,51,6765
+2a03:2880:f103:83:face:b00c:0:25de,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,476,643976,244,622945,232,21031
+2a03:2880:f203:1cc:face:b00c:0:32c2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,9161,3116805,4507,2060410,4654,1056395
+2a03:2880:f203:c1:face:b00c:0:32c2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,105240,107924457,53282,98136862,51958,9787595
+2a03:2880:f211:1ce:face:b00c:0:32c2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,241,99105,118,72196,123,26909
+2a03:2880:f211:c1:face:b00c:0:32c2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,245,177461,121,143028,124,34433
+2a03:2880:f212:1c8:face:b00c:0:32c2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,11213,3779567,5516,2480988,5697,1298579
+2a03:2880:f212:c1:face:b00c:0:32c2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,5514,2040427,2794,1394655,2720,645772
+2a03:2880:f272:ca:face:b00c:0:32c2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,57,21812,28,16068,29,5744
+2a03:2880:f275:1cb:face:b00c:0:32c2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,184,64386,95,42167,89,22219
+2a03:2880:ff08::123,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,28,3080,14,1540,14,1540
+2a03:2880:ff09::123,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,68,7480,34,3740,34,3740
+2a03:2880:ff0a::123,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,44,4840,22,2420,22,2420
+2a03:2880:ff0b::123,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,38,4180,19,2090,19,2090
+2a03:2880:ff0c::123,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,38,4180,19,2090,19,2090
+157.240.229.1,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,scontent.xx.fbcdn.net,scontent.xx.fbcdn.net,None,None,179,199958,96,188435,83,11523
+157.240.241.1,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,scontent.xx.fbcdn.net,scontent.xx.fbcdn.net,None,None,379,348063,201,325947,178,22116
+31.13.71.7,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,scontent.xx.fbcdn.net,scontent.xx.fbcdn.net,None,None,275,239515,146,223631,129,15884
+31.13.66.19,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,scontent-iad3-1.xx.fbcdn.net,scontent-iad3-1.xx.fbcdn.net,None,None,7128,11437011,3866,11103758,3262,333253
+129.134.25.123,Time,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,time.facebook.com,time.facebook.com,None,None,132,11880,66,5940,66,5940
+129.134.26.123,Time,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,time.facebook.com,time.facebook.com,None,None,186,16740,93,8370,93,8370
+129.134.27.123,Time,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,time.facebook.com,time.facebook.com,None,None,164,14760,82,7380,82,7380
+129.134.28.123,Time,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,time.facebook.com,time.facebook.com,None,None,158,14220,79,7110,79,7110
+129.134.29.123,Time,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,time.facebook.com,time.facebook.com,None,None,182,16380,91,8190,91,8190
+157.240.229.17,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,web.facebook.com,web.facebook.com,None,None,12749,9601715,5305,3187211,7444,6414504
+157.240.24.3,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,web.facebook.com,web.facebook.com,None,None,108,91756,54,71184,54,20572
+157.240.241.17,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,web.facebook.com,web.facebook.com,None,None,23338,17539806,10413,8656292,12925,8883514
+157.240.254.12,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,web.facebook.com,web.facebook.com,None,None,210,142793,84,31029,126,111764
+157.240.26.18,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,web.facebook.com,web.facebook.com,None,None,46,37982,23,29546,23,8436
+31.13.66.4,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,web.facebook.com,web.facebook.com,None,None,176706,136284544,77507,62788787,99199,73495757
+31.13.71.1,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,web.facebook.com,web.facebook.com,None,None,11370,8707363,5036,4035403,6334,4671960
+157.240.241.35,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,www.facebook.com,www.facebook.com,None,None,356,625439,191,613698,165,11741
+31.13.66.35,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,www.facebook.com,www.facebook.com,None,None,1381,3159245,731,3081208,650,78037
+142.250.80.36,Support,None,None,None,None,"GOOGLE, US",US,www.google.com,www.google.com,None,None,19,7169,10,5728,9,1441
+142.251.111.104,Support,None,None,None,None,"GOOGLE, US",US,www.google.com,www.google.com,None,None,38,14335,20,11453,18,2882
+142.251.111.105,Support,None,None,None,None,"GOOGLE, US",US,www.google.com,www.google.com,None,None,74,28540,39,22842,35,5698
+142.251.111.106,Support,None,None,None,None,"GOOGLE, US",US,www.google.com,www.google.com,None,None,36,10179,18,7247,18,2932
+142.251.111.147,Support,None,None,None,None,"GOOGLE, US",US,www.google.com,www.google.com,None,None,17,7036,9,5661,8,1375
+142.251.111.99,Support,None,None,None,None,"GOOGLE, US",US,www.google.com,www.google.com,None,None,36,14202,19,11386,17,2816
+142.251.167.106,Support,None,None,None,None,"GOOGLE, US",US,www.google.com,www.google.com,None,None,19,7169,10,5728,9,1441
+142.251.32.100,Support,None,None,None,None,"GOOGLE, US",US,www.google.com,www.google.com,None,None,19,7169,10,5728,9,1441
+142.251.35.164,Support,None,None,None,None,"GOOGLE, US",US,www.google.com,www.google.com,None,None,19,7168,10,5727,9,1441
+142.251.40.228,Support,None,None,None,None,"GOOGLE, US",US,www.google.com,www.google.com,None,None,19,7168,10,5727,9,1441
+172.253.115.103,Support,None,None,None,None,"GOOGLE, US",US,www.google.com,www.google.com,None,None,10,1458,5,913,5,545
+172.253.115.147,Support,None,None,None,None,"GOOGLE, US",US,www.google.com,www.google.com,None,None,73,28475,39,22843,34,5632
+172.253.115.99,Support,None,None,None,None,"GOOGLE, US",US,www.google.com,www.google.com,None,None,20,7234,11,5793,9,1441
+172.253.122.103,Support,None,None,None,None,"GOOGLE, US",US,www.google.com,www.google.com,None,None,38,14334,20,11452,18,2882

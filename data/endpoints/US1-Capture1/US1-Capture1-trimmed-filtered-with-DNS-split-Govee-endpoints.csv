@@ -1,0 +1,55 @@
+IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+104.167.241.197,Time,None,None,None,None,"CYBERPLANET, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+108.181.220.94,Time,None,None,None,None,"AS40676, US",CA,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+108.61.73.243,Time,None,None,None,None,"AS-VULTR, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+129.250.35.250,Time,None,None,None,None,"NTT-LTD-2914, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+142.147.88.111,Time,None,None,None,None,"XTOM, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+144.34.193.110,Time,None,None,None,None,"IT7NET, CA",CA,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+162.159.200.1,Time,None,None,None,None,"CLOUDFLARENET, US",US,pool.ntp.org,pool.ntp.org,None,None,6,540,3,270,3,270
+162.159.200.123,Time,None,None,None,None,"CLOUDFLARENET, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+171.66.97.126,Time,None,None,None,None,"STANFORD, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+174.136.99.6,Time,None,None,None,None,"ARPNET, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+174.53.169.69,Time,None,None,None,None,"COMCAST-7922, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+198.30.92.2,Time,None,None,None,None,"OARNET-AS, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+198.60.22.240,Time,None,None,None,None,"XMISSION, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+203.107.6.88,Time,None,None,None,None,"ALIBABA-CN-NET Hangzhou Alibaba Advertising Co.,Ltd., CN",CN,ntp.aliyun.com,ntp.aliyun.com,None,None,121,10890,60,5400,61,5490
+204.17.205.8,Time,None,None,None,None,"YKWC, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
+204.2.134.162,Time,None,None,None,None,"NTT-LTD-2914, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+208.67.72.43,Time,None,None,None,None,"BADCOCK-MUL, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+216.218.254.202,Time,None,None,None,None,"HURRICANE, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
+216.229.4.66,Time,None,None,None,None,"ASN7806, US",US,pool.ntp.org,pool.ntp.org,None,None,1,90,0,0,1,90
+216.229.4.69,Time,None,None,None,None,"ASN7806, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+216.239.35.0,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,44,3960,22,1980,22,1980
+216.239.35.12,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,28,2520,14,1260,14,1260
+216.239.35.4,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,24,2160,12,1080,12,1080
+216.239.35.8,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,38,3420,19,1710,19,1710
+216.31.17.12,Time,None,None,None,None,"TEAM-CYMRU, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
+217.180.209.214,Time,None,None,None,None,"AS-CMN, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+23.141.40.123,Time,None,None,None,None,"CODEHOF, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+23.95.169.235,Time,None,None,None,None,"AS-COLOCROSSING, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+3.224.137.138,First,None,None,None,None,"AMAZON-AES, US",US,app.govee.com,app.govee.com,None,None,185,22534,88,11936,97,10598
+34.200.66.82,First,None,None,None,None,"AMAZON-AES, US",US,app.govee.com,app.govee.com,None,None,163,19779,77,10445,86,9334
+35.168.43.89,First,None,None,None,None,"AMAZON-AES, US",US,app.govee.com,app.govee.com,None,None,161,19670,77,10444,84,9226
+35.172.22.100,First,None,None,None,None,"AMAZON-AES, US",US,app.govee.com,app.govee.com,None,None,208,25581,99,13681,109,11900
+44.212.106.40,First,None,None,None,None,"AMAZON-AES, US",US,app.govee.com,app.govee.com,None,None,69,8430,33,4476,36,3954
+45.33.53.84,Time,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+45.79.111.167,Time,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+45.79.35.159,Time,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+5.161.111.190,Time,None,None,None,None,"HETZNER-CLOUD2-AS, DE",DE,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+5.161.186.39,Time,None,None,None,None,"HETZNER-CLOUD2-AS, DE",DE,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+5.78.62.36,Time,None,None,None,None,"HETZNER-CLOUD3-AS, DE",DE,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+5.78.71.97,Time,None,None,None,None,"HETZNER-CLOUD3-AS, DE",DE,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+5.78.89.3,Time,None,None,None,None,"HETZNER-CLOUD3-AS, DE",DE,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+52.217.114.120,Support,None,None,None,None,"AMAZON-02, US",US,s3.amazonaws.com,s3.amazonaws.com,None,None,1412,929142,598,884911,814,44231
+52.86.50.224,First,None,None,None,None,"AMAZON-AES, US",US,app.govee.com,app.govee.com,None,None,69,8430,33,4476,36,3954
+54.161.211.254,Support,None,None,None,None,"AMAZON-AES, US",US,ec2-54-161-211-254.compute-1.amazonaws.com,ec2-54-161-211-254.compute-1.amazonaws.com,None,None,22339,2213637,7408,903732,14931,1309905
+54.172.223.241,Support,None,None,None,None,"AMAZON-AES, US",US,aqm3wd1qlc3dy-ats.iot.us-east-1.amazonaws.com,aqm3wd1qlc3dy-ats.iot.us-east-1.amazonaws.com,None,None,7076,708131,2352,291161,4724,416970
+54.208.127.232,First,None,None,None,None,"AMAZON-AES, US",US,app.govee.com,app.govee.com,None,None,23,2810,11,1492,12,1318
+62.72.0.70,Time,None,None,None,None,"AS-HOSTINGER, CY",DE,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+66.228.58.20,Time,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+68.183.107.237,Time,None,None,None,None,"DIGITALOCEAN-ASN, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+69.89.207.199,Time,None,None,None,None,"WIKTEL, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+73.239.145.47,Time,None,None,None,None,"COMCAST-7922, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+75.101.175.8,First,None,None,None,None,"AMAZON-AES, US",US,app.govee.com,app.govee.com,None,None,115,14050,55,7460,60,6590
+76.223.42.77,Time,None,None,None,None,"AMAZON-02, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+99.119.214.210,Time,None,None,None,None,"ATT-INTERNET4, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90

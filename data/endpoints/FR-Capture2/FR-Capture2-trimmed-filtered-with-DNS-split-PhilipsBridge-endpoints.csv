@@ -1,0 +1,21 @@
+IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+120.25.115.20,Time,None,None,None,None,"ALIBABA-CN-NET Hangzhou Alibaba Advertising Co.,Ltd., CN",CN,ntp.aliyun.com,ntp.aliyun.com,None,None,224,20160,82,7380,142,12780
+203.107.6.88,Time,None,None,None,None,"ALIBABA-CN-NET Hangzhou Alibaba Advertising Co.,Ltd., CN",CN,ntp.aliyun.com,ntp.aliyun.com,None,None,188,16920,89,8010,99,8910
+216.239.35.0,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,182,16380,91,8190,91,8190
+216.239.35.12,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,180,16200,90,8100,90,8100
+216.239.35.4,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,180,16200,90,8100,90,8100
+216.239.35.8,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,180,16200,90,8100,90,8100
+3.251.22.95,First,Signify Netherlands B.V.,NL,None,None,"AMAZON-02, US",US,data.meethue.com,data.meethue.com,None,None,43,26511,17,4617,26,21894
+34.117.13.189,First,None,None,None,None,"GOOGLE-CLOUD-PLATFORM, US",US,ws.meethue.com,ws.meethue.com,None,None,38922,5052446,19423,1212992,19499,3839454
+34.89.247.226,First,None,None,None,None,"GOOGLE-CLOUD-PLATFORM, US",US,mqtt-eu-02.iot.meethue.com,mqtt-eu-02.iot.meethue.com,None,None,22313,1288090,11016,603280,11297,684810
+46.51.188.91,First,Signify Netherlands B.V.,NL,None,None,"AMAZON-02, US",IE,diag.meethue.com,diag.meethue.com,None,None,1629,393063,784,177619,845,215444
+52.48.41.28,First,Signify Netherlands B.V.,NL,None,None,"AMAZON-02, US",US,diag.meethue.com,diag.meethue.com,None,None,1735,398971,832,190872,903,208099
+54.216.117.174,First,Signify Netherlands B.V.,NL,None,None,"AMAZON-02, US",US,data.meethue.com,data.meethue.com,None,None,320,200383,135,33183,185,167200
+99.80.116.23,First,Signify Netherlands B.V.,NL,None,None,"AMAZON-02, US",US,diag.meethue.com,diag.meethue.com,None,None,1298,284011,615,142888,683,141123
+192.168.231.110,Local (Echo Dot 3),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,37639,7763094,17992,1504198,19647,6258896
+192.168.231.171,Local (Echo Show 5),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,37691,7772913,18019,1506316,19672,6266597
+192.168.231.192,Local (Google Speaker),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,77721,28947624,38095,3905130,39626,25042494
+192.168.231.223,Local (Nest Mini),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,22252,7029112,12770,1101402,9482,5927710
+224.0.0.251,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,19475,5830851,0,0,19475,5830851
+239.255.255.250,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,39012,13771236,0,0,39012,13771236
+ff02::fb,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,19475,6220351,0,0,19475,6220351

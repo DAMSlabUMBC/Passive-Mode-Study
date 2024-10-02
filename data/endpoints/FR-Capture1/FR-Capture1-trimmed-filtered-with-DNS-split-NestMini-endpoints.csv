@@ -1,0 +1,86 @@
+IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+216.58.214.174,First,None,None,None,None,"GOOGLE, US",US,android.clients.google.com,android.clients.google.com,None,None,56,25504,29,22015,27,3489
+142.250.201.174,First,None,None,None,None,"GOOGLE, US",US,clients3.google.com,clients3.google.com,None,None,2195,664310,1043,233709,1152,430601
+173.194.76.139,First,None,None,None,None,"GOOGLE, US",US,clients3.google.com,clients3.google.com,None,None,96,35147,43,19233,53,15914
+74.125.133.100,First,None,None,None,None,"GOOGLE, US",US,clients3.google.com,clients3.google.com,None,None,23,16229,16,14563,7,1666
+108.177.15.100,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,52,18795,23,9438,29,9357
+108.177.15.101,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,148,67213,70,44731,78,22482
+108.177.15.102,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,68,28317,30,17397,38,10920
+108.177.15.113,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,93,32240,43,12273,50,19967
+108.177.15.138,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,50,19165,23,9652,27,9513
+108.177.15.139,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,47,18399,22,9556,25,8843
+142.251.168.102,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,45,18432,21,9516,24,8916
+172.217.20.206,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,804,808334,390,674301,414,134033
+173.194.76.100,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,48,19766,23,9799,25,9967
+173.194.76.113,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,66,29862,32,17805,34,12057
+173.194.76.138,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,108,45881,54,26198,54,19683
+216.58.213.78,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,1867,518176,873,125387,994,392789
+216.58.215.46,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,48636,21015838,23322,12142386,25314,8873452
+64.233.166.101,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,143,51391,66,22353,77,29038
+64.233.166.113,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,44,12062,21,2898,23,9164
+64.233.166.138,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,44,11924,21,2713,23,9211
+64.233.167.102,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,24,21673,18,20069,6,1604
+64.233.167.139,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,49,18607,23,9585,26,9022
+64.233.184.113,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,50,18896,23,9509,27,9387
+64.233.184.139,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,53,25861,22,9602,31,16259
+66.102.1.102,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,97,37654,44,18934,53,18720
+66.102.1.113,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,67,40140,38,28514,29,11626
+74.125.133.101,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,76,30551,37,11269,39,19282
+74.125.133.139,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,35,24438,23,21792,12,2646
+74.125.206.113,First,None,None,None,None,"GOOGLE, US",US,clients4.google.com,clients4.google.com,None,None,120,51062,55,31267,65,19795
+142.250.179.67,First,None,None,None,None,"GOOGLE, US",US,clientservices.googleapis.com,clientservices.googleapis.com,None,None,810,274858,405,34027,405,240831
+142.250.179.99,First,None,None,None,None,"GOOGLE, US",US,clientservices.googleapis.com,clientservices.googleapis.com,None,None,131,45273,64,5380,67,39893
+142.250.178.131,First,None,None,None,None,"GOOGLE, US",US,connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,22991,3580598,9429,1202658,13562,2377940
+142.250.75.227,First,None,None,None,None,"GOOGLE, US",US,connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,528,71826,226,25073,302,46753
+216.58.214.163,First,None,None,None,None,"GOOGLE, US",US,connectivitycheck.gstatic.com,connectivitycheck.gstatic.com,None,None,609,85657,267,29143,342,56514
+142.250.201.170,First,None,None,None,None,"GOOGLE, US",US,geller-pa.googleapis.com,geller-pa.googleapis.com,None,None,1820,638348,871,407717,949,230631
+216.58.214.67,First,None,None,None,None,"GOOGLE, US",US,gstatic.com,gstatic.com,None,None,253,77158,111,52750,142,24408
+142.250.179.106,First,None,None,None,None,"GOOGLE, US",US,home-devices.googleapis.com,home-devices.googleapis.com,None,None,3012,963426,1459,502354,1553,461072
+108.177.15.188,First,None,None,None,None,"GOOGLE, US",US,mtalk.google.com,mtalk.google.com,None,None,472,84002,241,63910,231,20092
+142.250.110.188,First,None,None,None,None,"GOOGLE, US",US,mtalk.google.com,mtalk.google.com,None,None,23,16107,15,14505,8,1602
+142.251.168.188,First,None,None,None,None,"GOOGLE, US",US,mtalk.google.com,mtalk.google.com,None,None,790,84643,389,54439,401,30204
+142.251.173.188,First,None,None,None,None,"GOOGLE, US",US,mtalk.google.com,mtalk.google.com,None,None,3288,273976,1646,153006,1642,120970
+173.194.76.188,First,None,None,None,None,"GOOGLE, US",US,mtalk.google.com,mtalk.google.com,None,None,538,83936,260,60092,278,23844
+64.233.166.188,First,None,None,None,None,"GOOGLE, US",US,mtalk.google.com,mtalk.google.com,None,None,191,63102,97,52983,94,10119
+64.233.167.188,First,None,None,None,None,"GOOGLE, US",US,mtalk.google.com,mtalk.google.com,None,None,11461,917604,5732,509001,5729,408603
+64.233.184.188,First,None,None,None,None,"GOOGLE, US",US,mtalk.google.com,mtalk.google.com,None,None,3243,331869,1624,213182,1619,118687
+66.102.1.188,First,None,None,None,None,"GOOGLE, US",US,mtalk.google.com,mtalk.google.com,None,None,1423,158347,720,105341,703,53006
+74.125.133.188,First,None,None,None,None,"GOOGLE, US",US,mtalk.google.com,mtalk.google.com,None,None,1755,209612,844,139644,911,69968
+74.125.206.188,First,None,None,None,None,"GOOGLE, US",US,mtalk.google.com,mtalk.google.com,None,None,3818,346790,1747,196721,2071,150069
+74.125.71.188,First,None,None,None,None,"GOOGLE, US",US,mtalk.google.com,mtalk.google.com,None,None,2668,258012,1330,163558,1338,94454
+192.168.231.112,Local (TP-Link Plug),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,5610,2748323,4247,2688351,1363,59972
+192.168.231.192,Local (Google Speaker),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,907774,74594092,451836,36401958,455938,38192134
+192.168.231.200,Local (TP-Link Bulb),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,5494,4529688,4208,4473104,1286,56584
+224.0.0.250,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,708,61590,0,0,708,61590
+224.0.0.251,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,35601,7687861,0,0,35601,7687861
+239.255.255.251,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,711,61845,0,0,711,61845
+255.255.255.255,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,8512,651201,0,0,8512,651201
+ff02::fb,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,35621,8643016,0,0,35621,8643016
+8.8.4.4,Support,None,None,None,None,"GOOGLE, US",US,None,None,None,None,402,62376,201,46108,201,16268
+8.8.8.8,Support,None,None,None,None,"GOOGLE, US",US,None,None,None,None,24675,2441704,12337,1500539,12338,941165
+142.250.178.138,First,None,None,None,None,"GOOGLE, US",US,play.googleapis.com,play.googleapis.com,None,None,2881,924438,1383,528979,1498,395459
+142.250.179.74,First,None,None,None,None,"GOOGLE, US",US,play.googleapis.com,play.googleapis.com,None,None,4490,1525735,2150,814507,2340,711228
+142.250.74.234,First,None,None,None,None,"GOOGLE, US",US,play.googleapis.com,play.googleapis.com,None,None,2152,708817,1026,411023,1126,297794
+142.250.75.234,First,None,None,None,None,"GOOGLE, US",US,play.googleapis.com,play.googleapis.com,None,None,4341,1521037,2072,923793,2269,597244
+172.217.18.202,First,None,None,None,None,"GOOGLE, US",US,play.googleapis.com,play.googleapis.com,None,None,1804,591381,861,310150,943,281231
+172.217.20.170,First,None,None,None,None,"GOOGLE, US",US,play.googleapis.com,play.googleapis.com,None,None,2520,880977,1209,540299,1311,340678
+172.217.20.202,First,None,None,None,None,"GOOGLE, US",US,play.googleapis.com,play.googleapis.com,None,None,3673,1206425,1776,680476,1897,525949
+216.58.213.74,First,None,None,None,None,"GOOGLE, US",US,play.googleapis.com,play.googleapis.com,None,None,1879,627456,917,327867,962,299589
+216.58.214.74,First,None,None,None,None,"GOOGLE, US",US,play.googleapis.com,play.googleapis.com,None,None,2266,739770,1116,412718,1150,327052
+216.58.214.170,First,None,None,None,None,"GOOGLE, US",US,safesearch.googleapis.com,safesearch.googleapis.com,None,None,2137,763521,1040,460014,1097,303507
+142.250.179.70,Support,None,None,None,None,"GOOGLE, US",US,static.doubleclick.net,static.doubleclick.net,None,None,112,28669,51,20875,61,7794
+142.250.179.91,First,None,None,None,None,"GOOGLE, US",US,storage.googleapis.com,storage.googleapis.com,None,None,927,2264303,671,2244737,256,19566
+142.250.75.251,First,None,None,None,None,"GOOGLE, US",US,storage.googleapis.com,storage.googleapis.com,None,None,893,2262151,627,2241862,266,20289
+172.217.20.187,First,None,None,None,None,"GOOGLE, US",US,storage.googleapis.com,storage.googleapis.com,None,None,110,122678,46,110389,64,12289
+172.217.20.219,First,None,None,None,None,"GOOGLE, US",US,storage.googleapis.com,storage.googleapis.com,None,None,1098,2275601,716,2247707,382,27894
+216.239.35.0,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,148,13320,74,6660,74,6660
+216.239.35.12,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,142,12780,71,6390,71,6390
+216.239.35.4,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,146,13140,73,6570,73,6570
+216.239.35.8,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,230,20700,115,10350,115,10350
+142.250.74.238,Time,None,None,None,None,"GOOGLE, US",US,tools.google.com,tools.google.com,None,None,522,208656,231,164399,291,44257
+216.58.215.42,First,None,None,None,None,"GOOGLE, US",US,www.googleapis.com,www.googleapis.com,None,None,945,369376,459,250614,486,118762
+216.58.213.67,First,None,None,None,None,"GOOGLE, US",US,www.gstatic.com,www.gstatic.com,None,None,251,226655,127,207041,124,19614
+216.58.215.35,First,None,None,None,None,"GOOGLE, US",US,www.gstatic.com,www.gstatic.com,None,None,390,441115,193,408026,197,33089
+142.250.75.238,Third,None,None,None,None,"GOOGLE, US",US,www.youtube.com,www.youtube.com,None,None,439,1019405,248,984298,191,35107
+142.251.168.91,Third,None,None,None,None,"GOOGLE, US",US,www.youtube.com,www.youtube.com,None,None,538,1025903,310,988362,228,37541
+74.125.133.136,Third,None,None,None,None,"GOOGLE, US",US,www.youtube.com,www.youtube.com,None,None,559,1027341,343,990589,216,36752
