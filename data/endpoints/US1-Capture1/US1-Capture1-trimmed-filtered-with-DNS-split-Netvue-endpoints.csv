@@ -21,7 +21,7 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 3.216.168.201,First,None,None,None,None,"AMAZON-AES, US",US,deviceapi.nvts.co,deviceapi.nvts.co,None,None,179,51556,77,40046,102,11510
 3.5.8.175,Support,None,None,None,None,"AMAZON-AES, US",US,s3.us-east-1.amazonaws.com,s3.us-east-1.amazonaws.com,None,None,43,17766,18,7776,25,9990
 34.193.127.115,First,None,None,None,None,"AMAZON-AES, US",US,deviceapi.nvts.co,deviceapi.nvts.co,None,None,534,163399,229,129414,305,33985
-34.194.40.211,Time,None,None,None,None,"AMAZON-AES, US",US,0.ntp.nvts.co,0.ntp.nvts.co,None,None,440,26546,220,14263,220,12283
+34.194.40.211,Support,None,None,None,None,"AMAZON-AES, US",US,0.ntp.nvts.co,0.ntp.nvts.co,None,None,440,26546,220,14263,220,12283
 34.196.181.225,First,None,None,None,None,"AMAZON-AES, US",US,deviceapi.nvts.co,deviceapi.nvts.co,None,None,84,27204,36,21924,48,5280
 34.197.164.221,First,None,None,None,None,"AMAZON-AES, US",US,deviceapi.nvts.co,deviceapi.nvts.co,None,None,402,123950,172,98360,230,25590
 34.203.118.105,First,None,None,None,None,"AMAZON-AES, US",US,deviceapi.nvts.co,deviceapi.nvts.co,None,None,48,12245,21,9130,27,3115
@@ -31,7 +31,7 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 44.209.65.86,First,None,None,None,None,"AMAZON-AES, US",US,localweb.nvts.co,localweb.nvts.co,None,None,451,151155,185,120662,266,30493
 44.213.42.13,First,None,None,None,None,"AMAZON-AES, US",US,deviceapi.nvts.co,deviceapi.nvts.co,None,None,707,209268,305,164118,402,45150
 52.0.113.149,First,None,None,None,None,"AMAZON-AES, US",US,localweb.nvts.co,localweb.nvts.co,None,None,209,71277,83,56850,126,14427
-52.200.232.52,Time,None,None,None,None,"AMAZON-AES, US",US,0.ntp.nvts.co,0.ntp.nvts.co,None,None,394,23767,197,12770,197,10997
+52.200.232.52,Support,None,None,None,None,"AMAZON-AES, US",US,0.ntp.nvts.co,0.ntp.nvts.co,None,None,394,23767,197,12770,197,10997
 52.216.10.181,Support,None,None,None,None,"AMAZON-02, US",US,s3.us-east-1.amazonaws.com,s3.us-east-1.amazonaws.com,None,None,43,17404,18,7552,25,9852
 52.216.108.221,Support,None,None,None,None,"AMAZON-02, US",US,s3.us-east-1.amazonaws.com,s3.us-east-1.amazonaws.com,None,None,44,17147,19,7606,25,9541
 52.216.108.69,Support,None,None,None,None,"AMAZON-02, US",US,s3.us-east-1.amazonaws.com,s3.us-east-1.amazonaws.com,None,None,43,16614,18,7552,25,9062
@@ -187,4 +187,4 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 54.231.236.136,Support,None,None,None,None,"AMAZON-02, US",US,s3.us-east-1.amazonaws.com,s3.us-east-1.amazonaws.com,None,None,43,16707,18,7552,25,9155
 54.231.236.88,Support,None,None,None,None,"AMAZON-02, US",US,s3.us-east-1.amazonaws.com,s3.us-east-1.amazonaws.com,None,None,47,17222,22,7768,25,9454
 192.168.1.106,Local (Hue Bridge),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,639562,135434556,351635,111422976,287927,24011580
-239.255.255.250,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,10629,1897332,0,0,10629,1897332
+239.255.255.250,Local Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,10629,1897332,0,0,10629,1897332

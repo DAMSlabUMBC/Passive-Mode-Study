@@ -69,19 +69,19 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 180.163.207.108,Support,None,None,None,None,"CHINANET-SH-AP China Telecom Group, CN",CN,imdns.hpplay.cn,imdns.hpplay.cn,None,None,10,1596,4,970,6,626
 180.163.207.109,Support,None,None,None,None,"CHINANET-SH-AP China Telecom Group, CN",CN,imdns.hpplay.cn,imdns.hpplay.cn,None,None,31,4861,13,2971,18,1890
 192.168.1.109,Local (Echo Dot 5),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,22,6615,8,641,14,5974
-192.168.1.255,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,5753,7487295,0,0,5753,7487295
-224.0.0.251,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,5751,7485728,0,0,5751,7485728
-239.255.255.250,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,92460,35828250,0,0,92460,35828250
+192.168.1.255,Local Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,5753,7487295,0,0,5753,7487295
+224.0.0.251,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,5751,7485728,0,0,5751,7485728
+239.255.255.250,Local Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,92460,35828250,0,0,92460,35828250
 240e:97c:2f:1::9f,Support,None,None,None,None,"CT-GUANGZHOU-IDC CHINANET Guangdong province network, CN",CN,None,None,None,None,36,9282,15,2179,21,7103
 240e:97c:2f:2::4a,Support,None,None,None,None,"CT-GUANGZHOU-IDC CHINANET Guangdong province network, CN",CN,None,None,None,None,42,11671,18,2564,24,9107
-2600:1700:5a0f:ee00::314:1b,Time,None,None,None,None,"ATT-INTERNET4, US",US,None,None,None,None,5,550,2,220,3,330
-2600:3c01:e000:7e6::123,Time,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,None,None,None,None,2,220,1,110,1,110
-2603:c020:6:b900:6b54:1390:4afd:814a,Time,None,None,None,None,"ORACLE-BMC-31898, US",US,None,None,None,None,2,220,1,110,1,110
-2604:a840::111,Time,None,None,None,None,"XTOM, US",US,None,None,None,None,2,220,1,110,1,110
-2605:6400:84e1::123,Time,None,None,None,None,"PONYNET, US",US,None,None,None,None,2,220,1,110,1,110
-2620:138:5000:0:5054:ff:fe89:6673,Time,None,None,None,None,"NULLROUTE, US",US,None,None,None,None,2,220,1,110,1,110
-2620:46:8000:128::112,Time,None,None,None,None,"GAC, US",US,None,None,None,None,2,220,1,110,1,110
-2620:83:8000:ffd1:1::e,Time,None,None,None,None,"LBL, US",US,None,None,None,None,2,220,1,110,1,110
+2600:1700:5a0f:ee00::314:1b,Support,None,None,None,None,"ATT-INTERNET4, US",US,None,None,None,None,5,550,2,220,3,330
+2600:3c01:e000:7e6::123,Support,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,None,None,None,None,2,220,1,110,1,110
+2603:c020:6:b900:6b54:1390:4afd:814a,Support,None,None,None,None,"ORACLE-BMC-31898, US",US,None,None,None,None,2,220,1,110,1,110
+2604:a840::111,Support,None,None,None,None,"XTOM, US",US,None,None,None,None,2,220,1,110,1,110
+2605:6400:84e1::123,Support,None,None,None,None,"PONYNET, US",US,None,None,None,None,2,220,1,110,1,110
+2620:138:5000:0:5054:ff:fe89:6673,Support,None,None,None,None,"NULLROUTE, US",US,None,None,None,None,2,220,1,110,1,110
+2620:46:8000:128::112,Support,None,None,None,None,"GAC, US",US,None,None,None,None,2,220,1,110,1,110
+2620:83:8000:ffd1:1::e,Support,None,None,None,None,"LBL, US",US,None,None,None,None,2,220,1,110,1,110
 2a03:2880:f003:112:face:b00c:0:2,Third,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,22,7438,9,5396,13,2042
 2a03:2880:f003:c07:face:b00c:0:2,Third,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,134,44739,50,32043,84,12696
 42.193.219.66,Support,None,None,None,None,"TENCENT-NET-AP Shenzhen Tencent Computer Systems Company Limited, CN",CN,None,None,None,None,41,3505,15,1299,26,2206

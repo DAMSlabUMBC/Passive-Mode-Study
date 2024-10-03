@@ -57,7 +57,6 @@ IP, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Locat
 216.239.38.223,"None","None","None","None","GOOGLE, US","US",play.googleapis.com,play.googleapis.com,None,None,149,52568,74,27667,75,24901
 34.104.35.123,"None","None","None","None","GOOGLE-CLOUD-PLATFORM, US","US",edgedl.me.gvt1.com,edgedl.me.gvt1.com,None,None,42117,116520206,37501,116213986,4616,306220
 64.233.180.188,"None","None","None","None","GOOGLE, US","US",mtalk.google.com,mtalk.google.com,None,None,7453,545965,3733,292981,3720,252984
-8.8.8.8,"None","None","None","None","GOOGLE, US","US",None,None,None,None,31090,2789810,15544,1627767,15546,1162043
 192.168.3.1,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,190,22400,95,15281,95,7119
 224.0.0.250,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,6977,606983,0,0,6977,606983
 224.0.0.251,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,27105,5085001,0,0,27105,5085001

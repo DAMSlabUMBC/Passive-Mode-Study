@@ -135,9 +135,6 @@ IP, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Locat
 54.84.154.83,"None","None","None","None","AMAZON-AES, US","US",deviceapi.nvts.co,deviceapi.nvts.co,None,None,289,91398,118,73104,171,18294
 54.86.175.178,"None","None","None","None","AMAZON-AES, US","US",deviceapi.nvts.co,deviceapi.nvts.co,None,None,302,99562,126,80190,176,19372
 54.89.54.2,"None","None","None","None","AMAZON-AES, US","US",deviceapi.nvts.co,deviceapi.nvts.co,None,None,75,21286,32,16411,43,4875
-8.8.4.4,"None","None","None","None","GOOGLE, US","US",None,None,None,None,136,15817,68,10541,68,5276
-8.8.8.8,"None","None","None","None","GOOGLE, US","US",None,None,None,None,120,13086,60,8465,60,4621
-9.9.9.9,"None","None","None","None","QUAD9-AS-1, CH","CH",None,None,None,None,342,39860,171,26571,171,13289
 98.82.204.13,"None","None","None","None","AMAZON-AES, US","US",deviceapi.nvts.co,deviceapi.nvts.co,None,None,227,67488,93,53119,134,14369
 192.168.3.1,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,278203,62259862,138864,40713336,139339,21546526
 192.168.3.114,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,220826,46634355,130643,39117054,90183,7517301

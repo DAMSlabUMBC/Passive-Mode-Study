@@ -65,11 +65,10 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 74.125.133.188,Support,None,None,None,None,"GOOGLE, US",US,mtalk.google.com,mtalk.google.com,None,None,469,61958,208,40227,261,21731
 192.168.231.108,Local (Echo Dot 3),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,2220,823055,525,43120,1695,779935
 192.168.231.171,Local (Echo Show 5),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,2240,831075,525,43120,1715,787955
-224.0.0.251,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,23083,5362511,0,0,23083,5362511
-239.255.255.250,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,6816,2475344,0,0,6816,2475344
-ff02::fb,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,23078,5993467,0,0,23078,5993467
+224.0.0.251,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,23083,5362511,0,0,23083,5362511
+239.255.255.250,Local Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,6816,2475344,0,0,6816,2475344
+ff02::fb,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,23078,5993467,0,0,23078,5993467
 142.251.168.188,Support,None,None,None,None,"GOOGLE, US",US,None,None,None,None,21424,1965863,12884,1131630,8540,834233
-8.8.8.8,Support,None,None,None,None,"GOOGLE, US",US,None,None,None,None,650,100592,325,74182,325,26410
 34.240.160.76,Third,None,None,None,None,"AMAZON-02, US",US,nrdp70-appboot.netflix.com,nrdp70-appboot.netflix.com,None,None,63,51743,22,19936,41,31807
 34.252.29.56,Third,None,None,None,None,"AMAZON-02, US",US,nrdp70-appboot.netflix.com,nrdp70-appboot.netflix.com,None,None,69,52140,28,20332,41,31808
 52.17.126.117,Third,None,None,None,None,"AMAZON-02, US",US,nrdp70-appboot.netflix.com,nrdp70-appboot.netflix.com,None,None,37,26235,15,10232,22,16003
@@ -101,8 +100,8 @@ ff02::fb,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,23078
 52.25.158.229,First,None,None,None,None,"AMAZON-02, US",US,ssm1.internet.sony.tv,ssm1.internet.sony.tv,None,None,24,10650,9,8631,15,2019
 104.84.81.161,First,None,None,None,None,"AKAMAI-ASN1, NL",US,static.internet.sony.tv,static.internet.sony.tv,None,None,14,5729,5,5011,9,718
 52.222.169.67,Third,None,None,None,None,"AMAZON-02, US",US,threeplr-abdx8mxr6q3e.api.amazonvideo.com,threeplr-abdx8mxr6q3e.api.amazonvideo.com,None,None,30,17831,13,15838,17,1993
-216.239.35.0,Time,None,None,None,None,"GOOGLE, US",US,time.android.com,time.android.com,None,None,2,180,1,90,1,90
-216.239.35.4,Time,None,None,None,None,"GOOGLE, US",US,time.android.com,time.android.com,None,None,2,180,1,90,1,90
+216.239.35.0,Support,None,None,None,None,"GOOGLE, US",US,time.android.com,time.android.com,None,None,2,180,1,90,1,90
+216.239.35.4,Support,None,None,None,None,"GOOGLE, US",US,time.android.com,time.android.com,None,None,2,180,1,90,1,90
 52.17.111.227,Third,None,None,None,None,"AMAZON-02, US",US,uiboot.netflix.com,uiboot.netflix.com,None,None,84,79848,35,52320,49,27528
 52.211.14.11,Third,None,None,None,None,"AMAZON-02, US",US,uiboot.netflix.com,uiboot.netflix.com,None,None,46,37307,18,16255,28,21052
 52.213.164.31,Third,None,None,None,None,"AMAZON-02, US",US,uiboot.netflix.com,uiboot.netflix.com,None,None,42,37086,15,16100,27,20986

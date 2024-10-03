@@ -21,4 +21,4 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 63.33.29.77,First,D-LINK CORPORATION,TW,None,None,"AMAZON-02, US",US,mp-eu-rcdda-5.auto.mydlink.com,mp-eu-rcdda-5.auto.mydlink.com,None,None,9377,9774803,3581,243102,5796,9531701
 99.80.0.240,First,D-LINK CORPORATION,TW,None,None,"AMAZON-02, US",US,mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,3301,606368,1119,243951,2182,362417
 99.81.252.178,First,D-LINK CORPORATION,TW,None,None,"AMAZON-02, US",US,mp-eu-dcdda.auto.mydlink.com,mp-eu-dcdda.auto.mydlink.com,None,None,7036,3205376,2479,422901,4557,2782475
-224.0.0.251,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,184,33504,0,0,184,33504
+224.0.0.251,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,184,33504,0,0,184,33504

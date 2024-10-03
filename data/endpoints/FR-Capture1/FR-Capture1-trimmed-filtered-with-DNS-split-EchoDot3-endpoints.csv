@@ -3,10 +3,10 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 192.168.231.171,Local (Echo Show 5),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,1156003,92917093,590490,54905720,565513,38011373
 192.168.231.176,Local (Sony TV),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,2220,823055,1695,779935,525,43120
 192.168.231.200,Local (TP-Link Bulb),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,55,58465,55,58465,0,0
-224.0.0.251,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,661,76931,0,0,661,76931
-239.255.255.250,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,315,43680,0,0,315,43680
-255.255.255.255,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,291,21396,0,0,291,21396
-ff02::fb,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,175,17325,0,0,175,17325
+224.0.0.251,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,661,76931,0,0,661,76931
+239.255.255.250,Local Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,315,43680,0,0,315,43680
+255.255.255.255,Local Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,291,21396,0,0,291,21396
+ff02::fb,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,175,17325,0,0,175,17325
 107.21.124.128,First,None,None,None,None,"AMAZON-AES, US",US,A32DOYMUN6DTXA.us-east-1.prod.service.minerva.devices.a2z.com,A32DOYMUN6DTXA.us-east-1.prod.service.minerva.devices.a2z.com,None,None,201,106896,76,17288,125,89608
 107.22.233.255,First,None,None,None,None,"AMAZON-AES, US",US,A32DOYMUN6DTXA.us-east-1.prod.service.minerva.devices.a2z.com,A32DOYMUN6DTXA.us-east-1.prod.service.minerva.devices.a2z.com,None,None,203,110936,85,17882,118,93054
 107.23.254.117,First,None,None,None,None,"AMAZON-AES, US",US,A32DOYMUN6DTXA.us-east-1.prod.service.minerva.devices.a2z.com,A32DOYMUN6DTXA.us-east-1.prod.service.minerva.devices.a2z.com,None,None,246,129439,94,24612,152,104827
@@ -246,8 +246,8 @@ ff02::fb,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,175,1
 52.94.239.41,First,None,None,None,None,"AMAZON-02, US",US,msh.amazon.com,msh.amazon.com,None,None,22,8145,9,6605,13,1540
 67.220.240.26,First,None,None,None,None,"AMAZON-02, US",US,msh.amazon.com,msh.amazon.com,None,None,44,19522,18,15923,26,3599
 54.211.64.190,First,None,None,None,None,"AMAZON-AES, US",US,None,None,None,None,8481,739522,2863,276037,5618,463485
-34.236.6.206,Time,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
-52.45.237.36,Time,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
+34.236.6.206,Support,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
+52.45.237.36,Support,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
 44.215.139.77,First,None,None,None,None,"AMAZON-AES, US",US,softwareupdates.amazon.com,softwareupdates.amazon.com,None,None,77,25360,32,17914,45,7446
 44.215.115.210,First,None,None,None,None,"AMAZON-AES, US",US,todo-ta-g7g.amazon.com,todo-ta-g7g.amazon.com,None,None,47,15430,20,11584,27,3846
 44.215.133.149,First,None,None,None,None,"AMAZON-AES, US",US,todo-ta-g7g.amazon.com,todo-ta-g7g.amazon.com,None,None,24,7760,10,5792,14,1968

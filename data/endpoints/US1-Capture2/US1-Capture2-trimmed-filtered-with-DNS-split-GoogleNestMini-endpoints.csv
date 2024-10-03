@@ -18,17 +18,15 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 172.253.115.95,First,None,None,None,None,"GOOGLE, US",US,lycraservice-pa.googleapis.com,lycraservice-pa.googleapis.com,None,None,129,65995,74,29443,55,36552
 142.251.167.188,First,None,None,None,None,"GOOGLE, US",US,mtalk.google.com,mtalk.google.com,None,None,37,19845,19,17005,18,2840
 172.253.115.188,First,None,None,None,None,"GOOGLE, US",US,mtalk.google.com,mtalk.google.com,None,None,38,19959,20,17070,18,2889
-224.0.0.250,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,11046,960986,0,0,11046,960986
-224.0.0.251,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,45801,8621599,0,0,45801,8621599
-239.255.255.251,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,11061,962261,0,0,11061,962261
-ff02::fb,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,45794,9809002,0,0,45794,9809002
+224.0.0.250,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,11046,960986,0,0,11046,960986
+239.255.255.251,Local Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,11061,962261,0,0,11061,962261
+ff02::fb,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,45794,9809002,0,0,45794,9809002
 142.251.179.188,Support,None,None,None,None,"GOOGLE, US",US,None,None,None,None,2,132,0,0,2,132
 172.253.122.94,Support,None,None,None,None,"GOOGLE, US",US,None,None,None,None,1,66,0,0,1,66
 2001:4860:4806:4::,First,None,None,None,None,"GOOGLE, US",US,None,None,None,None,312,34320,156,17160,156,17160
 2001:4860:4806:8::,First,None,None,None,None,"GOOGLE, US",US,None,None,None,None,400,44000,200,22000,200,22000
 2001:4860:4806::,First,None,None,None,None,"GOOGLE, US",US,None,None,None,None,488,53680,244,26840,244,26840
 2001:4860:4806:c::,First,None,None,None,None,"GOOGLE, US",US,None,None,None,None,338,37180,169,18590,169,18590
-2001:4860:4860::8888,First,None,None,None,None,"GOOGLE, US",US,None,None,None,None,1546,159696,8,1432,1538,158264
 2607:f8b0:4004:c06::5b,First,None,None,None,None,"GOOGLE, US",US,None,None,None,None,2863,356063,1448,152732,1415,203331
 2607:f8b0:4004:c06::5d,First,None,None,None,None,"GOOGLE, US",US,None,None,None,None,4211,521355,2131,223911,2080,297444
 2607:f8b0:4004:c06::5e,First,None,None,None,None,"GOOGLE, US",US,None,None,None,None,115386,26024862,40197,8010039,75189,18014823
@@ -145,12 +143,11 @@ ff02::fb,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,45794
 2607:f8b0:4004:c21::95,First,None,None,None,None,"GOOGLE, US",US,None,None,None,None,38,10351,18,7383,20,2968
 2607:f8b0:4004:c21::bc,First,None,None,None,None,"GOOGLE, US",US,None,None,None,None,3692,321100,1845,160464,1847,160636
 2607:f8b0:4004:c21::be,First,None,None,None,None,"GOOGLE, US",US,None,None,None,None,2954,1332936,1684,1151735,1270,181201
-8.8.8.8,Support,None,None,None,None,"GOOGLE, US",US,None,None,None,None,56880,7124915,27467,4903233,29413,2221682
 142.251.163.95,First,None,None,None,None,"GOOGLE, US",US,play.googleapis.com,play.googleapis.com,None,None,35,13844,16,6867,19,6977
-216.239.35.0,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,4,360,2,180,2,180
-216.239.35.12,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,4,360,2,180,2,180
-216.239.35.4,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,4,360,2,180,2,180
-216.239.35.8,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,4,360,2,180,2,180
+216.239.35.0,Support,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,4,360,2,180,2,180
+216.239.35.12,Support,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,4,360,2,180,2,180
+216.239.35.4,Support,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,4,360,2,180,2,180
+216.239.35.8,Support,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,4,360,2,180,2,180
 142.251.16.95,First,None,None,None,None,"GOOGLE, US",US,www.googleapis.com,www.googleapis.com,None,None,1,74,0,0,1,74
 142.251.167.95,First,None,None,None,None,"GOOGLE, US",US,www.googleapis.com,www.googleapis.com,None,None,1,74,0,0,1,74
 172.253.62.95,First,None,None,None,None,"GOOGLE, US",US,www.googleapis.com,www.googleapis.com,None,None,45,12566,22,8385,23,4181

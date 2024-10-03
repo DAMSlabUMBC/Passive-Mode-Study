@@ -1,0 +1,4 @@
+Device,EndpointFiles,ProtocolFiles
+<device_name>,<endpoint_file_1>,<protocol_file_1>;<protocol_file_2>
+<device_name>,<endpoint_file_1>;<endpoint_file_2>,<protocol_file_1>;<protocol_file_2>
+<device_name>,<endpoint_file_1>;<endpoint_file_2>,<protocol_file_1>

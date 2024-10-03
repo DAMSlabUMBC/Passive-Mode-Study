@@ -402,7 +402,6 @@ IP, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Locat
 67.220.240.35,"None","None","None","None","AMAZON-02, US","US",msh.amazon.com,msh.amazon.com,None,None,45,16304,17,13116,28,3188
 72.21.207.143,"None","None","None","None","AMAZON-02, US","US",api.amazon.com,api.amazon.com,None,None,84,25974,36,19605,48,6369
 75.101.225.105,"None","None","None","None","AMAZON-AES, US","US",A4ZXE0RM7LQ7A.us-east-1.prod.service.minerva.devices.a2z.com,A4ZXE0RM7LQ7A.us-east-1.prod.service.minerva.devices.a2z.com,None,None,209,158686,71,23100,138,135586
-8.8.8.8,"None","None","None","None","GOOGLE, US","US",None,None,None,None,15,1620,7,967,8,653
 192.168.3.1,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,11473,2326399,6936,1941321,4537,385078
 192.168.3.114,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,7924,1596380,5024,1354578,2900,241802
 224.0.0.251,"Local","Local","Local","Local","Local","Local",N/A,N/A,Local,Local,1698,159052,0,0,1698,159052

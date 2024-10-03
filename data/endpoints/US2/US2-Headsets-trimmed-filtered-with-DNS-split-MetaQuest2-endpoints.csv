@@ -8,9 +8,9 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 157.240.229.34,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,mqtt-mini.facebook.com,mqtt-mini.facebook.com,None,None,1411,127780,694,63290,717,64490
 157.240.241.34,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,mqtt-mini.facebook.com,mqtt-mini.facebook.com,None,None,38,7262,16,4824,22,2438
 31.13.66.34,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,mqtt-mini.facebook.com,mqtt-mini.facebook.com,None,None,470,44551,233,23894,237,20657
-129.134.26.123,Time,None,None,None,None,"FACEBOOK, US",US,None,None,None,None,2,180,1,90,1,90
-129.134.27.123,Time,None,None,None,None,"FACEBOOK, US",US,None,None,None,None,6,540,3,270,3,270
-129.134.29.123,Time,None,None,None,None,"FACEBOOK, US",US,None,None,None,None,2,180,1,90,1,90
+129.134.26.123,Support,None,None,None,None,"FACEBOOK, US",US,None,None,None,None,2,180,1,90,1,90
+129.134.27.123,Support,None,None,None,None,"FACEBOOK, US",US,None,None,None,None,6,540,3,270,3,270
+129.134.29.123,Support,None,None,None,None,"FACEBOOK, US",US,None,None,None,None,2,180,1,90,1,90
 142.250.31.94,Support,None,None,None,None,"GOOGLE, US",US,None,None,None,None,10,1049,5,484,5,565
 142.251.111.94,Support,None,None,None,None,"GOOGLE, US",US,None,None,None,None,20,2098,10,968,10,1130
 142.251.35.163,Support,None,None,None,None,"GOOGLE, US",US,None,None,None,None,10,1049,5,484,5,565
@@ -41,11 +41,11 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 2a03:2880:f211:c1:face:b00c:0:32c2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,336,87435,150,54777,186,32658
 2a03:2880:f212:1c8:face:b00c:0:32c2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,87,22827,39,14674,48,8153
 2a03:2880:f212:c1:face:b00c:0:32c2,First,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,32,8863,16,5938,16,2925
-2a03:2880:ff08::123,Time,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,120,13200,60,6600,60,6600
-2a03:2880:ff09::123,Time,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,148,16280,74,8140,74,8140
-2a03:2880:ff0a::123,Time,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,104,11440,52,5720,52,5720
-2a03:2880:ff0b::123,Time,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,82,9020,41,4510,41,4510
-2a03:2880:ff0c::123,Time,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,104,11440,52,5720,52,5720
+2a03:2880:ff08::123,Support,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,120,13200,60,6600,60,6600
+2a03:2880:ff09::123,Support,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,148,16280,74,8140,74,8140
+2a03:2880:ff0a::123,Support,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,104,11440,52,5720,52,5720
+2a03:2880:ff0b::123,Support,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,82,9020,41,4510,41,4510
+2a03:2880:ff0c::123,Support,None,None,None,None,"FACEBOOK, US",IE,None,None,None,None,104,11440,52,5720,52,5720
 157.240.241.55,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,securecdn.oculus.com,securecdn.oculus.com,None,None,103,30463,48,21071,55,9392
 31.13.66.48,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,securecdn.oculus.com,securecdn.oculus.com,None,None,314,83190,145,53996,169,29194
 157.240.229.35,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,www.facebook.com,www.facebook.com,None,None,28,21393,13,9712,15,11681

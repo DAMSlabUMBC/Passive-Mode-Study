@@ -122,7 +122,7 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 54.161.12.130,First,"Nest Labs, Inc.",US,None,None,"AMAZON-AES, US",US,squeakydoor.nest.com,squeakydoor.nest.com,None,None,1716,480104,716,319510,1000,160594
 54.173.184.57,First,"Nest Labs, Inc.",US,None,None,"AMAZON-AES, US",US,squeakydoor.nest.com,squeakydoor.nest.com,None,None,3740,1048102,1564,709956,2176,338146
 54.208.138.69,First,"Nest Labs, Inc.",US,None,None,"AMAZON-AES, US",US,squeakydoor.nest.com,squeakydoor.nest.com,None,None,160,41838,58,27689,102,14149
-216.239.35.0,Time,None,None,None,None,"GOOGLE, US",US,time.nest.com,time.nest.com,None,None,173,15570,81,7290,92,8280
+216.239.35.0,Support,None,None,None,None,"GOOGLE, US",US,time.nest.com,time.nest.com,None,None,173,15570,81,7290,92,8280
 52.2.240.94,First,"Nest Labs, Inc.",US,None,None,"AMAZON-AES, US",US,weather.nest.com,weather.nest.com,None,None,94,41082,39,33723,55,7359
 52.22.206.203,First,"Nest Labs, Inc.",US,None,None,"AMAZON-AES, US",US,weather.nest.com,weather.nest.com,None,None,69,26858,30,21939,39,4919
 52.45.108.15,First,"Nest Labs, Inc.",US,None,None,"AMAZON-AES, US",US,weather.nest.com,weather.nest.com,None,None,21,10581,8,8864,13,1717

@@ -16,7 +16,7 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 18.210.177.46,First,"Nest Labs, Inc.",US,None,None,"AMAZON-AES, US",US,czfe59-front01-iad01.transport.home.nest.com,czfe59-front01-iad01.transport.home.nest.com,None,None,21,6660,11,5349,10,1311
 18.210.25.50,First,"Nest Labs, Inc.",US,None,None,"AMAZON-AES, US",US,czfe45-front01-iad01.transport.home.nest.com,czfe45-front01-iad01.transport.home.nest.com,None,None,97,28876,44,16890,53,11986
 18.210.94.215,First,"Nest Labs, Inc.",US,None,None,"AMAZON-AES, US",US,czfe04-front01-iad01.transport.home.nest.com,czfe04-front01-iad01.transport.home.nest.com,None,None,66,23027,31,15098,35,7929
-216.239.35.0,Time,None,None,None,None,"GOOGLE, US",US,time.nest.com,time.nest.com,None,None,70,6300,35,3150,35,3150
+216.239.35.0,Support,None,None,None,None,"GOOGLE, US",US,time.nest.com,time.nest.com,None,None,70,6300,35,3150,35,3150
 3.83.229.35,First,"Nest Labs, Inc.",US,None,None,"AMAZON-AES, US",US,czfe121-front01-iad01.transport.home.nest.com,czfe121-front01-iad01.transport.home.nest.com,None,None,60,21201,27,14631,33,6570
 34.231.209.135,First,"Nest Labs, Inc.",US,None,None,"AMAZON-AES, US",US,czfe24-front01-iad01.transport.home.nest.com,czfe24-front01-iad01.transport.home.nest.com,None,None,213,49907,100,27208,113,22699
 34.237.131.21,First,"Nest Labs, Inc.",US,None,None,"AMAZON-AES, US",US,czfe93-front01-iad01.transport.home.nest.com,czfe93-front01-iad01.transport.home.nest.com,None,None,109,35763,44,16787,65,18976

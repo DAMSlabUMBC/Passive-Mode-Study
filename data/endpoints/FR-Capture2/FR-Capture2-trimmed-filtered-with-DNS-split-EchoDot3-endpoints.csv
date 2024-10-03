@@ -271,15 +271,14 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 192.168.231.176,Local (Sony TV),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,2874,1063668,2182,1006840,692,56828
 192.168.231.200,Local (TP-Link Bulb),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,14951,6453986,10280,6166381,4671,287605
 192.168.231.237,Local (Hue Bridge),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,37639,7763094,19647,6258896,17992,1504198
-224.0.0.251,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,962,115864,0,0,962,115864
-239.255.255.250,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,417,57819,0,0,417,57819
-255.255.255.255,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,5820,414207,0,0,5820,414207
-ff02::fb,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,235,23265,0,0,235,23265
+224.0.0.251,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,962,115864,0,0,962,115864
+239.255.255.250,Local Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,417,57819,0,0,417,57819
+255.255.255.255,Local Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,5820,414207,0,0,5820,414207
+ff02::fb,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,235,23265,0,0,235,23265
 16.171.124.25,Support,None,None,None,None,"AMAZON-02, US",US,None,None,None,None,7360,607200,3680,242880,3680,364320
-8.8.8.8,Support,None,None,None,None,"GOOGLE, US",US,None,None,None,None,72,9279,36,6052,36,3227
-18.234.8.250,Time,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
-3.234.38.31,Time,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
-34.239.12.200,Time,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
+18.234.8.250,Support,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
+3.234.38.31,Support,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
+34.239.12.200,Support,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
 44.215.129.154,First,None,None,None,None,"AMAZON-AES, US",US,softwareupdates.amazon.com,softwareupdates.amazon.com,None,None,26,8404,12,5968,14,2436
 44.215.134.182,First,None,None,None,None,"AMAZON-AES, US",US,softwareupdates.amazon.com,softwareupdates.amazon.com,None,None,53,16842,23,11870,30,4972
 44.215.115.210,First,None,None,None,None,"AMAZON-AES, US",US,todo-ta-g7g.amazon.com,todo-ta-g7g.amazon.com,None,None,25,7806,11,5827,14,1979

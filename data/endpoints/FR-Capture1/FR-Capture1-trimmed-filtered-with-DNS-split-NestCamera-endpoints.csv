@@ -1,11 +1,11 @@
 IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
 104.199.109.192,First,Dropcam,US,None,None,"GOOGLE-CLOUD-PLATFORM, US",US,oculus346-eu1.dropcam.com,oculus346-eu1.dropcam.com,None,None,172,42312,78,17373,94,24939
-129.151.225.244,Time,None,None,None,None,"ORACLE-BMC-31898, US",US,pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
-129.250.35.251,Time,None,None,None,None,"NTT-LTD-2914, US",US,pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
+129.151.225.244,Support,None,None,None,None,"ORACLE-BMC-31898, US",US,pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
+129.250.35.251,Support,None,None,None,None,"NTT-LTD-2914, US",US,pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
 130.211.135.74,First,Dropcam,US,None,None,"GOOGLE-CLOUD-PLATFORM, US",US,oculus10798-us1.dropcam.com,oculus10798-us1.dropcam.com,None,None,203,68623,92,19811,111,48812
-146.59.35.38,Time,None,None,None,None,"OVH, FR",FR,pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
-162.159.200.123,Time,None,None,None,None,"CLOUDFLARENET, US",US,pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
-194.57.169.1,Time,None,None,None,None,"FR-RENATER Reseau National de telecommunications pour la Technologie, FR",FR,pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
-195.154.226.102,Time,None,None,None,None,"Online SAS, FR",FR,pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
+146.59.35.38,Support,None,None,None,None,"OVH, FR",FR,pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
+162.159.200.123,Support,None,None,None,None,"CLOUDFLARENET, US",US,pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
+194.57.169.1,Support,None,None,None,None,"FR-RENATER Reseau National de telecommunications pour la Technologie, FR",FR,pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
+195.154.226.102,Support,None,None,None,None,"Online SAS, FR",FR,pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
 35.195.102.202,First,Dropcam,US,None,None,"GOOGLE-CLOUD-PLATFORM, US",US,oculus395-eu1.dropcam.com,oculus395-eu1.dropcam.com,None,None,65247,6748121,32637,2728414,32610,4019707
-5.39.80.51,Time,None,None,None,None,"OVH, FR",FR,pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
+5.39.80.51,Support,None,None,None,None,"OVH, FR",FR,pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450

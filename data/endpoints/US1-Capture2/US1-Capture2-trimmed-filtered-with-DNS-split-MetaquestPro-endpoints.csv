@@ -75,11 +75,11 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 157.240.241.1,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,scontent.xx.fbcdn.net,scontent.xx.fbcdn.net,None,None,379,348063,201,325947,178,22116
 31.13.71.7,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,scontent.xx.fbcdn.net,scontent.xx.fbcdn.net,None,None,275,239515,146,223631,129,15884
 31.13.66.19,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",IE,scontent-iad3-1.xx.fbcdn.net,scontent-iad3-1.xx.fbcdn.net,None,None,7128,11437011,3866,11103758,3262,333253
-129.134.25.123,Time,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,time.facebook.com,time.facebook.com,None,None,132,11880,66,5940,66,5940
-129.134.26.123,Time,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,time.facebook.com,time.facebook.com,None,None,186,16740,93,8370,93,8370
-129.134.27.123,Time,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,time.facebook.com,time.facebook.com,None,None,164,14760,82,7380,82,7380
-129.134.28.123,Time,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,time.facebook.com,time.facebook.com,None,None,158,14220,79,7110,79,7110
-129.134.29.123,Time,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,time.facebook.com,time.facebook.com,None,None,182,16380,91,8190,91,8190
+129.134.25.123,Support,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,time.facebook.com,time.facebook.com,None,None,132,11880,66,5940,66,5940
+129.134.26.123,Support,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,time.facebook.com,time.facebook.com,None,None,186,16740,93,8370,93,8370
+129.134.27.123,Support,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,time.facebook.com,time.facebook.com,None,None,164,14760,82,7380,82,7380
+129.134.28.123,Support,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,time.facebook.com,time.facebook.com,None,None,158,14220,79,7110,79,7110
+129.134.29.123,Support,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,time.facebook.com,time.facebook.com,None,None,182,16380,91,8190,91,8190
 157.240.229.17,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,web.facebook.com,web.facebook.com,None,None,12749,9601715,5305,3187211,7444,6414504
 157.240.24.3,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,web.facebook.com,web.facebook.com,None,None,108,91756,54,71184,54,20572
 157.240.241.17,First,"Meta Platforms, Inc.",US,None,None,"FACEBOOK, US",US,web.facebook.com,web.facebook.com,None,None,23338,17539806,10413,8656292,12925,8883514

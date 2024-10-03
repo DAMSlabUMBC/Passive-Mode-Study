@@ -51,13 +51,11 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 192.168.231.112,Local (TP-Link Plug),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,5610,2748323,4247,2688351,1363,59972
 192.168.231.192,Local (Google Speaker),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,907774,74594092,451836,36401958,455938,38192134
 192.168.231.200,Local (TP-Link Bulb),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,5494,4529688,4208,4473104,1286,56584
-224.0.0.250,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,708,61590,0,0,708,61590
-224.0.0.251,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,35601,7687861,0,0,35601,7687861
-239.255.255.251,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,711,61845,0,0,711,61845
-255.255.255.255,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,8512,651201,0,0,8512,651201
-ff02::fb,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,35621,8643016,0,0,35621,8643016
-8.8.4.4,Support,None,None,None,None,"GOOGLE, US",US,None,None,None,None,402,62376,201,46108,201,16268
-8.8.8.8,Support,None,None,None,None,"GOOGLE, US",US,None,None,None,None,24675,2441704,12337,1500539,12338,941165
+224.0.0.250,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,708,61590,0,0,708,61590
+224.0.0.251,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,35601,7687861,0,0,35601,7687861
+239.255.255.251,Local Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,711,61845,0,0,711,61845
+255.255.255.255,Local Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,8512,651201,0,0,8512,651201
+ff02::fb,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,35621,8643016,0,0,35621,8643016
 142.250.178.138,First,None,None,None,None,"GOOGLE, US",US,play.googleapis.com,play.googleapis.com,None,None,2881,924438,1383,528979,1498,395459
 142.250.179.74,First,None,None,None,None,"GOOGLE, US",US,play.googleapis.com,play.googleapis.com,None,None,4490,1525735,2150,814507,2340,711228
 142.250.74.234,First,None,None,None,None,"GOOGLE, US",US,play.googleapis.com,play.googleapis.com,None,None,2152,708817,1026,411023,1126,297794
@@ -73,11 +71,11 @@ ff02::fb,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,35621
 142.250.75.251,First,None,None,None,None,"GOOGLE, US",US,storage.googleapis.com,storage.googleapis.com,None,None,893,2262151,627,2241862,266,20289
 172.217.20.187,First,None,None,None,None,"GOOGLE, US",US,storage.googleapis.com,storage.googleapis.com,None,None,110,122678,46,110389,64,12289
 172.217.20.219,First,None,None,None,None,"GOOGLE, US",US,storage.googleapis.com,storage.googleapis.com,None,None,1098,2275601,716,2247707,382,27894
-216.239.35.0,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,148,13320,74,6660,74,6660
-216.239.35.12,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,142,12780,71,6390,71,6390
-216.239.35.4,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,146,13140,73,6570,73,6570
-216.239.35.8,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,230,20700,115,10350,115,10350
-142.250.74.238,Time,None,None,None,None,"GOOGLE, US",US,tools.google.com,tools.google.com,None,None,522,208656,231,164399,291,44257
+216.239.35.0,Support,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,148,13320,74,6660,74,6660
+216.239.35.12,Support,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,142,12780,71,6390,71,6390
+216.239.35.4,Support,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,146,13140,73,6570,73,6570
+216.239.35.8,Support,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,230,20700,115,10350,115,10350
+142.250.74.238,Support,None,None,None,None,"GOOGLE, US",US,tools.google.com,tools.google.com,None,None,522,208656,231,164399,291,44257
 216.58.215.42,First,None,None,None,None,"GOOGLE, US",US,www.googleapis.com,www.googleapis.com,None,None,945,369376,459,250614,486,118762
 216.58.213.67,First,None,None,None,None,"GOOGLE, US",US,www.gstatic.com,www.gstatic.com,None,None,251,226655,127,207041,124,19614
 216.58.215.35,First,None,None,None,None,"GOOGLE, US",US,www.gstatic.com,www.gstatic.com,None,None,390,441115,193,408026,197,33089

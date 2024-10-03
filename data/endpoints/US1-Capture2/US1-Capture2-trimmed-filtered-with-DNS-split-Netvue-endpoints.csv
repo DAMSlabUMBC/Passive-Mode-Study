@@ -1,6 +1,6 @@
 IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
-34.194.40.211,Time,None,None,None,None,"AMAZON-AES, US",US,0.ntp.nvts.co,0.ntp.nvts.co,None,None,576,34376,260,16805,316,17571
-52.200.232.52,Time,None,None,None,None,"AMAZON-AES, US",US,0.ntp.nvts.co,0.ntp.nvts.co,None,None,499,29999,245,15850,254,14149
+34.194.40.211,Support,None,None,None,None,"AMAZON-AES, US",US,0.ntp.nvts.co,0.ntp.nvts.co,None,None,576,34376,260,16805,316,17571
+52.200.232.52,Support,None,None,None,None,"AMAZON-AES, US",US,0.ntp.nvts.co,0.ntp.nvts.co,None,None,499,29999,245,15850,254,14149
 52.204.175.39,Support,None,None,None,None,"AMAZON-AES, US",US,afnmeajrvu9n4-ats.iot.us-east-1.amazonaws.com,afnmeajrvu9n4-ats.iot.us-east-1.amazonaws.com,None,None,35,9671,16,6670,19,3001
 52.55.101.58,Support,None,None,None,None,"AMAZON-AES, US",US,afnmeajrvu9n4-ats.iot.us-east-1.amazonaws.com,afnmeajrvu9n4-ats.iot.us-east-1.amazonaws.com,None,None,1217,116144,417,48438,800,67706
 52.73.32.30,Support,None,None,None,None,"AMAZON-AES, US",US,afnmeajrvu9n4-ats.iot.us-east-1.amazonaws.com,afnmeajrvu9n4-ats.iot.us-east-1.amazonaws.com,None,None,5350,476838,1809,184968,3541,291870
@@ -51,16 +51,13 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 34.198.247.42,First,None,None,None,None,"AMAZON-AES, US",US,localweb.nvts.co,localweb.nvts.co,None,None,523,175110,215,139844,308,35266
 50.17.222.81,First,None,None,None,None,"AMAZON-AES, US",US,localweb.nvts.co,localweb.nvts.co,None,None,96,31896,40,25484,56,6412
 192.168.1.106,Local (Hue Bridge),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,90,22008,60,19506,30,2502
-239.255.255.250,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,5,895,0,0,5,895
+239.255.255.250,Local Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,5,895,0,0,5,895
 118.190.148.38,Support,None,None,None,None,"ALIBABA-CN-NET Hangzhou Alibaba Advertising Co.,Ltd., CN",CN,None,None,None,None,10,3790,5,3100,5,690
 2406:da00:ff00::36d1:6e52,Support,None,None,None,None,"AMAZON-AES, US",US,None,None,None,None,8574,922512,2914,345884,5660,576628
 52.4.145.225,Support,None,None,None,None,"AMAZON-AES, US",US,None,None,None,None,1,335,0,0,1,335
 52.6.188.235,Support,None,None,None,None,"AMAZON-AES, US",US,None,None,None,None,20234,1752686,6816,658660,13418,1094026
 52.71.148.150,Support,None,None,None,None,"AMAZON-AES, US",US,None,None,None,None,1,345,0,0,1,345
 54.223.118.211,Support,None,None,None,None,"BJ-GUANGHUAN-AP Beijing Guanghuan Xinwang Digital, CN",CN,None,None,None,None,8,3032,4,2480,4,552
-8.8.4.4,Support,None,None,None,None,"GOOGLE, US",US,None,None,None,None,442,40084,50,10533,392,29551
-8.8.8.8,Support,None,None,None,None,"GOOGLE, US",US,None,None,None,None,1163,142967,407,84718,756,58249
-9.9.9.9,Support,None,None,None,None,"QUAD9-AS-1, CH",CH,None,None,None,None,367,27521,0,0,367,27521
 16.182.100.16,Support,None,None,None,None,"AMAZON-02, US",US,s3.us-east-1.amazonaws.com,s3.us-east-1.amazonaws.com,None,None,42,17044,17,7499,25,9545
 16.182.101.0,Support,None,None,None,None,"AMAZON-02, US",US,s3.us-east-1.amazonaws.com,s3.us-east-1.amazonaws.com,None,None,42,17033,17,7499,25,9534
 16.182.103.216,Support,None,None,None,None,"AMAZON-02, US",US,s3.us-east-1.amazonaws.com,s3.us-east-1.amazonaws.com,None,None,42,16841,17,7499,25,9342

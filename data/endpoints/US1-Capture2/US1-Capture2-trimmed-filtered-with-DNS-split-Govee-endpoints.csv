@@ -12,81 +12,81 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 52.71.102.226,Support,None,None,None,None,"AMAZON-AES, US",US,aqm3wd1qlc3dy-ats.iot.us-east-1.amazonaws.com,aqm3wd1qlc3dy-ats.iot.us-east-1.amazonaws.com,None,None,1151,121162,388,51586,763,69576
 54.209.197.152,Support,None,None,None,None,"AMAZON-AES, US",US,aqm3wd1qlc3dy-ats.iot.us-east-1.amazonaws.com,aqm3wd1qlc3dy-ats.iot.us-east-1.amazonaws.com,None,None,13384,1332916,4451,546436,8933,786480
 54.165.118.63,Support,None,None,None,None,"AMAZON-AES, US",US,None,None,None,None,19656,1943382,6581,796215,13075,1147167
-203.107.6.88,Time,None,None,None,None,"ALIBABA-CN-NET Hangzhou Alibaba Advertising Co.,Ltd., CN",CN,ntp.aliyun.com,ntp.aliyun.com,None,None,198,17820,98,8820,100,9000
-100.4.216.244,Time,None,None,None,None,"UUNET, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-104.131.155.175,Time,None,None,None,None,"DIGITALOCEAN-ASN, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-104.152.220.10,Time,None,None,None,None,"CASCADEDIVIDE-DC, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-108.59.2.24,Time,None,None,None,None,"LEASEWEB-USA-WDC, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-108.61.73.243,Time,None,None,None,None,"AS-VULTR, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-131.153.171.22,Time,None,None,None,None,"SS-ASH, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-131.153.171.250,Time,None,None,None,None,"SS-ASH, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-135.134.111.122,Time,None,None,None,None,"TDS-AS, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-135.148.100.14,Time,None,None,None,None,"OVH, FR",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-137.190.2.4,Time,None,None,None,None,"WEST-NET-WEST, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-138.236.128.36,Time,None,None,None,None,"GAC, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-142.147.88.111,Time,None,None,None,None,"XTOM, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-143.198.227.207,Time,None,None,None,None,"DIGITALOCEAN-ASN, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-15.204.87.223,Time,None,None,None,None,"OVH, FR",US,pool.ntp.org,pool.ntp.org,None,None,6,540,3,270,3,270
-152.42.240.120,Time,None,None,None,None,"DIGITALOCEAN-ASN, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-152.70.159.102,Time,None,None,None,None,"ORACLE-BMC-31898, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-155.248.196.28,Time,None,None,None,None,"ORACLE-BMC-31898, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-162.159.200.1,Time,None,None,None,None,"CLOUDFLARENET, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-162.159.200.123,Time,None,None,None,None,"CLOUDFLARENET, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-167.248.62.201,Time,None,None,None,None,"ALLO-COMM, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-168.235.89.132,Time,None,None,None,None,"RAMNODE, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-173.244.254.9,Time,None,None,None,None,"NSTELCO, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-173.255.255.133,Time,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-192.155.94.72,Time,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-198.137.202.56,Time,None,None,None,None,"MOJO, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
-198.211.103.209,Time,None,None,None,None,"DIGITALOCEAN-ASN, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-198.30.92.2,Time,None,None,None,None,"OARNET-AS, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-199.68.201.234,Time,None,None,None,None,"YKWC, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-204.17.205.27,Time,None,None,None,None,"YKWC, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-204.17.205.8,Time,None,None,None,None,"YKWC, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-205.233.73.201,Time,None,None,None,None,"FLUIDSOFT-14, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
-208.113.130.146,Time,None,None,None,None,"DREAMHOST-AS, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-208.67.75.242,Time,None,None,None,None,"BADCOCK-MUL, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-209.38.132.42,Time,None,None,None,None,"DIGITALOCEAN-ASN, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
-209.51.161.238,Time,None,None,None,None,"HURRICANE, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-212.227.240.160,Time,None,None,None,None,"IONOS-AS This is the joint network for IONOS, Fasthosts, Arsys, 1&1 Mail and Media and 1&1 Telecom. Formerly known as 1&1 Internet SE., DE",DE,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-216.229.0.50,Time,None,None,None,None,"ASN7806, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
-216.229.4.66,Time,None,None,None,None,"ASN7806, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-216.31.16.12,Time,None,None,None,None,"TEAM-CYMRU, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
-216.66.48.42,Time,None,None,None,None,"HURRICANE, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
-23.131.160.7,Time,None,None,None,None,"NULLROUTE, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-23.141.40.124,Time,None,None,None,None,"CODEHOF, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-23.150.40.242,Time,None,None,None,None,"ROZINT, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
-23.157.160.168,Time,None,None,None,None,"NEPTUNE-NETWORKS, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-23.168.24.210,Time,None,None,None,None,"TRITAN, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
-44.31.46.123,Time,None,None,None,None,"AIRGAPPED, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
-45.33.53.84,Time,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-45.55.58.103,Time,None,None,None,None,"DIGITALOCEAN-ASN, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-45.56.66.53,Time,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-45.79.111.167,Time,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-45.79.51.42,Time,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-45.83.234.123,Time,None,None,None,None,"FREEDOMINTERNET, NL",NL,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-5.161.111.190,Time,None,None,None,None,"HETZNER-CLOUD2-AS, DE",DE,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-5.161.184.148,Time,None,None,None,None,"HETZNER-CLOUD2-AS, DE",DE,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-5.78.62.36,Time,None,None,None,None,"HETZNER-CLOUD3-AS, DE",DE,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
-50.218.103.254,Time,None,None,None,None,"COMCAST-7922, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-51.81.209.232,Time,None,None,None,None,"OVH, FR",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
-51.81.226.229,Time,None,None,None,None,"OVH, FR",US,pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
-64.142.54.12,Time,None,None,None,None,"SNIC, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-65.100.46.164,Time,None,None,None,None,"CENTURYLINK-US-LEGACY-QWEST, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-65.100.46.166,Time,None,None,None,None,"CENTURYLINK-US-LEGACY-QWEST, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-65.108.59.245,Time,None,None,None,None,"HETZNER-AS, DE",DE,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-66.118.229.14,Time,None,None,None,None,"LSHIY, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-66.205.249.28,Time,None,None,None,None,"INTEGRATED-NETWORK-CONCEPTS, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-69.10.223.131,Time,None,None,None,None,"MASHELL-TELECOM, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-69.10.223.133,Time,None,None,None,None,"MASHELL-TELECOM, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
-69.164.213.136,Time,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,6,540,3,270,3,270
-69.89.207.199,Time,None,None,None,None,"WIKTEL, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-69.89.207.99,Time,None,None,None,None,"WIKTEL, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-71.162.136.44,Time,None,None,None,None,"UUNET, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-72.30.35.88,Time,None,None,None,None,"YAHOO-BF1, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-72.46.61.205,Time,None,None,None,None,"ALLO-COMM, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-73.234.118.31,Time,None,None,None,None,"COMCAST-7922, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
-96.245.170.99,Time,None,None,None,None,"UUNET, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-97.107.128.165,Time,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-99.119.214.210,Time,None,None,None,None,"ATT-INTERNET4, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
-216.239.35.0,Time,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,1,90,0,0,1,90
+203.107.6.88,Support,None,None,None,None,"ALIBABA-CN-NET Hangzhou Alibaba Advertising Co.,Ltd., CN",CN,ntp.aliyun.com,ntp.aliyun.com,None,None,198,17820,98,8820,100,9000
+100.4.216.244,Support,None,None,None,None,"UUNET, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+104.131.155.175,Support,None,None,None,None,"DIGITALOCEAN-ASN, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+104.152.220.10,Support,None,None,None,None,"CASCADEDIVIDE-DC, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+108.59.2.24,Support,None,None,None,None,"LEASEWEB-USA-WDC, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+108.61.73.243,Support,None,None,None,None,"AS-VULTR, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+131.153.171.22,Support,None,None,None,None,"SS-ASH, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+131.153.171.250,Support,None,None,None,None,"SS-ASH, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+135.134.111.122,Support,None,None,None,None,"TDS-AS, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+135.148.100.14,Support,None,None,None,None,"OVH, FR",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+137.190.2.4,Support,None,None,None,None,"WEST-NET-WEST, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+138.236.128.36,Support,None,None,None,None,"GAC, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+142.147.88.111,Support,None,None,None,None,"XTOM, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+143.198.227.207,Support,None,None,None,None,"DIGITALOCEAN-ASN, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+15.204.87.223,Support,None,None,None,None,"OVH, FR",US,pool.ntp.org,pool.ntp.org,None,None,6,540,3,270,3,270
+152.42.240.120,Support,None,None,None,None,"DIGITALOCEAN-ASN, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+152.70.159.102,Support,None,None,None,None,"ORACLE-BMC-31898, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+155.248.196.28,Support,None,None,None,None,"ORACLE-BMC-31898, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+162.159.200.1,Support,None,None,None,None,"CLOUDFLARENET, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+162.159.200.123,Support,None,None,None,None,"CLOUDFLARENET, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+167.248.62.201,Support,None,None,None,None,"ALLO-COMM, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+168.235.89.132,Support,None,None,None,None,"RAMNODE, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+173.244.254.9,Support,None,None,None,None,"NSTELCO, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+173.255.255.133,Support,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+192.155.94.72,Support,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+198.137.202.56,Support,None,None,None,None,"MOJO, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
+198.211.103.209,Support,None,None,None,None,"DIGITALOCEAN-ASN, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+198.30.92.2,Support,None,None,None,None,"OARNET-AS, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+199.68.201.234,Support,None,None,None,None,"YKWC, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+204.17.205.27,Support,None,None,None,None,"YKWC, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+204.17.205.8,Support,None,None,None,None,"YKWC, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+205.233.73.201,Support,None,None,None,None,"FLUIDSOFT-14, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
+208.113.130.146,Support,None,None,None,None,"DREAMHOST-AS, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+208.67.75.242,Support,None,None,None,None,"BADCOCK-MUL, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+209.38.132.42,Support,None,None,None,None,"DIGITALOCEAN-ASN, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
+209.51.161.238,Support,None,None,None,None,"HURRICANE, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+212.227.240.160,Support,None,None,None,None,"IONOS-AS This is the joint network for IONOS, Fasthosts, Arsys, 1&1 Mail and Media and 1&1 Telecom. Formerly known as 1&1 Internet SE., DE",DE,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+216.229.0.50,Support,None,None,None,None,"ASN7806, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
+216.229.4.66,Support,None,None,None,None,"ASN7806, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+216.31.16.12,Support,None,None,None,None,"TEAM-CYMRU, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
+216.66.48.42,Support,None,None,None,None,"HURRICANE, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
+23.131.160.7,Support,None,None,None,None,"NULLROUTE, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+23.141.40.124,Support,None,None,None,None,"CODEHOF, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+23.150.40.242,Support,None,None,None,None,"ROZINT, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
+23.157.160.168,Support,None,None,None,None,"NEPTUNE-NETWORKS, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+23.168.24.210,Support,None,None,None,None,"TRITAN, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
+44.31.46.123,Support,None,None,None,None,"AIRGAPPED, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
+45.33.53.84,Support,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+45.55.58.103,Support,None,None,None,None,"DIGITALOCEAN-ASN, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+45.56.66.53,Support,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+45.79.111.167,Support,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+45.79.51.42,Support,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+45.83.234.123,Support,None,None,None,None,"FREEDOMINTERNET, NL",NL,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+5.161.111.190,Support,None,None,None,None,"HETZNER-CLOUD2-AS, DE",DE,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+5.161.184.148,Support,None,None,None,None,"HETZNER-CLOUD2-AS, DE",DE,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+5.78.62.36,Support,None,None,None,None,"HETZNER-CLOUD3-AS, DE",DE,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
+50.218.103.254,Support,None,None,None,None,"COMCAST-7922, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+51.81.209.232,Support,None,None,None,None,"OVH, FR",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
+51.81.226.229,Support,None,None,None,None,"OVH, FR",US,pool.ntp.org,pool.ntp.org,None,None,10,900,5,450,5,450
+64.142.54.12,Support,None,None,None,None,"SNIC, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+65.100.46.164,Support,None,None,None,None,"CENTURYLINK-US-LEGACY-QWEST, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+65.100.46.166,Support,None,None,None,None,"CENTURYLINK-US-LEGACY-QWEST, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+65.108.59.245,Support,None,None,None,None,"HETZNER-AS, DE",DE,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+66.118.229.14,Support,None,None,None,None,"LSHIY, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+66.205.249.28,Support,None,None,None,None,"INTEGRATED-NETWORK-CONCEPTS, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+69.10.223.131,Support,None,None,None,None,"MASHELL-TELECOM, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+69.10.223.133,Support,None,None,None,None,"MASHELL-TELECOM, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
+69.164.213.136,Support,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,6,540,3,270,3,270
+69.89.207.199,Support,None,None,None,None,"WIKTEL, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+69.89.207.99,Support,None,None,None,None,"WIKTEL, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+71.162.136.44,Support,None,None,None,None,"UUNET, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+72.30.35.88,Support,None,None,None,None,"YAHOO-BF1, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+72.46.61.205,Support,None,None,None,None,"ALLO-COMM, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+73.234.118.31,Support,None,None,None,None,"COMCAST-7922, US",US,pool.ntp.org,pool.ntp.org,None,None,4,360,2,180,2,180
+96.245.170.99,Support,None,None,None,None,"UUNET, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+97.107.128.165,Support,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+99.119.214.210,Support,None,None,None,None,"ATT-INTERNET4, US",US,pool.ntp.org,pool.ntp.org,None,None,2,180,1,90,1,90
+216.239.35.0,Support,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,1,90,0,0,1,90

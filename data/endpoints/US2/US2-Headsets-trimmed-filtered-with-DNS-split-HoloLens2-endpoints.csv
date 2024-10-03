@@ -42,10 +42,10 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 40.126.62.132,First,Microsoft Corporation,US,None,None,"MICROSOFT-CORP-MSN-AS-BLOCK, US",US,login.live.com,login.live.com,None,None,42,45266,18,32850,24,12416
 20.114.58.89,First,Microsoft,US,None,None,"MICROSOFT-CORP-MSN-AS-BLOCK, US",US,msedge.api.cdp.microsoft.com,msedge.api.cdp.microsoft.com,None,None,18,7790,8,5456,10,2334
 23.102.129.60,First,Microsoft,US,None,None,"MICROSOFT-CORP-MSN-AS-BLOCK, US",US,msedge.api.cdp.microsoft.com,msedge.api.cdp.microsoft.com,None,None,17,7736,7,5402,10,2334
-224.0.0.251,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,4293,750499,0,0,4293,750499
-224.0.0.252,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,1973,142056,0,0,1973,142056
-ff02::1:3,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,1973,181516,0,0,1973,181516
-ff02::fb,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,4294,836607,0,0,4294,836607
+224.0.0.251,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,4293,750499,0,0,4293,750499
+224.0.0.252,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,1973,142056,0,0,1973,142056
+ff02::1:3,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,1973,181516,0,0,1973,181516
+ff02::fb,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,4294,836607,0,0,4294,836607
 104.114.75.26,Support,None,None,None,None,"AKAMAI-ASN1, NL",US,None,None,None,None,20,1810,10,938,10,872
 168.61.215.74,First,None,None,None,None,"MICROSOFT-CORP-MSN-AS-BLOCK, US",US,None,None,None,None,24,2160,12,1080,12,1080
 192.229.211.108,Support,None,None,None,None,"EDGECAST, US",US,None,None,None,None,52,9112,24,5782,28,3330

@@ -342,18 +342,17 @@ IP,Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN 
 67.220.240.92,First,None,None,None,None,"AMAZON-02, US",US,msh.amazon.com,msh.amazon.com,None,None,68,27293,24,21959,44,5334
 192.168.1.106,Local (Hue Bridge),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,7924,1605138,5024,1363336,2900,241802
 192.168.1.116,Local (TP-Link Plug),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,173,111758,173,111758,0,0
-224.0.0.251,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,1800,183201,0,0,1800,183201
-239.255.255.250,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,528,78780,0,0,528,78780
-255.255.255.255,Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,348,25926,0,0,348,25926
-ff02::fb,Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,300,29695,0,0,300,29695
+224.0.0.251,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,1800,183201,0,0,1800,183201
+239.255.255.250,Local Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,528,78780,0,0,528,78780
+255.255.255.255,Local Broadcast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,348,25926,0,0,348,25926
+ff02::fb,Local Multicast,Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,300,29695,0,0,300,29695
 52.7.51.52,Support,None,None,None,None,"AMAZON-AES, US",US,None,None,None,None,5862,510988,1984,191053,3878,319935
-8.8.8.8,Support,None,None,None,None,"GOOGLE, US",US,None,None,None,None,1014,126412,507,82867,507,43545
-3.214.58.173,Time,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
-3.234.38.31,Time,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
-34.236.6.206,Time,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
-34.239.12.200,Time,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
-52.203.151.208,Time,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,6,540,3,270,3,270
-52.45.237.36,Time,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
+3.214.58.173,Support,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
+3.234.38.31,Support,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
+34.236.6.206,Support,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
+34.239.12.200,Support,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
+52.203.151.208,Support,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,6,540,3,270,3,270
+52.45.237.36,Support,None,None,None,None,"AMAZON-AES, US",US,ntp-g7g.amazon.com,ntp-g7g.amazon.com,None,None,2,180,1,90,1,90
 50.19.211.146,First,None,None,None,None,"AMAZON-AES, US",US,prod.amcs-tachyon.com,prod.amcs-tachyon.com,None,None,6218,551137,2081,208051,4137,343086
 52.1.112.15,First,None,None,None,None,"AMAZON-AES, US",US,prod.amcs-tachyon.com,prod.amcs-tachyon.com,None,None,2875,258683,982,100738,1893,157945
 54.145.27.211,First,None,None,None,None,"AMAZON-AES, US",US,prod.amcs-tachyon.com,prod.amcs-tachyon.com,None,None,416,44546,142,20185,274,24361
