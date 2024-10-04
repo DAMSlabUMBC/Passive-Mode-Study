@@ -306,32 +306,90 @@ def _get_positions_and_total_widths(df, labels, side, aspect):
 
     return widths, topEdge
 
-def generate_sankey():
+def generate_endpoint_dist_sankey():
 
-    url = "results/Lan_fin.csv"
+    url = "sankey_endpoint_dist.csv"
     data_field = pd.read_csv(url, sep=",") # reads the csv
 
     # device name in csv
-    device = "DeviceName"
+    device = "Device"
     # location in csv
-    location = "EndpointType"
+    location = "Output"
     # total packet to that destination
-    packets = "TotalBytes"
+    packets = "Packets"
 
     # Create Sankey diagram 
     sankey(
         left = data_field[device], right=data_field[location], 
         leftWeight = data_field[packets], rightWeight=data_field[packets], 
-        aspect=9, fontsize=8
+        aspect=6, fontsize=8
     )
 
     fig = plt.gcf() # Get current figure
 
-    fig.set_size_inches(5, 4.75) # Set size in inches
+    fig.set_size_inches(5, 4.5) # Set size in inches
 
     fig.set_facecolor("w") # Set the color of the background to white
 
-    fig.savefig("LanDistribution" + ".png", bbox_inches="tight", dpi=150) # Save the figure
+    fig.savefig("EndpointTypeDistribution" + ".svg", bbox_inches="tight", format="svg", dpi=300) # Save the figure
+
+
+def generate_protocol_dist_sankey():
+
+    url = "sankey_proto_dist.csv"
+    data_field = pd.read_csv(url, sep=",") # reads the csv
+
+    # device name in csv
+    device = "ProtoType"
+    # location in csv
+    location = "EndpointType"
+    # total packet to that destination
+    packets = "Pct"
+
+    # Create Sankey diagram 
+    sankey(
+        left = data_field[device], right=data_field[location], 
+        leftWeight = data_field[packets], rightWeight=data_field[packets], 
+        aspect=25, fontsize=8
+    )
+
+    fig = plt.gcf() # Get current figure
+
+    fig.set_size_inches(5, 1.5) # Set size in inches
+
+    fig.set_facecolor("w") # Set the color of the background to white
+
+    fig.savefig("ProtocolTypeDistribution" + ".svg", bbox_inches="tight", format="svg", dpi=300) # Save the figure
+
+
+def generate_local_dist_sankey():
+
+    url = "sankey_local_endpoint_dist.csv"
+    data_field = pd.read_csv(url, sep=",") # reads the csv
+
+    # device name in csv
+    device = "SourceDevice"
+    # location in csv
+    location = "TargetDevice"
+    # total packet to that destination
+    packets = "PacketsToTargetPct"
+
+    # Create Sankey diagram 
+    sankey(
+        left = data_field[device], right=data_field[location], 
+        leftWeight = data_field[packets], rightWeight=data_field[packets], 
+        aspect=20, fontsize=8
+    )
+
+    fig = plt.gcf() # Get current figure
+
+    fig.set_size_inches(5, 4) # Set size in inches
+
+    fig.set_facecolor("w") # Set the color of the background to white
+
+    fig.savefig("LocalTrafficDistribution" + ".svg", bbox_inches="tight", format="svg", dpi=300) # Save the figure
 
 if __name__ == "__main__":
-   generate_sankey()
+   generate_endpoint_dist_sankey()
+   generate_protocol_dist_sankey()
+   generate_local_dist_sankey()
