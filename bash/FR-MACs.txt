@@ -1,0 +1,14 @@
+PhilipsBridge,EC:B5:FA:80:80:F4
+TPLink,1C:3B:F3:8D:29:4A
+TP2ndLink,1C:3B:F3:8D:26:DA
+EchoDot3,FC:49:2D:34:98:28
+NestMini,20:DF:B9:3B:00:90
+NestThermostat,64:16:66:BE:44:9C
+GoogleHome,A4:77:33:DF:C2:4D
+EchoShow5,40:A2:DB:2C:8A:68
+NestCamera,64:16:66:4A:65:71
+TPLinkLight,50:C7:BF:5E:A8:48
+MaxcioSmartStrip,F4:CF:A2:0C:41:F6
+SonyTV,64:FF:0A:88:AF:4A
+DLink,B0:C5:54:4A:30:B0
+Maxcio2ndSmartStrip,F4:CF:A2:0C:40:1C

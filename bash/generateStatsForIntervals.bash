@@ -27,10 +27,10 @@ generate_stats_for_file() {
     wan_out_file=$(filename $pcap_file | sed "s/.pcap/-WAN-stats.csv/")
 
     # By default don't include router traffic in these metrics
-    global_filter="!(ip && (ip.addr == 192.168.1.1 || ip.addr == 192.168.3.1 || ip.addr == 192.168.231.1 || ip.addr == 192.168.1.100))"
+    global_filter="!(ip && (ip.addr == 192.168.1.1 || ip.addr == 192.168.3.1 || ip.addr == 192.168.231.1))"
 
-    lan_filter="(eth.dst.ig == 1 || ((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16 || ipv6.dst == ff00::/8 || ipv6.dst == fe80::/10)))"
-    wan_filter="(eth.dst.ig == 0 && !((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16 || ipv6.dst == ff00::/8 || ipv6.dst == fe80::/10)))"
+    lan_filter="(eth.dst.ig == 1 || ((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16 || ipv6.src == 2620:0:5300::/44 || ipv6.src == fdc4:22e1:d500::/32) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16 || ipv6.dst == ff00::/8 || ipv6.dst == fe80::/10 ||  ipv6.dst == 2620:0:5300::/44 || ipv6.dst == fdc4:22e1:d500::/32)))"
+    wan_filter="(eth.dst.ig == 0 && !((ip.src == 10.0.0.0/8 || ip.src == 172.16.0.0/12 || ip.src == 192.168.0.0/16 || ipv6.src == 2620:0:5300::/44 || ipv6.src == fdc4:22e1:d500::/32) && (ip.dst == 10.0.0.0/8 || ip.dst == 172.16.0.0/12 || ip.dst == 192.168.0.0/16 || ipv6.dst == ff00::/8 || ipv6.dst == fe80::/10 ||  ipv6.dst == 2620:0:5300::/44 || ipv6.dst == fdc4:22e1:d500::/32)))"
 
     # Use tshark to parse the statistics
     tshark -q -r $pcap_file -z io,stat,$interval_size,"${global_filter}","eth.src == $mac && ${global_filter}","eth.dst == $mac && ${global_filter}" | grep "<>" > "stats.tmp"

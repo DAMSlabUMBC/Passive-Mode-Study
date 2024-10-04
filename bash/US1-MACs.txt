@@ -1,0 +1,10 @@
+PhillipsBridge,EC:B5:FA:99:AC:15
+TPLink,AC:84:C6:20:FE:4B
+EchoDot5,44:3D:54:BE:12:3C
+Govee,60:74:F4:1B:24:16
+Litokam,90:31:4B:71:B2:7B
+Netvue,90:31:4B:71:8E:B6
+MetaquestPro,80:F3:EF:FA:70:AF
+AmazonLight,64:B7:08:A9:2B:20
+DreamGlassAir,C0:84:7D:2E:9C:86
+GoogleNestMini,D4:F5:47:82:0E:C6
