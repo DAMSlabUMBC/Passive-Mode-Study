@@ -1,6 +1,5 @@
 ﻿Device,Output,Packets
 Roborock S7 (US2),Third Party,0.021146826
-Roborock S7 (US2),Support Party,0
 Roborock S7 (US2),First Party,0.978853174
 Metaquest 2 (US2),Third Party,0.00094665
 Metaquest 2 (US2),Support Party,0.003130507
@@ -8,75 +7,51 @@ Metaquest 2 (US2),First Party,0.995922843
 Metaquest 1 (US2),Third Party,0.000106272
 Metaquest 1 (US2),Support Party,0.000217086
 Metaquest 1 (US2),First Party,0.999676642
-MagicLeap (US2),Third Party,0
 MagicLeap (US2),Support Party,0.16146789
 MagicLeap (US2),First Party,0.83853211
-HoloLens 2 (US2),Third Party,0
 HoloLens 2 (US2),Support Party,0.22614954
 HoloLens 2 (US2),First Party,0.77385046
 DreamGlass Air (US1),Third Party,0.010205847
 DreamGlass Air (US1),Support Party,0.989794153
-DreamGlass Air (US1),First Party,0
-Metaquest Pro (US1),Third Party,0
 Metaquest Pro (US1),Support Party,0.001587648
 Metaquest Pro (US1),First Party,0.998412352
 Nest Mini (US1),Third Party,0.020222611
 Nest Mini (US1),Support Party,4.47E-05
 Nest Mini (US1),First Party,0.979732689
-Amazon Light (US1),Third Party,0
 Amazon Light (US1),Support Party,0.494468742
 Amazon Light (US1),First Party,0.505531258
-TP-Link Plug (US1),Third Party,0
 TP-Link Plug (US1),Support Party,0.586320191
 TP-Link Plug (US1),First Party,0.413679809
-Hue Bridge (US1),Third Party,0
 Hue Bridge (US1),Support Party,0.022751945
 Hue Bridge (US1),First Party,0.977248055
-Netvue Camera (US1),Third Party,0
 Netvue Camera (US1),Support Party,0.86747206
 Netvue Camera (US1),First Party,0.13252794
-Litokam Camera (US1),Third Party,0
 Litokam Camera (US1),Support Party,1
-Litokam Camera (US1),First Party,0
-Govee Kettle (US1),Third Party,0
 Govee Kettle (US1),Support Party,0.956557444
 Govee Kettle (US1),First Party,0.043442556
-Echo Dot 5 (US1),Third Party,0
 Echo Dot 5 (US1),Support Party,0.066217964
 Echo Dot 5 (US1),First Party,0.933782036
-Hue Bridge (FR),Third Party,0
 Hue Bridge (FR),Support Party,0.01595011
 Hue Bridge (FR),First Party,0.98404989
-D-Link Camera (FR),Third Party,0
-D-Link Camera (FR),Support Party,0
 D-Link Camera (FR),First Party,1
-TP-Link Light (FR),Third Party,0
 TP-Link Light (FR),Support Party,0.028831329
 TP-Link Light (FR),First Party,0.971168671
-TP-Link Plug (FR),Third Party,0
 TP-Link Plug (FR),Support Party,1
-TP-Link Plug (FR),First Party,0
 Sony TV (FR),Third Party,0.041435086
 Sony TV (FR),Support Party,0.948946055
 Sony TV (FR),First Party,0.009618859
-Nest Thermostat (FR),Third Party,0
 Nest Thermostat (FR),Support Party,0.003015898
 Nest Thermostat (FR),First Party,0.996984102
 Nest Mini (FR),Third Party,0.191838582
 Nest Mini (FR),Support Party,0.003251499
 Nest Mini (FR),First Party,0.804909918
-Nest Camera (FR),Third Party,0
 Nest Camera (FR),Support Party,0.005119613
 Nest Camera (FR),First Party,0.994880387
-Maxcio Power Strip (FR),Third Party,0
 Maxcio Power Strip (FR),Support Party,1
-Maxcio Power Strip (FR),First Party,0
 Google Speaker (FR),Third Party,0.179885304
 Google Speaker (FR),Support Party,0.003231839
 Google Speaker (FR),First Party,0.816882857
-Echo Show 5 (FR),Third Party,0
 Echo Show 5 (FR),Support Party,0.102477496
 Echo Show 5 (FR),First Party,0.897522504
-Echo Dot 3 (FR),Third Party,0
 Echo Dot 3 (FR),Support Party,0.049505078
 Echo Dot 3 (FR),First Party,0.950494922
