@@ -1,7 +1,0 @@
-IP, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
-fe80::66ff:aff:fe88:af4a,None,None,None,None,23078,5993467,23078,5993467,0,0
-ff02::fb,None,None,None,None,23078,5993467,0,0,23078,5993467
-fdc4:22e1:d5d::1,None,None,None,None,2468,688300,1234,563287,1234,125013
-fdc4:22e1:d5d:0:3545:ee40:6984:507e,None,None,None,None,836,234513,418,42534,418,191979
-fdc4:22e1:d5d:0:35d0:b757:86d6:c0ec,None,None,None,None,832,232370,416,42071,416,190299
-fdc4:22e1:d5d:0:57c:d141:6ee2:3389,None,None,None,None,800,221417,400,40408,400,181009

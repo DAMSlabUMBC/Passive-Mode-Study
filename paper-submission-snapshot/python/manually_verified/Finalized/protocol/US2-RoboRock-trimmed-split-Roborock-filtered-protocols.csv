@@ -1,4 +1,0 @@
-MAC,Layer 3,Layer 4,Layer 5,Layer 7,
-B0:4A:39:24:BB:A6,ip,tcp,tls,58866,Integration with home assistants
-,,udp,,secure-mqtt,
-,,,,https,

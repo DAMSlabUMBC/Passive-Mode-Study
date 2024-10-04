@@ -1,4 +1,0 @@
-MAC,Layer 3,Layer 4,Layer 5,Layer 7,
-60:74:F4:1B:24:16,ip,tcp,tls,http,Update checks and gateway configs
-,,udp,,ntp,
-,,,,secure-mqtt,
