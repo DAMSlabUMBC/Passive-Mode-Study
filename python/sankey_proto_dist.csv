@@ -1,9 +1,9 @@
 ProtoType,EndpointType,Pct
-Encrypted,Third Party,0.047467866
-Encrypted,Support Party,0.284378647
-Encrypted,First Party,0.668153487
-Unencrypted,Third Party,0.077081599
-Unencrypted,Support Party,0.569023684
-Unencrypted,First Party,0.353894717
-Management,Support Party,0.877910962
-Management,First Party,0.122089038
+Encrypted,Third Party,0.012554965
+Encrypted,Support Party,0.068233457
+Encrypted,First Party,0.919211578
+Unencrypted,Third Party,0.006948478
+Unencrypted,Support Party,0.107878794
+Unencrypted,First Party,0.885172728
+Management,Support Party,0.924479123
+Management,First Party,0.075520831

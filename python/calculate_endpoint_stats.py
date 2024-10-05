@@ -135,6 +135,10 @@ def main(argv):
         local_traffic_categorization_dict[device_name] = local_traffic_dict
         protocol_distribution_per_device_dict[device_name] = protocol_distribtuion_dict
 
+    # Create output dir if it doesn't exist
+    if not os.path.isdir("results"):
+        os.makedirs("results")
+
     # Now we need to calculate stats and output
     # 1: Distribution of device traffic to First/Support/Third/Local parties
     out_path = os.path.join("results", "endpoint_type_distribution.csv")
@@ -446,10 +450,17 @@ def read_endpoint_data(endpoint_files):
                 type = row[1]
                 packet_count = row[12]
                 byte_count = row[13]
-                tx_packet_count = row[14]
-                tx_byte_count = row[15]
-                rx_packet_count = row[16]
-                rx_byte_count = row[17]
+
+                # It is important to note that the endpoint files maps 
+                # Tx and Rx packets from the perspective of the endpoint in question
+                # Not this device.
+                 
+                # Therefore endpoints showing Tx means our device Rx'ed the traffic and
+                # vise versa 
+                rx_packet_count = row[14]
+                rx_byte_count = row[15]
+                tx_packet_count = row[16]
+                tx_byte_count = row[17]
 
                 # There shouldn't be more than one row per endpoint, but we make this resilient just in case
                 if endpoint_ip not in ret_dict:
