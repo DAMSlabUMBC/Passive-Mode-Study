@@ -332,6 +332,8 @@ def generate_endpoint_dist_sankey():
     fig.set_facecolor("w") # Set the color of the background to white
 
     fig.savefig("EndpointTypeDistribution" + ".svg", bbox_inches="tight", format="svg", dpi=300) # Save the figure
+    
+    plt.clf()
 
 
 def generate_protocol_dist_sankey():
@@ -361,6 +363,7 @@ def generate_protocol_dist_sankey():
 
     fig.savefig("ProtocolTypeDistribution" + ".svg", bbox_inches="tight", format="svg", dpi=300) # Save the figure
 
+    plt.clf()
 
 def generate_local_dist_sankey():
 
@@ -388,6 +391,8 @@ def generate_local_dist_sankey():
     fig.set_facecolor("w") # Set the color of the background to white
 
     fig.savefig("LocalTrafficDistribution" + ".svg", bbox_inches="tight", format="svg", dpi=300) # Save the figure
+    
+    plt.clf()
 
 if __name__ == "__main__":
    generate_endpoint_dist_sankey()
