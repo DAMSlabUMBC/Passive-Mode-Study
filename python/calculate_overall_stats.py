@@ -147,6 +147,10 @@ def main(argv):
         line_to_write += f"{device_dict['LanPacketAvg']},{device_dict['LanPacketCoV']},{device_dict['LanByteAvg']},{device_dict['LanByteCoV']},{device_dict['LanTxPacketAvg']},{device_dict['LanTxPacketCoV']},{device_dict['LanTxByteAvg']},{device_dict['LanTxByteCoV']},{device_dict['LanRxPacketAvg']},{device_dict['LanRxPacketCoV']},{device_dict['LanRxByteAvg']},{device_dict['LanRxByteCoV']},"
         line_to_write += f"{device_dict['WanPacketAvg']},{device_dict['WanPacketCoV']},{device_dict['WanByteAvg']},{device_dict['WanByteCoV']},{device_dict['WanTxPacketAvg']},{device_dict['WanTxPacketCoV']},{device_dict['WanTxByteAvg']},{device_dict['WanTxByteCoV']},{device_dict['WanRxPacketAvg']},{device_dict['WanRxPacketCoV']},{device_dict['WanRxByteAvg']},{device_dict['WanRxByteCoV']}\n"
         lines_to_write.append(line_to_write)
+        
+    # Create output dir if it doesn't exist
+    if not os.path.isdir("results"):
+        os.makedirs("results")
 
     outfile_name = f"overall-stats.csv"
     outfile_location = os.path.join("results", outfile_name)
