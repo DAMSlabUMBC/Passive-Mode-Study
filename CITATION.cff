@@ -1,0 +1,45 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Smart Home IoT Passive Mode Analysis
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - family-names: Badolato
+    given-names: Christian
+    email: cbad1@umbc.edu
+    affiliation: 'University of Maryland, Baltimore County'
+    orcid: 'https://orcid.org/0000-0003-2684-4562'
+  - given-names: Kaur
+    family-names: Kullman
+    orcid: 'https://orcid.org/0000-0001-9480-0583'
+    email: kak@umbc.edu
+    affiliation: 'University of Maryland, Baltimore County'
+  - given-names: Nikolaos
+    family-names: Papadakis
+    orcid: 'https://orcid.org/0000-0003-2379-7158'
+    affiliation: Télécom SudParis
+    email: nikolaos.papadakis@telecom-sudparis.eu
+  - given-names: Manav
+    family-names: Bhatt
+    affiliation: 'University of Maryland, Baltimore County'
+    email: manavb1@umbc.edu
+  - given-names: Georgios
+    family-names: Bouloukakis
+    orcid: 'https://orcid.org/0000-0003-0109-9527'
+    affiliation: Télécom SudParis
+    email: georgios.bouloukakis@telecom-sudparis.eu
+  - given-names: Don
+    family-names: Engel
+    orcid: 'https://orcid.org/0000-0003-2838-0140'
+    affiliation: 'University of Maryland, Baltimore County'
+    email: donengel@umbc.edu
+  - given-names: Roberto
+    family-names: Yus
+    orcid: 'https://orcid.org/0000-0002-9311-954X'
+    email: ryus@umbc.edu
+    affiliation: 'University of Maryland, Baltimore County'
+repository-code: 'https://github.com/DAMSlabUMBC/Passive-Mode-Study'
