@@ -54,7 +54,7 @@ Several helper files are available in bash/helpers. While these files are primar
 * The splitting helper file takes the PCAP to split and a file containing a mapping of names to MACS as in `processPcap.bash`
 
 ## Extracting Raw Traffic Volume
-TODO
+TODO - outputs to output_stats
 
 An example execution of this script on the original passive mode dataset can be performed with the following command example command in the previous section has been executed. All other capture events may be processed in the same way.
 
@@ -63,7 +63,7 @@ An example execution of this script on the original passive mode dataset can be 
 
 
 ## Extracting Traffic Volume Statistics
-TODO
+TODO - outputs to overall_stats
 
 
 An example execution of this script on the original passive mode dataset can be performed with the following command example command in the previous section has been executed. All other capture events may be processed in the same way.
@@ -72,12 +72,35 @@ An example execution of this script on the original passive mode dataset can be 
         python3 calculate_overall_stats.py ../bash/output_stats
 
 ## Extracting Protocol Statistics
-TODO
+TODO - Outputs to protocol_stats
 
 
-An example execution of this script on the original passive mode dataset can be performed with the following command example command in the previous section has been executed. All other capture events may be processed in the same way.
+An example execution of this script on the original passive mode dataset can be performed with the following command example command in the previous section has been executed. All other capture events may be processed in the same way. 
+
+**Note:** the `parse_protocols_cfg_example.csv` configuration file provided must be updated to include the path to the user's home directory in place of `<path_to_home>`.
+
+    > From the python directory
+        python3 parse_protocols.py cfg_templates/examples_for_README/parse_protocol_cfg_example.csv
+
+## Calculating Protocol Types and Distributions
+TODO - Outputs to same dir as files
 
 
+An example execution of this script on the original passive mode dataset can be performed with the following command example command in the previous section has been executed. All other capture events may be processed in the same way. 
+
+    > From the python directory
+        python3 calculate_protocol_stats.py protocol_stats/
+
+## Extracting Endpoint Statistics
+TODO - Outputs to endpoint_stats
+
+
+An example execution of this script on the original passive mode dataset can be performed with the following command example command in the previous section has been executed. All other capture events may be processed in the same way. 
+
+**Note:** the `parse_endpoints_cfg_example.csv` configuration file provided must be updated to include the path to the user's home directory in place of `<path_to_home>`.
+
+    > From the python directory
+        python3 parse_endpoints.py cfg_templates/examples_for_README/parse_endpoints_cfg_example.csv
 
 
 ## Contributing to the Datasets
