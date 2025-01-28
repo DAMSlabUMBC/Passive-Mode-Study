@@ -45,11 +45,39 @@ This script creates PCAP files for each filtered with and without DNS for every 
 
 An example execution of this script on the original passive mode dataset can be performed with the following command. This command only processes the 2nd network capture event at US1. All other capture events may be processed in the same way.
 
-    ./processPcap.bash ../../Percom116Dataset/US1/US1-Capture2/unfiltered/US1-Capture2.pcap MAC_files_from_paper/US1-MACs.txt ../../Workspace
+    > From the bash directory
+        ./processPcap.bash ../../Percom116Dataset/US1/US1-Capture2/unfiltered/US1-Capture2.pcap MAC_files_from_paper/US1-MACs.txt ../../Workspace
 
 ### Helper Files
 Several helper files are available in bash/helpers. While these files are primarily used by `processPcap.bash` to assist with the filtering, they may be run manually on PCAP files if desired. 
 * Filtering helper files take the PCAP to filter as a parameter and outputs a filtered PCAP to the same directory as the originating PCAP
 * The splitting helper file takes the PCAP to split and a file containing a mapping of names to MACS as in `processPcap.bash`
+
+## Extracting Raw Traffic Volume
+TODO
+
+An example execution of this script on the original passive mode dataset can be performed with the following command example command in the previous section has been executed. All other capture events may be processed in the same way.
+
+    > From the bash directory
+        ./generateStatsForIntervals.bash ../../Workspace/filtered/no-DNS/per-device MAC_files_from_paper/US1-MACs.txt 3600 "(US1)"
+
+
+## Extracting Traffic Volume Statistics
+TODO
+
+
+An example execution of this script on the original passive mode dataset can be performed with the following command example command in the previous section has been executed. All other capture events may be processed in the same way.
+
+    > From the python directory
+        python3 calculate_overall_stats.py ../bash/output_stats
+
+## Extracting Protocol Statistics
+TODO
+
+
+An example execution of this script on the original passive mode dataset can be performed with the following command example command in the previous section has been executed. All other capture events may be processed in the same way.
+
+
+
 
 ## Contributing to the Datasets
