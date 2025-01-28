@@ -1,0 +1,3 @@
+MyCamera,AA:BB:CC:00:00:FF
+SmartKettle,AF:ED:11:12:34
+VoiceAssistant,11:22:33:44:55:66
