@@ -15,7 +15,7 @@ After creating and activating the virtual environment, install the dependencies 
 ![Workflow diagram](Workflow.png)
 
 ## Datasets
-A list of datasets is given in the [Dataset File](datasets.csv), currently this contains a single dataset used within the paper _Your Smart Home Exchanged 3M Messages: Defining and Analyzing Smart Device Passive Mode_. If you have a dataset you wish to add to this project, please follow the instructions in [Contributing to the Datasets](#contributing).
+A list of datasets is given in the [Dataset File](datasets.csv), currently this contains a single dataset used within the paper _Your Smart Home Exchanged 3M Messages: Defining and Analyzing Smart Device Passive Mode_. If you have a dataset you wish to add to this project, please follow the instructions in [Contributing to the Datasets](#contributing-to-the-datasets).
 
 ## Example Guide Setup
 For each section below, example commands are provided for running with the dataset from _Your Smart Home Exchanged 3M Messages: Defining and Analyzing Smart Device Passive Mode_. To setup your environment to follow along with these steps, download the first dataset [datasets.csv](datasets.csv). Then, ensure your directory tree matches the following:
@@ -29,4 +29,6 @@ For each section below, example commands are provided for running with the datas
 
 ## Processing and Splitting PCAPs
 
-## <a name="contributing"></a> Contributing to the Datasets
+    ./processPcap.bash ../../Percom116Dataset/US1/US1-Capture2/unfiltered/US1-Capture2.pcap MAC_files_from_paper/US1-MACs.txt ../../Workspace
+
+## Contributing to the Datasets
