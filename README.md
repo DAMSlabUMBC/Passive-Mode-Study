@@ -104,6 +104,7 @@ The script generates three output files for each line in the `input_csv`: one co
 |-----------------|-------|--------|----------------|------------|----------|---------|--------|---------|-------|
 |00:00:00:00:00:00|ALL    |ssdp    |192.168.1.102*  |92460       |35828250  |0        |0       |92460    |35828250|
 |00:00:00:00:00:00|ALL    |ssdp    |239.255.255.250*|92460       |35828250  |92460    |35828250|0        |0      |
+
 In this case, manual verification shows that this is SSDP communication from `192.168.1.102` to `239.255.255.250`. Therefore, the entry with an IP of `192.168.1.102` should be removed as it represents a duplicate with the `239.255.255.250` communication.
 
 An example execution of this script on the original passive mode dataset can be performed with the following command example command in the previous section has been executed. All other capture events may be processed in the same way. **Please note that some files will be generated with a `*` indicating manual verification is needed. The pipeline can be ran to completion without performing this verification to dry-run the full workflow, but data may be incorrect until this verification occurs.**
@@ -183,9 +184,13 @@ If you wish to contribute your own dataset to this project, you can use the foll
 3. Add your processed data files to a new directory under `data`
 4. Update datasets.csv to include the name of your dataset, the name of the directory under `data` containing your data files, and the link to your raw dataset
 5. Make any required script additions or modifications
+
     a. If you add a script, update the README to detail its usage
-6. Submit a pull request to the repo
+   
+7. Submit a pull request to the repo
+
     a. Include thorough reasoning and change description for any script modifications
+   
     b. Include contact information
 
 Note that data files will be marked as unverified until it can be shown they adequately describe the dataset. If pipeline execution results in non-trival and/or numerous manual verifications being needed, we will contact you to assist with providing a detailed description of the verification performed.
