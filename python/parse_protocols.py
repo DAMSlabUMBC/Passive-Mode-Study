@@ -109,13 +109,13 @@ def main(argv):
                 
                 file_progress.update(file_task, advance=1, description=f"Writing output")
                 # Create output dir if it doesn't exist and write final results
-                if not os.path.isdir("results"):
-                    os.makedirs("results")
+                if not os.path.isdir("protocol_stats"):
+                    os.makedirs("protocol_stats")
                 
                 if use_ipv4:    
-                    write_output(proto_data_by_mac, "results", file_name)
+                    write_output(proto_data_by_mac, "protocol_stats", file_name)
                 if use_ipv6:
-                    write_output(proto_data_by_mac_v6, "results", f"{file_name}-ipv6")
+                    write_output(proto_data_by_mac_v6, "protocol_stats", f"{file_name}-ipv6")
 
             # If it failed, we can't do anything else
             else:

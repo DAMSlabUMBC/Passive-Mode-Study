@@ -128,7 +128,7 @@ def main(argv):
                         protocol_distribtuion_dict[proto_type]["Overall"] = tuple(map(sum, zip(protocol_distribtuion_dict[proto_type]["Overall"], tuple_to_add)))
 
             else:
-                print(f"WARNING: Endpoint {endpoint_ip} not found in mapped protocol data for {device_name}")
+                print(f"WARNING: No application protocol found for endpoint {endpoint_ip} for {device_name}")
 
         # Save results for device
         target_categorization_dict[device_name] = outgoing_traffic_dict
@@ -136,12 +136,12 @@ def main(argv):
         protocol_distribution_per_device_dict[device_name] = protocol_distribtuion_dict
 
     # Create output dir if it doesn't exist
-    if not os.path.isdir("results"):
-        os.makedirs("results")
+    if not os.path.isdir("endpoint_stats"):
+        os.makedirs("endpoint_stats")
 
     # Now we need to calculate stats and output
     # 1: Distribution of device traffic to First/Support/Third/Local parties
-    out_path = os.path.join("results", "endpoint_type_distribution.csv")
+    out_path = os.path.join("endpoint_stats", "endpoint_type_distribution.csv")
     with open(out_path, "w", newline='') as outfile: # open the csv
         
         lines_to_write = []
@@ -200,7 +200,7 @@ def main(argv):
         outfile.writelines(lines_to_write)
 
     # 2: Distribution of local traffic between devices
-    out_path = os.path.join("results", "local_endpoint_distribution.csv")
+    out_path = os.path.join("endpoint_stats", "local_endpoint_distribution.csv")
     with open(out_path, "w", newline='') as outfile: # open the csv
         
         lines_to_write = []
@@ -238,7 +238,7 @@ def main(argv):
         outfile.writelines(lines_to_write)
 
     # 3: Distribution of protocol types (Management, Discovery, Unencrypted, Encrypted) to First/Support/Third/Local parties
-    out_path = os.path.join("results", "endpoint_protocol_distribution.csv")
+    out_path = os.path.join("endpoint_stats", "endpoint_protocol_distribution.csv")
     with open(out_path, "w", newline='') as outfile: # open the csv
         
         lines_to_write = []

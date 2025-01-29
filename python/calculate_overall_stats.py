@@ -149,11 +149,11 @@ def main(argv):
         lines_to_write.append(line_to_write)
         
     # Create output dir if it doesn't exist
-    if not os.path.isdir("results"):
-        os.makedirs("results")
+    if not os.path.isdir("overall_stats"):
+        os.makedirs("overall_stats")
 
     outfile_name = f"overall-stats.csv"
-    outfile_location = os.path.join("results", outfile_name)
+    outfile_location = os.path.join("overall_stats", outfile_name)
     with open(outfile_location, "w", newline='') as outfile: # open the csv
         outfile.writelines(lines_to_write)
 
@@ -189,24 +189,24 @@ def main(argv):
         wan_rx_packet_total = device_dict["WanRxPacketTotal"]
         wan_rx_byte_total = device_dict["WanRxByteTotal"]
 
-        tx_packet_pct = tx_packet_total / packet_total
-        tx_byte_pct = tx_byte_total / byte_total
-        rx_packet_pct = rx_packet_total / packet_total
-        rx_byte_pct = rx_byte_total / byte_total
+        tx_packet_pct = 0 if (packet_total == 0) else tx_packet_total / packet_total
+        tx_byte_pct = 0 if (byte_total == 0) else tx_byte_total / byte_total
+        rx_packet_pct = 0 if (packet_total == 0) else rx_packet_total / packet_total
+        rx_byte_pct = 0 if (byte_total == 0) else rx_byte_total / byte_total
 
-        lan_packet_pct = lan_packet_total / packet_total
-        lan_byte_pct = lan_byte_total / byte_total
-        lan_tx_packet_pct = lan_tx_packet_total / packet_total
-        lan_tx_byte_pct = lan_tx_byte_total / byte_total
-        lan_rx_packet_pct = lan_rx_packet_total / packet_total
-        lan_rx_byte_pct = lan_rx_byte_total / byte_total
+        lan_packet_pct = 0 if (packet_total == 0) else lan_packet_total / packet_total
+        lan_byte_pct = 0 if (byte_total == 0) else lan_byte_total / byte_total
+        lan_tx_packet_pct = 0 if (packet_total == 0) else lan_tx_packet_total / packet_total
+        lan_tx_byte_pct = 0 if (byte_total == 0) else lan_tx_byte_total / byte_total
+        lan_rx_packet_pct = 0 if (packet_total == 0) else lan_rx_packet_total / packet_total
+        lan_rx_byte_pct = 0 if (byte_total == 0) else lan_rx_byte_total / byte_total
 
-        wan_packet_pct = wan_packet_total / packet_total
-        wan_byte_pct = wan_byte_total / byte_total
-        wan_tx_packet_pct = wan_tx_packet_total / packet_total
-        wan_tx_byte_pct = wan_tx_byte_total / byte_total
-        wan_rx_packet_pct = wan_rx_packet_total / packet_total
-        wan_rx_byte_pct = wan_rx_byte_total / byte_total
+        wan_packet_pct = 0 if (packet_total == 0) else wan_packet_total / packet_total
+        wan_byte_pct = 0 if (byte_total == 0) else wan_byte_total / byte_total
+        wan_tx_packet_pct = 0 if (packet_total == 0) else wan_tx_packet_total / packet_total
+        wan_tx_byte_pct = 0 if (byte_total == 0) else wan_tx_byte_total / byte_total
+        wan_rx_packet_pct = 0 if (packet_total == 0) else wan_rx_packet_total / packet_total
+        wan_rx_byte_pct = 0 if (byte_total == 0) else wan_rx_byte_total / byte_total
 
         header_line = "Device,PacketTotal,ByteTotal,TxPacketTotal,TxPacketPct,TxByteTotal,TxBytePct,RxPacketTotal,RxPacketPct,RxByteTotal,RxBytePct,"
         header_line += "LanPacketTotal,LanPacketPct,LanByteTotal,LanBytePct,LanTxPacketTotal,LanTxPacketPct,LanTxByteTotal,LanTxBytePct,LanRxPacketTotal,LanRxPacketPct,LanRxByteTotal,LanRxBytePct,"
@@ -218,7 +218,7 @@ def main(argv):
         lines_to_write.append(line_to_write)
 
     outfile_name = f"overall-distribution.csv"
-    outfile_location = os.path.join("results", outfile_name)
+    outfile_location = os.path.join("overall_stats", outfile_name)
     with open(outfile_location, "w", newline='') as outfile: # open the csv
         outfile.writelines(lines_to_write)
 

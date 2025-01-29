@@ -101,26 +101,26 @@ def main(argv):
 
             file_progress.update(file_task, advance=1, description=f"Writing results")
             # Create output dir if it doesn't exist
-            if not os.path.isdir("results"):
-                os.makedirs("results")
+            if not os.path.isdir("endpoint_stats"):
+                os.makedirs("endpoint_stats")
 
             outfile_name = f"{file_name}-endpoints.csv"
-            outfile_location = os.path.join("results", outfile_name)
+            outfile_location = os.path.join("endpoint_stats", outfile_name)
             with open(outfile_location, "w", newline='') as outfile: # open the csv
 
                 lines_to_write = []
-                header = "IP, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes\n"
+                header = "IP, Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes\n"
                 lines_to_write.append(header)
                 
                 # Note, we wrap the owner information in quotes as it may contain commas
                 for ip in wan_ip_data.keys():
                     data_dict = wan_ip_data[ip]
-                    line_to_write = f"{ip},\"{data_dict['Cert Owner']}\",\"{data_dict['Cert Location']}\",\"{data_dict['WHOIS Owner']}\",\"{data_dict['WHOIS Location']}\",\"{data_dict['ASN Owner']}\",\"{data_dict['ASN Location']}\",{data_dict['Hostname']},{data_dict['Hostname']},{data_dict['IP Geolocation']},{data_dict['Cert Geolocation']},{data_dict['Packets']},{data_dict['Bytes']},{data_dict['TxPackets']},{data_dict['TxBytes']},{data_dict['RxPackets']},{data_dict['RxBytes']}\n"
+                    line_to_write = f"{ip},,\"{data_dict['Cert Owner']}\",\"{data_dict['Cert Location']}\",\"{data_dict['WHOIS Owner']}\",\"{data_dict['WHOIS Location']}\",\"{data_dict['ASN Owner']}\",\"{data_dict['ASN Location']}\",{data_dict['Hostname']},{data_dict['Hostname']},{data_dict['IP Geolocation']},{data_dict['Cert Geolocation']},{data_dict['Packets']},{data_dict['Bytes']},{data_dict['TxPackets']},{data_dict['TxBytes']},{data_dict['RxPackets']},{data_dict['RxBytes']}\n"
                     lines_to_write.append(line_to_write)
 
                 for ip in lan_ip_data.keys():
                     data_dict = lan_ip_data[ip]
-                    line_to_write = f"{ip},\"{data_dict['Cert Owner']}\",\"{data_dict['Cert Location']}\",\"{data_dict['WHOIS Owner']}\",\"{data_dict['WHOIS Location']}\",\"{data_dict['ASN Owner']}\",\"{data_dict['ASN Location']}\",{data_dict['Hostname']},{data_dict['Hostname']},{data_dict['IP Geolocation']},{data_dict['Cert Geolocation']},{data_dict['Packets']},{data_dict['Bytes']},{data_dict['TxPackets']},{data_dict['TxBytes']},{data_dict['RxPackets']},{data_dict['RxBytes']}\n"
+                    line_to_write = f"{ip},,\"{data_dict['Cert Owner']}\",\"{data_dict['Cert Location']}\",\"{data_dict['WHOIS Owner']}\",\"{data_dict['WHOIS Location']}\",\"{data_dict['ASN Owner']}\",\"{data_dict['ASN Location']}\",{data_dict['Hostname']},{data_dict['Hostname']},{data_dict['IP Geolocation']},{data_dict['Cert Geolocation']},{data_dict['Packets']},{data_dict['Bytes']},{data_dict['TxPackets']},{data_dict['TxBytes']},{data_dict['RxPackets']},{data_dict['RxBytes']}\n"
                     lines_to_write.append(line_to_write)
                     
                 outfile.writelines(lines_to_write)
