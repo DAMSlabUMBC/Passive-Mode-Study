@@ -1,5 +1,5 @@
 # Smart Home IoT Passive Mode Analysis
-This repository provides scripts, data files, and datasets for analyzing smart home Internet-of-Things (IoT) devices in passive mode as introduced in the paper "_Your Smart Home Exchanged 3M Messages: Defining and Analyzing Smart Device Passive Mode_" accepted to [IEEE PerCom  2025](https://www.percom.org/accepted-papers-main-conference/). Anyone using this repository for analysis is welcome to submit their own datasets, data files, and scripts through the process outlined in [Contributing Datasets](#contributing-to-the-datasets).
+This repository provides scripts, data files, and datasets for analyzing smart home Internet-of-Things (IoT) devices in passive mode as introduced in the paper "_Your Smart Home Exchanged 3M Messages: Defining and Analyzing Smart Device Passive Mode_" accepted to [IEEE PerCom  2025](https://www.percom.org/accepted-papers-main-conference/). Anyone using this repository for analysis is welcome to submit their own datasets, data files, and scripts through the process outlined in [Contributing Datasets](#contributing-datasets).
 
 ## Installing Requirements
 The files in this repository were designed to run on a current Linux operating system. The following are required to run the full pipeline:
