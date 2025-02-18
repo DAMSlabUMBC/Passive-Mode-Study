@@ -75,7 +75,7 @@ if ! [ -f $1 ]; then
 fi
 
 in_pcap=$1
-pcap_name=$(filename $in_pcap | sed "s/.pcap//")
+pcap_name=$(basename $in_pcap .pcap)
 
 # Ensure MAC mapping exists
 if ! [ -f $2 ]; then

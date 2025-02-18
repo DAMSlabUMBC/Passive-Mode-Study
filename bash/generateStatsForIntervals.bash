@@ -22,9 +22,10 @@ generate_stats_for_file() {
     echo "... processing file $pcap_file"
 
     out_dir="output_stats"
-    out_file=$(filename $pcap_file | sed "s/.pcap/-stats.csv/")
-    lan_out_file=$(filename $pcap_file | sed "s/.pcap/-LAN-stats.csv/")
-    wan_out_file=$(filename $pcap_file | sed "s/.pcap/-WAN-stats.csv/")
+    base_name=$(basename $pcap_file .pcap)
+    out_file="${base_name}-stats.csv"
+    lan_out_file="${base_name}-LAN-stats.csv"
+    wan_out_file="${base_name}-WAN-stats.csv"
 
     # By default don't include router traffic in these metrics
     global_filter="!(ip && (ip.addr == 192.168.1.1 || ip.addr == 192.168.3.1 || ip.addr == 192.168.231.1))"
