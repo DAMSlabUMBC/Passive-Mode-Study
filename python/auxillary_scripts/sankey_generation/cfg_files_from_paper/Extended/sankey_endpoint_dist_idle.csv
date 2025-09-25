@@ -1,0 +1,13 @@
+﻿Device,Output,Packets
+Amazon Light (Idle),First Party,0.803030303
+Amazon Light (Idle),Support Party,0.196969697
+Echo Dot 5 (Idle),First Party,0.975706746
+Echo Dot 5 (Idle),Support Party,0.024293254
+Govee Kettle (Idle),First Party,0.026450405
+Govee Kettle (Idle),Support Party,0.973549595
+Litokam Camera (Idle),Support Party,1
+Netvue Camera (Idle),First Party,0.113594369
+Netvue Camera (Idle),Support Party,0.886405631
+Hue Bridge (Idle),First Party,0.592363602
+Hue Bridge (Idle),Support Party,0.407636398
+TP-Link Plug (Idle),Support Party,1

@@ -1,0 +1,11 @@
+SourceDevice,TargetDevice,PacketsToTargetPct
+Echo Dot 5 (Idle),Broadcast,0.151205937
+Echo Dot 5 (Idle),Multicast,0.354050711
+Echo Dot 5 (Idle),Hue Bridge (Idle),0.494743352
+Netvue Camera (Idle),Broadcast,0.035433883
+Netvue Camera (Idle),Hue Bridge (Idle),0.964566117
+Hue Bridge (Idle),Broadcast,0.185452449
+Hue Bridge (Idle),Multicast,0.032318561
+Hue Bridge (Idle),Netvue Camera (Idle),0.766822671
+Hue Bridge (Idle),Echo Dot 5 (Idle),0.015406319
+TP-Link Plug (Idle),Echo Dot 5 (Idle),1

@@ -1,0 +1,14 @@
+IP, Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+216.239.35.0,Support,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,48,4320,24,2160,24,2160
+216.239.35.12,Support,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,30,2700,15,1350,15,1350
+216.239.35.4,Support,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,20,1800,10,900,10,900
+216.239.35.8,Support,None,None,None,None,"GOOGLE, US",US,time.google.com,time.google.com,None,None,36,3240,18,1620,18,1620
+3.218.204.125,First,None,None,None,None,"AMAZON-AES, US",US,None,None,None,None,92,11240,44,5968,48,5272
+3.221.241.175,First,None,None,None,None,"AMAZON-AES, US",US,None,None,None,None,69,8504,33,4566,36,3938
+3.231.106.7,First,None,None,None,None,"AMAZON-AES, US",US,None,None,None,None,35,4059,16,2050,19,2009
+34.203.99.187,First,None,None,None,None,"AMAZON-AES, US",US,None,None,None,None,35,4186,17,2232,18,1954
+34.207.10.56,First,None,None,None,None,"AMAZON-AES, US",US,None,None,None,None,69,8430,33,4476,36,3954
+34.227.220.101,First,None,None,None,None,"AMAZON-AES, US",US,None,None,None,None,24,2865,11,1493,13,1372
+52.203.102.153,First,None,None,None,None,"AMAZON-AES, US",US,None,None,None,None,34,4244,16,2244,18,2000
+52.45.199.7,Support,None,None,None,None,"AMAZON-AES, US",US,None,None,None,None,11632,1162862,3896,473538,7736,689324
+54.84.188.85,First,None,None,None,None,"AMAZON-AES, US",US,None,None,None,None,46,5621,22,2985,24,2636

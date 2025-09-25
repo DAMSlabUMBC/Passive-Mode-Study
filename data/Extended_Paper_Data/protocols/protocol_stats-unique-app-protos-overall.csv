@@ -1,0 +1,12 @@
+Proto,Purpose,Type
+http,Well known,Unencrypted App
+https,Well known,Encrypted App
+mdns,Well known,Discovery
+ntp,Well known,Management
+ssdp,Well known,Discovery
+secure-mqtt,Well known,Encrypted App
+tplink-smarthome,TP Link discovery protocol,Discovery
+udp:1982,Query SSDP (wifi bulb),Discovery
+udp:56700,"Broadcast, probably lifx, https://lan.developer.lifx.com/docs/querying-the-device-for-data#getservice---packet-2",Unencrypted App
+udp:6667,Tuya device discovery  https://kth.diva-portal.org/smash/get/diva2:1697718/FULLTEXT01.pdf https://support.tuya.com/en/help/_detail/Kd9ym28csm58k This is encrypted but I don't know where it says that,Discovery
+udp:8555,sync587264985- ???,Unencrypted App

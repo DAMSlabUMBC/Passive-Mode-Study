@@ -1,0 +1,42 @@
+IP, Type, Cert Owner, Cert Location, WHOIS Owner, WHOIS Location, ASN Owner, ASN Location, Original Hostname, Modified Hostname, IP Geolocation, Cert Geolocations, Packets, Bytes, TxPackets, TxBytes, RxPackets, RxBytes
+104.238.174.158,Support,None,None,None,None,"AS-VULTR, US",US,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+129.250.35.250,Support,None,None,None,None,"NTT-DATA-2914, US",US,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+13.41.102.135,Support,None,None,None,None,"AMAZON-02, US",US,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+131.111.8.60,Support,None,None,None,None,"JANET Jisc Services Limited, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,10,900,5,450,5,450
+131.111.8.61,Support,None,None,None,None,"JANET Jisc Services Limited, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,10,900,5,450,5,450
+134.0.16.1,Support,None,None,None,None,"THIRTEENTEN, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+139.143.5.30,Support,None,None,None,None,"NPL-MANG-LTD, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+139.162.219.252,Support,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",NL,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+143.47.241.91,Support,None,None,None,None,"ORACLE-BMC-31898, US",IE,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+162.159.200.1,Support,None,None,None,None,"CLOUDFLARENET, US",US,uk.pool.ntp.org,uk.pool.ntp.org,None,None,4,360,2,180,2,180
+162.159.200.123,Support,None,None,None,None,"CLOUDFLARENET, US",US,uk.pool.ntp.org,uk.pool.ntp.org,None,None,6,540,3,270,3,270
+178.215.228.24,Support,None,None,None,None,"ESEVEN, DE",DE,uk.pool.ntp.org,uk.pool.ntp.org,None,None,4,360,2,180,2,180
+178.62.250.107,Support,None,None,None,None,"DIGITALOCEAN-ASN, US",US,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+178.62.68.79,Support,None,None,None,None,"DIGITALOCEAN-ASN, US",US,uk.pool.ntp.org,uk.pool.ntp.org,None,None,4,360,2,180,2,180
+185.177.149.33,Support,None,None,None,None,"CLOUVIDER Clouvider - Global ASN, GB",DE,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+185.57.191.229,Support,None,None,None,None,"CREEPERHOSTLTD-AS, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+193.150.34.2,Support,None,None,None,None,"A4N Network Services, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,6,540,3,270,3,270
+193.57.144.50,Support,None,None,None,None,"INFERNO, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,4,360,2,180,2,180
+195.171.43.10,Support,None,None,None,None,"BT-UK-AS BTnet UK Regional network, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+213.170.135.197,Support,None,None,None,None,"PEBBLEHOST, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,8,720,4,360,4,360
+213.5.132.231,Support,None,None,None,None,"DIVERGENT DIVERGENT NETWORKS, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,4,360,2,180,2,180
+217.114.59.3,Support,None,None,None,None,"LUNS-AS, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,3,270,1,90,2,180
+217.114.59.66,Support,None,None,None,None,"LUNS-AS, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+46.17.88.210,Support,None,None,None,None,"CWCS-PS CompuWeb Communications Services Ltd, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+52.5.118.234,Support,None,None,None,None,"AMAZON-AES, US",US,None,None,None,None,3039,323678,1021,125911,2018,197767
+80.82.245.120,Support,None,None,None,None,"PUBLIC-INTERNET, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+81.179.123.60,Support,None,None,None,None,"TISCALI-UK TalkTalk Communications Limited, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+81.187.202.141,Support,None,None,None,None,"AS20712 Andrews & Arnold Ltd, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+81.187.45.82,Support,None,None,None,None,"AS20712 Andrews & Arnold Ltd, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+82.219.4.30,Support,None,None,None,None,"EXA-NETWORKS Exa Networks Limited, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,4,360,2,180,2,180
+85.159.209.93,Support,None,None,None,None,"AKAMAI-LINODE-AP Akamai Connected Cloud, SG",US,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+85.199.214.100,Support,None,None,None,None,"ECOM-AS , GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,6,540,3,270,3,270
+85.199.214.102,Support,None,None,None,None,"ECOM-AS , GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,4,360,2,180,2,180
+85.199.214.99,Support,None,None,None,None,"ECOM-AS , GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,6,540,3,270,3,270
+86.3.232.217,Support,None,None,None,None,"NTL, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+89.117.31.192,Support,None,None,None,None,"PHOTOSHELTER-LON, US",LT,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+90.155.73.34,Support,None,None,None,None,"AS20712 Andrews & Arnold Ltd, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+90.255.244.219,Support,None,None,None,None,"Vodafone, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,4,360,2,180,2,180
+93.93.131.118,Support,None,None,None,None,"MYTHIC Mythic Beasts Ltd, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,4,360,1,90,3,270
+95.215.175.2,Support,None,None,None,None,"A4N-OFFNET Network Services, GB",GB,uk.pool.ntp.org,uk.pool.ntp.org,None,None,2,180,1,90,1,90
+192.168.1.109,Local (Echo Dot 5),Local,Local,Local,Local,Local,Local,N/A,N/A,Local,Local,63,40974,0,0,63,40974
